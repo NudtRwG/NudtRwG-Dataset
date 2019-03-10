@@ -1,1 +1,0 @@
-A Discriminative Latent Variable Chinese Segmenter with Hybrid Word/Character Information

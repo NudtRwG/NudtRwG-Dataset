@@ -1,1 +1,0 @@
-A DOM Tree Alignment Model for Mining Parallel Data from the Web

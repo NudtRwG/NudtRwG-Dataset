@@ -1,1 +1,0 @@
-A Discriminative Topic Model using Document Network Structure
