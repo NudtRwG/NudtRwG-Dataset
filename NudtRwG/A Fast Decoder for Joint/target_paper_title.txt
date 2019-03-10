@@ -1,0 +1,1 @@
+A Fast Decoder for Joint Word Segmentation and POS-Tagging Using a Single Discriminative Model
