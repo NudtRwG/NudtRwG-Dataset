@@ -1,0 +1,1 @@
+A Dynamic Programming Algorithm for Computing N-gram Posteriors from Lattices

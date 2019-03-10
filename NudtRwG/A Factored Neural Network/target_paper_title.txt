@@ -1,0 +1,1 @@
+A Factored Neural Network Model for Characterizing Online Discussions in Vector Space
