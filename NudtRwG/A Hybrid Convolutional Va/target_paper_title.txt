@@ -1,0 +1,1 @@
+A Hybrid Convolutional Variational Autoencoder for Text Generation

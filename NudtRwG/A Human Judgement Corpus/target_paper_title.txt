@@ -1,0 +1,1 @@
+A Human Judgement Corpus and a Metric for Arabic MT Evaluation
