@@ -1,0 +1,1 @@
+A Joint Learning Model of Word Segmentation, Lexical Acquisition, and Phonetic Variability
