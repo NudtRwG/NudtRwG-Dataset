@@ -1,0 +1,1 @@
+A novel dependency-to-string model for statistical machine translation

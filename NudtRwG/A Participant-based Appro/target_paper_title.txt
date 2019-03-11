@@ -1,0 +1,1 @@
+A Participant-based Approach for Event Summarization Using Twitter Streams
