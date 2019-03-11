@@ -1,0 +1,1 @@
+A Translation-Based Knowledge Graph Embedding Preserving Logical Property of Relations
