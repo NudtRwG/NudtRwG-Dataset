@@ -1,0 +1,1 @@
+A Maximum Entropy Approach to Combining Word Alignments

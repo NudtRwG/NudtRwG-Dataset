@@ -1,0 +1,1 @@
+A Multimodal LDA Model integrating Textual, Cognitive and Visual Modalities

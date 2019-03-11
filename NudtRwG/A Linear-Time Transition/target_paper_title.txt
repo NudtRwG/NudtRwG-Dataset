@@ -1,0 +1,1 @@
+A Linear-Time Transition System for Crossing Interval Trees

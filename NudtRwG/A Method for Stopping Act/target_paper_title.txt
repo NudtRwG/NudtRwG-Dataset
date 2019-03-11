@@ -1,0 +1,1 @@
+A Method for Stopping Active Learning Based on Stabilizing Predictions and the Need for User-Adjustable Stopping
