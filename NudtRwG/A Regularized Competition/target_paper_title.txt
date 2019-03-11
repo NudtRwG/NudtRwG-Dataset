@@ -1,0 +1,1 @@
+A Regularized Competition Model for Question Difficulty Estimation in Community Question Answering Services

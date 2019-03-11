@@ -1,0 +1,1 @@
+A Statistical Language Modeling Approach to Lattice-Based Spoken Document Retrieval

@@ -1,0 +1,1 @@
+A Probabilistic Morphological Analyzer for Syriac

@@ -1,0 +1,1 @@
+A Shift-Reduce Parsing Algorithm for Phrase-based String-to-Dependency Translation

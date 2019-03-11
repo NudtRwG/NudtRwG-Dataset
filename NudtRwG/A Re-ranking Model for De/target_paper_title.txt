@@ -1,0 +1,1 @@
+A Re-ranking Model for Dependency Parser with Recursive Convolutional Neural Network
