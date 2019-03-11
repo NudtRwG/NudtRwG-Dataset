@@ -1,0 +1,1 @@
+A Non-negative Matrix Factorization Based Approach for Active Dual Supervision from Document and Word Labels
