@@ -1,0 +1,1 @@
+An Empirical Study of Automatic Chinese Word Segmentation for Spoken Language Understanding and Named Entity Recognition

@@ -1,0 +1,1 @@
+AFET: Automatic Fine-Grained Entity Typing by Hierarchical Partial-Label Embedding

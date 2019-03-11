@@ -1,0 +1,1 @@
+Aggregating and Predicting Sequence Labels from Crowd Annotations

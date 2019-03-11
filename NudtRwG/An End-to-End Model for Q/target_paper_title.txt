@@ -1,0 +1,1 @@
+An End-to-End Model for Question Answering over Knowledge Base with Cross-Attention Combining Global Knowledge

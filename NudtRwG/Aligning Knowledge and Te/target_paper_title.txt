@@ -1,0 +1,1 @@
+Aligning Knowledge and Text Embeddings by Entity Descriptions

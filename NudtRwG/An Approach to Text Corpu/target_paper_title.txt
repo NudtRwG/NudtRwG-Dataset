@@ -1,0 +1,1 @@
+An Approach to Text Corpus Construction which Cuts Annotation Costs and Maintains Reusability of Annotated Data
