@@ -1,0 +1,1 @@
+Accurate Linear-Time Chinese Word Segmentation via Embedding Matching
