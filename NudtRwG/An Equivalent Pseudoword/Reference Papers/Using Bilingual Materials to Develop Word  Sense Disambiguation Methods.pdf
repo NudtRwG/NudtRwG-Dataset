@@ -1,0 +1,4249 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 6356
+>>
+stream
+BT
+/TT2 1 Tf
+10 0 0 10 209.3 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.002 Tw
+(Using Bilingual Materials to Develop)Tj
+-0.21 -1.2 TD
+0.0031 Tw
+(Word Sense Disambiguation Methods)Tj
+/TT4 1 Tf
+4.76 -3.6 TD
+-0.0034 Tw
+(William A. Gale)Tj
+-0.69 -1.2 TD
+-0.0077 Tw
+(Kenneth W. Church)Tj
+0.61 -1.2 TD
+-0.0142 Tw
+(David Yarowsky)Tj
+/TT6 1 Tf
+-1.53 -3.6 TD
+0.0078 Tw
+(AT&T Bell Laboratories)Tj
+0.52 -1.2 TD
+-0.0055 Tw
+(600 Mountain Avenue)Tj
+1.59 -1.2 TD
+-0.0026 Tw
+(P. O. Box 636)Tj
+-2.96 -1.2 TD
+-0.0016 Tw
+(Murray Hill NJ, 07974-0636)Tj
+-15.82 -3 TD
+0 Tw
+(Abstract)Tj
+/TT4 1 Tf
+0 -1.8 TD
+0.2547 Tw
+[(Word sense disambiguation has been recognized as a major problem )-10.2(in )-10.2(natural )-10.2(language )-10.2(processing)]TJ
+0 -1.2 TD
+0.0578 Tw
+[(research for over forty years. )-259.2(Much of this work has been stymied by dif)]TJ
+/TT7 1 Tf
+30.0029 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0577 Tw
+(culties in acquiring appropriate)Tj
+-30.559 -1.2 TD
+0.0223 Tw
+[(lexical resources, such as semantic networks and annotated corpora. )-265.9(Following )-6(the )-18.4(suggestion )-18.4(in )-18.4(Brown)]TJ
+/TT6 1 Tf
+42.48 0 TD
+0 Tw
+(et)Tj
+-42.48 -1.2 TD
+(al.)Tj
+/TT4 1 Tf
+1.34 0 TD
+0.0482 Tw
+(\(1991a\) and Dagan)Tj
+/TT6 1 Tf
+8.07 0 TD
+0.0605 Tw
+(et al.)Tj
+/TT4 1 Tf
+2.37 0 TD
+0.048 Tw
+(\(1991\), we have achieved considerable progress recently by taking advantage)Tj
+-11.78 -1.2 TD
+0.0163 Tw
+[(of a new source of testing and training materials. )-248.2(Rather than )-10.7(depending )-10.7(on )-10.7(small )-10.7(amounts )-10.7(of )-10.7(hand-labeled)]TJ
+T*
+0.1866 Tw
+[(text, )-6.8(we )-6.8(have been making use of relatively large amounts of parallel text, text such as the Canadian)]TJ
+T*
+0.1518 Tw
+[(Hansards \(parliamentary debates\), which are available in two \(or more\) languages. )-253.5(The )-7(translation )-10.5(can)]TJ
+T*
+0.1064 Tw
+[(often be used in lieu of hand-labeling. )-254.4(For example, consider the polysemous word)]TJ
+/TT6 1 Tf
+35.05 0 TD
+0 Tw
+(sentence)Tj
+/TT4 1 Tf
+3.43 0 TD
+0.0966 Tw
+(, which has)Tj
+-38.48 -1.2 TD
+0.0548 Tw
+[(two major senses: \(1\) a judicial sentence, and \(2\), a syntactic sentence. )-247.5(We can collect a number of )-9.2(sense)]TJ
+T*
+0.0542 Tw
+(\(1\) examples by extracting instances that are translated as)Tj
+/TT6 1 Tf
+23.79 0 TD
+0 Tw
+(peine)Tj
+/TT4 1 Tf
+2.16 0 TD
+0.0448 Tw
+[(, )-10.3(and )-10.3(we can collect a number of sense \(2\))]TJ
+-25.95 -1.2 TD
+0.0342 Tw
+(examples by extracting instances that are translated as)Tj
+/TT6 1 Tf
+22.16 0 TD
+0 Tw
+(phrase)Tj
+/TT4 1 Tf
+2.72 0 TD
+0.0354 Tw
+[(. )-251.6(In this way, we have been able to acquire a)]TJ
+-24.88 -1.2 TD
+0.2979 Tw
+[(considerable )-8(amount )-8(of )-8(testing and training material for developing and testing our disambiguation)]TJ
+T*
+0 Tw
+(algorithms.)Tj
+0 -2.4 TD
+0.0485 Tw
+[(The availability of this testing and training material has enabled us to )-10.7(develop )-10.7(quantitative )-10.7(disambiguation)]TJ
+0 -1.2 TD
+0.0775 Tw
+[(methods )-5.6(that )-5.6(achieve )-5.6(90% )-5.6(accuracy )-5.6(in discriminating between two very distinct senses of a noun such as)]TJ
+/TT6 1 Tf
+T*
+0 Tw
+(sentence)Tj
+/TT4 1 Tf
+3.43 0 TD
+0.0962 Tw
+[(. )-240.8(In )9.9(the )9.9(training )9.9(phase, )9.9(we collect a number of instances of each sense of the polysemous noun.)]TJ
+-3.43 -1.2 TD
+0.0464 Tw
+[(Then in the testing phase, we are given a new instance of the noun, and )9.4(are )9.4(asked )9.4(to )9.4(assign )9.4(the )9.4(instance )9.4(to)]TJ
+T*
+0.0682 Tw
+[(one )12.8(of )12.8(the )12.8(senses. )-234.1(We )11.2(attempt )11.2(to )11.2(answer this question by comparing the context of the unknown instance)]TJ
+T*
+0.0662 Tw
+[(with )-12.1(contexts )-12.1(of known instances using a Bayesian argument that has been applied successfully in related)]TJ
+T*
+-0.0037 Tw
+(applications such as author identi)Tj
+/TT7 1 Tf
+13.3154 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0037 Tw
+(cation and information retrieval.)Tj
+-13.8716 -2.4 TD
+0 Tw
+(The )Tj
+/TT7 1 Tf
+2.0006 0 TD
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.2078 Tw
+[(nal )11.9(section )11.9(of )11.9(the )11.9(paper will describe a number of methodological studies which show that the)]TJ
+-2.5568 -1.2 TD
+0.0658 Tw
+[(training )-10.4(set )-10.4(need )-10.4(not )-10.4(be )-10.4(large and that it need not be free from errors. )-248.2(Perhaps )-5.5(most )-5.5(surprisingly, )-5.5(we )]TJ
+/TT7 1 Tf
+41.6438 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+(nd)Tj
+-42.2 -1.2 TD
+0.1482 Tw
+(that the context should extend)Tj
+/TT9 1 Tf
+12.99 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.63 0 TD
+0.1455 Tw
+[(50 words, an order of magnitude )-12.9(larger )-12.9(than )-12.9(one )-12.9(typically )]TJ
+/TT7 1 Tf
+24.8183 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1584 Tw
+(nds in the)Tj
+-38.9944 -1.2 TD
+0 Tw
+(literature.)Tj
+/TT2 1 Tf
+9 0 0 9 72 180.06 Tm
+0.2667 Tw
+[(1. Word-Sense )262.7(Disambiguation)]TJ
+/TT4 1 Tf
+10 0 0 10 72 162.06 Tm
+0.1448 Tw
+(Consider, for example, the word)Tj
+/TT6 1 Tf
+13.92 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+2.12 0 TD
+0.1474 Tw
+(which has at least two quite distinct senses: \(1\) a tax and \(2\) an)Tj
+-16.04 -1.2 TD
+0.0146 Tw
+[(obligation. )-248.7(Three examples of each sense are given in Table )-13.5(1 )-13.5(below. )-260.7(The )-14(classic )-14(disambiguation )-14.1(problem)]TJ
+T*
+0.0877 Tw
+[(is )-9.4(to )-9.4(construct )-9.4(a )-9.4(means )-9.4(for )-9.4(discriminating )-9.4(between )-9.4(two or more sets of examples such as those shown in)]TJ
+T*
+0.0564 Tw
+[(Table 1. )-255.8(This paper will focus on the methodology required to address the classic problem, and )-11.9(will )-11.9(have)]TJ
+T*
+0.1873 Tw
+[(less to say about the details required for practical application of this methodology. )-253.2(Consequently, the)]TJ
+T*
+0.0154 Tw
+(reader should exercise some caution in interpreting the 90% )Tj
+/TT7 1 Tf
+24.3804 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0154 Tw
+(gure reported here; this )Tj
+/TT7 1 Tf
+9.6134 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5561 0 TD
+0.0268 Tw
+[(gure )11.4(could easily be)]TJ
+-35.1061 -1.2 TD
+0.1162 Tw
+[(swamped out in a practical system by any number of factors )8.8(that )8.8(go )8.8(beyond )8.8(the )8.8(scope )8.8(of )8.8(this )8.7(paper. )-240.8(In)]TJ
+T*
+0.2361 Tw
+[(particular, )16.2(the )16.2(Canadian )16.2(Hansards, one of just the few currently available sources of parallel text, is)]TJ
+T*
+-0.0048 Tw
+(extremely unbalanced, and is therefore severely limited as a basis for a practical disambiguation system.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+12 0 obj
+<<
+/Length 7682
+>>
+stream
+BT
+/TT4 1 Tf
+10 0 0 10 72 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.0053 Tw
+(Table 1: Sample Concordances of)Tj
+/TT6 1 Tf
+13.78 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+0.0002 Tw
+(\(split into two senses\))Tj
+-14.02 -1.2 TD
+-0.0091 Tw
+[(Sense )-9432.7(Examples \(from Canadian Hansards\))]TJ
+/TT9 1 Tf
+-1.73 -0.2 TD
+0 Tw
+(_ )Tj
+0.19 0 TD
+(_________________________________________________________________________)Tj
+/TT4 1 Tf
+2.65 -1.2 TD
+-0.0052 Tw
+[(tax )-1237.6(fewer cases of companies paying)]TJ
+/TT6 1 Tf
+16.15 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0046 Tw
+(and then claiming a refund)Tj
+-13.51 -1.2 TD
+-0.0041 Tw
+(and impose a countervailing)Tj
+/TT6 1 Tf
+11.54 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0045 Tw
+(of 29,1 per cent on candian exports of)Tj
+-12.99 -1.2 TD
+-0.0013 Tw
+(the united states imposed a)Tj
+/TT6 1 Tf
+11.02 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0041 Tw
+(on canadian salt)Tj
+/TT7 1 Tf
+6.4336 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0041 Tw
+(sh last year)Tj
+/TT9 1 Tf
+-27.9498 -0.2 TD
+0 Tw
+(_ )Tj
+0.19 0 TD
+(_________________________________________________________________________)Tj
+/TT4 1 Tf
+-0.19 -1.2 TD
+-0.0004 Tw
+[(obligation )-6659.6(it is my honour and)]TJ
+/TT6 1 Tf
+18.99 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0026 Tw
+(to present a petition duly approved)Tj
+-14.95 -1.2 TD
+-0.0033 Tw
+(working well beyond the call of)Tj
+/TT6 1 Tf
+12.98 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0012 Tw
+(? SENT i know what time they start)Tj
+-10.29 -1.2 TD
+0.0029 Tw
+(in addition , it is my)Tj
+/TT6 1 Tf
+8.32 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.97 0 TD
+-0.0032 Tw
+(to present the government ’s comments)Tj
+/TT8 1 Tf
+-16.15 0 TD
+0 Tw
+<00b2>Tj
+0 0.6 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+/TT4 1 Tf
+-4.81 -9.4 TD
+0.1894 Tw
+[(Moreover, )9.8(it )9.8(is )9.8(important )9.8(to distinguish the monolingual word-sense disambiguation problem from the)]TJ
+0 -1.2 TD
+0.1365 Tw
+[(translation )-12.3(issue. )-262.7(It )-9.5(is )-9.5(not )-9.5(always )-9.5(necessary )-9.5(to )-9.5(resolve the word-sense ambiguity in order to translate a)]TJ
+T*
+0.0886 Tw
+[(polysemous word. )-246.4(Especially in related languages like English and French, it is common for word-sense)]TJ
+T*
+0.0591 Tw
+[(ambiguity )-6.4(to )-6.4(be )-6.4(preserved in both languages. )-251.7(For example, both the English noun)]TJ
+/TT6 1 Tf
+33.84 0 TD
+0 Tw
+(interest)Tj
+/TT4 1 Tf
+3.31 0 TD
+0.0538 Tw
+(and the French)Tj
+-37.15 -1.2 TD
+0 Tw
+(equivalent)Tj
+/TT6 1 Tf
+4.54 0 TD
+(intere )Tj
+2.057 0 TD
+(ˆ )Tj
+0.2752 0 TD
+(t)Tj
+/TT4 1 Tf
+0.6578 0 TD
+0.138 Tw
+[(are )7.9(multiply ambiguous in both languages in more or less the same ways. )-252(Thus, one)]TJ
+-7.53 -1.2 TD
+0.0694 Tw
+[(cannot )-8.5(turn )-8.5(to )-8.5(the )-8.5(French )-8.5(to resolve the ambiguity in the English, since the word is equally ambiguous in)]TJ
+T*
+-0.0064 Tw
+(both languages.)Tj
+0 -2.4 TD
+0.017 Tw
+[(Furthermore, )14.9(when )14.9(one )14.9(word does translate to two \(e.g.,)]TJ
+/TT6 1 Tf
+22.8 0 TD
+0 Tw
+(sentence)Tj
+/TT8 1 Tf
+3.7 0 TD
+<0041>Tj
+/TT6 1 Tf
+1.26 0 TD
+(peine)Tj
+/TT4 1 Tf
+2.43 0 TD
+(and)Tj
+/TT6 1 Tf
+1.71 0 TD
+(phrase)Tj
+/TT4 1 Tf
+2.72 0 TD
+0.0141 Tw
+(\), the choice of target)Tj
+-34.62 -1.2 TD
+0.1674 Tw
+[(translation need not indicate a sense split in the source. )-251.8(Consider, )13.2(for )13.2(example, )13.2(the )13.2(group )13.2(of )13.2(Japanese)]TJ
+T*
+0.2152 Tw
+[(words )16.7(translated by ‘‘wearing clothes’’ in English. )-251.4(While the Japanese have )]TJ
+/TT7 1 Tf
+33.2569 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.2135 Tw
+(ve different words for)Tj
+-33.8131 -1.2 TD
+0.0555 Tw
+[(‘‘wear’’ depending on which part of the body is involved, )8.3(we )8.3(doubt )8.3(that )8.3(English )8.3(speakers )8.3(would )8.3(ever )8.3(sort)]TJ
+T*
+-0.0105 Tw
+(‘‘wearing shoes’’ and ‘‘wearing shirt’’ into separate categories.)Tj
+0 -2.4 TD
+0.0442 Tw
+[(These examples indicate that word-sense disambiguation )-10.1(and )-10.1(translation )-10(are )-10.1(somewhat )-10(different )-10.1(problems.)]TJ
+0 -1.2 TD
+0.0171 Tw
+[(It )-9.1(would )-9.1(have )-9.1(been )-9.1(nice )-9.1(if )-9.1(the )-9.1(translation )-9.1(could )-9.1(always be used in lieu of hand-tagging to resolve the word-)]TJ
+T*
+0.1284 Tw
+[(sense )9.6(ambiguity but unfortunately, this is not the case. )-237(Nevertheless, the translation is often helpful for)]TJ
+T*
+0.199 Tw
+[(resolving the ambiguity. )-250.2(It seems to us to make sense to continue to use the )12.4(Hansard )12.4(translations )12.4(to)]TJ
+T*
+0.0064 Tw
+[(develop )8.4(the )8.4(discrimination methodology, while we continue to seek more appropriate sources of testing and)]TJ
+T*
+0.0555 Tw
+[(training )-9.1(materials. )-260.7(See Yarowsky \(1992\) for an application of the methods developed here to a somewhat)]TJ
+T*
+0.1859 Tw
+[(more )23.8(appropriate source, a combination of the Roget’s Thesaurus \(Chapman, 1977\))]TJ
+7 0 0 7 424.7 354.0601 Tm
+0 Tw
+(1)Tj
+10 0 0 10 432.6 350.0601 Tm
+0.1823 Tw
+(and the Grolier’s)Tj
+-36.06 -1.2 TD
+-0.0179 Tw
+(Encyclopedia \(1991\).)Tj
+/TT2 1 Tf
+9 0 0 9 72 314.0601 Tm
+0.0054 Tw
+[(2. )-261.2(Knowledge Acquisition Bottleneck)]TJ
+/TT4 1 Tf
+10 0 0 10 72 296.0601 Tm
+0.1272 Tw
+[(In our view, the crux of the problem in developing methods for word sense disambiguation )-14.1(is )-14.1(to )]TJ
+/TT7 1 Tf
+40.8087 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1413 Tw
+(nd a)Tj
+-41.3649 -1.2 TD
+0.1456 Tw
+(strategy for acquiring a suf)Tj
+/TT7 1 Tf
+11.3562 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1466 Tw
+[(ciently large set of training material. )-245.7(We think that we have found )10(such )10(a)]TJ
+-11.9124 -1.2 TD
+0.037 Tw
+[(strategy )9.1(by )9.1(turning to parallel text as a source of testing and training materials. )-256.8(Most of the previous work)]TJ
+T*
+0.1056 Tw
+[(falls )-10.9(into )-10.9(one )-10.9(of )-10.9(three )-10.9(camps: )-10.9(\(1\) Qualitative Methods, e.g., Hirst \(1987\), \(2\) Dictionary-based Methods,)]TJ
+T*
+0.0641 Tw
+[(e.g., Lesk \(1986\), and \(3\) Hand Annotated )-12.6(Corpora, )-12.6(e.g., )-12.6(Kelly )-12.5(and )-12.6(Stone )-12.6(\(1975\). )-262.9(In )-8.6(each )-8.6(case, )-8.6(the )-8.6(work)]TJ
+T*
+-0.0024 Tw
+(has been limited by knowledge acquisition bottleneck.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+0.251 Tw
+[(2.1 Qualitative )254.8(Methods)]TJ
+/TT4 1 Tf
+T*
+0.0078 Tw
+[(For )11.4(example, )11.4(there )11.4(has )11.4(been )11.4(a )11.4(tradition )11.4(in )11.4(parts )11.4(of the AI community of building large experts by hand, e.g.,)]TJ
+0 -1.2 TD
+0.0351 Tw
+[(Granger \(1977\), Rieger \(1977\), Small and Rieger \(1982\), Hirst \(1987\). )-245.5(Unfortunately, this approach is not)]TJ
+T*
+0.0432 Tw
+[(very easy to scale up, as many researchers have observed: ‘‘The expert for THROW is )-12.4(currently )-12.4(six )-12.4(pages)]TJ
+T*
+0.0086 Tw
+[(long, ... )-253.6(but it should be 10 times that size’’ \(Small and Reiger, 1982\). )-249.7(Since this approach )6.2(is )6.2(so )6.2(dif)]TJ
+/TT7 1 Tf
+40.1141 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0024 Tw
+(cult to)Tj
+-40.6703 -1.2 TD
+0.1969 Tw
+[(scale up, much of the work has had to focus on )-8.2(‘‘toy’’ )-8.2(domains )-8.2(\(e.g., )-8.2(Winograd’s )-8.2(Blocks )-8.2(World\) )-8.2(or)]TJ
+T*
+0.1507 Tw
+[(sublanguages \(e.g., Isabelle \(1984\), Hirschman \(1986\)\). )-256.8(Currently, )-12.2(it )-12.2(is )-12.3(not )-12.3(possible )-12.2(to )]TJ
+/TT7 1 Tf
+36.8538 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.146 Tw
+(nd a semantic)Tj
+-37.41 -1.2 TD
+-0.0049 Tw
+(network with the kind of broad coverage that would be required for unrestricted text.)Tj
+8 0 0 8 72 99.1601 Tm
+0 Tw
+(__________________)Tj
+0 -1.5 TD
+-0.0126 Tw
+[(1. )-509.8(This thesaurus should not be confused with the much smaller and less up-to-date 1911 edition of Roget’s.)]TJ
+ET
+endstream
+endobj
+13 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+16 0 obj
+<<
+/Length 7017
+>>
+stream
+BT
+/TT4 1 Tf
+10 0 0 10 72 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.1774 Tw
+[(From an AI point of view, it appears )-8.4(that )-8.4(the )-8.4(word-sense )-8.4(disambiguation )-8.4(problem )-8.4(is )-8.4(‘‘AI-Complete,’’)]TJ
+0 -1.2 TD
+0.0588 Tw
+[(meaning that you can’t solve this problem until you’ve solved all of the )12(other )12(hard )12(problems )12(in )12(AI. )-239.5(Since)]TJ
+T*
+0.0091 Tw
+[(this is unlikely to happen any time soon \(if at all\), it would seem to suggest that word-sense )-14.9(disambiguation)]TJ
+T*
+0.0564 Tw
+[(is )-12.2(just )-12.2(too )-12.2(hard )-12.2(a )-12.2(problem, )-12.2(and )-12.2(we )-12.2(should )-12.2(spend our time working on a simpler problem where we have a)]TJ
+T*
+0.0454 Tw
+[(good )20.8(chance of making progress. )-249.1(Rather than accept this rather pessimistic conclusion, we prefer to reject)]TJ
+T*
+-0.0052 Tw
+(the premise and search for an alternative point of view.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+-0.0054 Tw
+[(2.2 )-237.5(Machine-Readable Dictionaries \(MRDs\))]TJ
+/TT4 1 Tf
+T*
+0.1933 Tw
+[(Others such as Lesk \(1986\), Walker \(1987\), Ide )-9.2(and )-9.2(Veronis )-9.2(\(1990\) )-9.2(have )-9.2(turned )-9.2(to )-9.2(machine-readable)]TJ
+0 -1.2 TD
+0.0184 Tw
+(dictionaries \(MRD\) such as Oxford’s Advanced Learner’s Dictionary of Current English \(OALDCE\) in the)Tj
+T*
+0.0274 Tw
+[(hope that MRDs might provide a way out of the knowledge acquisition bottleneck. )-244.9(These researchers seek)]TJ
+T*
+0.1172 Tw
+[(to )-8.4(develop )-8.4(a )-8.4(program )-8.4(that )-8.4(could )-8.4(read )-8.4(an arbitrary text and tag each word in the text with a pointer to a)]TJ
+T*
+-0.0064 Tw
+(particular sense number in a particular dictionary.)Tj
+0 -2.4 TD
+0.2562 Tw
+[(Unfortunately, the approach doesn’t seem to work as well as one might )-10(hope. )-260(Lesk )-7.4(\(1986\) )-7.4(reports)]TJ
+0 -1.2 TD
+0.0239 Tw
+(accuracies of 50-70% on short samples of)Tj
+/TT6 1 Tf
+17.14 0 TD
+0.0256 Tw
+(Pride and Prejudice)Tj
+/TT4 1 Tf
+8.16 0 TD
+0.0177 Tw
+[(. )-261.5(Part )-9.9(of )-9.9(the )-9.9(problem may be that dictionary)]TJ
+-25.3 -1.2 TD
+0 Tw
+(de)Tj
+/TT7 1 Tf
+0.9438 0 TD
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0881 Tw
+[(nitions are too short to mention all of the collocations \(words that are often found in the context of )-8.1(a)]TJ
+-1.5 -1.2 TD
+0.0462 Tw
+[(particular )-7.8(sense )-7.8(of )-7.8(a )-7.8(polysemous )-7.8(word\). )-260.8(In )-12.6(addition, )-12.6(dictionaries have much less coverage than one might)]TJ
+T*
+0.1258 Tw
+[(have )16.7(expected. )-241.8(Walker \(1987\) reports that perhaps half of the words occurring in a new text )-9.5(cannot )-9.5(be)]TJ
+T*
+-0.0052 Tw
+(related to a dictionary entry.)Tj
+0 -2.4 TD
+0.1445 Tw
+[(Thus, like the AI approach, the dictionary-based approach is also )-15.4(limited )-15.4(by )-15.4(the )-15.4(knowledge )-15.4(acquisition)]TJ
+0 -1.2 TD
+0.3466 Tw
+[(bottleneck; )-9.6(dictionaries )-9.6(simply )-9.6(don’t )-9.6(record enough of the relevant information, and much of the)]TJ
+T*
+0.0991 Tw
+[(information that is stored in the dictionary is not in a format that computers )-8.4(can )-8.4(easily )-8.4(digest, )-8.4(at )-8.4(least )-8.4(at)]TJ
+T*
+0 Tw
+(present.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+-0.0012 Tw
+[(2.3 )-244.3(Approaches Based on Hand-Annotated Corpora)]TJ
+/TT4 1 Tf
+T*
+0.1253 Tw
+[(A third line of research makes use of hand-annotated corpora. )-268.5(Most )-13.1(of )-13.1(these )-13.1(studies )-13.1(are )-13.1(limited )-13.1(by )-13.1(the)]TJ
+0 -1.2 TD
+0.0911 Tw
+[(availability )6.1(of )6.1(hand-annotated )6.1(text. )-247.2(Since it is unlikely that such text will be )14.5(available )14.5(in )14.5(large )14.5(quantities)]TJ
+T*
+0.2255 Tw
+[(for )6.4(most )6.4(of )6.4(the )6.4(polysemous )6.4(words )6.4(in the vocabulary, there are serious questions about how such an)]TJ
+T*
+0.0558 Tw
+[(approach )-7(could )-7(be )-7(scaled )-7(up to handle unrestricted text. )-239.7(Nevertheless, we are extremely sympathetic with)]TJ
+T*
+0.1865 Tw
+[(the )11.6(basic )11.6(approach, )11.6(and )11.6(will adopt a very similar strategy ourselves. )-238.5(However, we will introduce one)]TJ
+T*
+0.0957 Tw
+[(important difference, the use of parallel text in lieu of hand-annotated text, as suggested )6.8(by )6.8(Brown)]TJ
+/TT6 1 Tf
+41.11 0 TD
+0.0905 Tw
+(et al.)Tj
+/TT4 1 Tf
+-41.11 -1.2 TD
+-0.0197 Tw
+(\(1991a\), Dagan)Tj
+/TT6 1 Tf
+6.45 0 TD
+0.0005 Tw
+(et al.)Tj
+/TT4 1 Tf
+2.25 0 TD
+-0.0069 Tw
+(\(1991\) and others.)Tj
+-8.7 -2.4 TD
+-0.0017 Tw
+[(Kelly and Stone \(1975\) constructed 1815 disambiguation models by )-6.4(hand, )-6.4(selecting )-6.4(words )-6.4(with )-6.4(a )-6.4(frequency)]TJ
+0 -1.2 TD
+0.0381 Tw
+[(of at least 20 in a half million word corpus. )-255.7(Most subsequent work has sought automatic )14.7(methods )14.7(because)]TJ
+T*
+0.0087 Tw
+[(it is quite labor intensive to construct these rules by hand. )-247.5(Weiss )-10.2(\(1973\) )]TJ
+/TT7 1 Tf
+29.2637 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0189 Tw
+(rst built rule sets by hand for )Tj
+/TT7 1 Tf
+11.8801 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+(ve)Tj
+-42.2562 -1.2 TD
+0.0854 Tw
+[(words, then developed automatic procedures for building similar rule )6.7(sets, )6.7(which )6.7(he )6.7(applied )6.7(to )6.7(additional)]TJ
+T*
+0.0401 Tw
+[(three )13(words. )-240.5(Unfortunately, the system was tested on the training set, so it is dif)]TJ
+/TT7 1 Tf
+32.6443 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0501 Tw
+(cult to know how well it)Tj
+-33.2005 -1.2 TD
+-0.0141 Tw
+(actually worked.)Tj
+0 -2.4 TD
+0.0281 Tw
+(Black \(1987, 1988\) studied )Tj
+/TT7 1 Tf
+11.2496 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.029 Tw
+(ve 4-way polysemous words using about 2000 hand tagged concordance lines)Tj
+-11.8058 -1.2 TD
+0.0451 Tw
+[(for )6.5(each )6.5(word. )-255.7(Using 1500 training examples for each word, his program constructed decision trees )12(based)]TJ
+T*
+0.0526 Tw
+(on the presence or absence of 81 ‘‘contextual categories’’ within the context)Tj
+7 0 0 7 383.5 172.0601 Tm
+0 Tw
+(2)Tj
+10 0 0 10 390.1 168.06 Tm
+0.0572 Tw
+[(of the ambiguous word. )-246.8(He)]TJ
+-31.81 -1.2 TD
+0.2034 Tw
+[(used three different types of contextual categories: \(1\) subject )8.3(categories )8.3(from )8.3(LDOCE, )8.3(the )8.3(Longman)]TJ
+T*
+0.286 Tw
+[(Dictionary of Contemporary English \(Longman, 1978\), \(2\) the )-11(41 )-10.9(vocabulary )-11(items )-11(occurring )-10.9(most)]TJ
+T*
+0.0867 Tw
+[(frequently )-10.7(within )-10.7(two )-10.7(words )-10.7(of )-10.7(the )-10.7(ambiguous )-10.7(word, and \(3\) the 40 vocabulary items excluding function)]TJ
+T*
+0.2354 Tw
+[(words occurring most frequently in the concordance line. )-252.1(Black found that the )-5.9(dictionary )-5.9(categories)]TJ
+8 0 0 8 72 102.0601 Tm
+0 Tw
+(__________________)Tj
+0 -1.5 TD
+0.0011 Tw
+[(2. )-494.2(The context was de)]TJ
+/TT7 1 Tf
+9.2455 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.001 Tw
+(ned to be the concordance line, which we estimate to be about)Tj
+/TT9 1 Tf
+25.0983 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.8125 0 TD
+0.0018 Tw
+(6 words from the ambiguous word, given that)Tj
+-34.2125 -1.125 TD
+-0.0141 Tw
+(his 2000 concordance lines contained about 26,000 words.)Tj
+ET
+endstream
+endobj
+17 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+19 0 obj
+<<
+/Length 9095
+>>
+stream
+BT
+/TT4 1 Tf
+10 0 0 10 72 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.0524 Tw
+[(produced the weakest performance \(47 percent correct\), while the other two were quite close at )-16.3(72 )-16.3(and )-16.3(75)]TJ
+0 -1.2 TD
+-0.0194 Tw
+(percent correct, respectively.)Tj
+0 -1.8 TD
+0.0433 Tw
+(There has recently been a )Tj
+/TT7 1 Tf
+10.6828 0 TD
+0 Tw
+(ß)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0433 Tw
+[(urry of interest in approaches based )-7.4(on )-7.4(hand-annotated )-7.4(corpora. )-256.8(Hearst )-10.7(\(1991\))]TJ
+-11.2389 -1.2 TD
+0.0868 Tw
+[(is )-6.2(a )-6.2(very )-6.2(recent )-6.2(example )-6.2(of )-6.2(an )-6.2(approach somewhat like Black \(1987, 1988\), Weiss \(1973\) and Kelly and)]TJ
+T*
+0.1169 Tw
+[(Stone )7.7(\(1975\), )7.7(in this respect, though she makes use of considerably more syntactic information than the)]TJ
+T*
+-0.0019 Tw
+[(others. )-249(Her )-5.7(performance )-5.7(also )-5.7(seems )-5.7(to be somewhat better than the others’, though it is dif)]TJ
+/TT7 1 Tf
+36.4278 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0019 Tw
+(cult to compare)Tj
+-36.984 -1.2 TD
+-0.0141 Tw
+(performance across systems.)Tj
+/TT2 1 Tf
+9 0 0 9 72 594.0601 Tm
+0.0056 Tw
+[(3. )-260.5(An Information Retrieval \(IR\) Approach to Sense Disambiguation)]TJ
+/TT4 1 Tf
+10 0 0 10 72 576.0601 Tm
+0.1965 Tw
+[(We )18(have )18(been experimenting with an Information Retrieval approach to sense disambiguation. )-250.5(In the)]TJ
+T*
+0.0752 Tw
+(training phase, we collect a number of instances of)Tj
+/TT6 1 Tf
+21.23 0 TD
+0 Tw
+(sentence)Tj
+/TT4 1 Tf
+3.76 0 TD
+0.0732 Tw
+(that are translated as)Tj
+/TT6 1 Tf
+8.74 0 TD
+0 Tw
+(peine)Tj
+/TT4 1 Tf
+2.16 0 TD
+0.0762 Tw
+[(, and a )10(number )10(of)]TJ
+-35.89 -1.2 TD
+0.1215 Tw
+(instances of)Tj
+/TT6 1 Tf
+5.25 0 TD
+0 Tw
+(sentence)Tj
+/TT4 1 Tf
+3.81 0 TD
+0.1343 Tw
+(uses that are translated as)Tj
+/TT6 1 Tf
+11.09 0 TD
+0 Tw
+(phrase)Tj
+/TT4 1 Tf
+2.72 0 TD
+0.1365 Tw
+[(. )-248.8(Then in the testing phase, we are given a new)]TJ
+-22.87 -1.2 TD
+0.0606 Tw
+(instance of)Tj
+/TT6 1 Tf
+4.74 0 TD
+0 Tw
+(sentence)Tj
+/TT4 1 Tf
+3.43 0 TD
+0.0582 Tw
+[(, and are asked to assign the instance to one of the two senses. )-244.1(We attempt to answer)]TJ
+-8.17 -1.2 TD
+-0.0021 Tw
+(this question by comparing the context of the unknown instance with contexts of known instances.)Tj
+0 -2.4 TD
+0.0061 Tw
+[(Basically we are treating contexts as analogous to documents in an information retrieval )-17.4(setting. )-267.7(Just )-11.6(as )-11.6(the)]TJ
+0 -1.2 TD
+0.0472 Tw
+[(probabilistic retrieval model \(van Rijsbergen, 1979, chapter 6; Salton, 1989, section 10.3\) )8(sorts )8(documents)]TJ
+/TT6 1 Tf
+T*
+0 Tw
+(d)Tj
+/TT4 1 Tf
+0.75 0 TD
+(by)Tj
+/TT6 1 Tf
+0.75 -2.2 TD
+(score)Tj
+/TT4 1 Tf
+2.24 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(d)Tj
+/TT4 1 Tf
+0.58 0 TD
+(\))Tj
+/TT9 1 Tf
+0.9 0 TD
+(=)Tj
+/TT6 1 Tf
+7 0 0 7 145.3 448.0601 Tm
+(token)Tj
+/TT4 1 Tf
+2.5714 0 TD
+(in)Tj
+/TT6 1 Tf
+1.1857 0 TD
+(d)Tj
+/TT8 1 Tf
+15 0 0 15 154.4 455.0601 Tm
+<0057>Tj
+/TT6 1 Tf
+10 0 0 10 185 451.0601 Tm
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(token)Tj
+/TT8 1 Tf
+2.16 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(irrel)Tj
+/TT4 1 Tf
+1.86 0 TD
+(\))Tj
+/TT6 1 Tf
+-5.65 1.3 TD
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(token)Tj
+/TT8 1 Tf
+2.16 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(rel)Tj
+/TT4 1 Tf
+1.19 0 TD
+(\))Tj
+-5.8 -0.3 TD
+(_ )Tj
+0.12 0 TD
+(_____________)Tj
+-11.28 -2.9 TD
+-0.0014 Tw
+(we will sort contexts)Tj
+/TT6 1 Tf
+8.55 0 TD
+0 Tw
+(c)Tj
+/TT4 1 Tf
+0.69 0 TD
+(by)Tj
+/TT6 1 Tf
+-7.74 -2.4 TD
+(score)Tj
+/TT4 1 Tf
+2.24 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(c)Tj
+/TT4 1 Tf
+0.52 0 TD
+(\))Tj
+/TT9 1 Tf
+0.9 0 TD
+(=)Tj
+/TT6 1 Tf
+7 0 0 7 144.7 398.0601 Tm
+(token)Tj
+/TT4 1 Tf
+2.5714 0 TD
+(in)Tj
+/TT6 1 Tf
+1.1857 0 TD
+(c)Tj
+/TT8 1 Tf
+15 0 0 15 153.6 405.0601 Tm
+<0057>Tj
+/TT6 1 Tf
+10 0 0 10 184 401.0601 Tm
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(token)Tj
+/TT8 1 Tf
+2.16 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+7 0 0 7 248 399.0601 Tm
+(2)Tj
+10 0 0 10 253.1 401.0601 Tm
+(\))Tj
+/TT6 1 Tf
+-6.91 1.5 TD
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(token)Tj
+/TT8 1 Tf
+2.16 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+7 0 0 7 248 414.0601 Tm
+(1)Tj
+10 0 0 10 253.1 416.0601 Tm
+(\))Tj
+-7.06 -0.5 TD
+(_ )Tj
+0.04 0 TD
+(_______________)Tj
+-11.09 -2.9 TD
+(where)Tj
+/TT6 1 Tf
+2.84 0 TD
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(token)Tj
+/TT8 1 Tf
+2.16 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+2.24 0 TD
+0.1691 Tw
+[(\) )11(is )11(an estimate of the probability that)]TJ
+/TT6 1 Tf
+16.55 0 TD
+0 Tw
+(token)Tj
+/TT4 1 Tf
+2.58 0 TD
+0.1651 Tw
+(appears in the context of)Tj
+/TT6 1 Tf
+10.91 0 TD
+0 Tw
+(sense)Tj
+/TT4 1 Tf
+7 0 0 7 487.2 380.0601 Tm
+(1)Tj
+10 0 0 10 495.7 382.0601 Tm
+(or)Tj
+/TT6 1 Tf
+-42.37 -1.2 TD
+(sense)Tj
+/TT4 1 Tf
+7 0 0 7 94.7 368.0601 Tm
+(2)Tj
+10 0 0 10 99 370.0601 Tm
+0.3543 Tw
+[(. Contexts )265(are )265.6(de)]TJ
+/TT7 1 Tf
+7.2525 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0887 Tw
+(ned to extend 50 words to the left and 50 words to the right of the polysemous)Tj
+-10.5087 -1.2 TD
+0.0177 Tw
+[(word in question for reasons that will be discussed )-12.2(in )-12.2(section )-12.2(5. )-264.5(This )-10.1(model )-10.1(ignores )-10.1(a )-10.1(number )-10.1(of )-10.1(important)]TJ
+T*
+0.3554 Tw
+[(linguistic )-11.6(factors )-11.6(such )-11.6(as word order and collocations \(correlations among words in the context\).)]TJ
+T*
+0.0687 Tw
+(Nevertheless, there are 2)Tj
+/TT6 1 Tf
+10.17 0 TD
+0 Tw
+(V)Tj
+/TT8 1 Tf
+1.02 0.2 TD
+<00be>Tj
+0 -0.25 TD
+<00be>Tj
+/TT4 1 Tf
+0.96 0.05 TD
+0.0885 Tw
+[(200 )258.5(, )258.5(000 )12.3(parameters )12.3(in )12.3(the )12.3(model. )-240.7(It )9.2(is )9.2(a )9.2(non-trivial task to estimate such a)]TJ
+-12.15 -1.2 TD
+0.1627 Tw
+[(large number of parameters, especially given the sparseness of )5.2(the )5.2(training )5.2(data. )-242.6(The )5.8(training )5.8(material)]TJ
+T*
+0.0772 Tw
+(typically consists of approximately 12,000 words of text \(100 words words of context for 60 instances of)Tj
+T*
+0.1134 Tw
+[(each of two senses\). )-256.6(Thus, there are more than 15 parameters to be estimated from for each data point.)]TJ
+T*
+-0.0048 Tw
+(Clearly, we need to be fairly careful given that we have so many parameters and so little evidence.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+0.0029 Tw
+[(3.1 )-247.9(Using Global Probabilities to Smooth the Local Probabilities)]TJ
+/TT4 1 Tf
+T*
+0.0883 Tw
+(In principle, the conditional probabilities,)Tj
+/TT6 1 Tf
+17.3 0 TD
+0 Tw
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(tok)Tj
+/TT8 1 Tf
+1.22 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+2.24 0 TD
+0.0864 Tw
+[(\), can be estimated by selecting those )-10.8(parts )-10.8(of )-10.8(the)]TJ
+-22.73 -1.2 TD
+0.0953 Tw
+[(entire corpus which satisfy the required conditions \(e.g., 100-word contexts surrounding )9.4(instances )9.4(of )9.4(one)]TJ
+T*
+0.031 Tw
+(sense of)Tj
+/TT6 1 Tf
+3.57 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.72 0 TD
+0.0485 Tw
+[(\), )15.8(counting )15.8(the )15.8(frequency )15.8(of )15.8(each word, and dividing the counts by the total number of words)]TJ
+-5.29 -1.2 TD
+0.15 Tw
+[(satisfying the conditions. )-235(However, this estimate, which is known as )8.5(the )8.5(maximum )8.5(likelihood )8.5(estimate)]TJ
+T*
+0.0798 Tw
+[(\(MLE\), )14.8(has )14.8(a )14.8(number )14.8(of )14.8(well-known )14.8(problems. )-237.2(In )20.9(particular, it will assign zero probability to words that)]TJ
+T*
+0.0291 Tw
+[(do )-8.1(not )-8.1(happen )-8.1(to )-8.1(appear )-8.1(in )-8.1(the )-8.1(sample. )-253.2(Zero )-13.3(is )-13.3(not )-13.3(only a biased estimate of their true probability, but it is)]TJ
+T*
+-0.0027 Tw
+(also unusable for the sense disambiguation task.)Tj
+0 -2.4 TD
+0.0472 Tw
+[(In )11(order )11(to )10.9(avoid )10.9(these )10.9(problems, we have decided to use information from the entire corpus in addition to)]TJ
+0 -1.2 TD
+0.2882 Tw
+[(information from the conditional sample in order. )-244.1(We will estimate)]TJ
+/TT6 1 Tf
+30.26 0 TD
+0 Tw
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(tok)Tj
+/TT8 1 Tf
+1.22 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+2.24 0 TD
+0.287 Tw
+[(\) by )6.9(interpolating)]TJ
+-35.69 -1.2 TD
+0.0567 Tw
+[(between local probabilities computed within the 100-word context and global )-10.2(probabilities )-10.2(computed )-10.2(over)]TJ
+T*
+0.073 Tw
+(the entire corpus)Tj
+/TT6 1 Tf
+7.14 0 TD
+0 Tw
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(tok)Tj
+/TT4 1 Tf
+1.3 0 TD
+0.0655 Tw
+[(\). )-246.8(The local probabilities are more relevant and the global probabilities are better)]TJ
+-9.93 -1.2 TD
+0.0207 Tw
+[(measured. )-240.1(We seek a trade-off between random measurement )-12.1(errors )-12.1(and )-12.1(bias )-12.1(errors. )-271.5(This )-16.8(is )-16.8(accomplished)]TJ
+T*
+0.0363 Tw
+[(by estimating the relevance of the larger corpus to the conditional sample )7.3(in )7.3(order )7.3(to )]TJ
+/TT7 1 Tf
+34.5315 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.029 Tw
+(nd the optimal trade)Tj
+-35.0876 -1.2 TD
+-0.0079 Tw
+[(off between random error and bias. )-254.1(See Gale)]TJ
+/TT6 1 Tf
+18.33 0 TD
+0.0005 Tw
+(et al.)Tj
+/TT4 1 Tf
+2.25 0 TD
+-0.0089 Tw
+(\(to appear\) for further details.)Tj
+ET
+endstream
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+22 0 obj
+<<
+/Length 8665
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 72 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.2492 Tw
+[(3.2 An )257.7(Example)]TJ
+/TT4 1 Tf
+0 -1.8 TD
+0.0447 Tw
+[(Table 2 \(below\) gives a sense of what the interpolation procedure )-12.6(does )-12.6(for )-12.6(some )-12.6(of )-12.6(the )-12.6(words )-12.6(that )-12.6(play )-12.6(an)]TJ
+0 -1.2 TD
+0.0771 Tw
+[(important )-12.5(role )-12.5(in disambiguating between the two senses of)]TJ
+/TT6 1 Tf
+24.8 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+2.05 0 TD
+0.0743 Tw
+[(in the Canadian Hansards. )-249.3(Table )-9.8(2 )-9.8(lists)]TJ
+-26.85 -1.2 TD
+0.0579 Tw
+(the 15 words with the largest product \(shown as the )Tj
+/TT7 1 Tf
+21.4635 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.066 Tw
+[(rst )8.1(column\) of the model score \(the second column\))]TJ
+-22.0196 -1.2 TD
+0.1976 Tw
+[(and the frequency in the 6000 word training corpus \(the third column\). )-247.7(The conditioned samples are)]TJ
+T*
+0.0052 Tw
+[(obtained by extracting a 100-word window surrounding )-11(each )-11(of )-11(the )-11(60 )-11(training )-11(examples. )-260.1(The )-14.6(training )-14.6(sets)]TJ
+T*
+0.0849 Tw
+(were selected by randomly sampling instances of)Tj
+/TT6 1 Tf
+20.51 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+2.06 0 TD
+0.0776 Tw
+[(in )-7.1(the )-7(Hansards until 60 instances were found that)]TJ
+-22.57 -1.2 TD
+0.0385 Tw
+(were translated as)Tj
+/TT6 1 Tf
+7.54 0 TD
+0 Tw
+(droit)Tj
+/TT4 1 Tf
+2.25 0 TD
+0.045 Tw
+[(and 60 instances were found that )-7.3(were )-7.3(translated )-7.3(as)]TJ
+/TT6 1 Tf
+21.24 0 TD
+0 Tw
+(devoir)Tj
+/TT4 1 Tf
+2.55 0 TD
+0.3053 Tw
+(. The )Tj
+/TT7 1 Tf
+2.6679 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0579 Tw
+(rst set of 60 are)Tj
+-36.804 -1.2 TD
+0.1275 Tw
+[(used to construct the model for the )11.1(tax )11.1(sense )11.1(of)]TJ
+/TT6 1 Tf
+20.34 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+2.09 0 TD
+0.1165 Tw
+(and the second set of 60 are used to construct the)Tj
+-22.43 -1.2 TD
+-0.0023 Tw
+(model for the obligation sense of)Tj
+/TT6 1 Tf
+13.43 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+1.72 0 TD
+(.)Tj
+-15.15 -2.4 TD
+0.0152 Tw
+(The column labeled ‘‘freq’’ shows the number of times that each word appeared in the conditioned sample.)Tj
+0 -1.2 TD
+0.0869 Tw
+[(For example, the count of 50 for )10.3(the )10.3(word)]TJ
+/TT6 1 Tf
+17.75 0 TD
+0 Tw
+(countervailing)Tj
+/TT4 1 Tf
+6.16 0 TD
+0.0763 Tw
+(indicates that)Tj
+/TT6 1 Tf
+5.71 0 TD
+0 Tw
+(countervailing)Tj
+/TT4 1 Tf
+6.16 0 TD
+0.0725 Tw
+(appeared 50 times)Tj
+-35.78 -1.2 TD
+-0.0032 Tw
+[(within the conditioned sample. )-255.4(This is a remarkable fact, given that)]TJ
+/TT6 1 Tf
+27.41 0 TD
+0 Tw
+(countervailing)Tj
+/TT4 1 Tf
+6.08 0 TD
+0.0061 Tw
+[(is )6.9(a fairly unusual word.)]TJ
+-33.49 -1.2 TD
+0.1296 Tw
+[(It )-12.6(is much less surprising to )]TJ
+/TT7 1 Tf
+12.0674 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1296 Tw
+(nd a common word like)Tj
+/TT6 1 Tf
+10.3964 0 TD
+0 Tw
+(to)Tj
+/TT4 1 Tf
+1.16 0 TD
+0.1267 Tw
+(appearing quite often \(228 times\) in the other)Tj
+-24.18 -1.2 TD
+0.3354 Tw
+[(conditioned )9.1(sample. )-249.9(The second column \(labeled ‘‘weight’’\) models the fact that 50 instances of)]TJ
+/TT6 1 Tf
+T*
+0 Tw
+(countervailing)Tj
+/TT4 1 Tf
+6.09 0 TD
+-0.0009 Tw
+(are more surprising than 228 instances of)Tj
+/TT6 1 Tf
+16.74 0 TD
+0 Tw
+(to)Tj
+/TT4 1 Tf
+0.78 0 TD
+-0.0014 Tw
+[(. )-246.7(The weights for a word are its log likelihood in)]TJ
+-23.61 -1.2 TD
+0.0279 Tw
+[(the conditioned sample compared with its )-12.1(likelihood )-12.1(in )-12.1(the )-12.1(global )-12.1(corpus. )-257.4(The )]TJ
+/TT7 1 Tf
+32.129 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.039 Tw
+(rst column, the product of)Tj
+-32.6851 -1.2 TD
+0.0061 Tw
+[(these )-13.7(log )-13.7(likelihoods )-13.7(and the frequencies, is a measure of the importance, in the training set, of the word for)]TJ
+T*
+0.1078 Tw
+[(determining )11.5(which )11.5(sense )11.5(the )11.5(training )11.5(examples )11.5(belong to. )-248.4(Note that words with large scores do seem to)]TJ
+T*
+-0.0009 Tw
+(intuitively distinguish the two senses, at least in the Canadian Hansards.)Tj
+0 -2.4 TD
+-0.0039 Tw
+(There are obviously some biases introduced by the unusual nature of this corpus, which is hardly a balanced)Tj
+0 -1.2 TD
+0.0589 Tw
+[(sample of general language. )-261.9(For example, the set of words listed in Table 2 under the obligation sense of)]TJ
+/TT6 1 Tf
+T*
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+2.07 0 TD
+0.098 Tw
+(is heavily in)Tj
+/TT7 1 Tf
+5.0843 0 TD
+0 Tw
+(ß)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1063 Tw
+[(uenced )8.3(by the fact that the Hansards contain a fair amount of boilerplate of the form:)]TJ
+-7.7104 -1.2 TD
+0.1096 Tw
+[(‘‘Mr. )-238.5(speaker, )-7.2(pursuant )-7.2(to )-7.2(standing )-7.2(order..., )-7.2(I )-7.2(have )-7.2(the honour and duty to present petitions duly signed)]TJ
+T*
+-0.0054 Tw
+(by... of my electors....’’)Tj
+/TT9 1 Tf
+1.41 -0.8 TD
+0 Tw
+(_ )Tj
+0.37 0 TD
+(________________________________________________________________________________)Tj
+/TT4 1 Tf
+0.13 -1.2 TD
+-0.0024 Tw
+(Table 2: Selected Portions of the Two Models for the Two Senses of)Tj
+/TT6 1 Tf
+27.66 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+-21.3 -1.2 TD
+-0.0054 Tw
+(tax sense of)Tj
+/TT6 1 Tf
+4.96 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+14.06 0 TD
+-0.0021 Tw
+(obligation sense of)Tj
+/TT6 1 Tf
+7.8 0 TD
+0 Tw
+(duty)Tj
+/TT4 1 Tf
+-33.18 -1.2 TD
+1.2425 Tw
+[(weight*freq weight freq word )-3716(weight*freq weight freq word)]TJ
+/TT9 1 Tf
+-0.5 -0.2 TD
+0 Tw
+(_ )Tj
+0.37 0 TD
+(________________________________________________________________________________)Tj
+/TT4 1 Tf
+1.41 -1.2 TD
+4.02 Tw
+[(285 5.7 )1730(50 )2475.9(countervailing )1490(64 )-250(3.2 )1230(20 )2714.3(petitions)]TJ
+T*
+3.27 Tw
+[(111.8 4.3 )980(26 )1718.7(duties )-2640(59.28 )250(0.26 )1480(228 )1967.8(to)]TJ
+0.5 -1.2 TD
+[(99.9 2.7 )980(37 )1719.2(u.s )-3890(56.28 )250(0.42 )1480(134)]TJ
+/TT8 1 Tf
+32.77 0 TD
+0 Tw
+<00ab>Tj
+/TT4 1 Tf
+-32.77 -1.2 TD
+3.27 Tw
+[(73.1 1.7 )980(43 )1728.5(trade )-3040(51 )-1000(3 )-270(17 )1965.2(petition)]TJ
+T*
+[(70.2 1.8 )980(39 )1721.7(states )-2810(47.6 )-250(2.8 )480(17 )1973.8(pursuant)]TJ
+T*
+2.29 Tw
+[(69.3 )-980(3.3 21 )737.8(duty )-4230(46.28 )-730(0.52 89 )990.8(mr)]TJ
+T*
+3.27 Tw
+[(68.4 3.6 )980(19 )1722.2(softwood )-1310(37.8 )-250(2.7 )480(14 )1973(honour)]TJ
+T*
+[(68.4 1.9 )980(36 )1719.5(united )-2530(37.8 )-250(1.4 )480(27 )1979.9(order)]TJ
+T*
+[(58.8 8.4 )480(7 )1726.9(rescinds )-1760(36 )-1000(2 )-270(18 )1977.7(present)]TJ
+T*
+4.02 Tw
+[(54 3 )980(18 )2472.5(lumber )-1450(33.6 )500(2.8 )1230(12 )2731.5(proceedings)]TJ
+T*
+3.27 Tw
+[(50.4 4.2 )980(12 )1717.8(shingles )-1750(31.5 )-250(3.5 )-20(9 )1976.4(prescription)]TJ
+T*
+2.29 Tw
+[(50.4 )-980(4.2 12 )746(shakes )-3350(31.32 )-730(0.87 36 )993(house)]TJ
+T*
+3.27 Tw
+[(46.8 3.6 )980(13 )1720(35 )-4030(29.7 )-250(3.3 )-20(9 )1980.2(reject)]TJ
+T*
+[(46.2 2.1 )980(22 )1722.5(against )-2200(29.4 )-250(4.2 )-20(7 )1977.7(boundaries)]TJ
+T*
+[(41.8 1.1 )980(38 )1733.2(canadian )-1490(28.7 )-250(4.1 )-20(7 )1981.9(electoral)]TJ
+/TT9 1 Tf
+-2.28 -0.2 TD
+0 Tw
+(_ )Tj
+0.37 0 TD
+(________________________________________________________________________________ )Tj
+/TT8 1 Tf
+-0.7538 0 TD
+<00b2>Tj
+0.3838 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+20.66 -21 TD
+<00b2>Tj
+0 0.6 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+19.71 -19.6 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+/TT2 1 Tf
+9 0 0 9 72 126.0601 Tm
+0.2684 Tw
+(4. Materials)Tj
+/TT6 1 Tf
+10 0 0 10 72 108.0601 Tm
+-0.0041 Tw
+[(4.1 )-252.4(Six Polysemous Words)]TJ
+/TT4 1 Tf
+0 -1.8 TD
+0.2089 Tw
+(We will focus on six polysemous words:)Tj
+/TT6 1 Tf
+17.99 0 TD
+0.2099 Tw
+[(duty, drug, land, language, )-17.4(position)]TJ
+/TT4 1 Tf
+15.66 0 TD
+0 Tw
+(and)Tj
+/TT6 1 Tf
+1.91 0 TD
+(sentence)Tj
+/TT4 1 Tf
+3.43 0 TD
+0.4636 Tw
+[(. Table )243.6(3)]TJ
+-38.99 -1.2 TD
+0.0606 Tw
+[(\(below\) shows the six English nouns, along with two French translations. )-244.7(The penultimate column shows)]TJ
+T*
+0.0375 Tw
+[(the number of times that each English noun was found with the particular French translation in )-8.7(the )-8.7(corpus,)]TJ
+T*
+0.0694 Tw
+(while the )Tj
+/TT7 1 Tf
+4.0822 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0558 Tw
+[(nal )-13.6(column )-13.6(shows )-13.6(the accuracy of the system in identifying the appropriate sense based on the)]TJ
+ET
+endstream
+endobj
+23 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+25 0 obj
+<<
+/Length 8107
+>>
+stream
+BT
+/TT9 1 Tf
+10 0 0 10 156.4 706.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+0.0005 Tw
+(Table 3: Six Polysemous Words)Tj
+T*
+1.7875 Tw
+[(English French )-1566.5(sense )-3570.3(N )540.5(% )1802.9(correct)]TJ
+/TT9 1 Tf
+-0.5 -0.1 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+-0.31 -0.2 TD
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.1 TD
+3.0735 Tw
+[(duty droit )-1164.8(tax )-1946.5(1114 )153.5(97)]TJ
+5.1 -1.2 TD
+3.5801 Tw
+[(devoir obligation )900.1(691 )660.1(84)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+3.0153 Tw
+(drug me )Tj
+6.037 0 TD
+0 Tw
+(´ )Tj
+0.278 0 TD
+1.245 Tw
+[(dicament medical )-1835(2992 )-1675(84)]TJ
+-1.215 -1.2 TD
+3.3623 Tw
+[(drogue illicit )-1257.7(855 )442.3(97)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+3.1168 Tw
+[(land terre )-1185.5(property )256.8(1022 )196.8(86)]TJ
+5.1 -1.2 TD
+4.2923 Tw
+[(pays country )602.3(386 )1372.3(89)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+1.2351 Tw
+[(language langue )-2237.6(medium )-1724.9(3710 )-1684.9(90)]TJ
+5.1 -1.2 TD
+3.022 Tw
+[(langage style )-1828(170 )102(91)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+1.6347 Tw
+[(position position )-1255.9(place )-2505.3(5177 )-1285.3(82)]TJ
+5.1 -1.2 TD
+4.0213 Tw
+[(poste job )-1438.7(577 )1101.3(86)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________)Tj
+/TT4 1 Tf
+0.19 -1.2 TD
+1.4021 Tw
+[(sentence peine )-2568.9(judicial )-2337.9(296 )-1517.9(97)]TJ
+5.1 -1.2 TD
+3.5126 Tw
+[(phrase grammatical )1762.6(148 )1092.6(100)]TJ
+/TT9 1 Tf
+-5.6 -0.2 TD
+0 Tw
+(_ )Tj
+0.31 0 TD
+(____________________________________________________ )Tj
+/TT8 1 Tf
+-0.6938 0 TD
+<00b2>Tj
+0.3838 0.2 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+26.31 -17.2 TD
+<00b2>Tj
+0 0.2 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+/TT4 1 Tf
+-34.75 -19 TD
+0.0753 Tw
+[(context of use. )-247(We selected these nouns because they could be disambiguated )-13.4(by )-13.4(looking )-13.4(at )-13.4(their )-13.4(French)]TJ
+0 -1.2 TD
+0.136 Tw
+[(translation in the Canadian Hansards. )-252.7(As mentioned )7.8(above, )7.8(the )7.8(polysemous )7.8(noun)]TJ
+/TT6 1 Tf
+34.4 0 TD
+0 Tw
+(interest)Tj
+/TT4 1 Tf
+3 0 TD
+0.1234 Tw
+(, for example,)Tj
+-37.4 -1.2 TD
+-0.0036 Tw
+(would not meet this constraint because the French target)Tj
+/TT6 1 Tf
+22.77 0 TD
+0 Tw
+(intere )Tj
+2.057 0 TD
+(ˆ )Tj
+0.2752 0 TD
+(t)Tj
+/TT4 1 Tf
+0.5278 0 TD
+-0.0005 Tw
+(is just as ambiguous as the English source.)Tj
+-25.63 -2.4 TD
+0.1528 Tw
+(In addition, for studying methodological questions, it is important that there be an adequate number of)Tj
+0 -1.2 TD
+0.0774 Tw
+(instances of both translations in corpus, though this constraint can be relaxed in a practical application as)Tj
+T*
+0.2269 Tw
+[(we )11.2(will )11.2(see. )-240.9(Unless )9.3(stated )9.3(otherwise, )9.3(the )9.3(studies to be reported here all use 60 instances of the six)]TJ
+T*
+-0.0021 Tw
+[(polysemous )-8.5(words )-8.5(in )-8.5(each )-8.5(of the two main senses for training)]TJ
+/TT6 1 Tf
+24.98 0 TD
+0 Tw
+(Pr)Tj
+/TT4 1 Tf
+1.08 0 TD
+(\()Tj
+/TT6 1 Tf
+0.41 0 TD
+(tok)Tj
+/TT8 1 Tf
+1.22 -0.17 TD
+<00ab>Tj
+/TT6 1 Tf
+0.48 0.17 TD
+(sense)Tj
+/TT4 1 Tf
+2.24 0 TD
+-0.0019 Tw
+[(\). )-246.7(An additional 90 instances of)]TJ
+-30.41 -1.2 TD
+0.0052 Tw
+[(each word in each sense are used for testing. )-255.3(Consequently, we require a total of 150 \(60 + 90\) instances )-11.8(of)]TJ
+T*
+-0.0037 Tw
+(each word in each sense in order to investigate the methodological issues.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+-0.0031 Tw
+[(4.2 )-239.9(Sentence Alignment and Word Correspondence)]TJ
+/TT4 1 Tf
+T*
+0.1073 Tw
+[(In order to collect the testing and training sets, we need to )-7.8(know )-7.8(the )-7.9(‘‘truth.’’ )-261.4(As )-7.7(mentioned )-7.7(above, )-7.7(we)]TJ
+0 -1.2 TD
+0.2063 Tw
+[(approximate the ‘‘truth’’ by assuming that the French translation in the Hansards is adequate )10.8(for )10.8(our)]TJ
+T*
+0.017 Tw
+[(purposes. )-243.1(The process of identifying the French translation is a two step procedure. )-251.7(As in Brown, Lai, )-9.1(and)]TJ
+T*
+0.0351 Tw
+[(Mercer \(1991b\), we begin by aligning the parallel texts at the sentence level \(Gale and Church, )12(1991a\). )-241.9(In)]TJ
+T*
+0.0941 Tw
+[(our experience, 90% of the English sentences match )-12.9(exactly )-12.9(one )-12.9(French )-12.9(sentence, )-12.9(but )-12.9(other )-12.9(possibilities,)]TJ
+T*
+0.0772 Tw
+[(especially two sentences matching one \(2-1\) or one matching two \(1-2\), are not uncommon. )-248.1(The method)]TJ
+T*
+0.0268 Tw
+[(correctly aligned all but 4% of the regions. )-240.3(Moreover, by selecting the )-10.3(best )-10.3(scoring )-10.3(80% )-10.3(of )-10.3(the )-10.3(corpus, )-10.3(the)]TJ
+T*
+0.2559 Tw
+[(error rate dropped to 0.7%. )-250.3(See \(Gale and Church, 1991a\) for more details on the method and its)]TJ
+T*
+0 Tw
+(evaluation.)Tj
+0 -2.4 TD
+-0.0059 Tw
+[(After the sentences have been aligned, we can then identify the )-10.1(French )-10.1(correspondences )-10.1(using )-10.1(a )-10.1(very )-10.1(simple)]TJ
+0 -1.2 TD
+0.0432 Tw
+[(set )-11.7(of )-11.7(programs )-11.7(designed )-11.6(by )-11.7(Yarowsky. )-259.1(Gale )-13(and )-13(Church \(1991b\) describe a more elaborate program that)]TJ
+T*
+0.0539 Tw
+(attempts to )Tj
+/TT7 1 Tf
+4.7738 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0584 Tw
+(nd correspondences for most of the words in the English text, not just the polysemous words)Tj
+-5.33 -1.2 TD
+-0.0067 Tw
+[(of interest. )-241.7(However, for our purposes here, the more elaborate methods proved unnecessary.)]TJ
+/TT2 1 Tf
+9 0 0 9 72 182.0601 Tm
+0.0056 Tw
+[(5. )-259.9(Studies of Methodological Questions)]TJ
+/TT6 1 Tf
+10 0 0 10 72 164.0601 Tm
+-0.0034 Tw
+[(5.1 )-254.2(How Much Context Should We Use?)]TJ
+/TT4 1 Tf
+0 -1.8 TD
+0.0079 Tw
+[(As )12.9(mentioned )12.9(above, )12.9(we )12.9(use )12.9(a )12.9(very wide context, 100-words surrounding the polysemous word in question.)]TJ
+0 -1.2 TD
+0.0174 Tw
+[(Most )-12.6(previous studies have limited themselves to a much narrower notion of context, perhaps only 5 words)]TJ
+T*
+-0.002 Tw
+(to the left and 5 words to the right of the polysemous word, based on the observation that people don’t seem)Tj
+T*
+0.0357 Tw
+[(to need very much context \(Kaplan, 1950; )9(Choueka )9(and )9(Lusignan, )9(1985\). )-246.5(Although )8.6(people )8.6(may )8.6(be )8.6(able )8.6(to)]TJ
+T*
+-0.0039 Tw
+(get by without the additional context, we )Tj
+/TT7 1 Tf
+16.5805 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0038 Tw
+[(nd that there are often very useful clues even quite far away )-10(from)]TJ
+-17.1366 -1.2 TD
+0.1597 Tw
+[(the polysemous word in question. )-249.5(Figure 1 shows )8.9(that )8.9(information )8.9(is)]TJ
+/TT6 1 Tf
+29.69 0 TD
+0 Tw
+(measurable)Tj
+/TT4 1 Tf
+5.06 0 TD
+0.15 Tw
+(out to 10,000 words)Tj
+-34.75 -1.2 TD
+0.0187 Tw
+(away from the polysemous word, and Figure 2 shows that this information is)Tj
+/TT6 1 Tf
+31.24 0 TD
+0 Tw
+(useful)Tj
+/TT4 1 Tf
+2.66 0 TD
+0.02 Tw
+[(out to 50 words. )-248.3(Since)]TJ
+-33.9 -1.2 TD
+0.0494 Tw
+(the disambiguation problem is as dif)Tj
+/TT7 1 Tf
+14.8279 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0387 Tw
+[(cult )-10.7(for )-10.7(the machine as it is, we believe that it would be a mistake to)]TJ
+-15.3841 -1.2 TD
+0.0778 Tw
+[(ignore this information just because people don’t seem to need it. )-250.9(As in computer )-11.5(chess, )-11.5(it )-11.5(is )-11.5(not )-11.5(always)]TJ
+ET
+endstream
+endobj
+26 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+28 0 obj
+<<
+/Length 8074
+>>
+stream
+BT
+/TT2 1 Tf
+10 0 0 10 170.8 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.0018 Tw
+(Contextual Clues are Measurable Out to 10,000 Words)Tj
+/TT11 1 Tf
+-9.88 -1.2 TD
+0.0912 Tw
+[(Figure 1. )-277.8(The horizontal axis)]TJ
+/TT6 1 Tf
+13.62 0 TD
+0 Tw
+(d)Tj
+/TT11 1 Tf
+0.86 0 TD
+0.09 Tw
+[(shows the size of the context as a distance \(in )-5.3(words\) )-5.3(from )-5.3(the)]TJ
+-14.48 -1.2 TD
+0.1738 Tw
+[(polysemous word in question. )-275.2(The vertical scale shows disambiguation performance \(percent)]TJ
+T*
+0.111 Tw
+[(correct\), )8.5(computed )8.5(over )8.5(a )8.5(context )8.5(of ten words at the distance speci)]TJ
+/TT12 1 Tf
+31.1939 0 TD
+0 Tw
+(Ş)Tj
+/TT11 1 Tf
+0.5 0 TD
+0.111 Tw
+(ed by the horizontal axis:)Tj
+-31.6939 -1.2 TD
+0.0739 Tw
+[([–d–5,–d] )-18.1(and )-18.1([d, )-18.1(d+5],. )-283.8(Vertical )-6.6(lines )-6.6(indicate means and standard deviations computed over a)]TJ
+T*
+0.1656 Tw
+[(group of 90 instances times six polysemous words times two senses. )-284.3(Note )-10.7(that )-10.7(performance)]TJ
+T*
+0.0115 Tw
+(remains signi)Tj
+/TT12 1 Tf
+5.9026 0 TD
+0 Tw
+(Ş)Tj
+/TT11 1 Tf
+0.5 0 TD
+0.0115 Tw
+(cantly above chance \(50%\) out to 10,000 words away from the polysemous word.)Tj
+/TT4 1 Tf
+-6.4026 -1.8 TD
+-0.0026 Tw
+(best for the computer to try to copy human strategies.)Tj
+0 -2.4 TD
+0.1772 Tw
+[(Figure 1 demonstrates that the information is measurable )-9.1(at )-9.1(very )-9.1(large )-9.1(distances )-9.1(from )-9.1(the )-9.1(polysemous)]TJ
+0 -1.2 TD
+0.0843 Tw
+[(words. )-258.4(In )-11.9(order )-11.9(to )-11.9(show )-11.9(this, )-11.9(we )-11.9(selected )-11.8(a )-11.9(very unusual context \([–d–5,–d] and [d, d+5]\) and measured)]TJ
+T*
+0.1213 Tw
+(performance as a function of)Tj
+/TT6 1 Tf
+12.36 0 TD
+0 Tw
+(d)Tj
+/TT4 1 Tf
+0.5 0 TD
+0.129 Tw
+[(. )-253.2(This experiment thus asks, if you did )-8.9(not )-8.9(know )-8.9(any )-8.9(of )-8.9(the )-8.9(intervening)]TJ
+-12.86 -1.2 TD
+0.1963 Tw
+(words, would ten words at distance)Tj
+/TT6 1 Tf
+15.54 0 TD
+0 Tw
+(d)Tj
+/TT4 1 Tf
+0.95 0 TD
+0.1962 Tw
+(be suf)Tj
+/TT7 1 Tf
+2.6122 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.181 Tw
+[(cient )-15.2(for )-15.2(disambiguation? )-264.3(The )-14.5(answer )-14.5(is ‘‘yes’’ for for)]TJ
+/TT6 1 Tf
+-19.6584 -1.2 TD
+0 Tw
+(d)Tj
+/TT9 1 Tf
+0.99 0 TD
+(<)Tj
+/TT4 1 Tf
+1.04 0 TD
+0.1984 Tw
+[(10 )368.4(, )368.4(000, at least in the Hansards. )-243.9(We found this result surprising, given )-11.8(that )-11.8(almost )-11.8(all )-11.8(previous)]TJ
+-2.03 -1.2 TD
+0.0659 Tw
+[(disambiguation studies have concentrated so heavily on very )13.2(narrow )13.2(contexts. )-239.4(The )8(result )8(almost )8(certainly)]TJ
+T*
+0.0744 Tw
+(has something to do with discourse structure, and may depend fairly strongly on the average length of an)Tj
+T*
+-0.0038 Tw
+[(average )24(debate. )-250.8(In addition, the result may depend on other factors such as part of speech.)]TJ
+0 -2.4 TD
+0.0458 Tw
+[(Although )6.5(Figure )6.5(1 )6.5(shows )6.5(that )6.5(contextual clues are measurable at surprisingly large distances, much of this)]TJ
+0 -1.2 TD
+0.2981 Tw
+[(information might not be very useful. )-248.9(In particular, it might have been possible )8.2(to )]TJ
+/TT7 1 Tf
+37.2877 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.2899 Tw
+(nd the same)Tj
+-37.8438 -1.2 TD
+0.1573 Tw
+[(information )11.2(at )11.2(smaller )11.2(distances. )-241.9(Figure )6.4(2 )6.4(attempts to address this concern by examining the)]TJ
+/TT6 1 Tf
+39.53 0 TD
+0 Tw
+(marginal)Tj
+/TT4 1 Tf
+-39.53 -1.2 TD
+-0.001 Tw
+[(contribution )-7.7(of )-7.7(context )-7.7(as )-7.7(a )-7.7(function )-7.7(of )-7.7(distance. )-260.2(Figure )-12.5(2 )-12.5(is computed just like Figure 1, except that Figure)]TJ
+T*
+0.208 Tw
+(2 uses a 2)Tj
+/TT6 1 Tf
+4.62 0 TD
+0 Tw
+(d)Tj
+/TT8 1 Tf
+0.74 0 TD
+<003c>Tj
+/TT4 1 Tf
+0.71 0 TD
+0.2162 Tw
+[(1 word context \([–d,–1] and [1,d]\), rather than the 10 word context in Figure 1. )-256(This)]TJ
+-6.07 -1.2 TD
+0.1193 Tw
+[(experiment )-5.7(thus asks, given that you know all the words out to)]TJ
+/TT6 1 Tf
+26.74 0 TD
+0 Tw
+(d)Tj
+/TT4 1 Tf
+0.5 0 TD
+0.1171 Tw
+(, what is the value of a few additional)Tj
+-27.24 -1.2 TD
+0.2687 Tw
+[(words )17.1(further )17.1(out? )-236.6(The )8.9(contribution )8.9(is )8.9(largest, not surprisingly, for smaller)]TJ
+/TT6 1 Tf
+33.21 0 TD
+0 Tw
+(d)Tj
+/TT4 1 Tf
+0.5 0 TD
+0.266 Tw
+(, but nevertheless, the)Tj
+-33.71 -1.2 TD
+0.048 Tw
+[(contribution )-11.3(continues to grow out to at least twenty words, perhaps )]TJ
+/TT7 1 Tf
+27.9793 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.048 Tw
+(fty words, well beyond the)Tj
+/TT9 1 Tf
+11.1846 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.63 0 TD
+0.0448 Tw
+(6 word)Tj
+-40.35 -1.2 TD
+0.1292 Tw
+[(contexts typically found in many disambiguation studies. )-236.2(Increasing the context from)]TJ
+/TT9 1 Tf
+36.05 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.63 0 TD
+0.1389 Tw
+(6 words to)Tj
+/TT9 1 Tf
+4.89 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.63 0 TD
+(50)Tj
+-42.2 -1.2 TD
+-0.006 Tw
+(words improves performance from 86% to 90%.)Tj
+/TT2 1 Tf
+11.92 -1.8 TD
+-0.0015 Tw
+(Contextual Clues are Useful Out to 50 Words)Tj
+/TT11 1 Tf
+-11.92 -1.2 TD
+0.1485 Tw
+[(Figure )4.8(2. )-270.5(The horizontal axis shows the size of the context, as in Figure 1. )-280.5(The vertical axis)]TJ
+T*
+0.0428 Tw
+(shows performance \(percent correct\), computed over a context of)Tj
+/TT4 1 Tf
+29.61 0 TD
+0 Tw
+(2)Tj
+/TT6 1 Tf
+0.58 0 TD
+(d)Tj
+/TT8 1 Tf
+0.74 0 TD
+<003c>Tj
+/TT4 1 Tf
+0.71 0 TD
+(1)Tj
+/TT11 1 Tf
+0.81 0 TD
+0.0369 Tw
+(words, from)Tj
+/TT8 1 Tf
+5.57 0 TD
+0 Tw
+<003c>Tj
+/TT6 1 Tf
+0.71 0 TD
+(d)Tj
+/TT11 1 Tf
+0.8 0 TD
+(to)Tj
+/TT6 1 Tf
+1.14 0 TD
+(d)Tj
+/TT11 1 Tf
+0.8 0 TD
+(\(but)Tj
+-41.47 -1.2 TD
+0.0202 Tw
+[(excluding 0\). )-269.7(Note )6(that performance rises very rapidly at )]TJ
+/TT12 1 Tf
+25.5126 0 TD
+0 Tw
+(Ş)Tj
+/TT11 1 Tf
+0.5 0 TD
+0.0202 Tw
+(rst and reaches an asymptote at about)Tj
+-26.0126 -1.2 TD
+0.0146 Tw
+(50 words.)Tj
+/TT6 1 Tf
+0 -1.8 TD
+0.0024 Tw
+[(5.2 )-248.1(Quantity and Quality of Training Material)]TJ
+/TT4 1 Tf
+0 -3 TD
+0.075 Tw
+[(In a practical application, we might be concerned that the )-14.5(Bayesian )-14.5(discrimination )-14.5(methods )-14.5(would )-14.5(be )-14.5(too)]TJ
+0 -1.2 TD
+0.1589 Tw
+[(demanding on the quantity and quality of )11.5(the )11.5(training )11.5(material. )-243.3(This )9.9(section )9.9(will )9.9(consider )9.9(the )9.9(quantity)]TJ
+T*
+0 Tw
+(question )Tj
+/TT7 1 Tf
+3.6382 0 TD
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0004 Tw
+(rst and then return to the quality question.)Tj
+-4.1944 -2.4 TD
+0.0376 Tw
+[(As )10.8(mentioned )10.8(above, )10.8(the )10.8(method )10.8(would )10.8(have limited applicability if it requires unreasonably large training)]TJ
+0 -1.2 TD
+0.0372 Tw
+[(sets. )-255.1(We expect performance to degrade with the size of the training set, and we would like to control this)]TJ
+T*
+0.2085 Tw
+[(source )13.4(of )13.4(variability )13.4(as )13.4(we )13.4(study )13.4(other )13.4(factors. )-238.5(In )10.2(addition, )10.2(we would also like to be able to predict)]TJ
+T*
+0.0942 Tw
+[(performance when the size of the training set is severely constrained, )7.5(because )7.5(this )7.6(is )7.5(usually )7.5(the )7.5(case )7.5(for)]TJ
+T*
+0.0375 Tw
+[(most )8(senses )8(of )8(most )8(words. )-241.7(Figure )15.1(3 )15.1(shows )15.1(performance as a function of the size of the training set. )-248.7(Note)]TJ
+T*
+0.1862 Tw
+[(that very small training sets perform remarkably well; )10(just )10(3 )10(exemplars )10(are )10(suf)]TJ
+/TT7 1 Tf
+33.5079 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.1762 Tw
+(cient to achieve 75%.)Tj
+-34.0641 -1.2 TD
+0.0253 Tw
+[(Nevertheless, )10.8(it )10.8(helps to use larger training sets, up to about 50 or 60 exemplars when performance reaches)]TJ
+T*
+0 Tw
+(asymptote.)Tj
+0 -2.4 TD
+0.2164 Tw
+[(The quality of the training set is another potential source of concern. )-247.6(If training materials are to )-9.8(be)]TJ
+0 -1.2 TD
+0.0349 Tw
+[(collected on a large scale, then we will need to accept a )12.4(certain )12.4(number )12.4(of )12.4(errors. )-232.2(Moreover, )5.6(if )5.6(the )5.6(method)]TJ
+T*
+0.0194 Tw
+[(is )10.2(robust )10.2(to )10.2(errors, )10.2(then )10.2(it will be possible to consider bootstrapping methods that might be able to speed up)]TJ
+T*
+-0.0069 Tw
+(the data collection effort.)Tj
+ET
+endstream
+endobj
+29 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+/TT11 30 0 R
+/TT12 31 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+33 0 obj
+<<
+/Length 6723
+>>
+stream
+BT
+/TT2 1 Tf
+10 0 0 10 187.2 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.0023 Tw
+(Small Training Sets Perform Surprisingly Well)Tj
+/TT11 1 Tf
+-11.52 -1.2 TD
+0.1177 Tw
+[(Figure 3. )-271.3(The )7.7(horizontal )7.7(axis )7.8(shows )7.7(the size of the training set, while the vertical scale shows)]TJ
+T*
+0.4958 Tw
+[(performance \(percent correct, averaged over 90 instances )20.7(times )20.7(two )20.6(senses )20.6(times )20.7(six)]TJ
+T*
+0.0359 Tw
+[(polysemous words\). )-274(Note that very small training sets perform remarkably well; just 3 exemplars)]TJ
+T*
+0.0343 Tw
+(are suf)Tj
+/TT12 1 Tf
+3.0914 0 TD
+0 Tw
+(Ş)Tj
+/TT11 1 Tf
+0.5 0 TD
+0.0192 Tw
+[(cient )-15.1(to )-15.1(achieve )-15.1(75%. )-289.2(Nevertheless, it helps to use larger training sets, up to about 50 or)]TJ
+-3.5914 -1.2 TD
+0.0165 Tw
+(60 exemplars when performance reaches asymptote.)Tj
+/TT4 1 Tf
+0 -1.8 TD
+0.0558 Tw
+[(In )8.6(order )8.6(to )8.6(study )8.6(the )8.6(quality )8.6(issue, )8.6(we )8.6(deliberately introduced a variable number of errors into the training)]TJ
+0 -1.2 TD
+0.0809 Tw
+[(set. )-251.9(Table 4 shows the mean performance \(percent correct\), averaged over 90 instances times two senses)]TJ
+T*
+0.2704 Tw
+(times six polysemous words, as a function of the quality of the training set \(the fraction of errors)Tj
+T*
+0.1852 Tw
+[(deliberately introduced into the training set\) and coverage \(the fraction of the test )6.7(set )6.7(with )6.7(the )6.7(largest)]TJ
+T*
+-0.0097 Tw
+(discrimination score\).)Tj
+0 -2.4 TD
+0.0563 Tw
+[(Two )8.8(observations )8.8(on )8.8(this )8.8(table )8.8(are )8.8(important. )-249.7(First, at 10 percent errors input, the output errors have only)]TJ
+0 -1.2 TD
+0.0951 Tw
+[(increased )-7.9(from )-7.9(10 )-7.9(percent )-7.9(to )-7.9(12 )-7.9(percent. )-264.9(Thus )-8.9(we can accommodate up to about ten percent errors with)]TJ
+T*
+0.0105 Tw
+[(little degradation of performance. )-255.7(Second, )-5.8(at )]TJ
+/TT7 1 Tf
+18.4343 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0253 Tw
+[(fty )9(percent coverage, input errors of twenty to thirty percent)]TJ
+-18.9905 -1.2 TD
+0.0072 Tw
+[(result in about half as many errors on output. )-231.4(Therefore if one had obtained a set of examples )8(with )8(no )8(more)]TJ
+T*
+0.0459 Tw
+[(than )9.3(twenty )9.3(to )9.3(thirty )9.3(percent, )9.3(one )9.3(could )9.3(iterate example selection just once or twice and have example sets)]TJ
+T*
+-0.0052 Tw
+(that had less than ten percent errors.)Tj
+/TT9 1 Tf
+12.64 -0.8 TD
+0 Tw
+(_ )Tj
+0.41 0 TD
+(___________________________________)Tj
+/TT4 1 Tf
+0.34 -1.2 TD
+-0.0006 Tw
+(Table 4: Robust to Errors in Training Set)Tj
+-0.25 -1.2 TD
+5.7543 Tw
+(coverage quality)Tj
+5.59 -1.2 TD
+1.246 Tw
+(0% 10% 20% 30%)Tj
+/TT9 1 Tf
+-6.09 -0.2 TD
+0 Tw
+(_ )Tj
+0.41 0 TD
+(___________________________________)Tj
+/TT4 1 Tf
+1.22 -1.2 TD
+2.08 Tw
+[(50% )203(98.6 )750(96 92 84)]TJ
+T*
+[(80% )203(93 92 88 81)]TJ
+-0.5 -1.2 TD
+[(100% )203(90 88 82 78)]TJ
+/TT9 1 Tf
+-1.13 -0.2 TD
+0 Tw
+(_ )Tj
+0.41 0 TD
+(___________________________________ )Tj
+/TT8 1 Tf
+-0.7938 0 TD
+<00b2>Tj
+0.3838 0.6 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+4.84 -6.6 TD
+<00b2>Tj
+0 0.2 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+13.07 -5.2 TD
+<00b2>Tj
+0 0.6 TD
+<00b2>Tj
+0 1 TD
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+T*
+<00b2>Tj
+/TT6 1 Tf
+-30.55 -8.4 TD
+-0.0028 Tw
+[(5.3 )-248.6(Recall vs. Precision)]TJ
+/TT4 1 Tf
+0 -3 TD
+0.0012 Tw
+[(One can make a tradeoff between coverage \(fraction of words for which )-17.5(a )-17.5(disambiguation )-17.5(is )-17.5(attempted\) )-17.5(and)]TJ
+0 -1.2 TD
+0.0978 Tw
+(accuracy \(fraction of attempted words which are correctly disambiguated\), analogous to the recall versus)Tj
+T*
+0.2559 Tw
+[(precision )14(tradeoff )14(in )14(Information Retrieval. )-253.3(Figure 4 shows the error rate depends very strongly on)]TJ
+T*
+0.0426 Tw
+[(coverage, and consequently, it is important to state coverage carefully when reporting performance. )-257.4(At 66)]TJ
+T*
+0.1739 Tw
+[(percent coverage, the error rate is about a quarter of its value at )-5.8(100 )-5.8(percent )-5.8(coverage. )-265.3(\(Some )-13.8(of )-13.8(the)]TJ
+T*
+-0.0033 Tw
+(literature has not been as careful as it might be in this respect.\))Tj
+/TT2 1 Tf
+14.47 -1.8 TD
+-0.0062 Tw
+(Error Rate Depends on Coverage)Tj
+/TT11 1 Tf
+-14.47 -1.2 TD
+0.1481 Tw
+[(Figure 4. )-270.9(The horizontal axis shows coverage while the vertical scale shows error rate. )-281.8(Note)]TJ
+T*
+0.0792 Tw
+[(that the error rate increases very quickly with small increases in coverage, because most of )7.2(the)]TJ
+T*
+0.0082 Tw
+(errors result when there is very little information to go on.)Tj
+/TT2 1 Tf
+9 0 0 9 72 216.06 Tm
+0.2649 Tw
+(6. Conclusions)Tj
+/TT4 1 Tf
+10 0 0 10 72 198.06 Tm
+0 Tw
+(Dif)Tj
+/TT7 1 Tf
+1.333 0 TD
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.2548 Tw
+[(culties )6.7(in )6.7(acquiring suitable testing and training materials have deterred progress on word-sense)]TJ
+-1.8892 -1.2 TD
+0.2062 Tw
+[(disambiguation over the past forty years. )-246.1(We )6.7(have )6.7(achieved )6.7(considerable )6.7(progress )6.7(recently )6(by )6(taking)]TJ
+T*
+0.0853 Tw
+[(advantage of a new source of testing and training materials. )-249.2(Rather than )-14(depending )-14(on )-14(small )-14(amounts )-14(of)]TJ
+T*
+0.1058 Tw
+(hand-labeled text, we have been making use of relatively large amounts of parallel text, text such as the)Tj
+T*
+0.1542 Tw
+[(Canadian Hansards, which are available in multiple languages. )-255(Consider, )-12.6(for )-12.6(example, )-12.6(the )-12.6(polysemous)]TJ
+T*
+0 Tw
+(word)Tj
+/TT6 1 Tf
+2.46 0 TD
+(drug)Tj
+/TT4 1 Tf
+1.89 0 TD
+0.1466 Tw
+[(, )-11.1(which )-11.1(has )-11.1(two major senses: \(1\) a medical drug, and \(2\), an illicit drug. )-245.7(We can collect a)]TJ
+-4.35 -1.2 TD
+0.0384 Tw
+[(number )15.3(of )15.3(examples )15.3(of )15.3(each )15.3(sense by using the French translation \()]TJ
+/TT6 1 Tf
+27.31 0 TD
+0 Tw
+(me )Tj
+1.077 0 TD
+(´ )Tj
+0.0775 0 TD
+(dicament)Tj
+/TT4 1 Tf
+3.9555 0 TD
+(vs.)Tj
+/TT6 1 Tf
+1.43 0 TD
+(drogue)Tj
+/TT4 1 Tf
+2.83 0 TD
+0.0353 Tw
+(\) as an indicator)Tj
+-36.68 -1.2 TD
+0.0052 Tw
+[(of the sense of the English word. )-251.8(In this way, we have been able to acquire considerable amounts of testing)]TJ
+T*
+-0.0022 Tw
+(and training material for study of quantitative methods.)Tj
+0 -2.4 TD
+0.0485 Tw
+[(The availability of this testing and training material has enabled us to )-10.7(develop )-10.7(quantitative )-10.7(disambiguation)]TJ
+0 -1.2 TD
+0.0078 Tw
+(methods that achieve 90% accuracy in discriminating between two senses corresponding to different topics,)Tj
+T*
+0.2087 Tw
+[(based )13.9(on )13.9(context )13.9(alone. )-238.3(In )6(addition, an perhaps more importantly, the availability of this testing and)]TJ
+ET
+endstream
+endobj
+34 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT8 14 0 R
+/TT9 8 0 R
+/TT11 30 0 R
+/TT12 31 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+36 0 obj
+<<
+/Length 7954
+>>
+stream
+BT
+/TT4 1 Tf
+10 0 0 10 72 696.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.0968 Tw
+[(training materials has allowed us to carry out )8.8(a )8.8(number )8.8(of )8.8(methodological )8.8(studies. )-240.2(In )11.2(particular, )11.2(we )]TJ
+/TT7 1 Tf
+41.6438 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+(nd)Tj
+-42.2 -1.2 TD
+0.0068 Tw
+[(that )8.7(a )8.7(training set of as few as ten exemplars seems to be quite useful, and that the training set can tolerate a)]TJ
+T*
+0.1695 Tw
+[(fair )8.6(number )8.6(of )8.6(errors. )-245.8(The most surprising result, perhaps, is that the width of context should )13.3(be)]TJ
+/TT9 1 Tf
+41.57 0 TD
+0 Tw
+(±)Tj
+/TT4 1 Tf
+0.63 0 TD
+(50)Tj
+-42.2 -1.2 TD
+-0.0036 Tw
+(words, an order of magnitude larger than one normally )Tj
+/TT7 1 Tf
+22.1271 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+-0.0036 Tw
+(nds in the literature.)Tj
+/TT6 1 Tf
+-22.6833 -1.8 TD
+0 Tw
+(References)Tj
+/TT4 1 Tf
+9 0 0 9 78.7 625.0601 Tm
+0.0635 Tw
+[(1. )-693.4(Bar-Hillel )9.6(\(1960\), )9.6(‘‘Automatic Translation of Languages,’’ in)]TJ
+/TT6 1 Tf
+27.2 0 TD
+0.0618 Tw
+(Advances in Computers)Tj
+/TT4 1 Tf
+9.6222 0 TD
+0.0646 Tw
+(, Donald Booth and R. E.)Tj
+-35.0667 -1.2222 TD
+0.0139 Tw
+(Meagher, eds., Academic, New York.)Tj
+-1.7556 -1.8333 TD
+0.2984 Tw
+[(2. )-463.5(Black, Ezra \(1987\),)]TJ
+/TT6 1 Tf
+10.7333 0 TD
+0.2942 Tw
+(Towards Computational Discrimination of English Word Senses)Tj
+/TT4 1 Tf
+27.5444 0 TD
+0.2997 Tw
+(, Ph. D. thesis, City)Tj
+-36.5222 -1.2222 TD
+0.0081 Tw
+(University of New York.)Tj
+-1.7556 -1.8333 TD
+0.074 Tw
+[(3. )-687.9(Black, )11.1(Ezra \(1988\), ‘‘An Experiment in Computational Discrimination of English Word Senses,’’)]TJ
+/TT6 1 Tf
+42.0444 0 TD
+0.0734 Tw
+(IBM Journal)Tj
+-40.2889 -1.2222 TD
+0.0068 Tw
+(of Research and Development)Tj
+/TT4 1 Tf
+12.0444 0 TD
+0.0098 Tw
+(, v 32, pp 185-194.)Tj
+-13.8 -1.8333 TD
+0.4191 Tw
+[(4. )-342.1(Brown, )10.4(Peter, )10.4(Stephen )10.4(Della )10.4(Pietra, )10.4(Vincent Della Pietra, and Robert Mercer \(1991a\), ‘‘Word Sense)]TJ
+1.7556 -1.2222 TD
+0.206 Tw
+[(Disambiguation using Statistical )5.3(Methods,’’)]TJ
+/TT6 1 Tf
+18.7222 0 TD
+0.1949 Tw
+(Proceedings of the 29th Annual Meeting of the Association for)Tj
+-18.7222 -1.2222 TD
+0.0043 Tw
+(Computational Linguistics)Tj
+/TT4 1 Tf
+10.6444 0 TD
+0.0113 Tw
+(, pp 264-270.)Tj
+-12.4 -1.8333 TD
+0.052 Tw
+[(5. )-709.2(Brown, Peter, Jennifer Lai, and Robert Mercer \(1991b\) ‘‘Aligning Sentences in Parallel )-16.2(Corpora,’’)]TJ
+/TT6 1 Tf
+42.2556 0 TD
+0 Tw
+(Proceedings)Tj
+-40.5 -1.2222 TD
+0.0057 Tw
+(of the 29th Annual Meeting of the Association for Computational Linguistics)Tj
+/TT4 1 Tf
+30.7222 0 TD
+0.0113 Tw
+(, pp 169-176.)Tj
+-32.4778 -1.8333 TD
+0.0089 Tw
+[(6. )-753(Chapman, Robert \(1977\).)]TJ
+/TT6 1 Tf
+12.2556 0 TD
+0.0059 Tw
+(Roget’s International Thesaurus \(Fourth Edition\))Tj
+/TT4 1 Tf
+19.9111 0 TD
+0.0103 Tw
+(, Harper and Row, NY.)Tj
+-32.1667 -1.8333 TD
+0.2639 Tw
+[(7. )-498.1(Choueka, Yaacov, and Serge Lusignan \(1985\), ‘‘Disambiguation )-10.2(by )-10.3(Short )-10.2(Contexts,’’)]TJ
+/TT6 1 Tf
+39.1 0 TD
+0.2724 Tw
+(Computers and the)Tj
+-37.3444 -1.2222 TD
+0 Tw
+(Humanities)Tj
+/TT4 1 Tf
+4.6111 0 TD
+0.0112 Tw
+(, v 19. pp. 147-158.)Tj
+-6.3667 -1.8333 TD
+0.3512 Tw
+[(8. )-410.5(Church, Kenneth \(1989\), ‘‘A Stochastic Parts Program an Noun Phrase )-12.6(Parser )-12.6(for )-12.6(Unrestricted )-12.6(Text,’’)]TJ
+/TT6 1 Tf
+1.7556 -1.2222 TD
+0.0077 Tw
+(Proceeding, IEEE International Conference on Acoustics, Speech and Signal Processing)Tj
+/TT4 1 Tf
+35.6444 0 TD
+0.017 Tw
+(, Glasgow.)Tj
+-37.4 -1.8333 TD
+0.0114 Tw
+[(9. )-750(Cruse, D. A. \(1986\),)]TJ
+/TT6 1 Tf
+10.2444 0 TD
+0.0075 Tw
+(Lexical Semantics)Tj
+/TT4 1 Tf
+7.2556 0 TD
+0.0107 Tw
+(, Cambridge University Press, Cambridge, England.)Tj
+-18 -1.8333 TD
+0.3307 Tw
+[(10. )-431.7(Dagan, Ido, Alon Itai, and Ulrike Schwall \(1991\), )-10.3(‘‘Two )-10.3(Languages )-10.3(are )-10.3(more )-10.3(Informative )-10.3(than )-10.3(One,’’)]TJ
+/TT6 1 Tf
+2.2556 -1.2222 TD
+0.0058 Tw
+(Proceedings of the 29th Annual Meeting of the Association for Computational Linguistics)Tj
+/TT4 1 Tf
+35.9778 0 TD
+0.0113 Tw
+(, pp 130-137.)Tj
+-38.2333 -1.8333 TD
+0.1289 Tw
+[(11. )-632.3(Fillmore, )10(Charles, )10.1(and )10(Sue )10(Atkins, )10(\(1991\) )10(‘‘Word )10.1(Meaning: Starting where MRD’s Stop,’’ invited talk at the)]TJ
+2.2556 -1.2222 TD
+0.0068 Tw
+(29th Annual Meeting of the Association for Computational Linguistics.)Tj
+-2.2556 -1.8333 TD
+0.0867 Tw
+[(12. )-675.6(Gale, W., and Church, K. \(1991a\) ‘‘A Program for )-9.4(Aligning )-9.4(Sentences )-9.4(in )-9.4(Bilingual )-9.4(Corpora,’’)]TJ
+/TT6 1 Tf
+41.5778 0 TD
+0.0943 Tw
+(Association for)Tj
+-39.3222 -1.2222 TD
+0.0043 Tw
+(Computational Linguistics)Tj
+/TT4 1 Tf
+10.6444 0 TD
+0 Tw
+(.)Tj
+-12.9 -1.8333 TD
+0.2761 Tw
+[(13. )-486.2(Gale, W., and Church, K. \(1991b\) ‘‘Identifying Word )-9.9(Correspondences )-9.9(in )-9.9(Parallel )-9.9(Text,’’)]TJ
+/TT6 1 Tf
+41.8333 0 TD
+0.2831 Tw
+(Fourth Darpa)Tj
+-39.5778 -1.2222 TD
+0.0058 Tw
+(Workshop on Speech and Natural Language)Tj
+/TT4 1 Tf
+17.7778 0 TD
+0.0172 Tw
+(, Asilomar.)Tj
+-20.0333 -1.8333 TD
+0.1179 Tw
+[(14. )-644.4(Gale, W., K. Church, and D. Yarowsky, \(to appear\) ‘‘A Method for Disambiguating Word Senses in a Large)]TJ
+2.2556 -1.2222 TD
+0 Tw
+(Corpus,’’)Tj
+/TT6 1 Tf
+4.0667 0 TD
+0.0057 Tw
+(Computers and the Humanities)Tj
+/TT4 1 Tf
+12.4889 0 TD
+0 Tw
+(.)Tj
+-18.8111 -1.8333 TD
+0.0416 Tw
+[(15. )-721.4(Granger, Richard \(1977\), ‘‘)]TJ
+/TT6 1 Tf
+13.4111 0 TD
+0 Tw
+(FOUL-UP)Tj
+/TT4 1 Tf
+4.5667 0 TD
+0.0394 Tw
+(A program that )Tj
+/TT7 1 Tf
+6.4775 0 TD
+0 Tw
+(Ş)Tj
+/TT4 1 Tf
+0.5562 0 TD
+0.0394 Tw
+[(gures out meanings of )-13.3(words )-13.3(from )-13.3(context,’’)]TJ
+/TT6 1 Tf
+18.433 0 TD
+0 Tw
+(IJCAII-77)Tj
+/TT4 1 Tf
+4.0555 0 TD
+(,)Tj
+-45.2444 -1.2222 TD
+0.017 Tw
+(pp. 172-178.)Tj
+-2.2556 -1.8333 TD
+0.0091 Tw
+[(16. )-747.7(Grolier’s Inc. \(1991\))]TJ
+/TT6 1 Tf
+10.8333 0 TD
+0.0069 Tw
+(New Grolier’s Electronic Encyclopedia)Tj
+/TT4 1 Tf
+15.8778 0 TD
+0 Tw
+(.)Tj
+-26.7111 -1.8333 TD
+0.0617 Tw
+[(17. )-700.7(Hearst, Marti \(1991\) ‘‘Toward Noun Homonym Disambiguation Using Local )-12.5(Context )-12.5(in )-12.5(Large )-12.5(Text )-12.5(Corpora,’’)]TJ
+2.2556 -1.2222 TD
+0 Tw
+(in)Tj
+/TT6 1 Tf
+1.2222 0 TD
+0.1838 Tw
+[(Proceedings )-11.9(of )-11.9(the )-11.9(Seventh Annual Conference of the UW Centre for the New OED and Text Research)]TJ
+/TT4 1 Tf
+44.0222 0 TD
+0 Tw
+(,)Tj
+-45.2444 -1.2222 TD
+0.0287 Tw
+[(available from the UW Centre for the New OED )-14.1(and )-14.1(Text )-14.1(Research, )-14.1(University )-14.1(of )-14.1(Waterloo, )-14.1(Waterloo, )-14.1(Ontario,)]TJ
+T*
+0 Tw
+(Canada.)Tj
+-2.2556 -1.8333 TD
+0.2971 Tw
+[(18. )-465.2(Hirschman, Lynette \(1986\), ‘‘Discovering Sublanguage )-12.2(Discovery,’’ )-12.2(in)]TJ
+/TT6 1 Tf
+33.2556 0 TD
+0.3062 Tw
+(Analyzing Language in Restricted)Tj
+-31 -1.2222 TD
+0 Tw
+(Domains)Tj
+/TT4 1 Tf
+3.6111 0 TD
+0.0101 Tw
+(, Ralph Grishman and Richard Kittredge, eds., Lawrence Erlbaum, Hillsdale, New Jersey.)Tj
+-5.8667 -1.8333 TD
+0.3226 Tw
+[(19. )-438.5(Hirst, G. \(1987\),)]TJ
+/TT6 1 Tf
+10.1111 0 TD
+0.3281 Tw
+[(Semantic )9.5(Interpretation and the Resolution of Ambiguity)]TJ
+/TT4 1 Tf
+24.6222 0 TD
+0.332 Tw
+(, Cambridge University Press,)Tj
+-32.4778 -1.2222 TD
+0 Tw
+(Cambridge.)Tj
+-2.2556 -1.8333 TD
+0.1076 Tw
+[(20. )-654.4(Ide, )9(N. )9(and )9(Veronis, J. \(1990\) ‘‘Mapping Dictionaries: A Spreading Activation Approach,’’ in)]TJ
+/TT6 1 Tf
+41.6222 0 TD
+0.107 Tw
+(Proceedings of)Tj
+-39.3667 -1.2222 TD
+0.0728 Tw
+(the Sixth Annual Conference of the UW Centre for the OED and Text Research)Tj
+/TT4 1 Tf
+32.5778 0 TD
+0.0633 Tw
+(, available from the UW Centre)Tj
+-32.5778 -1.2222 TD
+0.009 Tw
+(for the New OED and Text Research, University of Waterloo, Waterloo, Ontario, Canada.)Tj
+-2.2556 -1.8333 TD
+0.0529 Tw
+[(21. )-709.9(Isabelle, P. \(1984\) ‘‘Machine Translation at the TAUM Group,’’ in King, M. \(ed.\))]TJ
+/TT6 1 Tf
+36.1333 0 TD
+0.0614 Tw
+(Machine Translation Today:)Tj
+-33.8778 -1.2222 TD
+0.0058 Tw
+(The State of the Art)Tj
+/TT4 1 Tf
+7.8 0 TD
+0.0095 Tw
+(, Edinburgh University Press.)Tj
+ET
+endstream
+endobj
+37 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 7 0 R
+/TT9 8 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+39 0 obj
+<<
+/Length 6702
+>>
+stream
+BT
+/TT4 1 Tf
+9 0 0 9 74.2 704.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.0064 Tw
+[(22. )-755.4(Jackson, Howard \(1988\))]TJ
+/TT6 1 Tf
+12.3333 0 TD
+0.0058 Tw
+(Words and their Meaning)Tj
+/TT4 1 Tf
+10.3222 0 TD
+0.0144 Tw
+(, Longman, London.)Tj
+-22.6556 -1.8333 TD
+0.0753 Tw
+[(23. )-686.5(Jacobs, Paul, George Krupka, Susan McRoy, Lisa Rau, Norman Sondheimer, and Uri )-11.4(Zernik )-11.4(\(1990\), )-11.4(‘‘Generic)]TJ
+2.2556 -1.2222 TD
+0.0853 Tw
+(Text Processing: A Progress Report,’’)Tj
+/TT6 1 Tf
+15.9111 0 TD
+0.0729 Tw
+(Proceedings DARPA Speech and Natural Language Workshop)Tj
+/TT4 1 Tf
+25.6 0 TD
+0.0779 Tw
+(, pp. 359-)Tj
+-41.5111 -1.2222 TD
+0 Tw
+(364.)Tj
+-2.2556 -1.8333 TD
+0.0401 Tw
+[(24. )-722.2(Kaplan, )10.3(Abraham )10.3(\(1950\), )10.3(‘‘An )10.3(Experimental )10.3(Study of Ambiguity in Context,’’ cited in)]TJ
+/TT6 1 Tf
+37.8222 0 TD
+0.0396 Tw
+(Mechanical Translation)Tj
+/TT4 1 Tf
+9.6778 0 TD
+0 Tw
+(,)Tj
+-45.2444 -1.2222 TD
+0.013 Tw
+(v. 1, nos. 1-3.)Tj
+-2.2556 -1.8333 TD
+0.2848 Tw
+[(25. )-476.9(Kelly, )5.8(Edward, and Phillip Stone \(1975\),)]TJ
+/TT6 1 Tf
+20.6 0 TD
+0.2837 Tw
+(Computer Recognition of English Word Senses)Tj
+/TT4 1 Tf
+20.2222 0 TD
+0.2956 Tw
+(, North-Holland,)Tj
+-38.5667 -1.2222 TD
+0 Tw
+(Amsterdam.)Tj
+-2.2556 -1.8333 TD
+0.0216 Tw
+[(26. )-741.7(Kucera, H., and W. Francis \(1967\),)]TJ
+/TT6 1 Tf
+16.7444 0 TD
+0.0172 Tw
+(Computational Analysis of Present-day American English)Tj
+/TT4 1 Tf
+23.2778 0 TD
+0.0197 Tw
+(, Brown University)Tj
+-37.7667 -1.2222 TD
+0.0179 Tw
+(Press, Providence.)Tj
+-2.2556 -1.8333 TD
+0.0625 Tw
+[(27. )-699.2(Lesk, Michael \(1986\), ‘‘Automatic Sense Disambiguation: How to tell )-11.1(a )-11.1(Pine )-11.1(Cone )-11.1(from )-11.1(an )-11.1(Ice )-11.1(Cream )-11.1(Cone,’’)]TJ
+/TT6 1 Tf
+2.2556 -1.2222 TD
+0.0064 Tw
+(Proceeding of the 1986 SIGDOC Conference)Tj
+/TT4 1 Tf
+18.1667 0 TD
+0.0089 Tw
+(, Association for Computing Machinery, New York.)Tj
+-20.4222 -1.8333 TD
+0.1324 Tw
+[(28. )-624(Longman Group Limited, eds. \(1978\),)]TJ
+/TT6 1 Tf
+18.7222 0 TD
+0.1279 Tw
+(Longman Dictionary of Contemporary English)Tj
+/TT4 1 Tf
+19.2889 0 TD
+0.1337 Tw
+[(, Longman, Burnt )-10.3(Mill,)]TJ
+-35.7556 -1.2222 TD
+0 Tw
+(England.)Tj
+-2.2556 -1.8333 TD
+0.1864 Tw
+[(29. )-575.4(Masterson, Margaret \(1967\), ‘‘Mechanical Pidgin Translation,’’ in)]TJ
+/TT6 1 Tf
+30.5 0 TD
+0.1835 Tw
+(Machine Translation)Tj
+/TT4 1 Tf
+8.6 0 TD
+0.191 Tw
+(, Donald Booth, ed.,)Tj
+-36.8444 -1.2222 TD
+0.0177 Tw
+(Wiley, 1967.)Tj
+-2.2556 -1.8333 TD
+0.1412 Tw
+[(30. )-620.7(Mosteller, Fredrick, and David Wallace \(1964\))]TJ
+/TT6 1 Tf
+22.1556 0 TD
+0.1396 Tw
+(Inference and Disputed Authorship: The Federalist)Tj
+/TT4 1 Tf
+21.2222 0 TD
+0.1556 Tw
+(, Addison-)Tj
+-41.1222 -1.2222 TD
+0.0155 Tw
+(Wesley, Reading, Massachusetts.)Tj
+-2.2556 -1.8333 TD
+0.0114 Tw
+[(31. )-750.3(Quine, W. v. O. \(1960\),)]TJ
+/TT6 1 Tf
+12.0889 0 TD
+0.0062 Tw
+(Word and Object)Tj
+/TT4 1 Tf
+6.9 0 TD
+0.0115 Tw
+(, MIT Press, Cambridge.)Tj
+-18.9889 -1.8333 TD
+0.0962 Tw
+[(32. )-666(Reiger, Charles \(1977\), ‘‘Viewing Parsing as )-11.5(Word )-11.5(Sense )-11.4(Discrimination,’’ )-11.5(in)]TJ
+/TT6 1 Tf
+34.9111 0 TD
+0.1064 Tw
+(A Survey of Linguistic Science)Tj
+/TT4 1 Tf
+12.5889 0 TD
+0 Tw
+(,)Tj
+-45.2444 -1.2222 TD
+0.0159 Tw
+(W. Dingall, ed., Greylock.)Tj
+-2.2556 -1.8333 TD
+0.0087 Tw
+[(33. )-752.3(Salton, G. \(1989\))]TJ
+/TT6 1 Tf
+9.4778 0 TD
+0.0065 Tw
+(Automatic Text Processing)Tj
+/TT4 1 Tf
+10.7889 0 TD
+0.0182 Tw
+(, Addison-Wesley.)Tj
+-20.2667 -1.8333 TD
+0.1894 Tw
+[(34. )-572.5(Sinclair, )6.3(J., Hanks, P., Fox, G., Moon, R., Stock, P. et al. \(eds.\) \(1987\))]TJ
+/TT6 1 Tf
+33.2889 0 TD
+0.1829 Tw
+(Collins Cobuild English Language)Tj
+-31.0333 -1.2222 TD
+0 Tw
+(Dictionary,)Tj
+/TT4 1 Tf
+4.8444 0 TD
+0.0094 Tw
+(Collins, London and Glasgow.)Tj
+-7.1 -1.8333 TD
+0.3625 Tw
+[(35. )-398.4(Small, )9.7(S. )9.7(and C. Rieger \(1982\), ‘‘Parsing and Comprehending with Word Experts \(A Theory and its)]TJ
+2.2556 -1.2222 TD
+0.2472 Tw
+(Realization\),’’ in)Tj
+/TT6 1 Tf
+7.5667 0 TD
+0.2389 Tw
+(Strategies for Natural Language Processing)Tj
+/TT4 1 Tf
+18.6778 0 TD
+0.2437 Tw
+[(, W. Lehnert and M. )9.2(Ringle, )9.2(eds., )9.2(Lawrence)]TJ
+-26.2444 -1.2222 TD
+0.012 Tw
+(Erlbaum Associates, Hillsdale, NJ.)Tj
+-2.2556 -1.8333 TD
+0.1769 Tw
+[(36. )-584.2(Stone, Phillip, D. C. Dunphy, M. S. Smith, and D. )-10.4(M. )-10.4(Ogilvie )-10.4(\(1966\),)]TJ
+/TT6 1 Tf
+32.7111 0 TD
+0.1838 Tw
+[(The General Inquirer: )-255.4(A Computer)]TJ
+-30.4556 -1.2222 TD
+0.0059 Tw
+(Approach to Content Analysis)Tj
+/TT4 1 Tf
+12.0444 0 TD
+0.0115 Tw
+(, MIT Press, Cambridge.)Tj
+-14.3 -1.8333 TD
+0.0096 Tw
+[(37. )-746.6(van Rijsbergen, C. \(1979\))]TJ
+/TT6 1 Tf
+12.9 0 TD
+0.0071 Tw
+(Information Retrieval)Tj
+/TT4 1 Tf
+8.7 0 TD
+0.0116 Tw
+(, Second Editional, Butterworths, London.)Tj
+-21.6 -1.8333 TD
+0.0292 Tw
+[(38. )-734(Walker, )10(Donald )10(\(1987\), )10(‘‘Knowledge )10(Resource Tools for Accessing Large Text Files,’’ in)]TJ
+/TT6 1 Tf
+38.9778 0 TD
+0.0283 Tw
+(Machine Translation:)Tj
+-36.7222 -1.2222 TD
+0.3841 Tw
+(Theoretical and Methodological Issues)Tj
+/TT4 1 Tf
+16.7889 0 TD
+0.39 Tw
+[(, Sergei Nirenberg, ed., Cambridge )13.6(University )13.6(Press, )13.6(Cambridge,)]TJ
+-16.7889 -1.2222 TD
+0 Tw
+(England.)Tj
+-2.2556 -1.8333 TD
+0.0115 Tw
+[(39. )-752.2(Weinreich, U. \(1980\),)]TJ
+/TT6 1 Tf
+11.3444 0 TD
+0.0065 Tw
+(On Semantics)Tj
+/TT4 1 Tf
+5.5333 0 TD
+0.0094 Tw
+(, University of Pennsylvania Press, Philadelphia.)Tj
+-16.8778 -1.8333 TD
+0.0089 Tw
+[(40. )-752.8(Weiss, Stephen \(1973\), ‘‘Learning to Disambiguate,’’)]TJ
+/TT6 1 Tf
+24.1667 0 TD
+0.006 Tw
+(Information Storage and Retrival)Tj
+/TT4 1 Tf
+13.3778 0 TD
+0.0112 Tw
+(, v. 9, pp 33-41.)Tj
+-37.5444 -1.8333 TD
+0.0292 Tw
+[(41. )-732.7(Yarowsky, David \(1992\), ‘‘Word-Sense Disambiguation Using Statistical Models )-10.6(of )-10.6(Roget’s )-10.6(Categories )-10.6(Trained)]TJ
+2.2556 -1.2222 TD
+0.01 Tw
+(on Large Corpora,’’)Tj
+/TT6 1 Tf
+8.3 0 TD
+0.0065 Tw
+(Proceedings COLING-92)Tj
+/TT4 1 Tf
+10.2556 0 TD
+0 Tw
+(.)Tj
+-20.8111 -1.8333 TD
+0.0735 Tw
+[(42. )-688.3(Yngve, )9.8(Victor )9.8(\(1955\), )9.8(‘‘Syntax and the Problem of Multiple Meaning,’’ in)]TJ
+/TT6 1 Tf
+33.2 0 TD
+0.0722 Tw
+(Machine Translation of Languages)Tj
+/TT4 1 Tf
+14.3 0 TD
+0 Tw
+(,)Tj
+-45.2444 -1.2222 TD
+0.0097 Tw
+(William Locke and Donald Booth, eds., Wiley, New York.)Tj
+-2.2556 -1.8333 TD
+0.1177 Tw
+[(43. )-644.5(Zernik, Uri \(1990\) ‘‘Tagging Word Senses in Corpus: The Needle in the Haystack Revisited,’’ in)]TJ
+/TT6 1 Tf
+43.2111 0 TD
+0.1289 Tw
+(Text Based)Tj
+-40.9556 -1.2222 TD
+0.0508 Tw
+[(Intelligent Systems: Current Research in Text )9.2(Analysis, )9.2(Information )9.2(Extraction, )9.3(and )9.2(Retrival)]TJ
+/TT4 1 Tf
+37.5667 0 TD
+0.0461 Tw
+(, P. Jacobs, ed., GE)Tj
+-37.5667 -1.2222 TD
+0.0098 Tw
+(Research and Development Center, pp25-29.)Tj
+ET
+endstream
+endobj
+40 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 9 0 R
+>>
+>>
+endobj
+9 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+41 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 701
+/CapHeight 0
+/Descent -298
+/Flags 4
+/FontBBox [-167 -299 1094 827]
+/FontName /HOFPCK+Symbol
+/ItalicAngle 0
+/StemV 0
+/FontFile2 42 0 R
+>>
+endobj
+42 0 obj
+<<
+/Filter /FlateDecode
+/Length 18261
+/Length1 37192
+>>
+stream
+H‰äW}tÕ¿ovgvfwv³åx$T1¡‡V¥PÀ‚%ĞH1å ãñpr˜İ}›™]fgaC‰T>B IiJ#¢¥[?R
+)¥)¥…@Z£‚-hÊ—”"PŒ1˜Ş™İèñÔş›÷Î›ßıİwß›{ï¼™÷ dAØ úèc#8³¨pjº±Íõ/ĞsÕÅ•v 2€¹3H%{°éxƒ5P}£a1ò
+€òª`´,|àÛoïX,¢=”)åÁÏF2ÛV]F®„¨8ºj×€u^?6„
+±•Ù °íah(¬'Ö<÷ƒ|Îy÷“ñ˜N ,ıŠñKã_° ı!kÃR"Ê¿ËX‹óC®*…©>ue`ÍEì·E5½ó•ñm8¾€÷FµH´¼µt8ÀÊì¿lö²X°3»™•8CU
+ÉIx º OÁğ>Î's/ÜQâÑr-(wö°u7ê ¸ML Õ¤Ï\l—àL€g™0	fC3”’‹Ğ@ÖÃ*2V`ïØ
+pÛ8smI´é†6h„6fB„ÑÌ ÄP‚VuÃ†84“ĞÌx˜I¤61ud	l†' Ç~/Z^ƒÇm; yÌËPj’Yæ ˆ1/Aœx!¥Ìf†À@­ı:Œc§ÂØÛ i3g¥PH:qöœ„ÃŒ¬f|èéÒFv’cä4SGÉ>ÒM°ÓÌÄ(Â%¶v2wÁ|ÀgwÁ$›İêŸ†<îGÿ$ëÙCdÆ?£¿£a#¬CıF´Û£mµ0Â†Ãy(Âz¿­5yl%Êû`³mğ©ƒ8·s…}¶¤òlµl%9hòZ¼Û ò7ÆÛ‡0÷r¥ğ,œg·11Ç`!T2×Ñr|À®f’˜lSI|©œÀ¶V±«áÌÌÄ9øDrØkPLv1#ÀkK’WÓ¹aß`Î2"7ìEr‰tr#¹o’¶n%iæÆÀC¤›Ë#{¸ñœGTb÷üxÙ’X
+£`Ø-ë„AÆ™YsE.6G®W{¬<ì‹(ĞÓO‹ëıLF< ^Àİı6©’ó|&' ãwl`aÏÉÌÃ™œà>2›{zÏIPÉäÄ	0åq ¡ßç$vO&'Ù ?Ü‚GÚş<È¥s"à¹f"®“™ı='©Úù#kûÍ±6±·§£b(Ø§ |¼Ïîe^'WmNsõ„š’&{áÅíFb]yİÅd–·O‰ß²¬´ôpdÖ¯‘YÍm&µ™'¼³ñ,ğÉà›‹ï1~Ïğ‡; î‡øÍÇ W/®åL¹Qòyş×÷Dp#™j4òôYÃ8ìVpjDĞàÓ.µ°ÒÂg,\fáO,|ÖÂå®°p¥…«,¬²pµ…Õ®±p­…ë,|ÎÂõÖXøS7Xø3k-ü¹…-ü……u>oá&_°p³ıá¸y‘ŸÉJDı–Õ¸N)(4£óã’²…j’_—#ê¯xYÊª¬—'¹ Ñdõ×v¿÷½ìÈRÿ^añ7GÓ_ecQ)@_$M‹,ôEôP}JThPÿÃãÑ­NSĞä²şÛT ²PİÆh™Fév!ªÄc†7±.Fı8ıïDìtª™~íàÃqE—£JùïEãw'¢>JÊNW}%% ƒà|qE¡z#ÈúGã6‡ïr!È$…ª~ú'—Å9fÏn*ŠŒ	‰ıÙeºµ€j:MìMÂ¸ÑÄ^©,•¡7z\S›Xœ)jæÁlÍCÍë|±%ís-¤2Õbº&Åbû=~Yó+4íû_œ)n{€§á¨^£úAQV1NÛˆ©…«oxŒ0Q7.Toõh4¨ĞDš0¶XÜ‡âa1mj°#bÚĞ`o:(ŞªúQ§‘‹”üWVRËú7¾L“2*Şrk´L™Nhr°ÍãÇJóY™ümF aI›gòwxÃ@Ü¯¿ë0&ğKÊ1G ¢‡%=tÜ©DÊŞí½´,©¿–Ñş‘JmÀ§‹åD†ëå¤3ÍâÑ÷İiÙôäƒŒ¡±pÚJdUËh‡`Æb>%f¢ÔØiwoH?t÷Æ€ô#!£Ã˜é3Æ¢ª1ƒ=ÛKhâ\/ñéçİ>|3æQ=ex¡/¥‰ûRŸ~ÑePš2ı§˜!a9p©·Ë§ÿËaš¸ÌâšTè'N3Óë+¼±,ğ)WiI^ËÈ4ñïŒìÓ¯‹¦¯æH=úiF}˜OÿÌc¹jÙvİÄiâó›¸OïN¹oYßp÷2Œæ‹>>½ÇñÔ—&ı6ö­ vKC®İÜskM´[â
+ñÀ·¸KDÍÁ±%l‰Áìf³k(ßVíê[Œêø:ßâªvÖ»ª…Vá€8VHºªÙg6êº<ºª]Õb‘ëFH\N'9‹ÅFá [â~í–ãl…Îls¦sŸÍÕI¶PH!ŸŸmŞ¯BÒÁ	ù®³Ëñ!¶s­¶ï:¶¢şK#ü_ªëœpÑvoaê,ˆVñÖgµ
+I£qA¾…«1üp…ğ¾sRqó-^’^p.wwv‰Y­b‘Xän\]¡¾Õàâq‹ç{îáFF]!!‰#3ó;Î±…F¿Xã
+qC{+ŞË¬â¶ĞîsvõöşÔs\kÂ 7ğT‘Å¾ƒû¾uÅğÕKNûQæŞ¦á
+zùÒ)sÓÀÃĞú`ûá‚–AË»µ¬Ëÿ‡‹`œòoUôuÈ,w[>Ú*2>>uÆ®ô1ZÒd\Ú-£ÀÚ½ˆ9§öKâäıÃ:¦U‰÷\mzø©«£ -ÙSù—ÍùºĞN²NÌÏ9˜ÓÙ×8¤¹óìWîİûI“˜óŞÑè@ƒAÓcÎlãÒnNŸË;Á–İd7ffğ}‹omå#ñî›€—60´?xúô…ÜËÇãÀ:½—'.9t¿OœüÌ7†ÜW5UÌ&›—ı‡úrmê:ãøw¶o'¾v<pRF®;°¢`¥U†/FKFA¥]'’ğÜº¶hZ†o‚KËƒPÂ@¤lR‡ÊèZUC¥“ó(´¥•`"št¥*u([“aì}÷Ú&ÑÚ9º¯óû}¿ÿyİsÙD?Á:¦éÏ¶.şîçš/\î¼B¥œ(u¶Í><fqtÏ.u²8û·£À…¾DUÑZ˜ıº{	ÖÈ@~§õB-U øBÏBª#‘‘í|)G0±à0F*…¼ö?HJ²È<dÄÀ6?GÆŸÖÈ:£Qö7îNíeÂGJa—ÆHƒ²7”Xô“*;Zı~Y^ 7#orèŒ6UÒ¹æ;‡Å±[]2¬ŞÇSñ±)<ÄHmak;¶Ü6ƒÀ¥vù‹iF¨ƒÍıÙöœÅ2.Ë.'2Šæöüõ…µ+òBÈÈsŸVìVTu¤;XSúÓr±b»RÙñjeáøy³¹-[	›d'2fR}àÂ¤_t†zl“^ÙşşV~è÷‚Šk]û•!¤RŠñ"
+¬IcôWìtŸ>Rè.Q<ÅÓ×
+6y»¼Uš­@PÏ¡’lò¹¥CgìJ2Ú-Íæu§ÇšG
+ÈhYY>0sY)Të™ÙI;
+ón‡Şm©,œğé!n.R×G|c^ó'sÆ¿ñvÙ“³lâ…ŠØå¹›
+l.¹N& ÙúV×®ˆ`Ÿ#­€¬œ÷ö‰9±ˆÆø…åSyÉ$§·[‘$»T¥IDF¾Uš§B—Ø/I=[¤–İÈètjŒe–¼Òf3ıÁ
+#2ÚíB^iƒÿ %àT¸¯&èï(ı•PëlÇ'‚œKJHU}Z_ÛÄ–r{…ûÑñf›ĞUá¬‘q†\ï^6 Xì5RíÕÁ~ğkß E€¢=åKÇiÆ¹şš‡N××)’h±¨“$ÛØ\Ã™]¾öAwN¢=şxâ›ï¼ÔâBF9Éèkp„6yè¸£Óó»ˆS)ÔPÆ9zdŸ¿x92J¡ÖæÊÂB‡€ŒH‡Í£3¾VÖ2Ë]1Ñ>ÄX÷=îÚ
+sü1qõ*.Ä¡DÃ>Ÿ'^pµ‰$âÌIí?_2)—Aİ°‚û$oS†kD±õcßY¥z;ö'ÛÑi1;hEĞh×ÚQ²†BØ`YŒŒqÎl´ñÍÚœ‘q2@O26”Û‘q‚Ífğ¦ß¤nU`w_A|ğ›kév$ğúA‰q­¯ëºìSÚŒ1À.Eg¬“TóèÅ‡‘Q5Û
+ôv<¾Éİº¸6¦çLUĞA7Ø$
+Ê¢âEmsg½…ãQäå……^Aôÿ-—‡šáÚSäãÎ–*i½¥[v>?~ƒ{~ÅîÇË–şèà×c·„ë´9ƒó»t_íù©ñ¨M{ãcbé€P
+$Ş{îäÔ¶cK³`X²ÏÀñØ‰4^¤`;õñø²¶ö€ 1Î9—dÌ/®@Æê¯âÑ§×˜ªq^Ï‰ú‰ŞQÓb+Ûôî\yÂs";ûëÄÙîX·'
+–S‡{îE¡Èß»J]|ÍùË¾K«kûqí‰xÂ€BIÎk·?@âSEêº¦VŸ1±ıĞ˜Ÿœ×DĞTÑ-BXŸ×”KÑ{j,å]{\¹–rk4µÜKC_²ë77'’\µÕN,Ê)ˆ©…R†|£HåMo;q¤“š:0ÕF†…Ñ\æ £Â{ÜÈ(¤Héê0tssÊÆèV©Ec,ºÎ(KIF2ÄÃb§öiFë Ä-Ãˆú»­5f…óGò,åbÚş6°a)[;™ b€Xb„ëŒÓ¤Ú$Œ:Ä¨½ª\tÛ0º;¡a]FXà%£¬‡ªî íN3Ø`$¶ñ8˜“`
+<Œ|^üdÏ‚Ç`<	a	<ƒûšU°êàeÁ&h†6h‡=°Ş÷ ş
+'áœƒ‹p	şqb"vò ) ß'SÈ#ÄK*È\²€ÔgÈ*òk¢’y…´’äu²—¼E¿nr”|DN‘>r|I.“ÿPBMÔJ4ºèú }ˆ*´œÎ¡óéSô'´Š.½ù9ºŠ¾@ëèÚH_¥íô÷ôMú.í¦ÓÓôsúOÚOh‚Yû{€Il,›È¦²6“ùÙl![ÆgkX={…µ²vö{›d°ì‹°ìä”[øîâød>…ÿ—ñGùS|¿ÈëùF¾™oã»ù^şÿ3?Àßç¼‹âGùqş1?Éûx„ÿƒÉ/ò(¿ÂÿÅù57PƒÑaÈÂì <qSJ—à÷ááÌ@2ˆ‰
+8r3‰‘¢sj"eúÁÑb"z¦×ÏEQ`¦F<2i†~d¤îĞ53ÍÂ{³~šKM$ciµXj f¢EÊĞ|a_±ú#¼
+Éœ²hWÍ’‰ŞLšÌL+¿…·Ñ\¨I5šÉ0c+ÉF
+<4…zlA·›ÒdÌjÈ VbfTbÑÚ[Ï‚u4åÃT¬Û‘İ‚Z´(ZKèş©Ã„zu;Ö3e±8f´7šèºM;´á»@°®ÿ¿åàéØÁiŞ†g#–-½G«Ä}IF\{ğêå¢ôÿÑû„ÛW^WPS÷FkÔ‰Z&wñüÈgÖØÿÇp-B‘„Zæwq±ªÕÂï“~ÃÓİhqÓ’-)¨Å_ŠZî–ü˜vk‹şÜßœîRIDÒuÓ2BÓb¿7xWZFıo³¬©¨aíœz€L•ÜZeJKÊ¨s²îŞo÷§µtàŞW¥zØMK¶ä÷ú’Z"Â¶ÁN¦ê;2-íD—}Ó«âÓj<İİ‰ó1÷º±Ö][â‰Îÿ*‘è[{OB­96UE«´snòwoÕvi»§ö-Éîì!-•W~¦¿µZ^Ñš°B4ñ›pXLhc¬&g¯ü—ùúmãª ş}ïİÙ×öâ“Ìœ[ã\~4« Œs\¥©êKš&k%¶	Æ9©R]ë²A#%—4qä4	’³Ú@ÿÛ í
+‚ízİ:Ó2Z›Š„V[‘Z •–©ƒºš›ãİÙN³õ—€Iğ,E}¿>~ïûã¹°eá—ZÆWl
+í€ØhòšÚ‘Êî6e³À‰—9AõõÇ¢•¢"ˆQˆób0\k÷«Zİş…Èõ€óQ“¬{YA[|È´ÙÓmœ\|>ú)Se•	æ¶%”éöi°ÙZ"AàBrœÿQä#&›ıĞlZ®·6Vå,„qGµi¡·g—Ít©—	çéR-‹Gìêä–´‹úE­Îãğ8û"¢~Îoóù@^#Ûv.ZxXb‘ÍßÂn˜ñ‚ª jÑTŞ²¾õ˜–rópÛmK×|-µĞV½bY*±Úis~E×¥%–AFŸå›}ši9{ãÂ¢åÒõŒcíÀté¸+º¼†œ…7-rìÔb“‡İPçq•:!"jô*²ÏaVÏYĞ¹D‡­>D6js|0÷N&í×/æ–“½0H-Ò)½ˆZæ½›3ó‚ÀÁ§€cDÉÆ0¦…Ë[ºC•µ\½6QÌÚÀË”Íe{Õ¶à'«¾S°˜'WĞmë w¤5±u›nZ’Æğ¢e¦\r´ÚëkŠQ¯Ëñ½I½úbô¢Dµ<¶ÎçÕb‡Ï¯‚6—ËU³î©NY—W•¥ÜÜ¬°™R}ñĞÊÎ—ŠÎŞ¨OGb§{O¾~ôÆ»«mjrøÔ¢|AõIÍ73'ĞeH¨ŸƒÍHûD6gyr¸c³p¾"ÈsÑtmjiRôŒˆÎ*]WèÒ2O® ¿ŞğH±¯bë65ÌÉ-×ÚX*¨-ËÃDWŠ.·nYÊ/«{ÔÊhÛWÕU—éz[€ZŒhÜC-Õ%¦åÌ®”*{eÕyºoÀ²ØJÏ¹Üé#£#Õt$˜şcàÂÅ7K\DiãŸ7-¼¥´ùŞ3dF‚a›ÛÎ 3Ù™Ë „eyÔ¦nğÙKƒ¼pr=hn 1¦4"40âFKo6`TôÜøöâÜ4.SKs‹ÁX–‘Cç?,xMK	¯+İê:¹e6¥/ÀQÕ¿lÍK4ş(©v2- È¼$û24`­1›'î’Ó/OŒNº5j	şPŸŠ¸*]–Åˆ<"í¡İí‚†3Š² âO×&çAÁu–å	-ä¯±s{¯IÇJAPŸ€AiÂ0sĞ6Ô/†¡´É<™ÆËğøvi‘é¼$-‹dÍ‹i©Ş7µ°êÄMƒZ´Àü:¹íJL"A¯èSÃrÎ²Â%ÕÂ!kF-B9Ç&gáâ¼üêËÛ©%6ñ[–`Şb«Ü§ğ0ÆãÒ«]çz„"Ú($ù¡¬™x”gô:ÿú]t^7-ıÔÒkÀ]c´¾ÌÏm¤™–o¾0E×ÍƒV¼ô[3^ğĞ<·{ŸîõŒ›ó™ÎKDÕƒ_™= úå°ûÑ¸»;Ï	°bµpM˜·å-"µ¤-Kp*R|e‰U4x¨¡–Ş±+…y©Ò$¤™ó²2¿Æô})Ñ_—¬.ïS–#ÈY”VB_;ŞN¿>K«äÚü¼DÏ
+­´wéc-K¢µ‘Ï[ún6”p‰šåÜ´GŞM-AM¤í4ôEk|$—“ãbŒPË>+'cFæå¶Yjás–Ò¸H-å£“NÉ¨'xzÛÉñ†Jjéæ›ñÒPjÌØã»Íxá ?’9“‰t?Xk™kb¥8 M”e	7™ñÒ*@ˆæä‚¥/ƒÍÉ4İ›–³K,1¬p‘ÉîZÂ&Ô=ÍA¾ÃKó˜ŒPt§›ĞZI-b;Â‚lÕJ{VæËº÷¨íf[s¹ÔİşBùè/|«ËÆ<şgşüj46Wùø·ÎŸ;£99´éÚã%šj¦"ºtĞ¡¿B°g	O[İÓã›;2LëKXYÕ¶“§yL–@¢·¤_OÄ„|c1Gk%`ÂÓZiæd^Q#´çá–›CMÓµ¤®Wô]böY/½—ß8`ü>`ñxl.[ßcŒef…ú@·l,›Ø³ÆB ,«v: é¿¬wÔ‡Ê#ÉXYÑ?9oplƒb±ˆoh.õ­•<t³V"PÍA_4öíY&×Y¥~K<öHh³=Ñ¥p]½…úbd$ÚÃä,B¾¾`ÌyQ
+ì·,Ë~®õYÓr{/†ÀKš‡¥ïï14°šÜ‘z€d>¬fáÏ$iËª
+ÇÓG2ë.£Ğ76ô3)ÿJ§>t‚Õû¬¼iZƒ³µË´‹ÚıW–vå–{_êNËJƒÎ—¡Iw=¼ĞÇ!¦UV€sXá55¢.µ0w|¿aÿ°%¨İÍ‚RÚÆ¼¥è>×*Xšx×üÈİ”Zú HµôF`ÑbõüÿÎ°çşj^¤òg+wZt-”É½uÜçZË=vtw‚e­¤X–"Pù%–ÿåxà¾òîÑ•Z€Sÿ?–ÿp †Ë[øÑ‚i8<Ÿ¤İ|-|`+İ1>OĞÍL;tÂxºa "ğãğœ†_ÃoàÌÀxŞ¿Ãû°€–¡bäE£T‹Ğ—ĞWÑSè{¨¡Ãè8ú%ú-šF¯£·Ğ%tıİÄÛq1^×`×áFüyü(~wâoãïâ<„Çñ$Â/âWğk8ßÀÂ)|_Ç„%ËÉ
+"ñcxUO“GH-©#M¤ì íäi²Ÿ“(™"§Èkäw$IŞ$o‘wÈ_É»ä}’eXÆÁ¸˜*f³id¾È<Æ™½Ì÷™Af‚ù1ósæWŒÎ¼Á¼Í¤™¿1ï1·X-e%ö³ì&v+ÛÂngw°ß`C¬Æ°Ï³?c_dO°ÿ¢½Z€¢ºÎğÎ=÷îÙîİ…„Õ2³w—EÁFƒHZˆT66jÆ¤v&±’i3ñÕ´:5²ÀFw¢€:ÊDFÀG¢iµ3ubÒPÔhŒèL¦µ3f ­1™;QÆÇí‹ÏMÇœÿ{÷Çÿç?Ïï}õ°ú±: ~ªUÏ©_ªÕaõšF4UÓ4·–ª¥i>Í¯MĞ&i“µ\íImšö”V¢…µÙ(ÏŠ—•Û¨‰7˜@¥I+±'œ cbÕ¤ªXb…[D|•ª`¶áÄIÄìøCì¨ØqN%ÿ¡6Ì±c9ôã š¢#kt E8ˆ°e•¶8ÖíE=¡(˜Ã¥UÑÂA¬ÔJÅ¶ÒÃûô_x½Q@Da#5™º1•p|s‰Pà—ÿ&êf¢Ü¡8I¶p‹¾Š¢`ß‰Š"¾etâC+ÔNí$×‹P1Z"NIÄ"¤(gKp4¼ÚRXTY&ŸVQ7»éf±’Mq°™1F.u3şgÉCÙ#şÿäq Ÿ¢>=ıÎ\Üÿ~pIhÊÃF¢ßr2İ‰ç‹|_jÀš,ïšÕCßÆSáİ®oKÈ[ªî‹„Èg $¯©ÈèiÍpÅWé÷jpó.x#E É³Ç‰»….Í£*7«· ¹v¼ÎÕ'n3R['_Àíïç›Š|±.$µwî¹PÅ uB^áO"Áğ9÷õÕæ›+g¾û´7í³áşnó´~\;èA$1&‰‹‹¼±9HMeoĞƒÂƒ‘VÆ[l‰“’é_û*Í¥7€’ëË–_è¤£1ñ\¸¾	‘ğ®t“Ş²œxZÏç}‹Š_ÂÍêeeQŸŞEc­nw ¼5¦woër‰„ÜDâÔáˆÁÃu®Ş¤¨î‰UÊ~{¬^kF$‡Ç-–Wg—%âFi}ôy¾H*B¡y!D2ùŒD’ü—Ë9tcx:¢»#[u‡ÓhØXQŸ‘íl´¥¤”êåƒUÛê‹Éü?ø§vşòÕom)éÿó¶Òö«¡smRËöã†©ì””²İ…£Læ·Í_óLuöº¼ı.^¼4ÀJ–æÌñ1”ê‘ qWìk›ãó4şW"Iízö?ì€½{Ë¦Î±Ó‡ÚÇÕœÕéêU¶‚Ö†3í‘®ÏØù¸X¯0‚¨@²şÍ’ÙÕ»V6/Y™SÑ–SµË:¾6æÉY~x` Ö4]fÌ9èØ–nö]‹Y——¶¬¥xá”Lİ3à%3Cå¾ùfàÅas»ÙÚ´½³Üåiš]¸_ Yº¾Ìt‹³2»4_Ü!BŞ>S<Ãh­Äƒ]á‰¶GşÕıÆ‹^.F'/İ^Ùø[-PY1cŠ.‘d5smöF<:DLÂ²‹+/s"FçyÇ+G«s<]÷”r§©g-]éÌ$NEå¾N°Š˜H$«RÖ_Î˜¢Xdn³ü#î×kÎ–¾°Ë·‘øÜáq8:\÷ë¦K$±ØÁÊÆ]ñ›H\z!'=©—ú»›Å<™H gkÓÂë8:¾YWf¬Î•HbœgY3sÀ7Šdiåö6p	$_ÌX^–‘ÓÀÉ;}Sı†Ç<PÖÑ©×Z\n«˜±.İo5¢Æ©—#°!û¨´qW8¨8”ˆ‰ÁK!˜zqõ±`DgiˆÎ"ºX;µ5çjÂ¸v2S#e– ‚O'q¯(b<>2cÇÆæ~~ìuFMmŞä%iG&\­}ß4ó¯|©»Ûû,ÿxaŞâ}æšÂS‡ zÏÓScñ%Ùï¥¯›vœ/øhóâ#†e³·G¯£bÿÀ=Ö9x‹UÌ›À8»üĞ¯sãÉıbÆé¦¾l"83Öá/(€"D2¾O Iì±Í£»Ó=vÆ P±iÔ‰‡rMŠ|jdÉ†úİMXÂpb+¹‘¿4·ä™)¸Çò®"_<qî4K_÷L’çI$õeßIÕÈ‡sHüî´*4eíşAkzƒoxÜÚàS•ÇÙõpDL aÆáñ6î…ä~‰¸c!üÊSu‘ªÿİ%âAR÷°¼$A2|ÒarªIù0yU…0r«rxæaì?‡…È®^ƒ_ÃëĞ qxÖ!Çê‚]°ŞE†uA¿äXŸÂğ\#*ŞœİÄC¼d<™ˆ\+Ÿ„pãšI%sÈOI5y™,"¯‘¤¼A‘{m ›H;ÙJv’ß“?’÷H/9D>$'É_Éiò/òor|E®“eÔöÄM=Èé|4N¤“h.&™İZEkèbºŒ® 4F×Ğ´¹İvdw»é^ú'z¢'é):@ÏÒ!:¬Päw)JšPSr•ÉÍ*U)5ÊBäguJ\iVZ¥µ+]Êï”}J·rT9<í”2ˆLmH¹¤\A®Œ!_³2s27KfiÌËül<›À¾ÏgÙ,—å±|ö#dElÊ,PîâÊ·bS
+eâFä	VdOA~1©
+Şõ5¸Cˆ‚ùò^ex¯GÆaÅYÄÑ•üF¶0Â½D.å‚›Á;aÈ‘D=aK!˜›P°QF„†¡JÛ¢—˜¨ğıØGÛ¢7ùòÈ‘¼ÍB#~¥Š~
+¦™ÀFŠëŒ0@2É²àæ™è¿;Ö´(ØÙi_ª†ñå©êMA&«QMpZ1"Œ3dr *²L>E™†ëcĞ,Ö±	È«Ìë‚¹*o¡=±ñ<Ø0ıÊ‚âò,“şµå†¬De¥üm<¹iË“ŞÈ×V½;)òìÈN|á±m¹qÔBDÙğÑ¯s/¾ù--—¥ßAé·ğ…œ±ŒÆuã=‘Ş¹×1(µEÏŸëÒ“şÉ±áşKÿüUúÚOÎŸÿù…eí«fƒ¬>ˆ3Av?ºˆª7äR±Æˆ<#upœ8y‹†FÁØÒ¥|d7&¯Ş‰~İ™ÒoWÙÂL¤¶SwÌjA¦D~²8³©4ÚUğ5}˜ûÂ'ŠG[	ú­ÑÄ`İÂHĞñ÷ƒ'â¼~}úœúèò0/‹°à RÕö?òË8Šêã¿÷Şf÷¢kn‚l4ãáHEº”ôdI"Ô$HEûo	•aœ ¢Vxù\l¨¡&0-AE8Šƒıc;C÷rf2"iu¤å`‡jÄvz‘xÛßÛ½K.ÁN­¦ãøŞíîí¾÷{¿ßïóöí~7´ .ÇåÒEË­Ü^ÓY’wQ«ğ{(¾¼øHÔµ,81ºa­¨|õmg
+æÕŞ¹/·fTtŞmÈÂñ{;ßúaIeõƒË>ÜRğÑí+5ÌüS+Z&‚©=Ë7µ ]ƒq·MÍÙ_XÜ[630óÑ÷2ıoí©»šgæh¼«`ËTv–¢ßÉ:ß6ÿø¯§ ®õ™’yÁ£¼¶'gõ¶™U„ßïş¶å¾9L$wî[ú«¿½ğFuÉ‹…VdCÍŞCš:/|îÑŞa^¿sâXŒ<6ù‰5ÕEÁÆÙ”£m¿gO]?a0ñâÅ—ö½¼`VgI•ğêàÛâÕ}'Õ…×•l=ò¡ÁÉ“0ßª¢ÖÕ;rkvKÙª-e£ßĞ¾öTïÏ­ªÛÛY°äÈ†ÚÂŞvºµJ,÷ÄCœ7†v>Êµ[‹÷¶éAóÕFæ·ïøú=9»Şè–¡+ëØíÓİ|‡ºİ|}5Õ}FlmŸU²Õ<Ú­E»+[
+ªB­¡Óï~*”{ eúºué³ÕûöTá'Èõè·¦[Ñ`së¿¾u^äËîü¹’x]c¼wü¬Öm¹fc‘Ù”kŞûPÍ†úçD¾]ĞDa›÷¨7¿á»Í8BË7;ú6o3¬?œü‹3øÚƒg<ùâ‘wß[õné	”£³ãp¼¸³çöêWo~öìM;oYÜÖ¥eà«ĞÄüæ<2­rŸAä[k_(]yfÜ.w~õ!Sø­Àù(…*ùÄí%yÅE­Ozë73¹?N!áê#¨Ğ¤"hñd–°È¦İ0¼NMb'ûjb™UzBLÍ$Ê•ÒÔHã6Aú¥EÇ.ÔÜ+rÒoúzO“4+6¾ö„_Ûó»2«A´ÉuÄGü¦.–q24f$ÑúÄÌ	´²?zÖúOŸ¢xJ*ò €ZªŠa
+Ü„jj”¢*C=5ªá˜w¡ú,†%°VÀJÔSÃzØ?…­Ğ¿€g`/€ƒğ
+jªÃ®¢:§áÔT@ÂÈ•$›\ƒªj"êª"r#*«äVRNæjòTWÉˆEî%ËQ_­!õ¤…„IÙ‚
+kÙMºÉóä ù*¬ß“C$ú9Ô#ä(ù#ù3y›œ"çÈò¾Pj4ƒúi.½õU!½ôfúMjÒY´’Î£uô.ú}º˜.¡÷ÓÕôÚH[i;}’şuÖóô ıĞ^z”ş‰¾Mcôı;ı½Ä2ØUlj­kX ÕÖT6ÕÖlVÍjÙì{¬-gl[šëaö[‡Ê«…mbaö3T_ÛPu¢ëb»Ù3ì9ÖÍö£{‰½Œõr™’J]!ŸHIønÏ@àsjT<£ÔİÉÀ³1-„ê
+êÙy¶©¢MÔ+Ü«^‹ì¶d¸:B(FŠ›;ç=Ãİ‹*yG¡—ÒZ<O>¯?ú¥Â÷gWRBaÄ2¸0*·bìW`nTHI‹Q¦™L´{ùùh¦›W•TuGò âyÓ$7\	bì+’ŞE;’¡ÒHeèïš*x2I‘Äˆ“0oŸ!zÀ}ó£–ºwï€ìr˜à>Š6~>‰/_1°ªšø‡oN?ÔË_‘9o(`mjA…ÛœøW†EŒfq hHâ¾¯ä]„·‚íûR±àŸÁ6£X#høIãíÈbÃÿ—…õ?[ğOïŒ}8†…¦jÄN²hş"Y¬ƒbƒØ{şe=ìä'ê(æå—¼ÁHÜŸõIpxš>fâ2õX0.yx4õ>\†µô)ªÙv*§™IÛØpó‰d¾ÄÖÆZŠ$ÌŠ×Ñ…»{Å)Û•¼¸Ìr¤èrú·BF¤±ğ;§<
+¤³¨Š¯9ùk²Ûm’İl7Ï_ÿ8³“Ñ£úÚtz@$üÇñ;tñûqIáX@‰8	s¢µG4ëüN|½‡ŸxAèhÃ,
+¼3†Ã[ğš"Ğ,k†¿G°ˆy/×<iä“,”Óçğß1Òuæx ùRs‡œşı’)qÁ‚Ñ,ğæ-°Äc!KÈ¢%Åb *‚dU»jã——(…‹ï3e Áél3’Ñ0q[“eVS©a[áù†¤ş¢~uç$ú¸óºu@¶Af¡ßëÄ;Èúpx˜ã_3ÛñO‘%:-IKh<n>-äŒĞ,h£ÊÊ£(°È`ÃØ’Á%Ë²ê«šõQ,’Ï>	Í¨>B‹‘Ìç¡)HêİÍÅ>eZxU¾"A„èÕ’Ñ3n6/•i fÍuYØYÄR*º¥[F¤MV³9g½°pQ—šÎ",É‹Ïïp‘ÇÚ¼\şFLtZ‘–Pˆ§±¡'dÍ½²Å°ÈÆ›Ú –j¢ÉáÁgûlÃ6Êg#m,‹FsÙHšrk¹ÇbÜ¥‹—±è±t;nD„ÑÜ›ÛKT¿J83Şçòµ=‚Å"(•a±n©L%z„{,,õÈaªj”m‚×S,âú´æ,¥ ñ¥é,ªiİ0bë/¨¥ÊàG=§M·hY0Õp’u˜+mË|–é²@8’¾v‹èyÉ:\…>£—×ù 1g“ãO”NàªÌäy\Ocá#xƒYÌ÷5ôäÖØ>—ÅçCdÑ”bqÎ¡Aòª©s9X.œ-Ìã†z->S]:XJş·©-XÌ•!ªz,¢E¬)SR,¢øìs8Kú"n$Y°–µË¢ŠºêîÈ¥³yø›e½ašî\PKN¡ª«Ë:›ÈB¢†{óXe»HN¯x^`*A¼®JŒbÑ^mècJëÆJ£†f7†AÃyS%×’­ú he—ef…Ë‹‘EPÈI®¹,Ì`S0ÜR®Èi·R,úÓYœ!8é³ó€Z÷“,ôi“_¡qg À¿ÙÙì®œ•nÏvÕQ}ö­e×„bÚQØ
+8ÜÊq]—*Ô¥8´•mì>”øœ—ªÔHsºã¤‚‹şU(4.„ä5-úRº—st	(Nò&pÎÁéCğŠĞúL®7ıfwï"ÙIì¶:ÚÓİîììof¿ï´xt%€Q:Z|-¬¢®,øâl#şø>=0ü!aW*8K§Ì¨³{,ôŸ\9F>Qyojè·i´àƒı#óı³£WNMÌÜÈZW”…aàûßÈ‘5¹Ö°pÈÊBxu|HåÑßjge¡…ËöèŠ‘}÷*ç\ß†kÑ€,Zï.p)yşÖ¡òP©ÇÂU=*×-9¥}xë-²²¢{­mñWM÷Èm10M½/{x³E´à§éRhd#*» …Ïı/AÙ*Êbòä2Zğñ=‘ÅÂxEhaŸ…	Í>~À#C›Ìïë_Ñ¿qšÙášcƒöÈ|Šæ1¶-Rnp{Y ……7`—pW£·åGM\O=ºçáCú>ÎMi@Ÿ¼¡'“³væ=›‡M´°á‡xšx¢G é*óÒX-pµm±¬iYŸ–kú´İRÚ)ÀpÚa‘Åö¬J"²˜hqDÓ¿)/@&CÌ‘…?Y…¶‘²˜aÊ‚ğÁòsAÊæm´HI{qtö Åî’²xa¹*|¶˜hœƒ c±Â÷®ØÇö(OYì7F.IRw}åq¿èÇ¹&NéÂœì2ÿ)oµ\ÃÕ$z¦˜î…?•R-°æ‹ÇèsöUÛËO’¯8Ûá!´pÁw<hábÊSz…P=ªua¹s}‰…í(‹3±Q>ZŒé¸.hæ,ë±è/ÂYİØ1?ªB¸ïÅ¹oÚ^,Ó„İ6ß¶hgÃaGYĞ&Z@Û‚íç?J,D¿Ál´˜O‘:÷ığúõjlNÄåneù¦DOåv¼ŞQëÂĞ
+V1%Uêä‹§À°jY¸³Ì:Ø‘¬ÁõU¬/Ü"@ZOƒêQYèîÜ§c8Éº¨M,DÛÂx¦êä‚GjÊ-œ‘ƒ†=R]QQÕZ.ÇA´HâcW#÷Jü*ª3e¡ODÛ‚.²Qÿœ}lXY-´HÿL¾Ü€Ë®[ıP¶$r¨VÊÉ†² í#%e8&UöÄ_„ö6˜PÛ	yõxWYHÙÒÑbZ¨ºÓ/J™Ö±`3bêşr«ZQIâE#±ˆâ…7—‰~ºp™bì$lHˆØÂ¯óh]È6øè>”“<ÂX¼Š=ï‰cg@@YhQ6 °Î×ÅVeQgefŒo°˜˜5ÿÒˆ×EUFŸX3š¡òˆ 3‰´&¨¨íäTìë-ğ"ì™¡2+)\ÄÙİ]—_ÜLÁrJ,öŠ2Ó±°±«" ÁD|8h0ßçQ¼Àİ£,âú‚±ªğ*ı¶ûpœS-²P
+à]Æòş¤}l»²Èon‘‹bç„3çU?¼Õœ~[¶ãÅŞ£øL?ò€²èÆ‡V"j»òobNıF‹í(^lÙÓ.~3eu-Ün¼ğ_ÛkaNÅ)sb‹/Ê°×N {]Ô{d¦cá“x—â¢ÅX	–Tİ©,x%Óv3‰…®,9ÌhjöZŒò2£KöHéAâºşÄ+cõb=*§¥LQY^mä.oç‘#Ç£<²Û*³IC#2Œã§×ë0_ğ–±ÖºŠYdT¿àÅyD¸`Uk)‹-háy=y¤pÔ.-çqÊÜ;[8oUş€ŞLÃáš6å§t´TÅ ^›ó‚²ÀıZX<¨‹	e×à¥£EÆ*d ÀÛ±øÇ=©E‹'døwX±lOüzåş™‘ÅÇGjyËš¸Ö2qÔÂ&aÖ|º]_N@T_„S½SkM·Ââ…Ù«ce¬ÁËX]lC{¬/DT_ô!‹	ªï±èÖirKwœ`ğb‹m*v–›Ö]´à¹ËÀ+Š0`L\úxVññ«³ªîÄ{y6¿ Ş€³FlaûÁµ„kÇ{³ ÛD‹ÔêMø8ûd^<ÛÌ¿Ã—Ç-vèùşôMRd×W”Y0™Ë¼œ›š.¯LÅ5¸Ú¬ ÔÀïÔ*Xªºk½¨á¦J­Ï_ÿšùµÇ¢’9H„ª;ETwö«Ù\Ğ¾²ĞU¯®èÖ[`F]¦Tù^e‘-JÊB6”Å¬ôóív@a€ÖäZH³òìs¦
+VP“aNÖV1ˆ·R•F.%iqM®Ê×rİ¬4¦RÅ0×ÌÁ½…ø»\"—d¯Ë_«,¤ÌÕ“;`VMÿàõ ²:iHí8œ­†¹hoÖTY“ˆœÚ}tkp¬/*_?Rïµp0Ü´º-Mh:-œ©TÏ~DÊ¦Y¡6R‹î~D‡‚ºLm#‹-ÎG¢$>ˆ,p:(t¾§Ö7Ÿ£%ó§âEü‘¼mˆÁQõk$Ô½ +‘çÛÿŞ{é›ß!9å0ÀOü’\ëùŠ›ôĞ9/¯,ú€yFÚº¡áFâ¾,œäØµ ê+/s'ï-`£Å&mS‹¤S†Ãn.´BÌ›B9"‹™uCsÄ:W€4wmÑƒ«Öca‰»YéZõöõ9-°”Æ¿²µîË©¬€-ş.¥,\·r"A×­oó|ÖFÃäC×ÂH‰»X¤Dê[hÿ·µ·¯OµØw¯£ô’£³;¶Ğ”ÅÂ‹M×Ôgoí¸ˆ‹P(SİıNñ“ß€Ù¾¨íw×&:Ÿ2÷:J/9~ŠÅ°õXÜO÷ß…›÷rd¡+‹ËÿM‹ÿæ&GÇõ»Áÿ§E»9nü€²ÿNŠ¡o'n”Áq8ßƒÀixò8¦°–}~¿ƒ—áğg¨Á»pŞ‡ğ7ø;!¤Ÿ|d	'‘qò}rüâŸ“Eòy•¼NVÈä–fjƒÚ°öUí°ömí»ÚíÜ½.h¿Ò~¯½¤½ªU´·´kÚûÚšö1ÕiŠÑ½ô+ô:FŸ OÒ3ô<½HËô_´WPT×>÷çı€ÀîÂ¢(†¼Ö Y…ÆmË‚‹4º"˜]cëB”Ä™t¢E¢Æ%
+kµü¨Š©5ÆÓcèÚ´ÕmüµjÌ¿iãXâXÑàöÜÇ¢–©ÆÓ={î»÷œ{¿ï{ß{÷¼¶š­g›Ø‡¬}ÊÎ±Ëìß¬ƒyø÷ }x"OæOğt>œá“ø|&÷òå¼…oâ;ù~~„Ÿá_ñËü–)õ–4É&=%—ÆH%Ò©RZ(5I¿•6II‡¥³ÒU™Ëf9IN—³e§<Y~Q®ÊËåõr›¼[>.ÿC>'_W˜¥P~¬ä)“•—”YÊe‘²JyGù@ÙiíårXùL9­ü]ù§rAéT™ªªFÕ¤öU5üÂKQ©ƒÕL5K®æ¡ìñë¶àéü ?ü€U‰	"H$3“Ú‹¨D¥¢¥*Q~¬ U”]‚»ª@¤Ò‹D‚‰Áj$Ñ$
+U"io¬G“İj6ìCŒºª<û*zR„NÈ¥cc©{„ ¢Á„ıL4g(1œåƒDxÿ1P•‘AÂç ‚F³h]ûIqÈJ—†ëóÜİó¢qúÁÈÍh7ó8Œ*†˜õˆMİBQô¶ğõ¦fˆ”"I4ò ‰ÃH…FàŠãAöºH£„‚>Ü¼Œ¸jaJAŸ"z O?¨£ÄN×‹'9aÁ[Ák vîM\/ñ~Èxø„zß ’vHLÎÓşo,Ô‹Å+gÚ!é±}ßÍb¸'¸ı,zº­é,›<íôgëöf}'ªº3Aº¿û“¢ÿû«ö»§uZ”NZ¥³\·vİŞÁ;‹WTÕƒmÅ¢Ï{aéÓmc›:¯¯jøÕ°­s¶ŞŒúö7§v£br^ı‹…T-£¿xCÏËRaL®é,‹×â&5œ˜ó·láş„6T^œŸî9hMôìüñÙ‚••±~bbYvØ´œBÇ–”†|ãñ¥5e­?÷µØG¯Š÷ÆeÛÚûgLˆU¥˜vàùù)Ş×ûÔª0¾h`ó¹/­¼8ç„yJÍÌ€dÍ™Ø¸ ölºçèÁ²eì+r%¤Wo¬,¿j«v}‘aÙè”–Â‚÷Õt­c$Ì(}»lO[Ş¨¬ãçËMUÇtì¿Y‡o¶±—bŸ¼4{Ò™ò+ÜSœÕÉ‰ßŸ9^›ÿì•Ö¶#ÓK'/Kôìy¯%gã_=PP;×óöú§3#×©çSê~XPS_İ`Ù±,m}¾(5g;_–WşÎ„äcjÚø`°½^•œöÄüàïv©´0ì—/Ş@–ú…·r6næùùU^gÔ…¶ö°tÏÉ}"–˜3/ı5
+óK“s®’è"óµ1ÏQg.¨I®öÕÖnC–ÆÒ¼ÔÍ-æV%–L8üuE0¸ûÖ){îŒÅüt÷3“KuJ•¥š;ädŒå›ÆF²è+ÖPÜ44Û¸¯³nEßuëÖ?›Vw¬¾x²éƒ9Şÿ\Çƒ¯ÁÓª:ëá„¦[ª—Ï\Fšg«-Æz•g_º^EŸŞñÍòdóWk/â¾œìH˜Íú¾X¢+O%á¾àŠéw2µÿ÷¯aşmBTÍ«vå\õEX`÷0Ü—Û€9ôœ ¨Sú,šY©vkò´½b$ñjzwcO–üx	Fßaa¦%p'Å»Ã¢3ÎÅ–»3ü§Îõ[4í¦úwŸ÷à¨—´—?zx¿)zá»(â!CM+>µ6ƒñ}ü…ŸBŒ€|˜qM„çày\*¼ å˜{Í‚Wa>TC,Áìk%¬†· ~m˜ƒm‡]°ÁQÌÄNÁY8ÿ‚«Ğ7	*Nk<%bI_’@‰•¤’2„#YÄAòÈ3d™@&’b2•”‘rò2™E*Ék˜·Õ¤,ş¤‘üš¬ Íd5Y‹™àâÇlğd;ÙCcäsr’|‰™ár™\#ä[J¨„§^$5ÓXúæŠ)4fĞ¡4‹:h>‹Y£›Ó©tÙc‡d-]B—ÒUtGn ~ ÛèNÌ&Ñ#ôz‚~IÏÓ‹ô
+ı†^£ôí¤AFÃ,3œEb¦ÍbXÖÅ³fa‰ÌÊcÙã(ƒ(ë™#t[èeTi˜‚QI"O¢œ2´ˆ£cz)ÑÂB}P¹>Nî&j
+‘u›J1}ÔQÅ(Ñƒ‡zÈ8^Õû	9„ËC-vÛr·ğ†EuËÅxßø&ÅH¨ÀeJ—è¹¬+q#/ë®‰ØÃ¸ˆ°+……é£ºÆÊÿ%]+ØW¥—BV/éÊQºVIÖë!aºr®ï	•dIŒÂBì(…q|~¥`Ğ®È°M3ú©5Ïã·si»Ü–4[¦fT4?8ı‘•Z tºx¼äöKııÌªú¹5éô½œ§Ól£œ.-@”\G6·ÄÆñ.¬ŠšÑëH€b Ùéz%î 	ÖÀñÈ|Í°ÉÅèVmš–;İá'%Ø³¡!Õ‚µp›6©F¸’ÜšOóåy|ÚmÚNL¿¢£Ôç~§8Ş5ËB—ÅowÇß®–ºİC§—Àá:Ïå!„r:±S„m”ægœ®q.¿×ï·;Üñ‹–ëßætù·9â-n7öŠ¼=S¼Î›šsÎ92+†.\{¼Ü>_W+Éâ÷ú|ñ>Œ#ÔÀ¶=ö! :"³æˆ×©»¼I–xaH²$Ypn±ÈF±ö¹8S‹;M=Rsg3nµŞü\­êÊïú}Ì÷A™^»Ç,^h+|Á!xCn…*9J°]ŒZÂ=0ı.Ô:š¼‚·Ø0Ô5¨?	Õ3PG-DÍD-@M3aj%.qe‹ab
+E®¯Ù1x“¬„5âÊ2 ’½ïb¿IÒf˜!xCã\¼–³«0íùòräõ@)[¡mG¸'xñ. ıÑÿP_îÁQUwÿ{î½»d!dCBÌ‹eBHS¬1< aĞ0`iq$¦Ø‚¤3 òA*Õ)(¥–v,EŠ–ZM,B­A¨0¶¶ô¥IÕ–RÅ©»ıï^¨eÊítìô9Ÿû»¿óşÇı»SŠñ¯|Í”CWÁîLYêÕUÏ÷I•ëë”ìŸ-ßA=e¨ïaFk¦Ó(8GãİÎlnŸ”ˆı†™è•bç,ì±WÊ!G¾\_.ŞG¥Ğ)’¥xÏF%vâ3’Š2agd»ÙR…´Lw®X¸ûT¡÷ë©b¡QÄB´‘jÃæÊv¤%›1â[ô9	C€Øˆ<Qİ,×êæøq{{ü<ÒG@Ÿæ4ÆÏ£UfÔ‡ÒŒz·¸®4 †!6a|/ÚboGù4ô¯ÀDc3îË#ÚÙÛL2ÑÈ°O£3I¦zi{w£üF÷MUù˜aìånU…:Uõb“‰ÈES±àHKÄDŒ=Õ9ïFcÑ—zä¼½X`¢¯S×]ê ìrCâM¹öâÛîÆ\Ÿ´†ú%¾Ê+‡6Uâ1ÌõB}!Á;Ê8UÚ`Ÿ›`{³vBK£Óß¿Å9KVÅ/ŞnI"GšÍa+ÜWo”HÓĞåÈ‚¡™¿†ç9ı«ÇâöRsÄã­}+Å•qkµr$&ZÙ¤–FĞ¢¬H1”8#/=äßÈÉóäd7ù>ÙE¾G#ß%ß!ÿB%ÿL!ÿÄ±ş‘òÛğ×>/ŞæËÈZŞ¤ü²“ì ß _'Oş–üyšüùKò5òäÏÉWáCæ¢µW%_¯P÷
+d[~Fù„G£9Nùe²|	¦–ŸR~‘ü	y”<Â¾¿@ù0ùc²||–üùùCòü@jĞ¯C‰¯ø	´o4Z–§$)OK~­FÊSğ{]èLŠqi¡FË÷¥< ÷ˆ®ŒË“²Şµƒ÷\hŸd¾ılá{ìë>xĞ‡¾ºïÊr¾ŒÎ|™–ğj0)45|[¦AŞË2ß"'¿É:÷À—×òÊ»©Œ­?JÍ.¯¾]2_¦>£Ñòu–k‘JpæDËv–ŞÆÖ¾Fùòa³å«r¸•š‡È¯°†-L}ÜÌ671õ¬dÛƒÉ³‘©ÈõœÓuÌs?yŸ1Œ¿ƒ¾İKÍZr·vÖà®¢)ki†¥Íxš™£™óvÇÓûFJSš¤)«q‡Ù IÑ ±ğ*ù²ŒÎ¤hĞXÄhÌn5%W’wãşcrİøb;+˜k95_"¿HŞÅQ/«Lìë¹S>’‰/–4-Ke	g)S–ÈbÎşÎşöm1n^ƒ¡[ÌÙ_Ì¾–ÛY¦¼•¼…ü9Ÿ¼‰œGÎ%oÄ½Îìõùuûy=å9äuälò³äµä,ÎÔLÊ3Èò3ät²šœFFã¿CO'³ş*j&qGO¤<¬$+8šñ”Ç‘cÉ1ährYÒkÎÈeäHrYJ‡NãNkäòSäPò“‹)‚,"‡H!Úpğ6_…\¡ƒ)ƒ¤/˜/Ù`V¼–0õa#-!æ@M.å2»2±²ÈL¶}seıÉt)°NšÑ¢ƒ·Ñõ“TXÓÁÛ´˜ê¥¥r7Y£LŒ4eûrw%SÓ‡ìMÈ$²é'}]œ®Zøş£D“÷–Åšû¿ £_ íjÔ¾	q'â>ÄVDŸ(U½f£j(şXùxšùo>¹—¼ãs…ÕìøI°³¹2ÿöôAï0€9ë
+ =	ú ‚öî¼üó\…àÃÚÊDJ–d¥0KÙs$g@ ³•y€@=!	¡¬Ş0ræ!°ªó‘s‚ƒ•_ Íû¦r	nØQì,ã3Æº	`wš³0Š½z™ıùÎ(‘eœ…æ4Û‰“1€ÿÌ.èŸÃ?(€±›Ñ·!şÕÏCsá¢¿eIml«]ëìæÍ¨èeÃÙ÷;–-%í§Û‡KÊ©öSíÃúÃÁ‚p0\kKOƒÎîéŒmõ%Ÿ?w§[”ğÇæ¨»·UdvQ…ßÚ ë±Œí”S‡Q¾çÌ0„íŞ=Õú€jYÏü*ìkĞ¸§JYÅ ×ö9ÆMsû^¶Ë±$Ÿc‰íª	z¢?š”ÒÕÕQšQÎšzÎSËËM¦
+Êœt§° q7Çæµæ\x|¨zì¯¯[{öÖÅ¶Åêö6˜v`M'æDaçšŠ’Pÿôä>ö@í÷wäËÚAåd&ißÚ,05³WNŸlŸäèÌœôlŸÊœ‚vwu¤t–vwËÑ’1g3J»Ï–f ıd•LëŸ‘ŒS‘àÈÁÅ*ÏıgMa$ìÄVÔL_yaËò³×·m¸®fÅ…Í+§×¬p;!'Z×³lÑd]T¤§Õé[ë§L©ïyä¶©æ{ò"½¾.ê$l«ÆÄëF¶…YE[µvJ×Xäğáa*˜´ÆŞëF>xÉ¡m7Æü*Ã-1§\E’Õ%ï¡„ºÙ+ÑÑ1LåG¨Œuëb~¡ÉRQ»ÊjÂ¹7¸¢Ÿ
+}I¶¯-ùù`›–t”¥Áftôt¤´Òôı0¾¥öˆÒ«ËÒ“U~Ş ü<74Ûôy*oTyóí×?8ybì×sÇmRÑãÊŒ®nYP™ğâóşGaÔ¥pÇ¿NüŸ„·>”\!\}yà™W{éTìsé~eCîãÉ.¤,¤Šİš,œY	ÙÂyXéÉæŸ[ãÉ6äÛ<Ù…Ü­©š1qZñ¬åõ/ºò·¸.3àtLƒË0n^½,Äñ¶nĞ-p¹–AºÜ•óı')åQx–¶wËL‡ñ½åOñÇ<ïo:8¿ï˜÷UĞÏŒ»İ·Ú¼”¼=6¶÷Âv«ÛBky·×¿0 z´Y
+endstream
+endobj
+43 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+44 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+45 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 653
+/Descent -250
+/Flags 98
+/FontBBox [-169 -217 1010 883]
+/FontName /Times-Italic
+/ItalicAngle -15
+/StemV 76
+/XHeight 441
+/StemH 76
+>>
+endobj
+46 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+47 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 701
+/CapHeight 0
+/Descent -298
+/Flags 32
+/FontBBox [-167 -299 1094 827]
+/FontName /HOFPEI+Symbol
+/ItalicAngle 0
+/StemV 0
+/FontFile2 48 0 R
+>>
+endobj
+48 0 obj
+<<
+/Filter /FlateDecode
+/Length 18136
+/Length1 37364
+>>
+stream
+H‰äW}tÕ¿ovgvfwv³r<
+L8¥µR¨b
+„¢%ĞH!õ ã±œfwg³#³»Ãì,lh‘H´|…$¥)ˆ–nıH)¦”R¤
+1€´F[ĞRŠ@1Áô¾ÙÙÍ=ÚóŞ™÷»¿ûî{ïŞ;ofŞ €[°±ƒ÷áGî¹ïô¢¢ d(jçúÃ’¯çÖŒ@]©‘Y\eGùG ÌmAY2€[6b0	Ô\kZŒ|@EuP+ïÿú[ÛB{(W+‚¾Ìÿ  Ú‹s<’¥À‘U;/¬İ…ãÇ…P!¶1ë– =Œ…ÄšgŞdÏÄ9‡>ÄQ9`©ŠıªõK“GLŞ°×'µa)¡ñïğ‡q¾ìÏ‹HaY›^¨­Ç~›`£şÖ&h¿¦ËÚm/MhÇùğ^Mjme¸öÊ.´ÿØìu¤X°3»˜•8¢:…äÜ=U*>* sÏİZ˜âZ…”»ûØ†kè·‘	 šdÉÃë†‰°ŒY“`6´@9Md¬"£aöN„-Ğğ£a®-‰6½Ğ; ™‘a3q”¢UÃ0Ã -d=´0fi„LY›à1Èµß…–WàQÛ6C>ó"”Ùgv Ä˜ N¼ƒ2f
+3C` Ş~Æ³Saì‚­´…™32("İ8{N@'ŒeÆƒV3>ôt7i'ÛÉQrŠ)#d/é%‡Ùifb”·Ã¶¶3wÀ|À½ wÀ$›İêŸ†<îFÿé$ëØƒd#Æ?£¿ c`¬Eı´Û
+clõ0Ú†ÃY(Æz·­5ùlÊ{a”°íği€8·s…}¶í¤	òmõl9`rÜ0ˆ|Èƒ	öáÌ]\,ƒ³ìVææ(,„*æ*Znƒ÷ÙÕLó1ˆm`ªˆ/•˜Á–À*v5ÜŠ™8ïH.{JÈNf4xmIòr:7ìëÌFä¦B€=O.nîî+¤‰íÆ\EZ¸±ğ éåòÉnnçÁU˜Çİ?|zI,…{aäû„AÆ™Y¼æREn6îwŞà©û¢*ôĞâz/“€ßSîf°ÙH•Üg390¬7NÑ@ÏÉÌC™œˆ cñr?4ĞsT39qLy@ğ9‰İ™ÉÉ`€ïmÆ#Hı@Ï‰™œx®¹÷ÉÌ“ÔÚù}ëó›b}bO_gå°OAùXÖ×;Çl'WoJóÈñHJšì…ç_¥‰uå÷–YŞF<%~Õ²ÒÓÃ	YŸ½Bfµ´›Ôfpez/ğÎà“‹Ï1¾Ïğ‡_@üâ;¿ ¸{q/gÊµÒOnaÜ÷ƒÉTz‘/X€¤Ïô°[ÉE¢F@>iáR«,|ÊÂ§-ü±…Ë,\ná
+WZ¸ÊÂjW[Xcák-\ká3®³°ÎÂŸX¸ŞÂŸZXoáÏ,Ü`áÏ-l°ğY7Zøœ…›ìÆõèóü,-¦¨ÑÈ˜¸°‰ò/UÅäùqIİÌuÉo(ÑÈ/y%T"ŠQ‘ä‚jTW"¿²ûÕ¸ïEG@‘ÂøÇô‹¿=ºñ2Ó¤€üŠ ézt¡/j„S¢*_;L1®mqš‚®”‡Œß¤úÑ…‘­\@.×eùUASã1êM¬‰‹É~œş·"vH†¬›~mãÃqÕP4µâw"ıİ‰êÔGIİîÒĞERJ0ø{ÎWUÙØÁ”J@şq›Ãwº”’*Güòk.IÃ9fÏ.^VUû£Ëtk¬rb·h’Æ½HNìñø‘*R9zcÄõH3‹3i¡~:fkjşÄ—XÒ^×BY‘õ˜¡K±Ø>_ÑıªœöıÏÎ§Áîçå°fTÄdã€¨D0N›ÆÔÊÆ#¯{h˜¨ÓF6Ú<ºTåDš0¶XÜ‡â!1mJÙa1mHÙ——#Æ'ÍEJş+EÊUù¯|¹.T¼éÖår%f:¡+Áv(Í{eò·<M@Kú<“¿íÀq¿ñƒNà—Ô£@ÔKFè˜S–S®önZ–"¿	–ÕÿJmÀ§ÒÍr<Ãè~9áL³¸ö;-›¼Ÿ1¤§Ã¡FÉ‘r¹S0c¡ƒOŠ™(¤Hì”»?¤¸ûc@ú¡‹‡ÑaÌôiº…äÁĞÎô9ÑÕO|ÆY·ŸŒy²‘2<—MåÄGÙÔgœwQ*§Lÿ!fHX	\èïòÿt˜DN\dqOªòÇN3ÓëK<İx‹ÔËÎ´dhW2²œøWFöWEÓWs¤¡}’ÅäDwóÿöX®Z¶=×q9ñéuÜgô¦Ü·¬¯¹ûFóYV§Ïès|#õ¦I¿Á…ÙÀniÈ•ë{n¬©‘v`K]!øVw©¨;8¶”-¥Ìn^vå›ª]G}+­/ñ­®g£«Fhö‹ã„¤«†-uF]ç[®WXì:ÎŸÂ~—ÓÁ‰ÅÎq‡°Ÿ-u¿vËq¶"ç`s¦.ÇÏæê„$[$$©F(àg›«`+$œPà
+9{àÕåØbû¦cê?7Âÿ¥ºº„ó¶+|+ÓH³ ZÅÛ˜Ó&$éÅùV®úá
+áºsRqó­^’^p.wröˆ;rÚÄb±Ø=Š¶®Pv¥\Ü,nö|Û=ŠfÔ’823¿£‹-¢ıb+Äè¯¸–YÅÍl‘İçì¡õæşÔ}¬5aƒÇkxªÈaßÆï¾u%ğÅKnÇQæİ¤á
+ûùÜ)óÒÀÒah} ãPaëÎå½zÎÅÿÃE g§‚U…Ù™e¨å£­2ãã§©t)ËhI3m:,5`í^ÄÜ“û$qò¾‘Óª‹Å;/7?øÄå{-Ù“ÎıºĞArÏÏ=Ûİ›¿cxK÷™ç.Ù³çãf1÷İ#}Ğ‰C*bèœƒiÓaN_ Ë»Á6¸ÙNff	ğ‡Om¡å#ñîˆ—6 ÚÂï>yê\^¡åã1`Ş‹ÿ¡¾l`›8Ï8ş¼¶/ÎŸœ”‘³sƒ +
+VZeäâ8Áa´dTÚu"	Ÿ[×6AKñ%jhP>%Ô@Ê&u¨Œ®U5T:9%À€¶´LD“®TE£íÖd˜xÏm !¡½¯îÃ÷¼÷<¿ÿó~ÜëÂ—*”îj±8èqçÕ—‰.²{›ä'ØÆ2ãÙÖ#ßÿ\÷Å‚Ëİ‚W¨ğ—äÖÙGÆ.îİ­M‘fÿv4¸Ñ—¤©£SsÀp/ÃÈï´ ñP/å ¾Ğ³ìHdd»6d
+ÆHå×ñYMô™‡ŒØîçÈøójÅ`t 2*~âÁİ©£TøHÍëÔiPñ†rHşñrE{‹ß¯(”&¤ãNƒÑ®É#×cç°AìV·«÷3¤d|Agl1Òã[FÚ[/w¤Ì p¹MùbgŠ*Àd÷|¶#s±€Œ+ŠÛ…Œ’µ-g}^ÍŠì2ò¬§Õ»TMå	V×…ş´\*ß¡V´¿Z‘7aŞlnÏPCÁFÅ…ŒŸT¼8ùW¡nûäC×Fµ½¿~ÁS¬@P‘±Æ}@-¦!—P€I`:£¿|—çÌÑ<O¡Zôá¹Ø``ÆZÁ®ìP¶É³Uèê8T“]Ùª4·Œ	F‡Ød]wfœu”€ŒâÊ²ş™ËJ r|÷ÌÚĞ—slK8ônsEŞÄOsk¾Ú°>âÓ³›>™3á·KŸœe—.–Ç®Ìİœkw+µ
+5ßŞ»ºfeûiÕ ŒÈ|o¿”‹èŒ_ˆŸ*K&»¼]ª,;ì ©2òmò<:íDÀ<n»·ÊÍ{ÑèĞKÅì’&+ıÑ
+32:BvI½ÿp©ÜWô·çIşMj¨e+æñ‰ ç²Ò4ŸŞ×v©¹ÌQîyt‚Õ.t–»ª$d,Vê<ËúUÑQ-×\è¿şRÈß[ ±Äxœnë¯~èL]­*K¢ƒ@­,ÛÇe™Îîöµx2ãmƒÇ?°û.ÈÍndTŒ¾zghslFv¼¨Ù!áT
+ÕçƒyÎÅnÅç/XŒr¨¥©"/Ï) #ÒazÆ×J›gyÊ'9†kÀİ;@e‚Ü?Æ¯^Å…8!cØç+Ì½ÚHâƒÌE¿\29‹A=°ûdocš{,D1¿ù©o«¢Q#}‰<ºD«“–Í=²í\0Â<‚¸âœÙdç»šô9#!ã€Z`¬/s ãD»İäM1¾I=,ªÂŞÜÁo¯¥òHàõCE$Æõ¾®«ïtLm=:Ö»Uƒ±VÖ¬cAFÍjÏ5òxb³§ep}<.LÍ™Ê “n:¹YÔE‹ZçñGUP–çåyÉÿ·,j<kO¾»š+åõb—>îz~ÂFÏüò=—.ıÉ¡¯;ÇmÔêsçwÉşš’ãQŸöæÇ¤’~¡È`ÏùSÓZ/Â²£ÇcÒx%‹Á*uãñe}íAgœs>Á˜:_\ŒU_FŸ^c©Ây='èÄ{FO­lk8Úß³kåÉ¢“_ÇÏuÅºŠ¢ v>Ücö,
+EşŞYxüÒk®_÷^^]Ó‡kO¤(8!ÔÄ¼öødP`š¤2Bmç´ª³¶©ró:Zj#:£(„yM¹-Éµ·Z,ëÜëÎËlÑär/}É®ßÜ\HbEÔW;© (§ø@J.thÓ”@*nzÛ…C U´ä¥&2,Œî2§UŞíAF!å@N5‡¡››KÚ0FFE1ÿ:£"—'É#‹ÜS¤mı@â·#ï¶T[UÎÉË¤”!ü]`ÃJ†~²@Ä©*É×§Ë5ı	mˆQz;Ù8ÿ¶awBıº´°ÀGÛWŞÚV°Ã(Ìñx˜“a*<Œ|^üdÏ‚Ç`<	a	<ƒûšU°jáeÁfh‚Vhƒ½°Ş÷ ş
+§à,œ‡KpşƒÄBä’K~H¦’Gˆ—”“¹d©&ÏUä%¢‘y…´äu²¼E’¿.rŒ|DN“^r|I®ÿPB-ÔF4›ºéXú }ˆª´ŒÎ¡óéSôg´’.½õ9ºŠ¾@kéFÚ@_¥mô÷ôMú.í¢Ó3ôsúOÚGûiœ™Ùö=ö “Ù86‰Mc…l&ó³'ØB¶Œ=ÏÖ°:ö
+kamìö6;Ä>`'ÙiaÙe6À)ùHîæù>•ÿ˜—òGùS|¿Èëø&¾…oç{ø>şÿ3?Èßç¼“æÇø	ş1?Å{y„ÿƒÉ/ñ(ÿ†ÿ‹ğk|ĞDMfSšiV'áñ›Jê	~î ÎL$X¨€#7˜):§"Pf-bTzıÌPVjÆ#¦GZòıQ+±Òxo5A·âSIÇXz+>5+Ñ#¥é¾°¯ÍØı^…DMZô«nIGoİV¦?¿…·Ñ\¨ÿ’ê44aÅ(6’xè
+Ø‚a·¤È˜Í”FlÄÊDT"ê¹Ãì‰ØFW>ì@Å†ÙEÔ¢GÑ3aø§zê5ìØÎ<T9ÆâXÑf"Ül5£7j66ıLĞ†ïÁ\ÿÿ–‰§Ëà —u;Íølé=Z%îK1ã²ØW/—ä `ü½ïE¸}“ám-yo¶E]¨eJ'Ï‰|f‹ıßiq×"äË¨e~'—*[D~Ÿ´ğ~İÏ0-B¾ŠZü%¨¥şŞhÉé‡é·¶©ÏıÍå.µx$ÕfÑ0-#u-ğ{ƒw¥eôÿ6ûÀ–ŒÖÏÉ®‘[«LjINÖÕóİşÃá”–vÜûjÔ«kÉı^_BKDØ>ĞÁ4cGÆ£%=áÜè²o{4üµ„¢GK®®ø…˜g]¿Tc‰®-,“óU<Ş¶õÄ‹ŠâÚ#Èa°kF(Z©Ÿ³?p÷Q}—Æ±{jnĞ’ØáÎÒRÑğÍ/Œ·Vkÿe¾şcÛ¸ê €ß{gûÚ^s’™skœËf”q«4UC}IÓ$@`­Ä~ ÁtNª”A×ºlĞEÉ%Mœ9MB‡äĞBÔ?¬]A°ıAÏ±[gZFbS‘Ğj+R´Ò2µĞTss¼w¶Ólı1“àYŠûİ½ûø½ïû~ßòEfÌ›‡CÌÀÖX?ö¡Ì7¶,ÂrËøª ]¥0€-–º¦ud†²{˜lxé2/*ñ¾şx¬RREÉ)‰	A
+EjM¯;°}r#à¼EÒek,Ë"êK™aU1=–ÁÉ¥ç£ŸrUVšàîXÂİ~¶:âCË$ÜHI?Œ~ÈÂ…"Rs š™åêxkcUÎrAwV3Ş¶b¦K»Lxo—fY¼R‡X§´dôx, éu^§×Õ•Œs»ßÊFİ±kÉ"À2‹Â~‡ÉâUAˆÔ¢k‚7l}ëe–rÖİ~ÇÒ5_K-t ÂªW-K%Ö:í®¯†¼Ì2È³B³_g–³7/,Y.]_pn°œ.×a•ÓPBW"³Ì¢Ô)I=>yÄu^w©¢’Nï¢øi	fœKvØëÃd³>'„¢	_ğdÊqıògn»l©E>e¬¦–yßÖ…yQäáSÀs’lç8fáó–îpe-_¯OÛ`-”Íe{Ó·á§ª¾]°°‹+è±u?ÚšÜ¾Ã`–”9¼d™)—­úšâãÔ"Jb_Ê¨¾Øccu²Z
+ßà÷êñ#ç×@›Ûí.YÏT§b(kÊÒ~ÖHÚ™…T_<\Ôùâêóƒ7ë3ÑøéŞ“¯»ùîZ»–ş>µ¨_Ğü@ÒóÁà­™é‰2dÔÏÃV¤"›³<5Ü±U<_øØ.:‡v-Št¹úF¤	W•a¨ti±‹+è¯7<Rì¯Ø¾C‹ğJC‹É·6–ŠÚ!Ëòğû±"Éí1,Kùem¯Vëñ˜Êšºê2ÃhR‹Kx©¥º„YÎìNkŠOÑ<ÏôX{é9·'óòÈèÈf-eş¼pñÍ7QÛ„1‹ ÅÃi}¾÷ÌûY•“aXÇìØr¥:3c(iYµk›üÒ ÜºŒhŒ©ŒxPÁÒ›š½&?¾³¸7+ÔÒÜbr–e$Ê‘dƒÌˆ>f)µ[Û ´Ì¦5DØ&iÆ—­y‰%~%Õ®ÃÌÒ	ª"ÈŠ!ˆ¬5f÷&ÜJæ¥‰ÑIN-¡(óóOwe²Ë²˜Q‚GÄ¡½´º]Ô±Ê¢ˆ#‹ ıt}jT\gYĞÃ¿ïš|¼tõ‰Ô&3‡<hË!ãbJ›ØÅ4^†Çwz™E¤ó’²,²5/ÌR½jqÍË·LjÑƒó”¶+qˆ½’_‹(9ËZˆ”T‹‡­5:µˆå¼@¸œ…OÊ«/í¤–øT4`YBy‹½r¿*ÀtD3ÍK7­rï5“ªZ£˜2ç‡²lã]TŸ5êwÓyQYú©¥×€ºÆh~™2ŸßHg–o¼0E×İ­xé·,,^ğĞ<¿g¿áó³y‰ƒBç%ª!S¨Ì”JÄŠıXÂÓ‡]çÄ?X±€Zø&,Øó‰Z2–%4­	½²Ì‚ª™ÔŒPKïØ•Â¼Té2ÒÙ¼å×˜±?-êR¡•}êJ9‹ÚÊCøk'Úé×gi–\ŸŸ—ØYq¢•Ö.}6Ë’lmò–~•Ÿ'İ’®C9?íUöPKH—h9}±?ÉíÉ	)N¨e¿µ'cN”¶Yjr–Ò„D-å£“®@É¨7tzÇÉñ†Jjé°xig8=f‰=,^xÀlG®T2ÓÖCæÂ5©RĞ'JˆºŠ€Œ›X¼´Š¦{rÁRˆ—A‘îÉt»g–³Ë,q¬òÑÉîZ	"‰¥µ½Í!¡ÃG÷1¡Ø.¡¹’Z:¥v"FDÅÊ•¬"”u›‹‚àÕÚÙ>¶îr©§ı…òÑ_ø×–yÏşùÕX|®òño?w*N÷ä(Ğ¢ch¯èÛŠèYĞI#„ş
+mhÀ‘%-eoîè0Í/uE4û.îcŠ2’~=óû˜ó4W&Ü0Í•lOT-Jkş8n¹5äÜ2-RKúºyÅØ}0î˜õÑ±æAó÷AÓL$âsÙús,{,+Ö{|ecÙlĞ‘5ƒeY­Ã4 Mÿe£³>\MÅËVÿ“÷…Æ69 ú‡æÒïÑ\)ĞHg¹ÆR}ÑØwd¹\=fYÔúm‰ø#á­d—Êwõò‹¹ Ó&gióùcŞ‡Òà¸mYğ­Ï1Ë³/+–¿¿OÓÁ*Br= ™=,O–øód}EU¡?}$öX÷h…º±ùÃŸÉùP&ı¬Ú§è³œ Wk³ˆKZıW–võ#-÷¿Õİ–"“Î—©Ë÷ì^¨ã×ª¨GÁ5¬
+ºÕ–[¸»:?¨9>h	é÷² ´¾9oYı€{,M9j¾å¥– 1 2O-½QX²X5ÿ¿Ó¹¿º‚éüÕêİC/äŞ:p¯‚å>'º»[Á²^V-ËjĞ„e–ÿeûÈså½¢*µ ¯:ÿ,ÿaCŸ·£Ópx>I«ùZø4Àvzb| ‡™vè„½ğtÃ Dáy8
+'àE8¿†ßÀ˜ğ6¼‡°ˆV bäC£T‹Ğ—ĞWÑÓè»¨¡#èú%ú-šF¯£·Ğ%tıİÂ;p1^‹×a×áFüyü(~wâoáïà<„Çñ$Â?Ç¯à×p¿ÿ„Óø*¾‰¬$«ˆH¤áUA>M!µ¤4‘6ò$i'Ïd˜ÄÈ9E^#¿#)ò&y‹¼CşJŞ%7H–³qNÎÍUqë¸M\#÷Eî1.Äíã¾ÇrÜ¹Ÿq¿âîîm.Ãı{»mãm¥6ÙöYÛÛv[‹mç¿h¯ ¨®+|î}÷½}ûƒûv!eµÌìÛeQ°Ñ ’"•Í¢v€`4µ32ÄJ¦ÍDÔ¦Õ©‘]Øè.CPGid„õ§‘Î4Ú™:1i(j4Ft&ÓÚ3ĞÖ˜LÇFŒ(ãÏë¹wEÑtÌ={ŞÛwÎùî¹¿Ÿ¼@^$×ÉA9*ÿFŞ!wËoËïÉGåäAùù¼|AşB¾,È7¢ÈŠ¢8•T%Mñ(^e’2E™ªä*O)3”§•¥L™‹ò<ÈxY¹#œxƒñ	dª$0±“q tLÌ`¡ŠPKÌ0Fø‘©°`•X ‰ØĞ‚ŸãˆU+Î©$pàÿqÀÕ‚9V¬£bıØˆ"iÈmhÑ6Âm™…-kòö<ÇšPÌQ…UŞÂFÌÔLÅ¶ÓÃôŸ{â½‘€Ga'4™:1•¨øVB_üã˜¨“ñr›d'IØÂÉûÊ#ˆ‚}'B(
+ÿqĞˆ,­P+µ’d\/V@Åx*‰8%"aœ%,ÁQPğjKm`’E™xšyÜ¬|¤[øJ6øÁf\Æ9ämøŸœ%døÿ“Ë†|Šz´Hø[sñàûÁm$i‰6ædz Îñ¾>]‡õYîõë†¿‰§Â{]ß‘·T?	O_I^s‘ŞÛ–áˆ®Õî×àö]ğV
+Ô‰³Ç‰»…&Ìê£ª@m‘Ç ¹qÜöu§î0R¯%àôğ÷‚æ"O$Æ‘¤öÍ¿0ª¤NÊ+üÁÙ!$ûşú|cÍìwq§}:2ĞcœµÃê‡\ˆ$Â¸!~q76©í5í÷ë|PT°©­–ÄIÉ€lxô–Ò[@ÉÍ•«.uÑÑ˜x
+
+.İÜŠHÔX:I_yN4­•ë³şºâ1DsúXyØ£5ùÊô¢ñf§ÓWÑÑzvvùU„ÜFbÒà˜®–…:}IaÍ«”ƒÖHˆŞhA$G',ñWÔd—'âFiCøõ…[H*…D2õœ@’ü—«9MtK?¸:Ã{ƒ;4—K¥á2‹ouCF–?°§É’’RªUUïl(B$‹ÿàŞõ‹ï×d¼¹½dàÏ;K;2Ìº¦*SZuœÔ8XHe§¥”ï-¤e²¸}ñúgk²7¾ï8tùò•AV²"g‡¯Túˆ³ò@û<«¹¨ğ¿Ijì¹ÿ°CÖí[»ÆÏî˜P{^£ëÖZ
+ÚÏuc{µ<öQ±V©û}adÓ%skšº×ú¶-_“SÙSİmXqå¬::8Xo#b²íL7ú¯ƒÉå¥­l-^º/%SÓ}ÅLõ©%³Å†oÑˆ±ËhkŞÕUáp5Ï-<È‘,IİTî=¾İŞ™1Åõ^
+’ß+åğµ5ø¢şXÙdËck^}‘[å£‰–îªjúâ«ªœ5MH²ZTeî<:yLÊdW]U	¶—;×ä¸\šæ*Uí†–µ"p­+“Tv*8:•UºÀÌc"¬MÙt5cšdf¹Óô¨W«=¯›úËÕˆÄã,›€££j^-È4$9\ÕÔ½Ä¡ª¤7õÊ@OŸ'“	ôîhŞWxGÇ3ÇöòœÓ5¹IDU3õ¬Ù9àE²¢jW;88’/â3V-ÏÈiTÉ[ıÓš¼ºËª¯¼³Kkğµ:œf>cš×¬‡õ3/as$òaiSw™ÏWy$]-êåuOFüA¥ j|íÔ×^¨-Ãµ“™¢ë¾03úµp<‰ºÅèxàóä‰øŒ™ÿÙ‰×TĞkëó¦.O;0ézı{†‘tÍ‹==îÈ§ù'ó–0ÖY:5û™‰.Ï~7}ãŒ“ê’·-;¦›¶¹{µåûî±ö¡›*_Åj3èçWÙí¶oy?y€ÏØaÍĞV®D$UùŒµy
+ ‘LìçH{lËèîtŸÑÏ•o!?q©ºX“<ŸêY¢¡vo–0œØJnå¯Â˜<#÷X5Vä‰&Îáë¾Iğ<¤¡ü›!©Ø‡ùïn«\S62§7zF¶ÂØ_›ª]ö^hĞAE$ş¦íåoı~H”ˆ3ĞÁ+=
+>Tıo/GIèQ!!xH‚dø.¤Ã$äTS òaòª eÈ­*àyXˆ±ÿ)ü–"»z~¯A#DáØˆ+İ°ŞA†uNÀ€àXŸÀçğ%Ü 2ŞœÄEÜd"™Œ\+ŸpãšM#óÈOHy‰Ô‘WÉj"¯“&ä^›ÉVÒAv=ämòGò.é#GÈä4ù+9KşEşM.’/É5bP ŒZ8©9‡¦ÓÉt
+Í¥3³›G«i-]FWÒÕ´‘Fèzº™v ·Û…ìn/İOÿDÓ#ô4=Céy:LG$Šü.EJ“|ÒãR®T ¸Y%²³j©VZŠü,$E¥©YZ‡“~/z¤ãÒ)äig¤!djÃÒér5`ùš™Ù˜9Y2KcnæeÙ$ö=öËf¹,å³2?+b³Pæ€t?¾›’(ã7z0!O0#{Bâ‹	•ğ®¯À]B$Ì÷z,Ã{=23Î"í˜PˆodqîÅsU^Î¹ÄÙ	CÄëq{ª`œ¹q5eè‰ûˆ3YØæ-T‰rß€M©h›÷†"ŸCÁÛLÄ÷+”÷“3Í6b“LX'Î -ÈtË‚»˜g¢ÿ\¬XÓ$aD„}¡
+Æk”§Ê·™¬BÎiùˆ0•!“YeâÉË\¿ƒ¾@^eÜäÌUzíñ¯àá¶€™_Sæç—g‘´¯,×E%**å_jW“›·?å~eÕ{“$ÎìÄÛ¦[GÍåø†~íûñ­ihº*ü	¿…/äŒwe4mœè
+öÍÿ»†Ay¼=|ñB/ŞôOŒ\ùç/Ó7||ñâ¯ÏM^1u`~l˜	"€°÷;uê‘]ü'åi
+Š3RÛ©cW7<
+väĞö˜Æñ‘½4œ¼nfúuf
+¿±ò¥™Hm§ïÓŠL‰üxYfsi8Vâó4ûÂî'‹mÇ|;úñhbG°naĞo{Ëıs›ş?òË8Šêã¿÷Şf÷‚kn‚l4ãáHE»”ôdƒÀ$j şé¿% ´ãaµÂËà†0Ô¦%h G`°lgè^ÎaÂLF´£­´Â v¬Fm§‰·ı½İ»äìÔªã{·»·ûŞïı~¿ÏÛ·û]_ŠsG‡…>gâvÕÃÕ¾Ù'‘f-ªÏs¹tÓMùUÛk»Ê
+î/‰¿Ç÷•¨‡úÖE§L7¬uS®ºí\Ñ‚’º…òk÷I%ÍĞúÜ ¼zo×ëß/«ª¹apù‡[‹6z|å†YøæŠÖI`jOÄM-È_Ò`üm7æ,.í«˜˜ùØ»Ùş×÷Õ_Å³ó4Ş]´õú£‹ªºÊJÑïw,xõWÆ“PÙ[6?x²“×õæ­î˜Y}XøıöoZ¿æ›È&A²ğÀ²_şõÙWjÊu[Ñõµûiêüğ…ÇúòP0„yÃÎÇÒ`BtÓ”Ç¬)	6…Ìæ<mû=ûêóø„‰ƒÉCï9ğÜ¢Ù]eÕÂo¨“w$júN«¯-ÛväcƒS&c¾Õ%‘Õ;òkwK¹ª-å¢ßĞöÕÌ¯®ßßU´ôÄúºâ¾vº­Z,÷äCœ7…v>Ê·#¥‹Ûô ùBs‚Ûw|õ¼]¯ôÈĞóòíÓİ|‡zÜ|}µ5ıF3lkŸ]¶Í<Ù	‘’İU­EÕ¡Hhçô»ŸåænŒ~oÜ¶ì©šûªñä:ô[Û£h°9òÏo\ùr ;¦$_ÒØû?Ü?av¤#ßl*1›óÍ{î¦¹Ğğ´ÈwÓuGM¶yó¾óå'håfg}ÿæÃúıé?;ƒ/>tş¡Ó‡N¼óîªwÊO¡“€WK»zo aõæ§Îß´ó–%m=P^¾Yš˜ß¼=ñ!Ó*"?2ˆ|kİ³å+ÏßåÎo²!d
+¿³p~'I¡*>i{YAiIdO±·~³Skñã®>‚
+M*VOf	‹\ÚÃëÔ$vª¯&–Y•'Ä4ÑLb\)O4~#T _ZòòbÍ½"§üf®÷tÁ1I‹bãkOøµ=¿+sE›‘ZG|Äoúb'CcF­ÏœH«ÎÄÎ[ãéSOIåAPKC)L…›PMÍ€rÔS¨§æBÜàNÔS?€%°–Á
+X‰zêXà'°:áç°öÃa8
+Ï£¦:î*ªSpŞBMõ$À!Œ\ArÉÕ¨ª&¡®*!7 ²šAn%•d.©!ßBuuù±È½ä>ÔW’GÉ:ÒJÂ¤lE…µƒì&=är”üÖïÈ1ûê	r’üü‰¼AŞ$ÈÛä=¡ÔhõÓ|z-ê«bz=5èÍôëÔ¤³iOëéô»t	]Jï§«é£´‰Fh;}‚şuÖ3ô(ı-Ò>z’ş‘¾Aãôıı;½Ä²Ø•l<j­«Y ÕÖlª­9¬†Õ±…ì;¬İÇÙ*¶5×#ìQ¶•W+ÛÈÂì§¨¾:Pu¡ëf»Ù^ö4ëaQ‹aÏa}\¦¤ÒWÈ'RRE ¾Û³P#øÜ£„Ï(u7F²ğlLEaƒº‚zvmúŸhuœ{Õk‘İ–,WGEÂ¨BqsÇó¼g¹{Q%ï(ôRF‹çÉçõG¿TøşìJJh#ŒX—FåVŒ}¶àF¥áˆ”ŒešÍD»—Ÿf»±yUIWw$*.‘7MqÃ• Æ—ò.Ú‘•F*C_x×dQÁ“IŠ$F”˜„±xû,Ñƒ€` î›µÔÕ¸{täVÂD÷Q´áóyH|ñŠUÕÄ?|s‚ø¡^ş’” ØøÈycÅ kÓP*Ünrø{à$¾4,ja4‹ÃAC÷…|ïn"<¶ïÅ‚Û0ŒbAŒ á,$·#‹õÿ_ÖmÁ?½3"ôášª;Å¢åÉb]üÃŞ/ëa§>QÿM1/¿äFşœO€Ã3ô1ß,¨Ç‚q)ÈÃ£Y¨Ÿ`ğá2¬¥ÿCQ-ÈµÓ9ÍLÙÆ‡›O¥ò%¶6ÖR$aÆQ¼.Üİ+NÅ®Ô…äe–#E—3¿²² ƒ…ßyÓc¡@&‹Z˜õ§pÂAv»M¶[ìFÂ…ë¶0;=ª¯g´@Òu¿C—¼—ˆ”¨“ô·$+P{Äâ°ÖïœI¬sğc/İ m˜E‘w`Æpxk ^Tšåí¢Óğ÷1ï•šÇ"ƒ|Š…röş‚!Fº/CÀœ¡ ´\jé”3¿_²%.Xğ š^»–z,d	Y´¦YÀ¬ YÕ®Úøå%Jñâ-gLhtºÚŒTôŒÅÜÖd™ÕÏTjØ–Dx¡!é†…¿X§_Æ9‰mq^²Ë6¨Ã,ôá{xYsüKv;ş)±D§¥	MÀm–O¹'#ôÚ¤²ÊŠ,2Ø0¶dqÉ²¬†ê}‹Ôó‚OF3ªOƒÇâç$s„ÅEh’C·As±O^U¨H%‡û´TôŒ†ÍËeˆ[ó\v±§–K†né–m“Õ\ÎYSÜµ¸[ÍdQ8–…äÅçw¸ÈcMA'.#.:­ÈH(Ä3XŒĞ²–>ÙŒaXdÃMmO7ÑÔğà³}¶a•s…6–E“9—l ÍùuÜc1şÒû—±èµt;aD…Ñ¼›ÛËT¿J83^çò5½‚Åb(—a‰n©L%z”{,,õèqªjQ”m‚×Ó,ú´–åÌ@Ó‘^é<ªiİ0âëŞVË•ÁzN›n± ²`ªá.$ëZ0WÚ–ùlÓe q$}Í(±‹’u¸
+ıF	®õA bÎFÇŸ¬8›ÄU™Í¸ÁÂGğ,8²˜—èoìÍ¯µ}.‹‰Î‡È¢9Íâ‚CƒäSçr°R8»«€ê5øLuYè`)…ß¤¶`1O†˜ê±ˆA±¦NM³ˆá³7J.à,é‹¹‘bÁZ×,)êª»£—Î|ào‘õÆiºó¶š\rÎ«ºº¼ó¸‰,$j¸7UñKñÔôŠç¦ÄÛèÊä(g.ªıL‰l¨2jinS4œ7UÒq-Ùª‚VnEvN¸²Y…|4àšËÂ6Ã­UáYyíVšÅ¿È¯¿Ø¶3 àß‘,I§´E%™wZÔˆq² ÁvZºÄRˆN³,Ã<,ÃaJ'A²C«ôeVØ'K=@m„ıu1`õ€¢}íØË0ªJ­pÓöÍ@ú Ï+Ò=¡QlQPM·ïHêk'm“m°{0e‰<wü¾ïÖ-şJ2-²â§@ñ~àÄôp-^D	 *-¾„fQ“lqvoò æë^Š[µÎÒYãòìíÇWNª‹G¾Q{g&õ›$Z°Ñálex~üÊÙ©ŠÎôŒyEZXø:¾ÿ­Ù-‡,-¸ÛÄ‡”ÃnFJ°b¯ê™·¯2Æ´]¸mğÉ¢Éğî—’ëíL•S¥Gö(-§dWKYmlg•EQÓÜ‚Òµø‹¢¹ä™UİÏ»x³E´`çÔå@ÏPJdvAyŸƒ²*êÒbúÌ
+Z°Éı¡Eu²Æ}´°.À”bÏg¡…®Lç¯j_9Gd÷8†Né¨•­$Ô<Æ¶E•éÌZáhaâèeÜäÔ[âƒ¶+İuñ!=ç†ĞaH\×b‹éy+ıÅ‚6Z˜£ğ}<Í…*è@:ÎÆReVšH¢®¶¦9+š³bC›SJÚ¥,Œ%mZìÎ¿ÄC‹9Çí«â¤Óª¹ ´ğ¦ëpİÒ&ÕQà˜^ÎOCÙ¸…	a-¯Â~´ØW’Ï­Ô¹gÁC¦S‘‹à÷,VÙ¡ñUëä~iáJ‹Czö² MÇóVõŠ^d‘kã”V\¯ñOq³ãÈ.'Ñ5„O57ø‰è€¹[<¢>c]µÜüôQñ’½D<Û¦<i¡XpÙ£\¦³0[X¶´8Yiá¡Å„†ëBM_ ÃE¸ é{*ã2„{.˜ŒyQ»ë‚¦Û°¯@+]‹¸³¥…ÚFèZĞCì‡±Ö©…•i2ÏÖÖê‘Ep
+áK§ÚÊ®Ìíx½-×…®ÌbBÈÕÎÇn6Ò<´p(f™M
+ĞãiëX_8E€¤–Ù£´Ğœ…v-l[·ãuÑ<[ğ®…şdİÎù_~¬-´ğqFèV¶¾*£:mtl\£hÇJ¯†Î•èñeT§ÒBğ®…ºHÇ½‹ÖÉ1iáoµğÑ"ùSñ0–§ş¾èä­”-iA
+Ê}zBˆ`BÈì‰¿påM0 ñ äå;âö,i!DGC‹=h!ëN¯(DRÃ‚M,Tç;åºÃH/Z±E/Ü…\@´s…%Õc'¡)Î#¯ÉÂuÁ!ÓbãRó¥pkVÅ9ÅNŸ€´PÂl Â&\;¥E“–©>¹ÅbjŞøs+ZuZ|d]Ì)ºÌ#Œ8^¨®òÆì’Œ|³^d‚5—*Ó’´ÀAœ¹}ıu±ôün´À`
+¦ı`lq€Ï‘¹…É‰Uç¾êg!´(àcÀzãFÙø~iÕ”Ö¹[¶œ‡¢œê+¡…T Oï[Pš÷¦­“»¥E~{‹äB;§ì·şşÍöì›¢/œÀ‡¤Úñû¤E?^Øjİ'¼±7ÿ:æÔ¯a´ØháF˜=­Â±×fßÂéÇï•&æTœ2;²ø¬-à4ZĞWy3¶°²s=D»-&J°,ëNiÁj>¯–“-4iA	,`FëY¨Æ Å8+SuÙÊ–î'ãM½4Ñ,6£Ø)sj*ağÚÊz+wù‰n9~*Ì#ûÌ2Ö"‚(^0u­	•Æˆ»‚µÖUÌ"£ +øªåî€Ad­%-v …;áä‘Â	«´’Ç)snoa¿Qû=Tx3‡kX*;«¡…/+ùšXŒ¤îGĞÂd~“OI‹¨÷M-Òf!>ÆØÅÙ[ÎíZ|çpš}“ËÖÔ¯ö¨Ì;Ÿ]|4ÛÈ[XÖDµ–£æ	2Æãİú¢pÂú"˜¡ k½Zk¶\çÏÍ_(c^ÆêbÚc}ÁÃúbY5ø€E¿¾H’ãXºãƒYì’±³[XjÓAÖ{u¼¢#úÔå+êx¿>/ëN¼—k±Kü5¸ G–ç_âXK8V´7ó3m´H\¯ß¾‡³O*rìäévş-¶2:iÒ£Ïñfo"][?\¦şt.ıbnf¶¼:Õàr³‚Ğ¯WwÊ`)ëN¬õÂ†›*¹. xbí‹Æ¯åK½Ÿ,@²ÀeİÉÃºsXÎ&à‚ö¤…&{ux¿îÜsò2©ÊH‹ddQ’¢%-æ…—Êja*Œ¨±¨XæC+hˆ 'ëÄ;‰Z+—jqC¬‹Wr-Í¨µfÅ ×ÎÁŒz-ğw±L.‹^—¿V«&Œõ3&=lÔïÈ2áM¿¶>m Iì9–©¹poÖ–Y“ğœÜ}ôkp¬/j_?Ò´°1ÜttuWÚĞ¶;&Ø3‰ıˆm2\n¤zııˆy™Ü(†;ìx‰¿Zàt¨ĞkøØÜ8|ŠÏŸŒÑJªxÛ ƒ£ìW©V"Ï.vÿ!ƒ÷Ò¶¿C|Ê1€ıù%¸2ğÕ·é¡w^^ZÙ „Ê¦¡áFâ,ìøØ·PåWnúvî]ZÀV‹mÚ¶q†Æœ\`˜79'DÓ›†fóM® [hîØÂ—mÀÂäw²ğ}Ò·Höõ)-°”Æ¿¢³éË™‡­-ú.!-·rB®nÚĞöø¤Mâ}=Áï`‘à~b¨Úıoç`_kqğnGéÆG{_d¡H‹ê‹m×Ô'oİ-x
+!—†¼ûíâ&¿£{Q×ï÷>¥ïv”n|ü‹ÿ`°¸—Æï½'>ÚÎRh¡I‹¥ÿ¦ÅÿNsâ£íx}ÿÿÓ¢Ûl'zG@Zğ§…Š¡ïÜ(…Sp¾ßƒsğ8ä1pÌ`-û4ü~/ÂàOĞ€·á¼×áoğwBÈ0ùÉF!“ä»ä"ùÄ?#‹äò2y•¬’÷ÈMÅPF•1åÊ1åëÊ·”óÊ“¸{­*¿T~§¼ ¼¬Ô”7”kÊ»Ê†ò¡ª©	5¥øíÕåq…ï<şì.,Šbè¿<’¥Q¨¦h[\ŒàkE0»Æ Ö…(‰§é‰‰¯¥Öjy¨‰Š‰5Æ0¦¡kÓVc´ñqTÔª1Ÿiã±6>â±¢ÁíŸE§Ï1ıïçŸ¹÷ÎıæÎüóÏıY
+Ä²Øhæbnö6—-dõlÛÀ6³Xû„gWØX;ğĞïzñxÈŸäi|Ã'ñçùLîá+x3ßÌwñü(?Ë¿äWøm)\ê)i’UzJ&‘Š¥)R…´Hj”~'m–>”Hç¤k2—Ír‚œ&gÉy²ü‚\./’WÈäVy|Bş§|^¾¡0%Bé§üDÉU&+/*³”9Êbeµò¶ò¾²ÓÚ½Êaåˆò©rFù‡ò/å¢Ò¡2UUªIí­jø‡—¬Pªj¦:LÍE*9Ğíê’àéüşÀªÄa$œ™IíAT¢RÑR™(VP‹,ÊNÂUU \éAÂÁDŒ`5’H¬‚=iO¬G’(]j2´"FUvFá5ÂS˜î+”?B÷¥®d€Pˆ@&´3Ñ0¡Äp”áƒ/b *#‚„û ŒF²HûH1ˆL—†êãØa]ã¢1êÁÈÍ(7óŒ*Š˜õˆM]D‘ô¶Ğõ¤f—ÂI$â ‰ÁH‡áŒãAÚ‡$ŒQBB®¾Fœµ%„ N¨Óê±Òub' $p;pÄÊ½ó%¾éşP PÜñ‰¹Úÿ…z°xùl$<¾ÿ»Q÷un»Šnk:Êfwıùú}™ß‰‚½*ïèú¥è{ÅöŠíŞa¥ƒVê(‡Ö¯[¿oà®¢••u`]¹øÓXötëØÆ«ë;tÛœm·"¾yãôn`TÎ£ÿ±ÊåôW¯éyY
+ŒÉ±1¥|ÉzP<âÀ¤†“sş%ÔÓúŠKÒÜ‡’âİû~t.U¤o˜_š2-»À¾5¹>ÏxbY~uiË/½Í¶À+c=1Y6 ¶¾™ù¢•ÅÉ¦'„ó¼¼dÏ¯{Õ¨0¾°ÓùÏPqiÎIó”ê™Ù ‰š#¾aaô¹4÷±£eëØ—å
+H«Úè_UvÍöfÍ†BÃòQÉÍùï9ªêé:û˜QòVéŞÖÜ‘™'.”->¢i?p«¿lc/Gº<{ Â™òÊ]SU‰ñ›Ş›9êç/xæjKëÑCi%“—Ç»÷¾Ûœ½é¯ÏÌ¯™ë~k'ıóÙëÕ†Éµ?Ê¯®«ª·ìÄX–µ<W˜âÏµ^(Í-{{Bâq5u| ĞV§J[|^à÷»UZò›n"Jİ¢ÛÙ›¶ğ¼¼J#âbk[HšûÔ~KÔÙÿ–ùy%‰Ù×Hd¡y«Úk¯5çW'Vykj¶#JCInÊ–fs‹MGÄùª<Øsû´-g0Æb|²gtù$R•\i©âv9cùºa¡Ñ„(úŒÕ5É2îï¨]Ù»Yİ¶íÆ5ík.j|Î_<Û~ğĞ|˜aZ]›t$®±ÿÖªeã3–“¦ÙÆ*‹±NåY—oTÒ§w¾F3júrİ%\—Síq³¹]_KdÅé\œ1ıM¦6ãÿ~ñ5Ì¿mÀ“‰ªyÔÎœ«®4Áu¹³q ÌÁ}"EœÖßdÑÌLq·%%NÛ'z¦›»£ãıÁeu…™–Âİï.Š8Xîİfx§Ìõ%ıxÚ-<òõ€ïég¯“´—>|tİşSôÀoQ4ÄB†I¸k­0 â÷ø)?ƒly0ò1ãšÏÂs8UnxÊ0÷š¯À¨‚ZXŠÙ×*XoB3üZ1Û»á †c˜‰†spş× n TœÖxJD“Ş$Ä“$’B~HÒÉ`2”d;É%£É82L$Ed*)%eä%2‹Tù˜·U“…¤–,ù¨¼JV’&²†¬ÃLp#ña6ø'²ƒì%Éqò9E¾ÀÌğ"¹B®“vò%TÂS/œši4}sÅdšJÓéšIí4Å¬ÑE‹èT:ÎÀì±œÎÃ²†.¥ËèjºVÏ#7RõÓítf“‡éQú1=I¿ è%z•~M¯Óvz“vĞ #Œa–ÊÂ1ÓŒdQ¬ëÃbY³°x–ÄgıÙH(ë#tIèCeTa˜‚QI"O¢œ2”ˆ£cz)ÑnÄ‚6È\ï'w5ûÈºL¥˜>ê^E/aÁƒ2öWu;áAúåÁ»#¹—xĞ‡ìEuÉCÅøÀø…OŠ‘Pá—)¤ç6²Î<ˆ¸¬«&bá"ÂÎh¢÷êì+‹:#VĞV¥—‚Rá_Ò™#uÎ’¬×ƒÄtæ\_*É’è…/„XQ
+ã¸¥@À¦È°U3úhR®ÛgçÔv»,©ÖnMÍ¨h>pøÂ+4 àpòXÉå“úúX’êãI	gî§<“jépj~¢äØƒnsŠí(ïÄªh¡å9öT?(Ö‘~Îw	Yêò“@µìmÅÏ›\„jÕªi9Óí>RŒ+
+R,XµjÃjx¾3Á¥y5o®Û«×¦MqãÀô'*J¼®'qˆãÓ±,pZ|6Wìj‰Ë5ıô~¸îÇëBeAeºtĞFaÖ‘šõs8Ç9}{¬ÏfwÅZ,Zo»ÃéÛnµ¸\h~g¤øœ7=&8æsx
+V^pl±>py½­‹ÏãõÆz1`ÛÛ»	tØ‚?èYRŸxºÊ“`‰‚K‚Çé“lsŸƒ#µ¸RÅÑ#5u4á©1ávË­ÏÔÊÎLñë#¾JõÚM<fñA[às›rTÊPŒí"äbî†‰¨w"×ÒŒÀU|Å†"¯Eşi°ürrr>ò(šk‘+°¿ğáO¶æ¡ÏÁˆõ;¯“U°V<Y:T°wà´›$m7ØÏÉ›`»P'¯@\7ü—ıòÎª®ãøçŞï½÷y¶g?=c¿ØÆkÑ~à‘#6Ã5&:‚éªkàB3[ÛÜ¡´ƒMÅe DEC452›,kä–eíĞ¹Ì"2šÄ™ó¹½?ïç™Ç'óøW÷{>¯û¹ŸïïŸ÷ó-´+üz¯Hš`û…s¹?‚òÃïŒJ)ş•Ïh>äñ,Œ€·L6&Êjæû¨••VÕƒ+äN”3åİ¬â¶ÙËÜ6Ùêø§ÜRá•*gDJTÜ)uO`<öÊ|è‘./‡÷€»%²ï(£Ìi…<(ä‰º›%ÇË‘:Äey«ÄÆİ§í¸Á4ˆ6ÖCŠQGÄ)Å˜ß.}ˆKÓ>â[ÌI‰B?Ò†4õ¦K.6]şãNŸñsaŸâ¶ù§Ñ:#k\ºPî6Ï“VHrÒ‰ş=æˆÓ‡üSĞ¾"í÷™‚zöcl©¨ñisIC"nd7òoñ³–`>–êxy½V±‰ÈC	éTAúzÔÑ€õ GZªTĞ÷ˆ{¯
+e,@[š‘¦i·$¤H%0j-4cÖ}—•ñ7õ¦É·s
+s}Ô¿=‘uZ#˜ëu*|«
+ïzJƒÂø\†±×µ“¾´¹cş~ü-NÚÒîŸ)‰İ’L£›C+ÜWÕ7ŠÇØråQA×ô¯‘ğœ^ë±¹½¬É¾ğßßÇÒZßî°\‰‰±ÒHhS·HQŠOÆÈ—É	ò%rœ<Mş“<E¾H‘ÿ O’'_ ÿF ÿJ'ÿÂ¾ş™úóğ×.oıRİÈsÔÿH’Ï’#äÈß“¿%‘ÃäoÈ_“Ï¿"I>2µ=-…øzŠ¶§ ;ò$õ'TËãÔN’?ƒ§iä§Ô#B‡ÙöG©÷“?&‘“‘?"$HH#Úu şå?úÕbä¹_Òó€LãWbî‡ßëÁ¦1Ä¥…#ß—Jğ^¹NL­/÷ÈNx×.Ş«`½‡éö³†»ÙÖ}ğ  ~mß“»ä*|©M¿´¦»%hŒµ„ïÊĞ÷2ÏwÈo“ßb™{àËù&õİ´ßÁÚo§eW¢¼]²_ZZŒ|ƒùn“Zğë˜#}Ì}+kÛAıòf]Çr“¼ì¥åkäv–°±_%¿Â:odìV¬dƒÛƒ¦ÙÂØ²›súe¦¹¼^f+ıĞ¶/ÑòErsbílÆ]ÅP7Ò…‘Öşt1Eçí:ö§ã7Œ˜NÆtÊAÄtàÓ›ÆPG¸]¾ Õ°iŒuDÔ¢»Us~¼÷Mumü‹õ|©®¡å³äÕäUìõ¦Úø¾n•+å|äl1§ZŒl”œıŒÙ -œıœıl[n^gÃÖÂÙoaÛÔbäSÌó	òãääÇÈ5äeäjry)îuº×/å×J¶ó#Ô/!?L® ?D^L.çL-£¾”l$/"/$—õşïĞÒ²ü:ZqG€úyd-YÃŞ,¤ş~rYMK¾œÜkNõyä9ä\²’¬€ÍàN«zùrùn©K©¿‹,!gK1êpñÖ¯b®Ğ³©‘³$,”p&V¼‘(í##ùL?ƒ–<ê¹dNm|d“Y¬{:Se’ÓÈ©	†1:S$5ºx«í,‰`4]¼µÆH".Âİ¨ºA©yÓ¹»ÒhI%SÈ™L&‘A2 U ‡ÓÕÿQÂ”ÒæŞ²Y²Åö¯Eï×ÂÚÒo„ì„ìƒ„Ä²–lŞbµ–¾#¼3Õ¼OŞ+Ş‚ús0j.öÎ«>G2ÆÙÁ\é?ÅÅx`J0#„9KÊ!>öB ã‚´™üóLG`me!&[²#!ÌRô\ÉÂlåAŸ!3PN¾ä£œ„Vo)g"„°ª‘r‚‹•_Ëlû¦znØQ!ì,õ™ÎÅº	awêYX½’fYû§BòœQ"›B8õ4Û‰“1„ÿÌ.ØÆ?(„¾kï!şÕÀraÒß²¥)Öë4¹»¹F3k’8ûA×v¤lpx°BÂCƒCƒågeD3Š¢Ñ&G&ZMÎÄh¬7vúä•^IÜ[+sÏìÀxÎ«)Êr¦™,wšíx<.7İÍwmw‡}K ½±Åµ¦›Ì@xìÙÊù«ïÕ™óËW'YS­*ûÉ‰•f5;¶İjo±Ú·k/±24{Û˜[“êõ8ÒcwUV¢¡Ç‡—[Ñ*'m¢ÁÜ§bevwu£ş‰X‰İ©{»&€ìØiNx¨_»ÏçD^vfÅò¶ÆıÍ•¸M¤˜HŸ.å5™i)Ng÷H²”0ÖŒ“²R“ÂáaÔ>oAÿPeøD8Vİ_^„ò¬èÔèÔB¶g®“2q‘Ùk¶¶Åš»cë­íİÅİÖX÷øx÷¸Ö6ó-„e˜ıÉĞsFxäÿá:ûñ³b
+fš•ñ^ó^òyƒ¸ìœ7Í^ğæ5ü—Ïì·¹<ş€Şè‚¼à<Z#wó)À	Eİñù‡ü«Ï¸Ç½ÑĞÄŸ 4½rB§Êä]ÏšĞ=hÙ:#N,Ù8?ãº³¹6¡ëÿ¿1¡;Ğ?™Ğ=è]õuKÏ_\ºüšæu-ë_ÿm#Ü¨¥pÃ}Y—³YÖá¨]MwÜ¿MĞ>
+§òõÓ½•ör ^®ÃŞª7PÏC
+†õËxÈÑÜòŞ5éÕ/ZA&Üuäú}.{~AlïË}ÁƒŞm­ÄüK€ 7•²Q
+endstream
+endobj
+49 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 32
+/FontBBox [-166 -225 1000 931]
+/FontName /Helvetica
+/ItalicAngle 0
+/StemV 88
+/XHeight 523
+/StemH 88
+>>
+endobj
+50 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 32
+/FontBBox [-166 -225 1000 931]
+/FontName /Helvetica
+/ItalicAngle 0
+/StemV 88
+/XHeight 523
+/StemH 88
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [250 0 0 0 0 0 0 0 333 333 0 0 250 333 250 0 
+500 500 500 500 500 500 500 0 0 0 0 0 0 0 0 0 
+0 722 667 722 722 667 0 0 0 389 0 778 0 944 0 778 
+611 778 722 556 667 722 0 1000 0 0 0 0 0 0 0 0 
+0 500 556 444 556 444 333 500 556 278 0 556 278 833 556 500 
+556 556 444 389 333 556 500 722 500 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 43 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 180
+/Widths [250 0 0 0 0 833 0 0 333 333 500 564 250 333 250 0 
+500 500 500 500 500 500 500 500 500 500 278 278 0 0 0 444 
+0 722 667 667 722 611 556 722 722 333 389 722 611 889 722 722 
+556 722 667 556 611 722 722 944 0 722 611 333 0 333 0 500 
+0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 
+500 500 333 389 278 500 500 722 500 500 444 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 333 333 0 0 0 500 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 44 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 180
+/Widths [250 0 0 0 0 0 778 0 333 333 0 0 250 333 250 0 
+500 500 500 500 500 500 500 500 500 500 333 0 0 0 0 500 
+0 611 611 667 722 611 611 722 722 333 444 0 556 833 667 722 
+611 722 611 500 556 722 611 833 0 0 0 0 0 0 0 0 
+0 500 500 444 500 444 278 500 500 278 278 444 278 722 500 500 
+500 500 389 389 278 500 444 667 444 444 389 0 0 0 0 0 
+0 0 0 0 0 0 0 0 333 0 0 0 0 0 0 0 
+0 0 333 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Italic
+/FontDescriptor 45 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 223
+/Widths [556 556 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 46 0 R
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /HOFPCK+Symbol
+/Encoding /Identity-H
+/DescendantFonts [ 51 0 R ]
+/ToUnicode 52 0 R
+>>
+endobj
+51 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /HOFPCK+Symbol
+/FontDescriptor 41 0 R
+/CIDSystemInfo<<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/DW 1000
+/W [
+60 [548]
+65 [986]
+87 [768]
+171 [494]
+178 [383]
+190 [548]
+]
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 177
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 549 549 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 500 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 549 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /HOFPEI+Symbol
+/FontDescriptor 47 0 R
+>>
+endobj
+30 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 150
+/Widths [278 0 0 0 0 889 0 0 333 333 0 584 278 0 278 0 
+556 556 556 556 556 556 556 556 0 556 278 278 0 0 0 0 
+0 0 0 0 0 0 611 0 0 0 0 0 0 0 722 0 
+0 0 0 0 611 0 667 0 0 0 0 278 0 278 0 0 
+0 556 556 500 556 556 278 556 556 222 222 500 222 833 556 556 
+556 556 333 500 278 556 500 722 500 500 500 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica
+/FontDescriptor 49 0 R
+>>
+endobj
+31 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 222
+/LastChar 222
+/Widths [500 ]
+/Encoding /MacRomanEncoding
+/BaseFont /Helvetica
+/FontDescriptor 50 0 R
+>>
+endobj
+52 0 obj
+<<
+/Filter /FlateDecode
+/Length 257
+>>
+stream
+H‰TMo„ †ïüŠ9¶éEÛncÒØnâ¡©nï£K²"A<øïh·éÈ3Ã;3ïĞª~©µr@?í$tĞ+--ÎÓbB‡ƒÒ2J¸â-Fn€zq³ÎÇZ÷¡_>9;»ÂMÛî’[ V¢Uzğ‘œ¾}¤YŒ¹àˆÚAe	{B«7nŞùˆ@£ğ/Ø®EN÷Ş“ÄÙp–ë¡H’L”áé°Ôò<lª®gnÉïoÆRVÊÓ@éÓF÷¡RöœDâ§ãá˜GêX¤×j#ŒU2O¾ç^=t›¹º‹µŞh\_´Œ(×›É„™Ã!?  kz!
+endstream
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 13 0 R
+/Contents 12 0 R
+>>
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 17 0 R
+/Contents 16 0 R
+>>
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 20 0 R
+/Contents 19 0 R
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 23 0 R
+/Contents 22 0 R
+>>
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 26 0 R
+/Contents 25 0 R
+>>
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 29 0 R
+/Contents 28 0 R
+>>
+endobj
+32 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 34 0 R
+/Contents 33 0 R
+>>
+endobj
+35 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 37 0 R
+/Contents 36 0 R
+>>
+endobj
+38 0 obj
+<<
+/Type /Page
+/Parent 10 0 R
+/Resources 40 0 R
+/Contents 39 0 R
+>>
+endobj
+53 0 obj
+<<
+/S /D
+>>
+endobj
+54 0 obj
+<<
+/Nums [0 53 0 R ]
+>>
+endobj
+10 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 11 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 32 0 R 35 0 R 38 0 R]
+/Count 10
+/MediaBox [0 0 612 792]
+>>
+endobj
+55 0 obj
+<<
+/CreationDate (D:20101028161904-04'00')
+/ModDate (D:20101028161904-04'00')
+/Producer (Apple pstopdf)
+>>
+endobj
+56 0 obj
+<<
+/Type /Catalog
+/Pages 10 0 R
+/PageLabels 54 0 R
+>>
+endobj
+xref
+0 57
+0000000000 65535 f 
+0000120424 00000 n 
+0000000016 00000 n 
+0000006424 00000 n 
+0000116672 00000 n 
+0000117127 00000 n 
+0000117758 00000 n 
+0000118370 00000 n 
+0000118938 00000 n 
+0000078388 00000 n 
+0000121329 00000 n 
+0000120505 00000 n 
+0000006563 00000 n 
+0000014298 00000 n 
+0000118544 00000 n 
+0000120589 00000 n 
+0000014450 00000 n 
+0000021520 00000 n 
+0000120673 00000 n 
+0000021649 00000 n 
+0000030797 00000 n 
+0000120757 00000 n 
+0000030949 00000 n 
+0000039667 00000 n 
+0000120841 00000 n 
+0000039819 00000 n 
+0000047979 00000 n 
+0000120925 00000 n 
+0000048131 00000 n 
+0000056258 00000 n 
+0000119415 00000 n 
+0000119925 00000 n 
+0000121009 00000 n 
+0000056436 00000 n 
+0000063212 00000 n 
+0000121093 00000 n 
+0000063390 00000 n 
+0000071397 00000 n 
+0000121177 00000 n 
+0000071526 00000 n 
+0000078281 00000 n 
+0000078528 00000 n 
+0000078718 00000 n 
+0000097069 00000 n 
+0000097271 00000 n 
+0000097468 00000 n 
+0000097668 00000 n 
+0000097865 00000 n 
+0000098056 00000 n 
+0000116282 00000 n 
+0000116477 00000 n 
+0000118687 00000 n 
+0000120094 00000 n 
+0000121261 00000 n 
+0000121289 00000 n 
+0000121475 00000 n 
+0000121598 00000 n 
+trailer
+<<
+/Size 57
+/Root 56 0 R
+/Info 55 0 R
+/ID [<8b81e4a95c7a128118d5defd791aaa4a><8b81e4a95c7a128118d5defd791aaa4a>]
+>>
+startxref
+121668
+%%EOF
