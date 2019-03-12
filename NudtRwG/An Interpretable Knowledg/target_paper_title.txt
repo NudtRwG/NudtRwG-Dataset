@@ -1,0 +1,1 @@
+An Interpretable Knowledge Transfer Model for Knowledge Base Completion

@@ -1,0 +1,1 @@
+An Unsupervised Probability Model for Speech-to-Translation Alignment of Low-Resource Languages

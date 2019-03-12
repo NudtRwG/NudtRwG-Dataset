@@ -1,0 +1,1 @@
+An MDL-based approach to extracting subword units for grapheme-to-phoneme conversion
