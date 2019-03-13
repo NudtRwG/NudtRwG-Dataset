@@ -1,0 +1,1 @@
+Bucking the Trend: Large-Scale Cost-Focused Active Learning for Statistical Machine Translation

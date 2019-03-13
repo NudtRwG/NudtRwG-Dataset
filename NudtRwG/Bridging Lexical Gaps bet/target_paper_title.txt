@@ -1,0 +1,1 @@
+Bridging Lexical Gaps between Queries and Questions on Large Online Q&A Collections with Compact Translation Models
