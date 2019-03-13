@@ -1,0 +1,1 @@
+Bag-of-Words Forced Decoding for Cross-Lingual Information Retrieval

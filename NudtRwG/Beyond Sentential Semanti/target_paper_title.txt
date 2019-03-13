@@ -1,0 +1,1 @@
+Beyond Sentential Semantic Parsing: Tackling the Math SAT with a Cascade of Tree Transducers
