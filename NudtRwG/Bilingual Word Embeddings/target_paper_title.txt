@@ -1,0 +1,1 @@
+Bilingual Word Embeddings from Parallel and Non-parallel Corpora for Cross-Language Text Classification
