@@ -1,0 +1,1 @@
+Combining Multiple Resources to Improve SMT-based Paraphrasing Model

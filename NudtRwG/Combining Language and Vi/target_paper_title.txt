@@ -1,0 +1,1 @@
+Combining Language and Vision with a Multimodal Skip-gram Model

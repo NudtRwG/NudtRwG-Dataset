@@ -1,0 +1,1 @@
+Comparing Convolutional Neural Networks to Traditional Models for Slot Filling

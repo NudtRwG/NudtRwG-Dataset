@@ -1,0 +1,1 @@
+Compositional Vector Space Models for Knowledge Base Completion
