@@ -1,0 +1,1 @@
+Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths
