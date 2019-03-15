@@ -1,0 +1,1 @@
+Confidence in Structured-Prediction Using Confidence-Weighted Models

@@ -1,0 +1,1 @@
+Coupled Sequence Labeling on Heterogeneous Annotations: POS Tagging as a Case Study

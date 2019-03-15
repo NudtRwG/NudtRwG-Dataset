@@ -1,0 +1,1 @@
+Coreference Resolution Using Semantic Relatedness Information from Automatically Discovered Patterns

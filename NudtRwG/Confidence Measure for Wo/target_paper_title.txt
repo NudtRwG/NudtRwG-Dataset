@@ -1,0 +1,1 @@
+Confidence Measure for Word Alignment
