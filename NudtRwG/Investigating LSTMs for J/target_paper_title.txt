@@ -1,0 +1,1 @@
+Investigating LSTMs for Joint Extraction of Opinion Entities and Relations
