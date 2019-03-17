@@ -1,0 +1,1 @@
+Hierarchical Text Segmentation from Multi-Scale Lexical Cohesion

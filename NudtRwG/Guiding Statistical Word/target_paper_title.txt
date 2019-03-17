@@ -1,0 +1,1 @@
+Guiding Statistical Word Alignment Models With Prior Knowledge

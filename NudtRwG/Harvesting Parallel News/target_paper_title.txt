@@ -1,0 +1,1 @@
+Harvesting Parallel News Streams to Generate Paraphrases of Event Relations

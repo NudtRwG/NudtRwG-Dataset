@@ -1,0 +1,1 @@
+Guided Open Vocabulary Image Captioning with Constrained Beam Search
