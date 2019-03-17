@@ -1,0 +1,1 @@
+Improving LSTM-based Video Description with Linguistic Knowledge Mined from Text

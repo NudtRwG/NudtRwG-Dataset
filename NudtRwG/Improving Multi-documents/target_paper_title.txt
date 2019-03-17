@@ -1,0 +1,1 @@
+Improving Multi-documents Summarization by Sentence Compression based on Expanded Constituent Parse Trees
