@@ -1,0 +1,1 @@
+Efficient Phrase-Table Representation for Machine Translation with Applications to Online MT and Speech Translation

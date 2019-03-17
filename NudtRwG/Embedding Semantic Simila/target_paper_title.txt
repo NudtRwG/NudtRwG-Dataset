@@ -1,0 +1,1 @@
+Embedding Semantic Similarity in Tree Kernels for Domain Adaptation of Relation Extraction
