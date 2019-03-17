@@ -1,0 +1,1 @@
+Image-Mediated Learning for Zero-Shot Cross-Lingual Document Retrieval
