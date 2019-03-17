@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+
+ 
+ 
+ 
+ 
+
+
+	
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>TextRank: Bringing Order into Texts</title>
+    <link rel="stylesheet" href="http://s1.bdstatic.com/r/www/cache/mid/static/xueshu_source/css/logic_e9e7001.css">
+    <script>
+var name,navigate,bdQid="c25123cf000ae098";
+var bds={
+    se:{},
+    util:{},
+    //结果页js通用数据
+    comm : {
+        domain:"http://www.baidu.com",
+        ubsurl : "http://sclick.baidu.com/w.gif",
+        tn:"SE_xueshusource_2kduw22v",
+        queryEnc:"paperuri%253A%2528afc08912c2ec59155bbb4a31f0f0f681%2529",
+        queryId:"c25123cf000ae098",
+        ishome : 0,
+        isTransShow: 0,
+        query : "paperuri:(afc08912c2ec59155bbb4a31f0f0f681)",
+        queryShow : "",
+        qid : "c25123cf000ae098",
+        cid : "0",
+        sid : "",
+        f : "0",
+        pn : "0",
+        oq : "",
+        rsp : "",
+        sc_f_para : "",
+        stoken : "",
+        serverTime : "1545475232",
+        user : "",
+        username : "",
+        isLogin : "0",
+        loginAction : [],
+        useFavo : "",
+        pinyin : "",
+        favoOn : "",
+        personalData : "",
+        curResultNum:"1",
+        rightResultExist:false,
+        protectNum:0,
+        zxlNum:0,
+        pageNum:parseInt('1')||1,
+        pageSize:parseInt('10')||10,
+        taskTipsShow: 1,
+        subpro: 'xueshu_respage',
+        isSchoolShow: 0,
+        schoolEname: "",
+        resultTn:"SE_baiduxueshu_c1gjeupa",
+        scFrom:"",
+        scAsPara:"",
+        isdetailpage: 1,
+        // topBannerInfo: {
+        //     startDate: "2018\/05\/28",
+        //     endDate: "2018\/10\/11",
+        //     width: "260",
+        //     height: "130",
+        //     id: "jiangxuejin",
+        //     imgUrl: "http:\/\/ps-scholar-static.bj.bcebos.com\/homepage%2Fbaidujiangxuejing.jpeg",
+        //     jumpUrl: "http:\/\/scholarship.baidu.com\/"
+        // },
+        pageBannerInfo: {
+            startDate: "2018\/01\/01",
+			endDate: "2099\/01\/01",
+			id: "jiandan"
+        },
+        detailJumpVars: "scholar_single_hit=1&scholar_single_hit_jump=1&no_jump="
+    }
+};
+
+bds.comm.upn = {"browser":"","ie":"","os":"","win":"","browsertype":"other"};
+
+var selfOpen = window.open;
+eval("var open = selfOpen;");
+
+function G(id){
+    return document.getElementById(id);
+}
+
+function TagQ(tag,obj){
+	return obj.getElementsByTagName(tag);
+}
+
+/**
+* @description 增加sclick统计
+* @function
+* @name c
+* @grammar c(1)
+* @param {Object} q 字段集合
+* @return {Boolean} 当发送成功时返回true
+*/
+function c(q){
+    var p = window.document.location.href, sQ = '', sV = '', mu='', img = window["BD_PS_C" + (new Date()).getTime()] = new Image();
+    for (v in q) {
+        switch (v) {
+            case "title":
+                sV = encodeURIComponent(q[v].replace(/<[^<>]+>/g, ""));
+                break;
+            case "url":
+                sV = escape(q[v]);
+                break;
+            default:
+                sV = q[v];
+        }
+        sQ += "&" + v + "=" + sV;
+    }
+    try{
+        if (("p2" in q)&&G(q["p1"]).getAttribute("mu") && q["fm"]!="pl") {
+            mu= "&mu=" + escape(G(q["p1"]).getAttribute("mu"));
+        }
+    }catch(e){};
+	img.src = "http://sclick.baidu.com/w.gif?q=" + bds.comm.queryEnc + sQ + mu + "&rsv_sid=" + bds.comm.sid + "&cid="+bds.comm.cid+"&qid="+bds.comm.qid+"&t="+new Date().getTime()+"&path="+p;
+    return true;
+}
+
+/**
+* @description 增加nsclick统计
+* @function
+* @name c
+* @grammar ns_c(1)
+* @param {Object} q 字段集合
+* @return {Boolean} 当发送成功时返回true
+*/
+function ns_c(q){
+	ns_c_xs(q);
+}
+
+/**
+* @description 增加xueshu nsclick统计
+* @function
+* @name c
+* @grammar ns_c(1)
+* @param {Object} q 字段集合
+* @return {Boolean} 当发送成功时返回true
+*/
+
+function ns_c_xs(q){
+    var p = encodeURIComponent(window.document.location.href), sQ = '',wd=bds.comm.queryEnc, sV = '', mu='', img = window["BD_PS_C" + (new Date()).getTime()] = new Image();
+    for (v in q) {
+        switch (v) {
+            case "title":
+                sV = encodeURIComponent(q[v].replace(/<[^<>]+>/g, ""));
+                break;
+            case "url":
+                sV = encodeURIComponent(q[v]);
+                break;
+            default:
+                sV = q[v]
+        }
+        sQ += v + "=" + sV + "&";
+    }
+    mu= "&mu=" + p;
+
+    // mod当前搜索是否为图书馆模式
+    var mod = bds.comm.schoolEname ? '&mod=lib_' + bds.comm.schoolEname : '';
+    //fr是否来自详情页
+    var fr = bds.comm.isdetailpage ? '&fr=detailpage' : '';
+    img.src = "http://nsclick.baidu.com/v.gif?pid=201&pj=mp_xueshu&qid=" + bds.comm.qid + "&rsv_sid=" + bds.comm.sid + "&wd=" + wd + "&" + sQ + "f=" + bds.comm.f + "&oq=" + bds.comm.oq + "&rsp=" + bds.comm.rsp + "&path=" + p + "&tn=" + bds.comm.tn + "&t=" + new Date().getTime() + '&pn=' + bds.comm.pn + mod + fr;
+    return true;
+}
+
+/**
+* @description 为搜索请求添加query，并增加ie参数
+* @function
+* @name setHeadUrl
+* @grammar setHeadUrl(el)
+* @param {Object} el 点击的链接对象
+*/
+function setHeadUrl(el){
+    var word = G("kw").value;
+    word = encodeURIComponent(word);
+    var url = el.href;
+    url = url.replace(new RegExp("(" + el.getAttribute('wdfield') + "=)[^&]*"), '\x241' + word+"&ie=utf-8");
+    el.href = url;
+}
+
+bds.util.getWinWidth = function(){
+    return window.document.documentElement.clientWidth;
+};
+//设置页面主体宽度
+//由于此时tangram还没加载，所以不能使用baidu.dom.addClass/removeClass
+bds.util.setContainerWidth = function(){
+    var c = G('container'),w = G('wrapper'),
+    remove = function(r,o){o.className = o.className.replace(r, '');},
+
+    add = function(cls,o){o.className = (o.className+' '+cls).replace(/^\s+/g, "");},
+    has = function(r,o){return r.test(o.className)};
+    if(bds.util.getWinWidth()<1310){
+        remove(/\bcontainer_l\b/g,c);
+        remove(/\bwrapper_l\b/g,w);
+        if(!has(/\bcontainer_s\b/,c)) add('container_s',c);
+        if(!has(/\bwrapper_s\b/,w)) add('wrapper_s',w);
+    bds.comm.containerSize = "s";
+    }else{
+        remove(/\bcontainer_s\b/g,c);
+        remove(/\bwrapper_s\b/g,w);
+        if(!has(/\bcontainer_l\b/,c)) add('container_l',c);
+        if(!has(/\bwrapper_l\b/,w)) add('wrapper_l',w);
+    bds.comm.containerSize = "l";
+    }
+};
+// ie版本
+bds.util.Ieversion = function() {
+    var ua = navigator.userAgent,
+        iereg = /MSIE (\d+).*/,
+        version = ua.match(iereg);
+
+    if (version && version[1]) {
+        return parseInt(version[1]);
+    }
+    return -1;
+};
+
+//阿拉丁命名空间
+window.A =  bds.aladdin = {
+    ids: [],
+    has: true,
+    list: [],
+    logs: [],
+    loadTimes: []
+};
+
+(function(){
+    var fns = [], isReady = false;
+    var exec = function(fn, thisobj){
+        try{
+            fn.call(thisobj);
+        }catch(e){
+            if(window.debugFlag) throw e;
+        }
+    };
+
+    //在js基础库加载完成后执行fn
+    bds.ready = function(fn){
+        if(typeof fn != 'function') return;
+        if(isReady){exec(fn)}
+        else{fns.push(fn);}
+    };
+
+    //手动触发ready
+    bds.doReady = function(){
+        isReady = true;
+        while(fns.length) exec(fns.shift());
+    };
+
+    //通过json字符串获取对象
+    var getJson = function(jsonString){
+        var result = {};
+        if(jsonString){
+            try{
+                var r = new Function("return " + jsonString)();
+                if(r) result = r;
+            }catch(e){}
+        }
+        return result;
+    },
+
+
+    // 获取当前阿拉丁DOM容器
+    getCurrentAladdin = (function(){
+        var scripts = document.getElementsByTagName("script");
+        return function(){
+            var script = scripts[scripts.length - 1], container = script;
+            while(container){
+                if( container.className ){
+                    if( /(?:^|\s)result(?:-op)?(?:$|\s)/.test(container.className)){
+                        if( tplname = container.getAttribute("tpl") ){
+                            return container;
+                        }
+                    }
+                }
+                container = container.parentNode;
+            }
+        };
+    })(),
+
+    // 筛选出阿拉丁结果
+    getResults = function(){
+        var els = $(".result-op").get().concat( $(".result").get() ),
+        alaEls = {};
+
+        for(var i = 0, name, el; el = els[i]; i++ ){
+            if(name = el.getAttribute("tpl")){
+                if( alaEls[name] ){
+                    alaEls[name].push(el);
+                }else{
+                    alaEls[name] = [el];
+                }
+            }
+        }
+        return alaEls;
+    },
+
+    // 入口事件队列
+    readyedHandlers = [],
+
+    //销毁函数列表，每项内容为
+    //{obj:instance, fn: fn}
+    //每项执行fn后即删除
+    disposeOnceHandlers = [],
+
+    //每项格式同disposeOnceHandlers
+    //每项执行后仍保留
+    //即每次销毁实例时都执行一次
+    disposeAlwaysHandlers = [],
+
+    currentSetupContainer = null,
+
+    // merge在bds.ready前的队列
+    mergeHandlers = [],
+
+    // 阿拉丁实例构造函数
+    Ala = A._Aladdin = function(){
+        this.p1 = 0;
+        this.mu = null;
+    };
+
+    A.merge = function(tplname, fn){
+        mergeHandlers.push({tplname: tplname, fn: fn});
+    };
+
+    // 阿拉丁入口函数
+    A.init = A.setup = function(k, v){
+
+        // 页面可能存在的空 init
+        if( k === undefined || k === null){
+            return;
+        }
+
+        var object, container = currentSetupContainer || getCurrentAladdin();
+        if( !container){
+            return;
+        }
+
+        object = {container: container};
+
+        if(typeof k == "function"){
+            object.handler = k;
+
+        }else if(typeof k == 'object'){
+            object.data = k;
+
+        }else{
+            object.data = {};
+            object.data[k] = v;
+        }
+
+        readyedHandlers.push( object );
+    };
+
+    // 注册每次销毁均执行的函数
+    A.addDisposeHandler = function(item){
+        disposeAlwaysHandlers.push(item);
+    };
+
+    //全局阿拉丁销毁函数，在删除阿拉丁dom节点前调用
+    A.dispose = function(){
+        // 执行阿拉丁实例dispose队列
+        while(disposeOnceHandlers.length){
+            var d = disposeOnceHandlers.shift();
+            exec(d.fn, d.obj);
+        }
+        // 顺序执行销毁函数
+        var handlers = disposeAlwaysHandlers;
+        for(var i=0;i<handlers.length;i++){
+            var d = handlers[i];
+            exec(d.fn, d.obj);
+        }
+    };
+
+    // 遍历执行所有阿拉丁实例
+    bds.ready(function(){
+
+        // 将所有的merge队列转换为setup队列
+        if( mergeHandlers.length ){
+            var results = getResults();
+            for(var i = 0, item; item = mergeHandlers[i]; i++){
+                var els = results[item.tplname];
+                if(els){
+                    for(var j = 0, el; el = els[j]; j++){
+                        currentSetupContainer = el;
+                        item.fn();
+                        currentSetupContainer = null;
+                    }
+                }
+            }
+        }
+
+        // 整理出的每个Aladding JS数据
+        var groupData = [],
+        getGroupData = function(el){
+            if(!isNaN(el.initIndex)){
+                return  groupData[ el.initIndex * 1];
+            }
+            var data = { data:{}, handlers: [], container: el };
+            groupData.push(data);
+            el.initIndex = groupData.length - 1;
+            return data;
+        };
+
+        // 整理setup队列顺序
+        for(var i = 0, item; item = readyedHandlers[i]; i++){
+            var elData = getGroupData(item.container);
+
+            if( item.data ){
+                for(var k in item.data){
+                    if(item.data.hasOwnProperty(k)){
+                        elData.data[k] = item.data[k];
+                    }
+                }
+
+            }else if (item.handler){
+                elData.handlers.push( item.handler );
+            }
+        }
+
+        // 遍历所有的setup
+        for(var i = 0, item; item = groupData[i]; i++){
+            var fn,
+            sTime,
+            eTime,
+            obj = {},
+            ala = new Ala();
+
+            ala.data = item.data;
+            ala.container = item.container;
+            ala._init();
+            A.list.push(ala);
+
+            // 执行setup队列
+            sTime = new Date();
+            while( fn = item.handlers.shift() ){
+                exec(fn, ala);
+                //执行完fn后，如果示例上定义了dispose方法
+                //则将其保存到队列中
+                if(typeof ala.dispose == 'function'){
+                    disposeOnceHandlers.push({
+                        obj:ala,
+                        fn: ala.dispose
+                    });
+                    ala.dispose = null;
+                }
+            }
+            eTime = new Date();
+
+            // 统计执行时间
+            obj = { srcid: ala.srcid };
+            obj.tpl  = ala.container.getAttribute('tpl');
+            obj.time = eTime - sTime;
+            A.loadTimes.push( obj );
+
+            $.each( A._Aladdin.fixs, function(i, f){
+                f.call(ala, ala);
+            });
+        }
+
+    });
+
+    Ala.prototype = {
+
+        //初始化实例属性
+        _init: function() {
+            var attrs = getJson(this.container.getAttribute('data-click'));
+            this.p1 = attrs.p1 || this.container.id;
+            this.mu = attrs.mu || this.container.getAttribute('mu');
+            this.srcid = attrs.rsv_srcid || this.container.getAttribute('srcid');
+        }
+    };
+
+
+})();
+</script>
+<script type="text/javascript">
+																					            																										
+
+//https域名转换工具
+bds.util = bds.util || {};
+bds.util.domain = (function(){
+	var list = {
+        "graph.baidu.com": "http://graph.baidu.com",
+		"p.qiao.baidu.com":"http://p.qiao.baidu.com",
+		"vse.baidu.com":"http://vse.baidu.com",
+		"hdpreload.baidu.com":"http://hdpreload.baidu.com",
+		"lcr.open.baidu.com":"http://lcr.open.baidu.com",
+		"kankan.baidu.com":"http://kankan.baidu.com",
+		"xapp.baidu.com":"http://xapp.baidu.com",
+		"dr.dh.baidu.com":"http://dr.dh.baidu.com",
+		"xiaodu.baidu.com":"http://xiaodu.baidu.com",
+		"sensearch.baidu.com":"http://sensearch.baidu.com",
+		"s1.bdstatic.com":"http://s1.bdstatic.com",
+		"olime.baidu.com":"http://olime.baidu.com",
+		"app.baidu.com":"http://app.baidu.com",
+		"i.baidu.com":"http://i.baidu.com",
+		"c.baidu.com":"http://c.baidu.com",
+		"sclick.baidu.com":"http://sclick.baidu.com",
+		"nsclick.baidu.com":"http://nsclick.baidu.com",
+		"sestat.baidu.com":"http://sestat.baidu.com",
+		"eclick.baidu.com":"http://eclick.baidu.com",
+		"api.map.baidu.com":"http://api.map.baidu.com",
+		"ecma.bdimg.com":"http://ecma.bdimg.com",
+		"ecmb.bdimg.com":"http://ecmb.bdimg.com",
+        "t1.baidu.com":"http://t1.baidu.com",
+        "t2.baidu.com":"http://t2.baidu.com",
+        "t3.baidu.com":"http://t3.baidu.com",
+		"t10.baidu.com":"http://t10.baidu.com",
+		"t11.baidu.com":"http://t11.baidu.com",
+		"t12.baidu.com":"http://t12.baidu.com",
+		"i7.baidu.com":"http://i7.baidu.com",
+		"i8.baidu.com":"http://i8.baidu.com",
+		"i9.baidu.com":"http://i9.baidu.com",
+		"b1.bdstatic.com":"http://b1.bdstatic.com",
+		"ss.bdimg.com":"http://ss.bdimg.com",
+		"opendata.baidu.com":"http://opendata.baidu.com",
+		"api.open.baidu.com":"http://api.open.baidu.com",
+		"tag.baidu.com":"http://tag.baidu.com",
+		"f3.baidu.com":"http://f3.baidu.com",
+		"s.share.baidu.com":"http://s.share.baidu.com",	
+		"bdimg.share.baidu.com":"http://bdimg.share.baidu.com",
+        "1.su.bdimg.com":"http://1.su.bdimg.com",
+        "2.su.bdimg.com":"http://2.su.bdimg.com",
+        "3.su.bdimg.com":"http://3.su.bdimg.com",
+        "4.su.bdimg.com":"http://4.su.bdimg.com",
+        "5.su.bdimg.com":"http://5.su.bdimg.com",
+        "6.su.bdimg.com":"http://6.su.bdimg.com",
+        "7.su.bdimg.com":"http://7.su.bdimg.com",
+        "8.su.bdimg.com":"http://8.su.bdimg.com",
+        "hiphotos.baidu.com":"http://hiphotos.baidu.com",
+        "nssug.baidu.com":"http://nssug.baidu.com",
+        "upload.xueshu.baidu.com":"http://upload.xueshu.baidu.com",
+        "a.xueshu.baidu.com":"http://a.xueshu.baidu.com"
+	};
+	var get = function(url) {
+		if(location.protocol === "http") {
+			return url;
+		}
+		var reg = /^(http[s]?:\/\/)?([^\/]+)(.*)/,
+		matches = url.match(reg);
+		//判断传入参数是域名还是地址，分别做处理
+		url = list.hasOwnProperty(matches[2])&&(list[matches[2]] + matches[3]) || url;
+		return url;
+	},
+	set = function(kdomain,vdomain) {
+		list[kdomain] = vdomain;
+	}; 
+	return {
+		get : get,
+		set : set
+	}
+})();
+</script>
+    <script>
+        bds.util.adjustWidth = function(){
+            var c = G('container'),
+                w = G('wrapper'),
+                remove = function(r,o){o.className = o.className.replace(r, '');},
+                add = function(cls,o){o.className = (o.className+' '+cls).replace(/^\s+/g, "");},
+                has = function(r,o){return r.test(o.className)};
+
+            var winWidth = bds.util.getWinWidth();
+            if(winWidth <= 1280){
+                remove(/\bwrapper_l\b/g,w);
+                if(!has(/\bwrapper_s\b/,w)) add('wrapper_s',w);
+                bds.comm.containerSize = "s";
+            }else{
+                remove(/\bwrapper_s\b/g,w);
+                if(!has(/\bwrapper_l\b/,w)) add('wrapper_l',w);
+                bds.comm.containerSize = "l";
+            }
+        };
+    </script>
+</head>
+<body>
+<div id="sc_md_s" style="display: none;"></div>
+<div class="frameloading">
+    <span class="spinner">
+    <span class="bounce1"></span>
+    <span class="bounce2"></span>
+    <span class="bounce3"></span>
+    </span>
+    <p class="text">加载中，请稍候</p>
+</div>
+<div id="wrapper">
+        
+                                                
+    <div class="leftcontent" id="leftcontent">
+            <iframe class="loadframe" src="http://www.osti.gov/cgi-bin/eprints/redirectEprintsUrl?http%3A%2F%2Faclweb.org%2Fanthology-new%2FW%2FW04%2FW04-3252.pdf"></iframe>
+        </div>
+
+    
+    <div class="rightcontent">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="headform"><form name="f" id="form" action="http://xueshu.baidu.com/s?" target="_blank"><span class="s_ipt_wr"><input name="wd" autocomplete="off" id="kw" class="s_ipt" value="" maxlength="255"></span><input type="hidden" name="tn" value="SE_baiduxueshu_c1gjeupa"><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="f" value="8"><span class="s_btn_wr"><input type="submit" id="su" value="" class="s_btn"></span></form></div><div class="maincontent xpath-log" data-click="{'fm':'as'}"><div class="maininfo"><h3 class="t">TextRank: Bringing Order into Texts</h3><div class="subinfo_wr"><span class="label">作者</span><span class="text">                                
+        <a href="        
+                    
+/s?wd=author%3A%28Mihalcea%2C%20Rada%29%20&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&sc_f_para=sc_hilight%3Dperson" target="_blank" data-click="{'button_tp':'author'}">
+        R Mihalcea
+        </a>，                                    
+        <a href="        
+                    
+/s?wd=author%3A%28Tarau%2C%20Paul%29%20&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&sc_f_para=sc_hilight%3Dperson" target="_blank" data-click="{'button_tp':'author'}">
+        P Tarau
+        </a>            </span></div><div class="subinfo_wr"><span class="label">出版源</span><span class="text">
+    <a href="                    /usercenter/data/journal?cmd=jump&wd=journaluri%3A%28d31aaffc14731b6d%29%20%E3%80%8AEmnlp%E3%80%8B&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&sc_f_para=sc_hilight%3Dpublish&sort=sc_cited" target="_blank" data-click="{'button_tp':'publish'}" title="《Emnlp》">
+    《Emnlp》
+</a>,&nbsp;<span>2004</span>:<span>404-411</span></span></div></div><div class="allversion"><span class="dl_vurl_copytip"><span class="tipcontent"><p class="beforcopytip">复制url</p><p class="aftercopytip">复制成功</p></span></span><span class="dl_outlink_hovertip">原网页</span><h4>全部来源</h4><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://digital.library.unt.edu/ark:/67531/metadc30962/" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://digital.library.unt.edu/ark:/67531/metadc30962/
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fdigital.library.unt.edu%2Fark%3A%2F67531%2Fmetadc30962%2F&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://digital.library.unt.edu/ark:/67531/metadc30962/" ><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">digital.library.unt.edu</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://ci.nii.ac.jp/naid/20001460534" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://ci.nii.ac.jp/naid/20001460534
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fci.nii.ac.jp%2Fnaid%2F20001460534&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://ci.nii.ac.jp/naid/20001460534" ><span class="dl_icon"><img src="http://hiphotos.baidu.com/space/wh%3D16%2C16/sign=88b978e8d7c8a786be7f420f5125f80b/5fdf8db1cb134954a4853076504e9258d1094a0d.jpg" width="16" height="16"></span><span class="dl_source ellipsis">CiNii</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.researchgate.net/publication/221013097_TextRank_Bringing_Order_into_Text" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.researchgate.net/publication/221013097_TextRank_Bringing_Order_into_Text
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.researchgate.net/publication/221013097_TextRank_Bringing_Order_into_Text
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.researchgate.net/publication/221013097_TextRank_Bringing_Order_into_Text" data-embed="0"><span class="dl_icon"><img src="http://hiphotos.baidu.com/space/wh%3D16%2C16/sign=3cacdd6c231f95caa6a09ab7ff3b4e08/5d6034a85edf8db160b5a4760f23dd54564e740d.jpg" width="16" height="16"></span><span class="dl_source ellipsis">ResearchGate</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.mendeley.com/catalog/textrank-bringing-order-texts/" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.mendeley.com/catalog/textrank-bringing-order-texts/
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.mendeley.com/catalog/textrank-bringing-order-texts/
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.mendeley.com/catalog/textrank-bringing-order-texts/" data-embed="0"><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">mendeley.com</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.researchgate.net/profile/Paul_Tarau/publication/200042361_TextRank_Bringing_Order_into_Texts/links/0912f508a98af2fe24000000" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.researchgate.net/profile/Paul_Tarau/publication/200042361_TextRank_Bringing_Order_into_Texts/links/0912f508a98af2fe24000000
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.researchgate.net/profile/Paul_Tarau/publication/200042361_TextRank_Bringing_Order_into_Texts/links/0912f508a98af2fe24000000
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.researchgate.net/profile/Paul_Tarau/publication/200042361_TextRank_Bringing_Order_into_Texts/links/0912f508a98af2fe24000000" data-embed="0"><span class="dl_icon"><img src="http://hiphotos.baidu.com/space/wh%3D16%2C16/sign=3cacdd6c231f95caa6a09ab7ff3b4e08/5d6034a85edf8db160b5a4760f23dd54564e740d.jpg" width="16" height="16"></span><span class="dl_source ellipsis">ResearchGate</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span select"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.osti.gov/cgi-bin/eprints/redirectEprintsUrl?http%3A%2F%2Faclweb.org%2Fanthology-new%2FW%2FW04%2FW04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.osti.gov/cgi-bin/eprints/redirectEprintsUrl?http%3A%2F%2Faclweb.org%2Fanthology-new%2FW%2FW04%2FW04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fwww.osti.gov%2Fcgi-bin%2Feprints%2FredirectEprintsUrl%3Fhttp%253A%252F%252Faclweb.org%252Fanthology-new%252FW%252FW04%252FW04-3252.pdf&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.osti.gov/cgi-bin/eprints/redirectEprintsUrl?http%3A%2F%2Faclweb.org%2Fanthology-new%2FW%2FW04%2FW04-3252.pdf" ><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">osti.gov</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://libra.msra.cn/Publication/13308633/textrank-bringing-order-into-text" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://libra.msra.cn/Publication/13308633/textrank-bringing-order-into-text
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Flibra.msra.cn%2FPublication%2F13308633%2Ftextrank-bringing-order-into-text&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://libra.msra.cn/Publication/13308633/textrank-bringing-order-into-text" ><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">libra.msra.cn</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf" data-embed="0"><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">acl.ldc.upenn.edu</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.zentralblatt-math.org/ioport/en/?q=an%3A11967611" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.zentralblatt-math.org/ioport/en/?q=an%3A11967611
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.zentralblatt-math.org/ioport/en/?q=an%3A11967611
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.zentralblatt-math.org/ioport/en/?q=an%3A11967611" data-embed="0"><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">zentralblatt-math.org</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://aclanthology.info/papers/W04-3252/w04-3252" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://aclanthology.info/papers/W04-3252/w04-3252
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://aclanthology.info/papers/W04-3252/w04-3252
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://aclanthology.info/papers/W04-3252/w04-3252" data-embed="0"><i class="c-icon gj-icon-link"></i><span class="dl_source ellipsis">aclanthology.info</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.cse.unt.edu/~tarau/teaching/NLP/papers/TextRank.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.cse.unt.edu/~tarau/teaching/NLP/papers/TextRank.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.cse.unt.edu/~tarau/teaching/NLP/papers/TextRank.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.cse.unt.edu/~tarau/teaching/NLP/papers/TextRank.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">cse.unt.edu</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.anthology.aclweb.org/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.anthology.aclweb.org/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.anthology.aclweb.org/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.anthology.aclweb.org/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">anthology.aclweb.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">aclweb.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://wing.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://wing.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://wing.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://wing.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">wing.comp.nus.edu.sg</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">web.eecs.umich.edu</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://web.archive.org/web/20120617170501/http:/acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://web.archive.org/web/20120617170501/http:/acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://web.archive.org/web/20120617170501/http:/acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://web.archive.org/web/20120617170501/http:/acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">web.archive.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://users.dsic.upv.es/~dpinto/miniproject/mihalcea.emnlp04.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://users.dsic.upv.es/~dpinto/miniproject/mihalcea.emnlp04.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://users.dsic.upv.es/~dpinto/miniproject/mihalcea.emnlp04.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://users.dsic.upv.es/~dpinto/miniproject/mihalcea.emnlp04.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">users.dsic.upv.es</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://pdfs.semanticscholar.org/7b95/d389bc6affe6a127d53b04bcfd68138f1a1a.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://pdfs.semanticscholar.org/7b95/d389bc6affe6a127d53b04bcfd68138f1a1a.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://pdfs.semanticscholar.org/7b95/d389bc6affe6a127d53b04bcfd68138f1a1a.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://pdfs.semanticscholar.org/7b95/d389bc6affe6a127d53b04bcfd68138f1a1a.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">pdfs.semanticscholar.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://oldsite.aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://oldsite.aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://oldsite.aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://oldsite.aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">oldsite.aclweb.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://logic.csci.unt.edu/tarau/teaching/SoftEng/PapersToRead/TextRank.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://logic.csci.unt.edu/tarau/teaching/SoftEng/PapersToRead/TextRank.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://logic.csci.unt.edu/tarau/teaching/SoftEng/PapersToRead/TextRank.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://logic.csci.unt.edu/tarau/teaching/SoftEng/PapersToRead/TextRank.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">logic.csci.unt.edu</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://digital.library.unt.edu/ark:/67531/metadc30962/m2/1/high_res_d/Mihalcea-2004-TextRank-Bringing_Order_into_Texts.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://digital.library.unt.edu/ark:/67531/metadc30962/m2/1/high_res_d/Mihalcea-2004-TextRank-Bringing_Order_into_Texts.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fdigital.library.unt.edu%2Fark%3A%2F67531%2Fmetadc30962%2Fm2%2F1%2Fhigh_res_d%2FMihalcea-2004-TextRank-Bringing_Order_into_Texts.pdf&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://digital.library.unt.edu/ark:/67531/metadc30962/m2/1/high_res_d/Mihalcea-2004-TextRank-Bringing_Order_into_Texts.pdf" ><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">digital.library.unt.edu</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://dias.users.greyc.fr/ict/mihalcea-2004.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://dias.users.greyc.fr/ict/mihalcea-2004.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://dias.users.greyc.fr/ict/mihalcea-2004.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://dias.users.greyc.fr/ict/mihalcea-2004.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">dias.users.greyc.fr</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0930DA0B12FA99C2A1511A74AB62ACB7?doi=10.1.1.81.4135&rep=rep1&type=pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0930DA0B12FA99C2A1511A74AB62ACB7?doi=10.1.1.81.4135&rep=rep1&type=pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="http://xueshu.baidu.com/s?wd=paperuri%3A%28afc08912c2ec59155bbb4a31f0f0f681%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Bjsessionid%3D0930DA0B12FA99C2A1511A74AB62ACB7%3Fdoi%3D10.1.1.81.4135%26rep%3Drep1%26type%3Dpdf&ie=utf-8&sc_us=14577912197456337083" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0930DA0B12FA99C2A1511A74AB62ACB7?doi=10.1.1.81.4135&rep=rep1&type=pdf" ><span class="dl_icon"><img src="http://hiphotos.baidu.com/space/wh%3D16%2C16/sign=a08f0ddc9f25bc312b08099968f3bc87/203fb80e7bec54e7bbabc20cbf389b504fc26a59.jpg" width="16" height="16"></span><span class="dl_source ellipsis">Citeseer</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://aye.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://aye.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://aye.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://aye.comp.nus.edu.sg/~antho/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">aye.comp.nus.edu.sg</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://anthology.aclweb.org/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://anthology.aclweb.org/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://anthology.aclweb.org/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://anthology.aclweb.org/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">anthology.aclweb.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://aclweb.org/anthology-new/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://aclweb.org/anthology-new/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">aclweb.org</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/W/W04/W04-3252.pdf" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/W/W04/W04-3252.pdf
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/W/W04/W04-3252.pdf
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/W/W04/W04-3252.pdf" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">acl-arc.comp.nus.edu.sg</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span><span class="dl_item_span"><a href="javascript:;" class="dl_vurl_copybtn" data-clipboard-text="http://www.ixueshu.com/document/c707007f125bb940318947a18e7f9386.html" data-click="{'button_tp':'copybtn'"><i class="c-icon c-icon-copy"></i></a><a href="    http://www.ixueshu.com/document/c707007f125bb940318947a18e7f9386.html
+" target="_blank" class="dl_outlink c-icon-outer-link-hover" data-click="{'button_tp':'outericon','libbuy':'0'}"><i class="c-icon c-icon-outer-link"></i></a><a class="dl_item ellipsis" href="    http://www.ixueshu.com/document/c707007f125bb940318947a18e7f9386.html
+" target="_blank" data-click="{'fm':'beha','button_tp':'down_link','libbuy':'0'}" data-url="http://www.ixueshu.com/document/c707007f125bb940318947a18e7f9386.html" data-embed="0"><i class="c-icon gj-icon-pdf"></i><span class="dl_source ellipsis">爱学术</span><span class="dl_lib ellipsis">(全网免费下载)</span></a></span></div><div class="exttool"><p class="paperhelp_wr">没找到全文？<a href="javascript:;" class="sc_paperhelp" target="_blank" data-click="{'button_tp':'help_btn','fm':'beha'}"><span class="paperhelp_text">点击求助</span></a></p><a href="javascript:;" class="btn sc_collect" target="_blank" data-click="{'fm':'beha','button_tp':'collect'}"><i class="c-icon c-icon-heart-org"></i><span class="collect_text">收藏至我的学术</span></a><a href="javascript:;" target="_blank" class="btn sc_q" data-sign="68dfd75f49492f6f139f66ec9c943fb0" data-click="{'fm':'beha','button_tp':'cite'}"><i class="c-icon c-icon-shape-org"></i>引用</a></div></div><i class="reqdata" style="display:none;" urlmd="52033dbd2fb9111ef0d2580d9550d1f3" url="http://digital.library.unt.edu/ark:/67531/metadc30962/" longsign="afc08912c2ec59155bbb4a31f0f0f681" diversion="6635807803313225729" allversion="[&quot;http:\/\/digital.library.unt.edu\/ark:\/67531\/metadc30962\/&quot;,&quot;http:\/\/ci.nii.ac.jp\/naid\/20001460534&quot;,&quot;http:\/\/www.researchgate.net\/publication\/221013097_TextRank_Bringing_Order_into_Text&quot;,&quot;http:\/\/www.mendeley.com\/catalog\/textrank-bringing-order-texts\/&quot;,&quot;http:\/\/libra.msra.cn\/Publication\/13308633\/textrank-bringing-order-into-text&quot;]"></i>
+        <div class="openright_btn" onmousedown="return ns_c_xs({'fm':'baha','button_tp':'open_rbtn'})"><i class="c-icon c-icon-arrow-left-org"></i></div>
+        <div class="hideright_btn" onmousedown="return ns_c_xs({'fm':'baha','button_tp':'hide_rbtn'})"><i class="c-icon c-icon-arrow-right-w"></i></div>
+    </div>
+    
+</div>
+
+<script src="http://s1.bdstatic.com/r/www/cache/mid/static/jquery/jquery-1.10.2.min_65682a2.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/mid/static/zeroclip/clipboard.min_22ee02b.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/mid/static/xueshu_source/js/logic_be3118f.js"></script>
+
+<div style="display:none">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?43115ae30293b511088d3cbe41ec099c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+</body>
+</html>
