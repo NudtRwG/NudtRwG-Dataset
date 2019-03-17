@@ -1,0 +1,1 @@
+Generating Image Descriptions Using Dependency Relational Patterns

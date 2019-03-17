@@ -1,0 +1,1 @@
+Generating Templates of Entity Summaries with an Entity-Aspect Model and Pattern Mining

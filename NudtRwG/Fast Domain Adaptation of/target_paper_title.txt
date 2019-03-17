@@ -1,0 +1,1 @@
+Fast Domain Adaptation of SMT models without in-Domain Parallel Data

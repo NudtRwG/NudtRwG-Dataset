@@ -1,0 +1,1 @@
+Generating Factoid Questions With Recurrent Neural Networks: The 30M Factoid Question-Answer Corpus

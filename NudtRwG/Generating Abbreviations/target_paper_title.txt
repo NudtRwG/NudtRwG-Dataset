@@ -1,0 +1,1 @@
+Generating Abbreviations for Chinese Named Entities Using Recurrent Neural Network with Dynamic Dictionary

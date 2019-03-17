@@ -1,0 +1,1 @@
+Global Inference for Bridging Anaphora Resolution

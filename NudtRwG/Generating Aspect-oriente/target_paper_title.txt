@@ -1,0 +1,1 @@
+Generating Aspect-oriented Multi-Document Summarization with Event-aspect model

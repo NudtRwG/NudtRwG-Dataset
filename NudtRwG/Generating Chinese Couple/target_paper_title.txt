@@ -1,0 +1,1 @@
+Generating Chinese Couplets using a Statistical MT Approach

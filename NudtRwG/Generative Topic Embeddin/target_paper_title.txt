@@ -1,0 +1,1 @@
+Generative Topic Embedding: a Continuous Representation of Documents

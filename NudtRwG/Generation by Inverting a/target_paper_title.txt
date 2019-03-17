@@ -1,0 +1,1 @@
+Generation by Inverting a Semantic Parser that Uses Statistical Machine Translation

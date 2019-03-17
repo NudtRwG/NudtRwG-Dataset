@@ -1,0 +1,1 @@
+Fast Generation of Translation Forest for Large-Scale SMT Discriminative Training

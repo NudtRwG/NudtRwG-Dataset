@@ -1,0 +1,1 @@
+Finding Patterns in Noisy Crowds: Regression-based Annotation Aggregation for Crowdsourced Data

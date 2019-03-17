@@ -1,0 +1,1 @@
+Fast Online Training with Frequency-Adaptive Learning Rates for Chinese Word Segmentation and New Word Detection

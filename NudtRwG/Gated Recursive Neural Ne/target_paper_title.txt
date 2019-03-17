@@ -1,0 +1,1 @@
+Gated Recursive Neural Network for Chinese Word Segmentation
