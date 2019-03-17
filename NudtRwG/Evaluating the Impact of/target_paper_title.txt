@@ -1,0 +1,1 @@
+Evaluating the Impact of Alternative Dependency Graph Encodings on Solving Event Extraction Tasks

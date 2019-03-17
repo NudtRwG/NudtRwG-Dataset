@@ -1,0 +1,1 @@
+Entity Retrieval via Entity Factoid Hierarchy
