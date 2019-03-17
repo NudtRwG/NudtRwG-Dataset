@@ -1,0 +1,1 @@
+Incorporating Structural Alignment Biases into an Attentional Neural Translation Model

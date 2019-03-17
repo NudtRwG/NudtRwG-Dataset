@@ -1,0 +1,1 @@
+Information Retrieval Oriented Word Segmentation based on Character Association Strength Ranking
