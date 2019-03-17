@@ -1,0 +1,1 @@
+Extracting Opinion Targets in a Single and Cross-Domain Setting with Conditional Random Fields
