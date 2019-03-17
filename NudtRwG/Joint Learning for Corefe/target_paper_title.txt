@@ -1,0 +1,1 @@
+Joint Learning for Coreference Resolution with Markov Logic

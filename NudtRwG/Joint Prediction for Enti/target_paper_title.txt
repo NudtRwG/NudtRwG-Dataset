@@ -1,0 +1,1 @@
+Joint Prediction for Entity/Event-Level Sentiment Analysis using Probabilistic Soft Logic Models

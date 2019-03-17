@@ -1,0 +1,1 @@
+Iterative Annotation Transformation with Predict-Self Reestimation for Chinese Word Segmentation

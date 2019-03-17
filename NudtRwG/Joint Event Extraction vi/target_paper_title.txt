@@ -1,0 +1,1 @@
+Joint Event Extraction via Structured Prediction with Global Features

@@ -1,0 +1,1 @@
+Latent Dynamic Model with Category Transition Constraint for Opinion Classification

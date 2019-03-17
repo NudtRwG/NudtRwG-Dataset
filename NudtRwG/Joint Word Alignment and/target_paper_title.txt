@@ -1,0 +1,1 @@
+Joint Word Alignment and Bilingual Named Entity Recognition Using Dual Decomposition

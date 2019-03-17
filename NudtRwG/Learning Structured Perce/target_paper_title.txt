@@ -1,0 +1,1 @@
+Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features

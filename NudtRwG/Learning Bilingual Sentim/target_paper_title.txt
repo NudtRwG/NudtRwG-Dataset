@@ -1,0 +1,1 @@
+Learning Bilingual Sentiment Word Embeddings for Cross-language Sentiment Classification

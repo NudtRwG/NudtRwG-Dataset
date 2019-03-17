@@ -1,0 +1,1 @@
+Large-Scale Cross-Document Coreference Using Distributed Inference and Hierarchical Models

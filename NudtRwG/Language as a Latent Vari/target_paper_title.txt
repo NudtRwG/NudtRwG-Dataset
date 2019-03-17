@@ -1,0 +1,1 @@
+Language as a Latent Variable: Discrete Generative Models for Sentence Compression

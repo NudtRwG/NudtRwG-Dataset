@@ -1,0 +1,1 @@
+Learning Distributions over Logical Forms for Referring Expression Generation

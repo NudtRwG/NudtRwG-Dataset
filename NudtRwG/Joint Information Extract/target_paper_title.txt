@@ -1,0 +1,1 @@
+Joint Information Extraction and Reasoning: A Scalable Statistical Relational Learning Approach

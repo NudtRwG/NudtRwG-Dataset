@@ -1,0 +1,1 @@
+Joint Embedding of Query and Ad by Leveraging Implicit Feedback

@@ -1,0 +1,1 @@
+Lattice-based Minimum Error Rate Training for Statistical Machine Translation

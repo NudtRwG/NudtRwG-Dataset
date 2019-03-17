@@ -1,0 +1,1 @@
+Joint Feature Selection in Distributed Stochastic Learning for Large-Scale Discriminative Training in SMT
