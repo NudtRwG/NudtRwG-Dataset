@@ -1,0 +1,1 @@
+Detect Rumors in Microblog Posts Using Propagation Structure via Kernel Learning

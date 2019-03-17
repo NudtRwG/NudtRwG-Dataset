@@ -1,0 +1,1 @@
+Dual Decomposition for Parsing with Non-Projective Head Automata

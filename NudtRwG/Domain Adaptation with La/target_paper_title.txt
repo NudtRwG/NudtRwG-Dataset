@@ -1,0 +1,1 @@
+Domain Adaptation with Latent Semantic Association for Named Entity Recognition
