@@ -1,0 +1,1 @@
+Omni-word Feature and Soft Constraint for Chinese Relation Extraction

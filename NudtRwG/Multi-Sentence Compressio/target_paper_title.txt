@@ -1,0 +1,1 @@
+Multi-Sentence Compression: Finding Shortest Paths in Word Graphs

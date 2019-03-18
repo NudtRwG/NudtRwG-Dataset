@@ -1,0 +1,1 @@
+Obtaining referential word meanings from visual and distributional information: Experiments on object naming

@@ -1,0 +1,1 @@
+MultiGranCNN: An Architecture for General Matching of Text Chunks on Multiple Levels of Granularity

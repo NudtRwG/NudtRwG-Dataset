@@ -1,0 +1,1 @@
+Pivot Approach for Extracting Paraphrase Patterns from Bilingual Corpora

@@ -1,0 +1,1 @@
+Obj2Text: Generating Visually Descriptive Language from Object Layouts

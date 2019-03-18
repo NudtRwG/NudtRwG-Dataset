@@ -1,0 +1,1 @@
+Political Ideology Detection Using Recursive Neural Networks

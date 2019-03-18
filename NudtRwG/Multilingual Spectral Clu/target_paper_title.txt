@@ -1,0 +1,1 @@
+Multilingual Spectral Clustering Using Document Similarity Propagation

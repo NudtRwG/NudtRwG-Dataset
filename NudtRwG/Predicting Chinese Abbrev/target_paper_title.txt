@@ -1,0 +1,1 @@
+Predicting Chinese Abbreviations with Minimum Semantic Unit and Global Constraints

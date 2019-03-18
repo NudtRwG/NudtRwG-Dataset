@@ -1,0 +1,1 @@
+Parsing the Internal Structure of Words: A New Paradigm for Chinese Word Segmentation

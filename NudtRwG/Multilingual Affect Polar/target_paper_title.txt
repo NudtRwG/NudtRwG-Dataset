@@ -1,0 +1,1 @@
+Multilingual Affect Polarity and Valence Prediction in Metaphor-Rich Texts

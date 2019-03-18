@@ -1,0 +1,1 @@
+Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding
