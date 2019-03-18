@@ -1,0 +1,1 @@
+Linear Text Segmentation Using Affinity Propagation

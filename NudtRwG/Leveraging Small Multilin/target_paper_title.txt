@@ -1,0 +1,1 @@
+Leveraging Small Multilingual Corpora for SMT Using Many Pivot Languages

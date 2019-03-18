@@ -1,0 +1,1 @@
+Major Life Event Extraction from Twitter based on Congratulations/Condolences Speech Acts

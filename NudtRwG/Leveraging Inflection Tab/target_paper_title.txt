@@ -1,0 +1,1 @@
+Leveraging Inflection Tables for Stemming and Lemmatization.
