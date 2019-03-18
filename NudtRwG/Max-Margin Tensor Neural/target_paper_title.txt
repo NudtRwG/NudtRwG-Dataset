@@ -1,0 +1,1 @@
+Max-Margin Tensor Neural Network for Chinese Word Segmentation

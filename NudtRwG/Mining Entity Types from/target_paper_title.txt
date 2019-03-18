@@ -1,0 +1,1 @@
+Mining Entity Types from Query Logs via User Intent Modeling

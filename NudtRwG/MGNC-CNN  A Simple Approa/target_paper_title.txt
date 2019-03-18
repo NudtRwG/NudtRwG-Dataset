@@ -1,0 +1,1 @@
+MGNC-CNN: A Simple Approach to Exploiting Multiple Word Embeddings for Sentence Classification

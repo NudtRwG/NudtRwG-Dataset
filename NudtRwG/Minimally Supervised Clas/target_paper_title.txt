@@ -1,0 +1,1 @@
+Minimally Supervised Classification to Semantic Categories using Automatically Acquired Symmetric Patterns
