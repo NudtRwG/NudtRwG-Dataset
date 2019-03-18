@@ -1,0 +1,1 @@
+Morphological Inflection Generation with Hard Monotonic Attention

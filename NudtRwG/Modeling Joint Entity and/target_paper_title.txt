@@ -1,0 +1,1 @@
+Modeling Joint Entity and Relation Extraction with Table Representation

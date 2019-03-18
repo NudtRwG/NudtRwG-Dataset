@@ -1,0 +1,1 @@
+Mining Paraphrasal Typed Templates from a Plain Text Corpus

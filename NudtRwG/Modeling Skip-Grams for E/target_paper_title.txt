@@ -1,0 +1,1 @@
+Modeling Skip-Grams for Event Detection with Convolutional Neural Networks
