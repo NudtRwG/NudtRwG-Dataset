@@ -1,0 +1,1 @@
+ReVal: A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks

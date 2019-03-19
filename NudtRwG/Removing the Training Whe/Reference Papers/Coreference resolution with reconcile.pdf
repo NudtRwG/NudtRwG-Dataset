@@ -1,0 +1,572 @@
+%PDF-1.4
+5 0 obj
+<< /S /GoTo /D (chapter.1) >>
+endobj
+8 0 obj
+(Paraphrase Lattice for Statistical Machine Translation)
+endobj
+9 0 obj
+<< /S /GoTo /D (chapter.2) >>
+endobj
+12 0 obj
+(A Joint Rule Selection Model for Hierarchical Phrase-Based Translation)
+endobj
+13 0 obj
+<< /S /GoTo /D (chapter.3) >>
+endobj
+16 0 obj
+(Learning Lexicalized Reordering Models from Reordering Graphs)
+endobj
+17 0 obj
+<< /S /GoTo /D (chapter.4) >>
+endobj
+20 0 obj
+(Filtering Syntactic Constraints for Statistical Machine Translation)
+endobj
+21 0 obj
+<< /S /GoTo /D (chapter.5) >>
+endobj
+24 0 obj
+(Diversify and Combine: Improving Word Alignment for Machine Translation on Low-Resource Languages)
+endobj
+25 0 obj
+<< /S /GoTo /D (chapter.6) >>
+endobj
+28 0 obj
+(Efficient Path Counting Transducers for Minimum Bayes-Risk Decoding of Statistical Machine Translation Lattices)
+endobj
+29 0 obj
+<< /S /GoTo /D (chapter.7) >>
+endobj
+32 0 obj
+(The Same-Head Heuristic for Coreference)
+endobj
+33 0 obj
+<< /S /GoTo /D (chapter.8) >>
+endobj
+36 0 obj
+(Authorship Attribution Using Probabilistic Context-Free Grammars)
+endobj
+37 0 obj
+<< /S /GoTo /D (chapter.9) >>
+endobj
+40 0 obj
+(The Impact of Interpretation Problems on Tutorial Dialogue)
+endobj
+41 0 obj
+<< /S /GoTo /D (chapter.10) >>
+endobj
+44 0 obj
+(The Prevalence of Descriptive Referring Expressions in News and Narrative)
+endobj
+45 0 obj
+<< /S /GoTo /D (chapter.11) >>
+endobj
+48 0 obj
+(Preferences versus Adaptation during Referring Expression Generation)
+endobj
+49 0 obj
+<< /S /GoTo /D (chapter.12) >>
+endobj
+52 0 obj
+(Cognitively Plausible Models of Human Language Processing)
+endobj
+53 0 obj
+<< /S /GoTo /D (chapter.13) >>
+endobj
+56 0 obj
+(The Manually Annotated Sub-Corpus: A Community Resource for and by the People)
+endobj
+57 0 obj
+<< /S /GoTo /D (chapter.14) >>
+endobj
+60 0 obj
+(Correcting Errors in a Treebank Based on Synchronous Tree Substitution Grammar)
+endobj
+61 0 obj
+<< /S /GoTo /D (chapter.15) >>
+endobj
+64 0 obj
+(Evaluating Machine Translations Using mNCD)
+endobj
+65 0 obj
+<< /S /GoTo /D (chapter.16) >>
+endobj
+68 0 obj
+(Tackling Sparse Data Issue in Machine Translation Evaluation)
+endobj
+69 0 obj
+<< /S /GoTo /D (chapter.17) >>
+endobj
+72 0 obj
+(Exemplar-Based Models for Word Meaning in Context)
+endobj
+73 0 obj
+<< /S /GoTo /D (chapter.18) >>
+endobj
+76 0 obj
+(A Structured Model for Joint Learning of Argument Roles and Predicate Senses)
+endobj
+77 0 obj
+<< /S /GoTo /D (chapter.19) >>
+endobj
+80 0 obj
+(Semantics-Driven Shallow Parsing for Chinese Semantic Role Labeling)
+endobj
+81 0 obj
+<< /S /GoTo /D (chapter.20) >>
+endobj
+84 0 obj
+(Collocation Extraction beyond the Independence Assumption)
+endobj
+85 0 obj
+<< /S /GoTo /D (chapter.21) >>
+endobj
+88 0 obj
+(Automatic Collocation Suggestion in Academic Writing)
+endobj
+89 0 obj
+<< /S /GoTo /D (chapter.22) >>
+endobj
+92 0 obj
+(Event-Based Hyperspace Analogue to Language for Query Expansion)
+endobj
+93 0 obj
+<< /S /GoTo /D (chapter.23) >>
+endobj
+96 0 obj
+(Automatically Generating Term Frequency Induced Taxonomies)
+endobj
+97 0 obj
+<< /S /GoTo /D (chapter.24) >>
+endobj
+100 0 obj
+(Complexity Assumptions in Ontology Verbalisation)
+endobj
+101 0 obj
+<< /S /GoTo /D (chapter.25) >>
+endobj
+104 0 obj
+(Word Alignment with Synonym Regularization)
+endobj
+105 0 obj
+<< /S /GoTo /D (chapter.26) >>
+endobj
+108 0 obj
+(Better Filtration and Augmentation for Hierarchical Phrase-Based Translation Rules)
+endobj
+109 0 obj
+<< /S /GoTo /D (chapter.27) >>
+endobj
+112 0 obj
+(Fixed Length Word Suffix for Factored Statistical Machine Translation)
+endobj
+113 0 obj
+<< /S /GoTo /D (chapter.28) >>
+endobj
+116 0 obj
+(Unsupervised Discourse Segmentation of Documents with Inherently Parallel Structure)
+endobj
+117 0 obj
+<< /S /GoTo /D (chapter.29) >>
+endobj
+120 0 obj
+(Coreference Resolution with Reconcile)
+endobj
+121 0 obj
+<< /S /GoTo /D (chapter.30) >>
+endobj
+124 0 obj
+(Predicate Argument Structure Analysis Using Transformation Based Learning)
+endobj
+125 0 obj
+<< /S /GoTo /D (chapter.31) >>
+endobj
+128 0 obj
+(Improving Chinese Semantic Role Labeling with Rich Syntactic Features)
+endobj
+129 0 obj
+<< /S /GoTo /D (chapter.32) >>
+endobj
+132 0 obj
+(Balancing User Effort and Translation Error in Interactive Machine Translation via Confidence Measures)
+endobj
+133 0 obj
+<< /S /GoTo /D (chapter.33) >>
+endobj
+136 0 obj
+(Improving Arabic-to-English Statistical Machine Translation by Reordering Post-Verbal Subjects for Alignment)
+endobj
+137 0 obj
+<< /S /GoTo /D (chapter.34) >>
+endobj
+140 0 obj
+(Learning Common Grammar from Multilingual Corpus)
+endobj
+141 0 obj
+<< /S /GoTo /D (chapter.35) >>
+endobj
+144 0 obj
+(Tree-Based Deterministic Dependency Parsing --- An Application to Nivre's Method ---)
+endobj
+145 0 obj
+<< /S /GoTo /D (chapter.36) >>
+endobj
+148 0 obj
+(Sparsity in Dependency Grammar Induction)
+endobj
+149 0 obj
+<< /S /GoTo /D (chapter.37) >>
+endobj
+152 0 obj
+(Top-Down K-Best A* Parsing)
+endobj
+153 0 obj
+<< /S /GoTo /D (chapter.38) >>
+endobj
+156 0 obj
+(Simple Semi-Supervised Training of Part-Of-Speech Taggers)
+endobj
+157 0 obj
+<< /S /GoTo /D (chapter.39) >>
+endobj
+160 0 obj
+(Efficient Optimization of an MDL-Inspired Objective Function for Unsupervised Part-Of-Speech Tagging)
+endobj
+161 0 obj
+<< /S /GoTo /D (chapter.40) >>
+endobj
+164 0 obj
+(SVD and Clustering for Unsupervised POS Tagging)
+endobj
+165 0 obj
+<< /S /GoTo /D (chapter.41) >>
+endobj
+168 0 obj
+(Intelligent Selection of Language Model Training Data)
+endobj
+169 0 obj
+<< /S /GoTo /D (chapter.42) >>
+endobj
+172 0 obj
+(Blocked Inference in Bayesian Tree Substitution Grammars)
+endobj
+173 0 obj
+<< /S /GoTo /D (chapter.43) >>
+endobj
+176 0 obj
+(Online Generation of Locality Sensitive Hash Signatures)
+endobj
+177 0 obj
+<< /S /GoTo /D (chapter.44) >>
+endobj
+180 0 obj
+(Optimizing Question Answering Accuracy by Maximizing Log-Likelihood)
+endobj
+181 0 obj
+<< /S /GoTo /D (chapter.45) >>
+endobj
+184 0 obj
+(Generating Entailment Rules from FrameNet)
+endobj
+185 0 obj
+<< /S /GoTo /D (chapter.46) >>
+endobj
+188 0 obj
+(Don't `Have a Clue'? Unsupervised Co-Learning of Downward-Entailing Operators.)
+endobj
+189 0 obj
+<< /S /GoTo /D (chapter.47) >>
+endobj
+192 0 obj
+(Vocabulary Choice as an Indicator of Perspective)
+endobj
+193 0 obj
+<< /S /GoTo /D (chapter.48) >>
+endobj
+196 0 obj
+(Cross Lingual Adaptation: An Experiment on Sentiment Classifications)
+endobj
+197 0 obj
+<< /S /GoTo /D (chapter.49) >>
+endobj
+200 0 obj
+(Using Anaphora Resolution to Improve Opinion Target Identification in Movie Reviews)
+endobj
+201 0 obj
+<< /S /GoTo /D (chapter.50) >>
+endobj
+204 0 obj
+(Hierarchical Sequential Learning for Extracting Opinions and Their Attributes)
+endobj
+205 0 obj
+<< /S /GoTo /D (chapter.51) >>
+endobj
+208 0 obj
+(Jointly Optimizing a Two-Step Conditional Random Field Model for Machine Transliteration and Its Fast Decoding Algorithm)
+endobj
+209 0 obj
+<< /S /GoTo /D (chapter.52) >>
+endobj
+212 0 obj
+(Arabic Named Entity Recognition: Using Features Extracted from Noisy Data)
+endobj
+213 0 obj
+<< /S /GoTo /D (chapter.53) >>
+endobj
+216 0 obj
+(Extracting Sequences from the Web)
+endobj
+217 0 obj
+<< /S /GoTo /D (chapter.54) >>
+endobj
+220 0 obj
+(An Entity-Level Approach to Information Extraction)
+endobj
+221 0 obj
+<< /S /GoTo /D (chapter.55) >>
+endobj
+224 0 obj
+(A Semi-Supervised Key Phrase Extraction Approach: Learning from Title Phrases through a Document Semantic Network)
+endobj
+225 0 obj
+<< /S /GoTo /D (chapter.56) >>
+endobj
+228 0 obj
+(Domain Adaptation of Maximum Entropy Language Models)
+endobj
+229 0 obj
+<< /S /GoTo /D (chapter.57) >>
+endobj
+232 0 obj
+(Decision Detection Using Hierarchical Graphical Models)
+endobj
+233 0 obj
+<< /S /GoTo /D (chapter.58) >>
+endobj
+236 0 obj
+(Using Speech to Reply to SMS Messages While Driving: An In-Car Simulator User Study)
+endobj
+237 0 obj
+<< /S /GoTo /D (chapter.59) >>
+endobj
+240 0 obj
+(Classification of Feedback Expressions in Multimodal Data)
+endobj
+241 0 obj
+<< /S /GoTo /D (chapter.60) >>
+endobj
+244 0 obj
+(Optimizing Informativeness and Readability for Sentiment Summarization)
+endobj
+245 0 obj
+<< /S /GoTo /D (chapter.61) >>
+endobj
+248 0 obj
+(Last but Definitely Not Least: On the Role of the Last Sentence in Automatic Polarity-Classification)
+endobj
+249 0 obj
+<< /S /GoTo /D (chapter.62) >>
+endobj
+252 0 obj
+(Automatically Generating Annotator Rationales to Improve Sentiment Classification)
+endobj
+253 0 obj
+<< /S /GoTo /D (chapter.63) >>
+endobj
+256 0 obj
+(Simultaneous Tokenization and Part-Of-Speech Tagging for Arabic without a Morphological Analyzer)
+endobj
+257 0 obj
+<< /S /GoTo /D (chapter.64) >>
+endobj
+260 0 obj
+(Hierarchical A* Parsing with Bridge Outside Scores)
+endobj
+261 0 obj
+<< /S /GoTo /D (chapter.65) >>
+endobj
+264 0 obj
+(Using Parse Features for Preposition Selection and Error Detection)
+endobj
+265 0 obj
+<< /S /GoTo /D (chapter.66) >>
+endobj
+268 0 obj
+(Distributional Similarity vs. PU Learning for Entity Set Expansion)
+endobj
+269 0 obj
+<< /S /GoTo /D (chapter.67) >>
+endobj
+272 0 obj
+(Active Learning-Based Elicitation for Semi-Supervised Word Alignment)
+endobj
+273 0 obj
+<< /S /GoTo /D (chapter.68) >>
+endobj
+276 0 obj
+(An Active Learning Approach to Finding Related Terms)
+endobj
+277 0 obj
+<< /S /GoTo /D (chapter.69) >>
+endobj
+280 0 obj
+(Learning Better Data Representation Using Inference-Driven Metric Learning)
+endobj
+281 0 obj
+<< /S /GoTo /D (chapter.70) >>
+endobj
+284 0 obj
+(Wrapping up a Summary: From Representation to Generation)
+endobj
+285 0 obj
+<< /S /GoTo /D [286 0 R  /Fit ] >>
+endobj
+292 0 obj <<
+/Length 117       
+/Filter /FlateDecode
+>>
+stream
+x⁄çéA
+Ä@E˜s
+/0¶9Éπ¢egh—*¢˚o≤Ü"f©†ºˇ»ì!∑Vz'0ØvÁ‰‰jÙç*Ç‰ëÕÆÓ°≤7„ö†ﬂ¬‡U∑I€Úó™!ôŸπA∞∏6<ûîs)˜j5>rTI»*¸ˇ»ÜI6Sendstream
+endobj
+286 0 obj <<
+/Type /Page
+/Contents 292 0 R
+/Resources 291 0 R
+/MediaBox [0 0 595.2756 841.8897]
+/Parent 295 0 R
+>> endobj
+290 0 obj <<
+/Type /XObject
+/Subtype /Form
+/FormType 1
+/PTEX.FileName (./titlepage.pdf)
+/PTEX.PageNumber 1
+/PTEX.InfoDict 296 0 R 
+/Matrix [1.00000000 0.00000000 0.00000000 1.00000000 0.00000000 0.00000000]
+/BBox [0.00000000 0.00000000 595.27560000 841.88980000]
+/Resources <<
+/Font << /F19 301 0 R /F20 306 0 R >>
+/ProcSet [ /PDF /Text ]
+>>
+/Length 301
+/Filter /FlateDecode
+>>
+stream
+x⁄mPªj√0›Û%®]Yœ1ÕR‘ôJcÀç!ïå-∑‰Ôk[)4¥ìÆ§Û∫Á±X≠w`h A
+T4à+Neûs§Ö¶¬âä˙oà`x{ ósåº˚ıé≥ﬂ‘L	™ÀQZS√Û|·
+œâ∏Ò~,/i~v.∂˛=]BìŒxv≥0 §†LsÉ2‘Ç6)ƒ0Ñ™-c|Ç7ÑK˙tŸÜènåÀÔè«a2€!∂’êd:üÛC¡⁄${Ï	*ÁÍ	?¸Mtì˜ç[êŒW∑∑ósËcè.;◊©ô˚RÅ…©Kaß}8ßVã‰êÅJ¸˝xπﬁ∑;•dT0≈ÔK8u›P^ Ñ=˘vÆ‡ìÄƒìuØSQiÁ5ˇ·=‹íπ⁄˘ºz*VﬂœëÑñendstream
+endobj
+296 0 obj
+<<
+/Producer (pdfeTeX-1.21a)
+/Creator (TeX)
+/CreationDate (D:20100621152423+08'00')
+/PTEX.Fullbanner (This is pdfeTeX, Version 3.141592-1.21a-2.2 \(Web2C 7.5.4\) kpathsea version 3.5.4)
+>>
+endobj
+299 0 obj
+<<
+/Ascent 678
+/CapHeight 651
+/Descent -216
+/ItalicAngle 0
+/StemV 85
+/XHeight 450
+/FontBBox [ -168 -281 1000 924]
+/Flags 4
+/FontName 307 0 R
+/FontFile 297 0 R
+>>
+endobj
+301 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 44
+/LastChar 121
+/Widths 308 0 R
+/FontDescriptor 299 0 R
+/BaseFont 307 0 R
+/Encoding 300 0 R
+>>
+endobj
+304 0 obj
+<<
+/Ascent 690
+/CapHeight 690
+/Descent -209
+/ItalicAngle 0
+/StemV 140
+/XHeight 461
+/FontBBox [ -168 -341 1000 960]
+/Flags 4
+/FontName 309 0 R
+/FontFile 302 0 R
+>>
+endobj
+306 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/FirstChar 52
+/LastChar 117
+/Widths 310 0 R
+/FontDescriptor 304 0 R
+/BaseFont 309 0 R
+/Encoding 305 0 R
+>>
+endobj
+308 0 obj
+[ 250 333 0 0 500 500 500 0 0 0 500 0 0 0 0 0 0 0 0 0 0 722 0 667 0 0 0 0 0 0 389 0 611 0 0 0 0 0 0 556 0 722 0 0 0 0 0 0 0 0 0 0 0 444 0 0 500 444 0 0 0 278 0 0 278 0 500 0 500 0 333 389 278 500 500 722 0 500]
+endobj
+310 0 obj
+[ 500 0 0 0 500 0 0 0 0 0 0 0 0 722 0 722 0 0 0 0 0 0 0 0 667 944 0 0 611 0 0 556 0 0 0 0 0 0 0 0 0 0 0 0 0 500 0 444 556 444 333 500 556 278 0 0 278 833 556 500 556 0 444 389 333 556]
+endobj
+305 0 obj <<
+/Type /Encoding
+/Differences [ 0 /.notdef/dotaccent/fi/fl/fraction/hungarumlaut/Lslash/lslash/ogonek/ring/.notdef/breve/minus/.notdef/Zcaron/zcaron/caron/dotlessi/dotlessj/ff/ffi/ffl/notequal/infinity/lessequal/greaterequal/partialdiff/summation/product/pi/grave/quotesingle/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde/.notdef/Euro/integral/quotesinglbase/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/Omega/radical/approxequal/.notdef 145/.notdef 147/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/Delta/lozenge/Ydieresis/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]
+>> endobj
+300 0 obj <<
+/Type /Encoding
+/Differences [ 0 /.notdef/dotaccent/fi/fl/fraction/hungarumlaut/Lslash/lslash/ogonek/ring/.notdef/breve/minus/.notdef/Zcaron/zcaron/caron/dotlessi/dotlessj/ff/ffi/ffl/notequal/infinity/lessequal/greaterequal/partialdiff/summation/product/pi/grave/quotesingle/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde/.notdef/Euro/integral/quotesinglbase/florin/quotedblbase/ellipsis/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/Omega/radical/approxequal/.notdef 145/.notdef 147/quotedblleft/quotedblright/bullet/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/Delta/lozenge/Ydieresis/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]
+>> endobj
+293 0 obj <<
+/D [286 0 R /XYZ 72 779.0816 null]
+>> endobj
+294 0 obj <<
+/D [286 0 R /XYZ 72 779.0816 null]
+>> endobj
+291 0 obj <<
+/XObject << /Im4 290 0 R >>
+/ProcSet [ /PDF ]
+>> endobj
+317 0 obj <<
+/Length 163       
+/Filter /FlateDecode
+>>
+stream
+x⁄}ç=¬@Ü˜˚uhö4wÊ≤äË&‹&Nä“°Hˇˇ‚µ••)	<Ôso(!iˇ0<m°Ë≥<´hï¥n K·u7≥%e43UCä¥Î~|rvûÉ˙ñi1≈ÖäGV·øöVYıhCóÔì+Ol¿îë1§7TP≈`¥“Îæ©ÎÌ#]›1ME°
+√πYŸxÏ˝[D8endstream
+endobj
+316 0 obj <<
+/Type /Page
+/Contents 317 0 R
+/Resources 315 0 R
+/MediaBox [0 0 595.2756 841.8897]
+/Parent 295 0 R
+>> endobj
+314 0 obj <<
+/Type /XObject
+/Subtype /Form
+/FormType 1
+/PTEX.FileName (./copyright.pdf)
+/PTEX.PageNumber 1
+/PTEX.InfoDict 320 0 R 
+/Matrix [1.00000000 0.00000000 0.00000000 1.00000000 0.00000000 0.00000000]
+/BBox [0.00000000 0.00000000 595.27560000 841.88980000]
+/Resources <<
+/Font << /F29 323 0 R /F30 328 0 R /F19 333 0 R /F32 338 0 R >>
+/ProcSet [ /PDF /Te

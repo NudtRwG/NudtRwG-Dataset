@@ -1,0 +1,1 @@
+Refining Event Extraction through Cross-Document Inference

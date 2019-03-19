@@ -1,0 +1,1 @@
+Query-focused Multi-Document Summarization: Combining a Topic Model with Graph-based Semi-supervised Learning

@@ -1,0 +1,1 @@
+Rationale-Augmented Convolutional Neural Networks for Text Classification

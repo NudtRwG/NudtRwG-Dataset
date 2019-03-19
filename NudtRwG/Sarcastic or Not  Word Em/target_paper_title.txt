@@ -1,0 +1,1 @@
+Sarcastic or Not: Word Embeddings to Predict the Literal or Sarcastic Meaning of Words

@@ -1,0 +1,1 @@
+Resolving References to Objects in Photographs using the Words-As-Classifiers Model

@@ -1,0 +1,1 @@
+Scalable Semantic Parsing with Partial Ontologies

@@ -1,0 +1,1 @@
+Scalable Bayesian Learning of Recurrent Neural Networks for Language Modeling

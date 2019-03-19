@@ -1,0 +1,1 @@
+Sampling Alignment Structure under a Bayesian Translation Model

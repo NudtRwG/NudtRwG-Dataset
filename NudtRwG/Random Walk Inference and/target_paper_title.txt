@@ -1,0 +1,1 @@
+Random Walk Inference and Learning in A Large Scale Knowledge Base

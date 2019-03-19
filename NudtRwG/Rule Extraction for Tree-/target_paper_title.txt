@@ -1,0 +1,1 @@
+Rule Extraction for Tree-to-Tree Transducers by Cost Minimization
