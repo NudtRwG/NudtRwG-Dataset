@@ -1,0 +1,1 @@
+Ten Pairs to Tag – Multilingual POS Tagging via Coarse Mapping between Embeddings

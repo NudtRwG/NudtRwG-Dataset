@@ -1,0 +1,1 @@
+Temporal Information Extraction for Question Answering Using Syntactic Dependencies in an LSTM-based Architecture

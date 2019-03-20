@@ -1,0 +1,1 @@
+Syntactic Dependencies and Distributed Word Representations for Analogy Detection and Mining

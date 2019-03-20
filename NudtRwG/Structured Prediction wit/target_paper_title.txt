@@ -1,0 +1,1 @@
+Structured Prediction with Output Embeddings for Semantic Image Annotation

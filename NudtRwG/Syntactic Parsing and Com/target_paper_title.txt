@@ -1,0 +1,1 @@
+Syntactic Parsing and Compound Recognition via Dual Decomposition: Application to French

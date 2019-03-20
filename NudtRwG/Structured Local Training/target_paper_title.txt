@@ -1,0 +1,1 @@
+Structured Local Training and Biased Potential Functions for Conditional Random Fields with Application to Coreference Resolution

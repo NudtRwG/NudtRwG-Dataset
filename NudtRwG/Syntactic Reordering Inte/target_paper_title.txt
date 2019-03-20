@@ -1,0 +1,1 @@
+Syntactic Reordering Integrated with Phrase-Based SMT

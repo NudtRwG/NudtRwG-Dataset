@@ -1,0 +1,1 @@
+Syntax-to-Morphology Mapping in Factored Phrase-Based Statistical Machine Translation from English to Turkish

@@ -1,0 +1,1 @@
+Supervised Learning of Automatic Pyramid for Optimization-Based Multi-Document Summarization
