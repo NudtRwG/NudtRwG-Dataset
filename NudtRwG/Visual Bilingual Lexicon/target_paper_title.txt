@@ -1,0 +1,1 @@
+Visual Bilingual Lexicon Induction with Transferred ConvNet Features

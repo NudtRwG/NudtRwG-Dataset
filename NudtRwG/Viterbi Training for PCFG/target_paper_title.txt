@@ -1,0 +1,1 @@
+Viterbi Training for PCFGs: Hardness Results and Competitiveness of Uniform Initialization
