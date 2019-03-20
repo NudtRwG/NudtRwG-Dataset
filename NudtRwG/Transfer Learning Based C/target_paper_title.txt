@@ -1,0 +1,1 @@
+Transfer Learning Based Cross-lingual Knowledge Extraction for Wikipedia

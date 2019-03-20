@@ -1,0 +1,1 @@
+Trainable Greedy Decoding for Neural Machine Translation

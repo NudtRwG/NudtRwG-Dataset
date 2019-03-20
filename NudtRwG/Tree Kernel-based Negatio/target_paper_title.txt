@@ -1,0 +1,1 @@
+Tree Kernel-based Negation and Speculation Scope Detection with Structured Syntactic Parse Features

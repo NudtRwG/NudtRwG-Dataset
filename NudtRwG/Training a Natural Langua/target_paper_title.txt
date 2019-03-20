@@ -1,0 +1,1 @@
+Training a Natural Language Generator From Unaligned Data

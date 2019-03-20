@@ -1,0 +1,1 @@
+Text to 3D Scene Generation with Rich Lexical Grounding

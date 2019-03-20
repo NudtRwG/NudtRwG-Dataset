@@ -1,0 +1,1 @@
+Training Nondeficient Variants of IBM-3 and IBM-4 for Word Alignment
