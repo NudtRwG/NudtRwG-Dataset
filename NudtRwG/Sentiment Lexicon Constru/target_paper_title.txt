@@ -1,0 +1,1 @@
+Sentiment Lexicon Construction with Representation Learning Based on Hierarchical Sentiment Supervision

@@ -1,0 +1,1 @@
+Sentiment Intensity Ranking among Adjectives Using Sentiment Bearing Word Embeddings
