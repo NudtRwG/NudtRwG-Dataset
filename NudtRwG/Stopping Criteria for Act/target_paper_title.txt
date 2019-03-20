@@ -1,0 +1,1 @@
+Stopping Criteria for Active Learning of Named Entity Recognition

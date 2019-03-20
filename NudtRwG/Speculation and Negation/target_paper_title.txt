@@ -1,0 +1,1 @@
+Speculation and Negation Scope Detection via Convolutional Neural Networks
