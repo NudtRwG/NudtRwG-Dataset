@@ -1,0 +1,1 @@
+What to talk about and how? Selective Generation using LSTMs with Coarse-to-Fine Alignment

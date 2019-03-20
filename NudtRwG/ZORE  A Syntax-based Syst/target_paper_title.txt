@@ -1,0 +1,1 @@
+ZORE: A Syntax-based System for Chinese Open Relation Extraction

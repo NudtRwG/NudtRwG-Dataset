@@ -1,0 +1,1 @@
+Weakly Supervised Cross-Lingual Named Entity Recognition via Effective Annotation and Representation Projection

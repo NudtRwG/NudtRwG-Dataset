@@ -1,0 +1,1 @@
+Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation.

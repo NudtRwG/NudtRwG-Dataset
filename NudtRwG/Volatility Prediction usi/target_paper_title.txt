@@ -1,0 +1,1 @@
+Volatility Prediction using Financial Disclosures Sentiments with Word Embedding-based IR Models
