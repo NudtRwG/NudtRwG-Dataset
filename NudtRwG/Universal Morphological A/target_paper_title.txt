@@ -1,0 +1,1 @@
+Universal Morphological Analysis using Structured Nearest Neighbor Prediction

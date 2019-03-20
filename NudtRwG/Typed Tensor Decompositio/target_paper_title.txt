@@ -1,0 +1,1 @@
+Typed Tensor Decomposition of Knowledge Bases for Relation Extraction

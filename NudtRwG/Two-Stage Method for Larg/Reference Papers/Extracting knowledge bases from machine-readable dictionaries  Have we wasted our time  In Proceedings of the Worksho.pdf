@@ -1,0 +1,8288 @@
+%PDF-1.3
+%âãÏÓ
+2 0 obj
+<<
+/Length 7573
+>>
+stream
+BT
+/TT2 1 Tf
+17 0 0 17 94 766 Tm
+0 g
+/GS1 gs
+-0.0244 Tc
+0 Tw
+(EXTRACTING KNOWLEDGE BASES FROM MACHINE-)Tj
+-1.3529 -1 TD
+-0.0306 Tc
+(READABLE DICTIONARIES : HAVE WE WASTED OUR TIME?)Tj
+14 0 0 14 216 704 Tm
+0.0013 Tc
+0.0131 Tw
+(Nancy Ide and Jean Véronis)Tj
+11 0 0 11 88 668 Tm
+0.01 Tc
+0.0998 Tw
+(Department of Computer Science)Tj
+3.9091 -1 TD
+0.0044 Tc
+0.044 Tw
+(Vassar College)Tj
+-5.5455 -1 TD
+0.008 Tc
+0.0804 Tw
+(Poughkeepsie, New York 12601 \(U.S.A.\))Tj
+1.1818 -1 TD
+0.0035 Tc
+0 Tw
+(e-mail: )Tj
+/TT4 1 Tf
+3.1462 0 TD
+0.0093 Tc
+({ide,veronis}@cs.vassar.edu)Tj
+/TT2 1 Tf
+21.672 3 TD
+0.0103 Tc
+0.1026 Tw
+(Laboratoire Parole et Langage)Tj
+-0.3636 -1 TD
+0.0035 Tc
+0.0347 Tw
+(CNRS & Université de Provence)Tj
+0.7273 -1 TD
+0.0083 Tc
+0.0829 Tw
+(29, Avenue Robert Schuman)Tj
+-2.8182 -1 TD
+0.0113 Tc
+0.1125 Tw
+(13621 Aix-en-Provence Cedex 1 \(France\))Tj
+0.2727 -1 TD
+0.0111 Tc
+0 Tw
+(e-mail:)Tj
+/TT4 1 Tf
+2.9097 0 TD
+0.0087 Tc
+0.0872 Tw
+[( {ide,veronis}@fraix11.univ-aix.fr)]TJ
+/TT2 1 Tf
+13 0 0 13 53 575 Tm
+-0.0208 Tc
+0 Tw
+(ABSTRACT)Tj
+11 0 0 11 74 564 Tm
+0.0526 Tc
+0.5268 Tw
+(Machine-readable versions of everyday)Tj
+-1.9091 -1 TD
+0.0154 Tc
+0.1538 Tw
+(dictionaries have been seen as a likely source of)Tj
+T*
+0.0631 Tc
+0.6306 Tw
+(information for use in natural language)Tj
+T*
+0.0319 Tc
+0.3195 Tw
+(processing because they contain an enormous)Tj
+T*
+0.0422 Tc
+0.4221 Tw
+(amount of lexical and semantic knowledge.)Tj
+T*
+0.0199 Tc
+0.1994 Tw
+(However, after 15 years of research, the results)Tj
+T*
+0.0277 Tc
+0.2771 Tw
+(appear to be disappointing. No comprehensive)Tj
+T*
+0.0509 Tc
+0.5088 Tw
+(evaluation of machine-readable dictionaries)Tj
+T*
+0.0114 Tc
+0.1139 Tw
+(\(MRDs\) as a knowledge source has been made to)Tj
+T*
+0.0087 Tc
+0.0876 Tw
+(date, although this is necessary to determine what,)Tj
+T*
+0.0199 Tc
+0.1995 Tw
+(if anything, can be gained from MRD research.)Tj
+T*
+0.0277 Tc
+0.2772 Tw
+(To this end, this paper will first consider the)Tj
+T*
+0.0236 Tc
+0.2364 Tw
+(postulates upon which MRD research has been)Tj
+T*
+0.0302 Tc
+0.3015 Tw
+(based over the past fifteen years, discuss the)Tj
+T*
+0.0052 Tc
+0.0515 Tw
+(validity of these postulates, and evaluate the results)Tj
+T*
+0.0085 Tc
+0.0857 Tw
+(of this work. We will then propose possible future)Tj
+T*
+0.0129 Tc
+0.1294 Tw
+(directions and applications that may exploit these)Tj
+T*
+0.0091 Tc
+0.0911 Tw
+(years of effort, in the light of current directions in)Tj
+T*
+0.0231 Tc
+0.2305 Tw
+(not only NLP research, but also fields such as)Tj
+T*
+0.0132 Tc
+0.1323 Tw
+(lexicography and electronic publishing.)Tj
+13 0 0 13 53 329 Tm
+-0.0285 Tc
+0 Tw
+(1. INTRODUCTION)Tj
+11 0 0 11 74 319 Tm
+0.0304 Tc
+0.3032 Tw
+(The need for robust lexical and semantic)Tj
+-1.9091 -1 TD
+0.0154 Tc
+0.1535 Tw
+(information to assist in realistic natural language)Tj
+T*
+0.0313 Tc
+0.3128 Tw
+(processing \(NLP\) applications is well known.)Tj
+T*
+0.0816 Tc
+0.816 Tw
+(Machine-readable versions of everyday)Tj
+T*
+0.0154 Tc
+0.1538 Tw
+(dictionaries have been seen as a likely source of)Tj
+T*
+0.0148 Tc
+0.148 Tw
+(information for use in NLP because they contain)Tj
+T*
+0.0326 Tc
+0.3267 Tw
+(an enormous amount of lexical and semantic)Tj
+T*
+0.0136 Tc
+0.1362 Tw
+(knowledge collected together over years of effort)Tj
+T*
+0.0099 Tc
+0.099 Tw
+(by lexicographers. Considerable research has been)Tj
+T*
+0.0394 Tc
+0.3941 Tw
+(devoted to devising methods to extract this)Tj
+T*
+0.0209 Tc
+0.2094 Tw
+(information from dictionaries \(see, for instance,)Tj
+T*
+0.0119 Tc
+0.1193 Tw
+([1,2,3,4,5,6,7,8,9,10,11]\) based on the supposition)Tj
+T*
+0.0352 Tc
+0.352 Tw
+(that it is sufficient to form the kernel of a)Tj
+T*
+0.0127 Tc
+0.1278 Tw
+(knowledge base that can be extended by utilizing)Tj
+T*
+0.0123 Tc
+0.123 Tw
+(information from other sources.)Tj
+1.9091 -1 TD
+0.0425 Tc
+0.4253 Tw
+(Interest in machine-readable dictionaries)Tj
+-1.9091 -1 TD
+0.0082 Tc
+0.0819 Tw
+(\(MRDs\) as a ready-made source of knowledge has)Tj
+T*
+0.0154 Tc
+0.1531 Tw
+(waned somewhat in recent years. The number of)Tj
+T*
+0.0215 Tc
+0.2147 Tw
+(papers on the topic at computational linguistics)Tj
+T*
+0.0545 Tc
+0.5442 Tw
+(conferences and workshops \(including the)Tj
+T*
+0.028 Tc
+0.2801 Tw
+(NewOED conference, which is devoted to the)Tj
+23 43.4545 TD
+0.0135 Tc
+0.1347 Tw
+(topic\) is reduced, indicating either that extraction)Tj
+0 -1 TD
+0.011 Tc
+0.1101 Tw
+(methods are well-established and robust \(which is)Tj
+T*
+0.0299 Tc
+0.2991 Tw
+(unlikely\) or that research has turned to other)Tj
+T*
+0.0126 Tc
+0.1262 Tw
+(areas. At the same time, the NLP community has)Tj
+T*
+0.0291 Tc
+0.2907 Tw
+(turned its attention to corpora as a source of)Tj
+T*
+0.0133 Tc
+0.133 Tw
+(linguistic knowledge, evident both in the upsurge)Tj
+T*
+0.0102 Tc
+0.1022 Tw
+(in the number of papers, journals, workshops, etc.)Tj
+T*
+0.103 Tw
+(dealing with corpora as a linguistic resource \(e.g.,)Tj
+T*
+0.0063 Tc
+0.0631 Tw
+(the recent issue of )Tj
+/TT4 1 Tf
+7.8749 0 TD
+0.0154 Tc
+0.1535 Tw
+(Computational Linguistics)Tj
+/TT2 1 Tf
+11.1778 0 TD
+0.0068 Tc
+0.0683 Tw
+(, vol.)Tj
+-19.0527 -1 TD
+0.0137 Tc
+0.1371 Tw
+(19, 1-2, 1993, devoted to corpus-based work, the)Tj
+T*
+0.0295 Tc
+0.296 Tw
+(workshop at ACL'93 on corpora, etc.\) and in)Tj
+T*
+0.0383 Tc
+0.3828 Tw
+(recent large-scale funding patterns \(e.g., the)Tj
+T*
+0.0351 Tc
+0.3506 Tw
+(European LRE program for corpora, ARPA's)Tj
+T*
+0.0093 Tc
+0.0926 Tw
+(Linguistic Data Consortium in the U.S., etc.\). It is)Tj
+T*
+0.0392 Tc
+0.392 Tw
+(clear that MRDs failed to live up to early)Tj
+T*
+0.0152 Tc
+0.1514 Tw
+(expectations that they would provide a source of)Tj
+T*
+0.0289 Tc
+0.2887 Tw
+(ready-made, comprehensive lexical knowledge.)Tj
+T*
+0.0093 Tc
+0.0928 Tw
+(But does this mean that these many years of work)Tj
+T*
+0.011 Tc
+0.1096 Tw
+(on MRDs constitutes wasted effort? Does it mean)Tj
+T*
+0.0085 Tc
+0.0842 Tw
+[(that MRDs are conclusively unsuitable as a source)]TJ
+T*
+0.0227 Tc
+0.2275 Tw
+(for automatically building knowledge bases? In)Tj
+T*
+0.0045 Tc
+0.0457 Tw
+(fact, while work on MRDs is eclipsed by the recent)Tj
+T*
+0.0175 Tc
+0.1742 Tw
+(interest in corpora, no comprehensive evaluation)Tj
+T*
+0.0119 Tc
+0.119 Tw
+(of the value of MRDs as a knowledge source has)Tj
+T*
+0.0166 Tc
+0.1668 Tw
+(been made in the light of the past ten or fifteen)Tj
+T*
+0.0242 Tc
+0.242 Tw
+(years' experience. Given the recent trend away)Tj
+T*
+0.0095 Tc
+0.096 Tw
+(from MRDs, as well as a greater understanding of)Tj
+T*
+0.0155 Tc
+0.154 Tw
+(what is needed in knowledge bases for NLP and)Tj
+T*
+0.0145 Tc
+0.1457 Tw
+(how partial knowledge can be exploited, such an)Tj
+T*
+0.021 Tc
+0.2102 Tw
+(evaluation is timely in order to determine what)Tj
+T*
+0.0259 Tc
+0.2588 Tw
+(may--or may not--be valuable to retrieve from)Tj
+T*
+0.0075 Tc
+0.075 Tw
+(MRD research.)Tj
+1.9091 -1 TD
+0.0193 Tc
+0.1924 Tw
+(This paper will first consider the postulates)Tj
+-1.9091 -1 TD
+0.0188 Tc
+0.1881 Tw
+(upon which MRD research has been based over)Tj
+T*
+0.0101 Tc
+0.1006 Tw
+(the past fifteen years, discuss the validity of these)Tj
+T*
+0.0167 Tc
+0.1676 Tw
+(postulates, and evaluate the results of this work.)Tj
+T*
+0.0212 Tc
+0.2117 Tw
+(We will then propose possible future directions)Tj
+T*
+0.0185 Tc
+0.1847 Tw
+(and applications that may exploit these years of)Tj
+T*
+0.0083 Tc
+0.0831 Tw
+(effort, in the light of current directions in not only)Tj
+T*
+0.0081 Tc
+0.0814 Tw
+(NLP research, but also fields such as lexicography)Tj
+T*
+0.0484 Tc
+0.484 Tw
+(and electronic publishing. We recognize a)Tj
+T*
+0.0161 Tc
+0.161 Tw
+(convergence of interests and goals between NLP)Tj
+T*
+0.0155 Tc
+0.1554 Tw
+(and these other communities \(cf. [12,13]\), which)Tj
+T*
+0.0063 Tc
+0.0632 Tw
+(may result in a benefit to all of them.)Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+9 0 obj
+<<
+/Length 10357
+>>
+stream
+BT
+/TT2 1 Tf
+13 0 0 13 53 767 Tm
+0 g
+/GS1 gs
+-0.0197 Tc
+0 Tw
+(2. THESIS)Tj
+11 0 0 11 74 757 Tm
+0.0072 Tc
+0.0721 Tw
+(MRD research has been based on two implicit)Tj
+-1.9091 -1 TD
+0.0086 Tc
+0 Tw
+(postulates:)Tj
+/TT6 1 Tf
+0 -2 TD
+0.0235 Tc
+0.2354 Tw
+(Postulate P1.)Tj
+/TT2 1 Tf
+6.0961 0 TD
+0.0164 Tc
+0.1633 Tw
+[( MRDs contain information that is)]TJ
+-6.0961 -1 TD
+0.0087 Tc
+0.0877 Tw
+(useful for NLP.)Tj
+/TT6 1 Tf
+0 -2.0909 TD
+0.0075 Tc
+0.0743 Tw
+(Postulate P2.)Tj
+/TT2 1 Tf
+5.726 0 TD
+0.0047 Tc
+0.0471 Tw
+[( This information is relatively easy to)]TJ
+-5.726 -1 TD
+0.0076 Tc
+0.0767 Tw
+(extract from MRDs.)Tj
+1.9091 -2 TD
+0.0081 Tc
+0.0806 Tw
+(The basis for postulate 1 is obvious when one)Tj
+-1.9091 -1 TD
+0.0237 Tc
+0.2372 Tw
+(considers a definition like the one for )Tj
+/TT4 1 Tf
+17.7993 0 TD
+0.0692 Tc
+0 Tw
+(fork)Tj
+/TT2 1 Tf
+1.8876 0 TD
+0.105 Tc
+[(  i)95.5(n)]TJ
+-19.6869 -1 TD
+0.0437 Tc
+0.4372 Tw
+(Figure 1, which identifies several semantic)Tj
+T*
+0.0116 Tc
+0.1168 Tw
+(relations between )Tj
+/TT4 1 Tf
+7.7178 0 TD
+0.0245 Tc
+0 Tw
+(fork)Tj
+/TT2 1 Tf
+1.709 0 TD
+0.0086 Tc
+0.0867 Tw
+[( and other lexical items that)]TJ
+-9.4268 -1 TD
+0.0132 Tc
+0.1318 Tw
+(might be found in a semantic network. Access to)Tj
+T*
+0.0286 Tc
+0.2868 Tw
+(this kind of information is often essential for)Tj
+T*
+0.0426 Tc
+0.4266 Tw
+(many NLP tasks \(sense disambiguation, PP)Tj
+T*
+0.0076 Tc
+0.0763 Tw
+(attachment, etc.\).)Tj
+/TT6 1 Tf
+10 0 0 10 55 555 Tm
+0 Tc
+0 Tw
+(fork)Tj
+/TT2 1 Tf
+4.4 0 TD
+(a   small usually metal utensil)Tj
+ET
+0 G
+0 J 0 j 1 w 10 M []0 d
+1 i 
+192.5 564.5 30 -13 re
+S
+BT
+/TT8 1 Tf
+10 0 0 10 234 563 Tm
+(SORT-OF)Tj
+1.5 -4.1 TD
+(PARTS)Tj
+-9.9 -3.7 TD
+-0.0152 Tc
+(INSTRUMENT-FOR)Tj
+/TT2 1 Tf
+-9.6 5.5 TD
+0 Tc
+(consisting of two, three or four long thin prongs)Tj
+-0.1 -1.6 TD
+-0.0003 Tc
+(on the end of a   handle,)Tj
+0 -1.7 TD
+-0.0015 Tc
+0.0001 Tw
+[(used for   eating)-1000.7(or   cooking.)]TJ
+ET
+220.5 548.5 31 -13 re
+115.5 533.5 35 -13 re
+88.5 515.5 32 -12 re
+140.5 515.5 39 -13 re
+S
+BT
+/TT4 1 Tf
+10 0 0 10 82 555 Tm
+0 Tc
+0 Tw
+(n.)Tj
+ET
+231 536 m
+232 536 l
+245 529 l
+245 528 l
+244 528 l
+231 535 l
+f
+244 529 m
+245 529 l
+245 528 l
+151 527 l
+150 527 l
+150 528 l
+f
+234 562 m
+235 562 l
+235 561 l
+223 556 l
+222 556 l
+222 557 l
+f
+143 503 m
+144 503 l
+146 495 l
+146 494 l
+145 494 l
+143 502 l
+f
+114 504 m
+115 504 l
+146 495 l
+146 494 l
+145 494 l
+114 503 l
+f
+BT
+/TT2 1 Tf
+11 0 0 11 65 463 Tm
+0.0095 Tc
+0.095 Tw
+(Figure 1. Semantic information in definitions)Tj
+0.8182 -2.0909 TD
+0.0175 Tc
+0.1753 Tw
+(Postulate 2, that most of this information is)Tj
+-1.9091 -1 TD
+0.0119 Tc
+0.1189 Tw
+(relatively easy to extract, was reinforced by work)Tj
+T*
+0.032 Tc
+0.3203 Tw
+(such as that described in [2] and [3], which)Tj
+T*
+0.0411 Tc
+0.4109 Tw
+(proposed simple heuristics for automatically)Tj
+T*
+0.0257 Tc
+0.2578 Tw
+(extracting hypernyms. These heurisitics exploit)Tj
+T*
+0.0112 Tc
+0.1119 Tw
+(the fact that definitions for nouns typically give a)Tj
+T*
+0.0518 Tc
+0 Tw
+(hypernym)Tj
+/TT4 1 Tf
+4.4692 0 TD
+0 Tc
+( )Tj
+/TT2 1 Tf
+0.2756 0 TD
+0.0144 Tc
+0.1439 Tw
+(term as the head of the defining noun)Tj
+-4.7449 -1 TD
+0.0087 Tc
+0.0869 Tw
+(phrase, as demonstrated in the following examples)Tj
+T*
+0.0045 Tc
+0.0458 Tw
+(from the )Tj
+/TT4 1 Tf
+3.7979 0 TD
+0.008 Tc
+0.0798 Tw
+(Collins English Dictionary \(CED\))Tj
+/TT2 1 Tf
+14.1893 0 TD
+0 Tc
+0 Tw
+(:)Tj
+/TT6 1 Tf
+10 0 0 10 53 328 Tm
+0.0024 Tc
+(dipper)Tj
+/TT2 1 Tf
+2.8484 0 TD
+0.0006 Tc
+0.0018 Tw
+( • a )Tj
+/TT4 1 Tf
+1.5515 0 TD
+0.002 Tc
+0 Tw
+(ladle)Tj
+/TT2 1 Tf
+2.0095 0 TD
+0.0008 Tc
+0.0077 Tw
+[( used for dipping...)]TJ
+/TT6 1 Tf
+-6.4094 -1.1 TD
+0.0079 Tc
+0 Tw
+(ladle)Tj
+/TT2 1 Tf
+2.0952 0 TD
+0.0023 Tc
+0.0234 Tw
+[( • a long-handled )]TJ
+/TT4 1 Tf
+7.2053 0 TD
+0.0086 Tc
+0 Tw
+(spoon...)Tj
+/TT6 1 Tf
+-9.3005 -1.1 TD
+0.0199 Tc
+(spoon)Tj
+/TT2 1 Tf
+2.601 0 TD
+0.0047 Tc
+0.0469 Tw
+[( • a metal, wooden, or plastic )]TJ
+/TT4 1 Tf
+12.3485 0 TD
+0.0152 Tc
+0 Tw
+(utensil)Tj
+/TT2 1 Tf
+2.7729 0 TD
+0.015 Tc
+(...)Tj
+11 0 0 11 53 284 Tm
+0.0115 Tc
+0.1144 Tw
+(The apparent success of extraction strategies such)Tj
+0 -1 TD
+0.0059 Tc
+0.0588 Tw
+(as this led to a flurry of activity in the area and the)Tj
+T*
+0.0135 Tc
+0.1343 Tw
+(application of these techniques to various MRDs.)Tj
+T*
+0.0071 Tc
+0.0709 Tw
+(Early results in MRD research were promising and)Tj
+T*
+0.0366 Tc
+0.3662 Tw
+(led many to feel that MRDs would provide)Tj
+T*
+0.0126 Tc
+0.1267 Tw
+(perhaps the most important source of information)Tj
+T*
+0.0163 Tc
+0.1627 Tw
+(for building knowledge bases automatically \(see,)Tj
+T*
+0.0198 Tc
+0.1983 Tw
+(for instance, the position papers by Amsler and)Tj
+T*
+0.0088 Tc
+0.0882 Tw
+(Boguraev at TINLAP-3 in 1987 [14, 15]\).)Tj
+13 0 0 13 53 158 Tm
+-0.0262 Tc
+0 Tw
+(3. ANTITHESIS)Tj
+11 0 0 11 74 148 Tm
+0.0379 Tc
+0.379 Tw
+(However, despite early success in using)Tj
+-1.9091 -1 TD
+0.0104 Tc
+0.1034 Tw
+(information from machine readable dictionaries, it)Tj
+T*
+0.0051 Tc
+0.0513 Tw
+(is still not clear that the results of early studies will)Tj
+T*
+0.0264 Tc
+0.2641 Tw
+(scale up to enable automatically building full-)Tj
+T*
+0.0195 Tc
+0.1945 Tw
+(scale knowledge bases from MRDs. In fact, the)Tj
+T*
+0.0144 Tc
+0.1436 Tw
+(previous ten or fifteen years of work in the field)Tj
+23 61.6364 TD
+0.0105 Tc
+0.1051 Tw
+[(has produced little more than a handful of limited)]TJ
+0 -1 TD
+0.0156 Tc
+0.1567 Tw
+(and imperfect taxonomies, which hardly lives up)Tj
+T*
+0.0106 Tc
+0.1062 Tw
+(to early expectations. In addition, there have been)Tj
+T*
+0.0442 Tc
+0.4421 Tw
+(very few studies assessing the quality and)Tj
+T*
+0.0178 Tc
+0.1778 Tw
+(usefulness of information extracted from MRDs,)Tj
+T*
+0.0237 Tc
+0.2371 Tw
+(or showing how to systematically extract more)Tj
+T*
+0.0118 Tc
+0.1182 Tw
+(complex information from definition texts.)Tj
+1.9091 -1 TD
+0.0227 Tc
+0.2269 Tw
+(In order to fully assess the value of MRD)Tj
+-1.9091 -1 TD
+0.0145 Tc
+0.1452 Tw
+(research to date, it is necessary to reconsider the)Tj
+T*
+0.0222 Tc
+0.2214 Tw
+(fundamental postulates underlying this work by)Tj
+T*
+0.008 Tc
+0.08 Tw
+(asking the following:)Tj
+1.9091 -1 TD
+0.0133 Tc
+0.1326 Tw
+(\(1\) How useful is the information in MRDs?)Tj
+-1.9091 -1 TD
+0.0488 Tc
+0.4886 Tw
+(In particular, is the information complete,)Tj
+T*
+0.012 Tc
+0.1201 Tw
+(coherent, and comprehensive enough to provide a)Tj
+T*
+0.0154 Tc
+0.1538 Tw
+(basis for building knowledge bases? If not, what)Tj
+T*
+0.008 Tc
+0.0803 Tw
+(kind and how much of the information is missing?)Tj
+1.9091 -1 TD
+0.0317 Tc
+0.3169 Tw
+(\(2\) Is the extraction of information from)Tj
+-1.9091 -1 TD
+0.0057 Tc
+0.0577 Tw
+(MRDs as simple as applying strategies such as that)Tj
+T*
+0.0079 Tc
+0.0792 Tw
+(of Chodorow, Byrd, and Heidorn?)Tj
+0 -2.0909 TD
+0.0075 Tc
+0.0745 Tw
+(3.1. Discussion of postulate P1)Tj
+1.9091 -1 TD
+0.0467 Tc
+0.467 Tw
+(Although many studies boasted a high)Tj
+-1.9091 -1 TD
+0.0076 Tc
+0.0768 Tw
+(success rate in extracting information from MRDs,)Tj
+T*
+0.0135 Tc
+0.1352 Tw
+(it has never been clear that extracted information)Tj
+T*
+0.0205 Tc
+0.2042 Tw
+(is coherent or comprehensive enough to form a)Tj
+T*
+0.0071 Tc
+0.0708 Tw
+(basis for knowledge bases. This is particularly true)Tj
+T*
+0.0249 Tc
+0.2486 Tw
+(for information extracted from definition texts.)Tj
+T*
+0.0181 Tc
+0.1806 Tw
+(Ide and Véronis [7] show that even in the most)Tj
+T*
+0.0165 Tc
+0.1659 Tw
+(straightforward case \(detection of hypernyms for)Tj
+T*
+0.0154 Tc
+0.1539 Tw
+(concrete objects, kitchen utensils\) 50-70% of the)Tj
+T*
+0.0125 Tc
+0.1241 Tw
+(information is garbled in some way in five major)Tj
+T*
+0.0127 Tc
+0.1269 Tw
+(English dictionaries. Similarly, it is not clear that)Tj
+T*
+0.0096 Tc
+0.096 Tw
+(the information in dictionaries is precisely what is)Tj
+T*
+0.021 Tc
+0.2104 Tw
+(needed to build knowledge bases. For example,)Tj
+T*
+0.0191 Tc
+0.1904 Tw
+(Kilgariff [16] suggests that sense distinctions in)Tj
+T*
+0.0083 Tc
+0 Tw
+(the )Tj
+/TT4 1 Tf
+1.5877 0 TD
+0.0517 Tc
+(LDOCE)Tj
+/TT2 1 Tf
+3.537 0 TD
+0.0121 Tc
+0.1211 Tw
+[( \(one of the most-used dictionaries in)]TJ
+-5.1246 -1 TD
+0.0108 Tc
+0.1084 Tw
+(MRD research, which, as a learner's dictionary, is)Tj
+T*
+0.0096 Tc
+0.0962 Tw
+(also one of the simplest\) do not reflect actual use,)Tj
+T*
+0.0253 Tc
+0.2528 Tw
+(and therefore may not form a viable basis for)Tj
+T*
+0.0203 Tc
+0.203 Tw
+(building knowledge bases for NLP. In addition,)Tj
+T*
+0.0135 Tc
+0.134 Tw
+[(some types of knowledge simply do not exist  in)]TJ
+T*
+0.0147 Tc
+0 Tw
+(dictionaries.)Tj
+0.0909 -2.0909 TD
+0.0094 Tc
+0.0936 Tw
+(3.1.1. Dictionary information is flawed)Tj
+1.8182 -1 TD
+0.0329 Tc
+0.3286 Tw
+(It is well known that information in the)Tj
+-1.9091 -1 TD
+0.0189 Tc
+0.1888 Tw
+(definition texts of dictionaries is often seriously)Tj
+T*
+0.0236 Tc
+0.236 Tw
+(inconsistent. Since a dictionary is typically the)Tj
+T*
+0.0202 Tc
+0.2017 Tw
+(product of several lexicographers' efforts and is)Tj
+T*
+0.0066 Tc
+0.0659 Tw
+(constructed, revised, and updated over many years,)Tj
+T*
+0.0303 Tc
+0.3031 Tw
+(inconsistencies in the criteria for constructing)Tj
+T*
+0.0249 Tc
+0.2488 Tw
+(definition texts necessarily evolve. In addition,)Tj
+T*
+0.0376 Tc
+0.3762 Tw
+(space and readability restrictions as well as)Tj
+T*
+0.0124 Tc
+0.1232 Tw
+(syntactic restrictions on phrasing may dictate that)Tj
+T*
+0.0242 Tc
+0.2417 Tw
+(certain information is unspecified or left to be)Tj
+T*
+0.0089 Tc
+0.0891 Tw
+(implied by other parts of the definition.)Tj
+1.9091 -1 TD
+0.0555 Tc
+0.5557 Tw
+(A pervasive problem in automatically)Tj
+-1.9091 -1 TD
+0.0215 Tc
+0.2153 Tw
+(extracted hierarchies is the attachment of terms)Tj
+T*
+0.0086 Tc
+0.0864 Tw
+(too high in the hierarchy, which occurs in 21-34%)Tj
+T*
+0.0264 Tc
+0.2639 Tw
+(of the definitions in the sample from the five)Tj
+T*
+0.015 Tc
+0.1497 Tw
+(dictionaries cited in [7]. For example, while )Tj
+/TT4 1 Tf
+19.5384 0 TD
+0.0732 Tc
+0 Tw
+(pan)Tj
+/TT2 1 Tf
+-19.5384 -1 TD
+0.0118 Tc
+(and )Tj
+/TT4 1 Tf
+1.8591 0 TD
+0.0145 Tc
+(bottle )Tj
+/TT2 1 Tf
+2.7742 0 TD
+0.0103 Tc
+(are )Tj
+/TT4 1 Tf
+1.6142 0 TD
+0.0164 Tc
+(vessels )Tj
+/TT2 1 Tf
+3.3218 0 TD
+0.009 Tc
+0.0903 Tw
+(in the )Tj
+/TT4 1 Tf
+2.7431 0 TD
+0.065 Tc
+0 Tw
+(CED)Tj
+/TT2 1 Tf
+2.195 0 TD
+0.0041 Tc
+(, )Tj
+/TT4 1 Tf
+0.5488 0 TD
+0.0469 Tc
+(cup)Tj
+/TT2 1 Tf
+1.5846 0 TD
+0.0059 Tc
+0.0595 Tw
+[(  and )]TJ
+/TT4 1 Tf
+2.4077 0 TD
+0.0633 Tc
+0 Tw
+(bowl)Tj
+/TT2 1 Tf
+-19.0484 -1 TD
+0.0194 Tc
+0.1936 Tw
+(are simply )Tj
+/TT4 1 Tf
+5.0436 0 TD
+0.029 Tc
+0 Tw
+(containers, )Tj
+/TT2 1 Tf
+5.3597 0 TD
+0.0202 Tc
+0.2014 Tw
+(the hypernym of )Tj
+/TT4 1 Tf
+7.7867 0 TD
+0.0594 Tc
+0 Tw
+(vessel.)Tj
+ET
+endstream
+endobj
+10 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 11 0 R
+/TT8 12 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+14 0 obj
+<<
+/Length 12360
+>>
+stream
+0 G
+0 J 0 j 1 w 10 M []0 d
+/GS1 gs
+1 i 
+51 353.5 m
+536 353.5 l
+S
+0 g
+357 325 m
+358 325 l
+358 324 l
+347 297 l
+346 297 l
+346 298 l
+f
+357 325 m
+358 325 l
+372 298 l
+372 297 l
+371 297 l
+357 324 l
+f
+466.5 325 m
+466.5 299 l
+S
+BT
+/TT6 1 Tf
+9.36 0 0 9.384 202.0832 330.0185 Tm
+0 Tc
+0 Tw
+[(container)-11015.7(utensil)-2723.9(instrument)-728.9(implement)]TJ
+ET
+102.5 325 m
+102.5 298 l
+S
+BT
+9.36 0 0 9.384 92.0377 330.0185 Tm
+(object)Tj
+0.2138 -4.4756 TD
+3.0777 Tw
+[(glass)-16434.4(vessel spatula)-735.5(spoon )912.6(knife)-3925.3(fork)]TJ
+16.6735 -7.2461 TD
+0 Tw
+[(frying-pan)-1215.5(saucepan)]TJ
+ET
+299 251 m
+300 251 l
+321 230 l
+321 229 l
+320 229 l
+299 250 l
+f
+BT
+9.36 0 0 9.384 134.0555 254.0214 Tm
+(plate tureen)Tj
+ET
+170 284 m
+171 284 l
+171 283 l
+143 262 l
+142 262 l
+142 263 l
+f
+170.5 284 m
+170.5 262 l
+S
+BT
+9.36 0 0 9.384 192.0789 254.0214 Tm
+(pressure-)Tj
+0 -1.0657 TD
+(cooker)Tj
+4.3822 1.0657 TD
+(coffee-)Tj
+0 -1.0657 TD
+(pot)Tj
+ET
+223 284 m
+224 284 l
+224 283 l
+210 262 l
+209 262 l
+209 263 l
+f
+223 284 m
+224 284 l
+242 263 l
+242 262 l
+241 262 l
+223 283 l
+f
+218 327 m
+219 327 l
+279 298 l
+279 297 l
+278 297 l
+218 326 l
+f
+280 285 m
+281 285 l
+281 284 l
+273 261 l
+272 261 l
+272 262 l
+f
+279 285 m
+280 285 l
+296 262 l
+296 261 l
+295 261 l
+279 284 l
+f
+299 250 m
+300 250 l
+300 249 l
+287 229 l
+286 229 l
+286 230 l
+f
+BT
+9.36 0 0 9.384 362.1493 254.0214 Tm
+(ladle)Tj
+ET
+370.5 285 m
+370.5 262 l
+412.5 325 m
+412.5 298 l
+S
+217 328 m
+218 328 l
+218 327 l
+137 294 l
+136 294 l
+136 295 l
+f
+218 328 m
+219 328 l
+219 327 l
+158 294 l
+157 294 l
+157 295 l
+f
+217 328 m
+218 328 l
+218 327 l
+180 294 l
+179 294 l
+179 295 l
+f
+217 328 m
+218 328 l
+218 327 l
+205 294 l
+204 294 l
+204 295 l
+f
+217 328 m
+218 328 l
+224 295 l
+224 294 l
+223 294 l
+217 327 l
+f
+217 328 m
+218 328 l
+248 295 l
+248 294 l
+247 294 l
+217 327 l
+f
+BT
+9.36 0 0 9.384 120.0498 287.0203 Tm
+[(bowl)-829.6(cup)-581.5(dish)-679(kettle)-391.2(pot)-641.6(teapot)]TJ
+15.1772 -3.5165 TD
+[(bottle)-869.5(pan)]TJ
+10.5812 -3.6231 TD
+(dipper)Tj
+ET
+370.5 251 m
+370.5 228 l
+S
+BT
+/TT10 1 Tf
+10.92 0 0 10.948 445.1834 247.0217 Tm
+(CED)Tj
+ET
+436.5 260.5 43 -18 re
+439.5 258.5 38 -15 re
+S
+BT
+/TT6 1 Tf
+9.108 0 0 9.024 445.7835 195.9073 Tm
+(instrument)Tj
+-39.9455 -4.4333 TD
+0.5556 Tw
+[(glass)-906.8(bowl)-467.9(cup)-528.8(dish)-964.2(kettle)-1014.3(pot coffee-)]TJ
+15.9123 -0.9975 TD
+0 Tw
+(pot)Tj
+4.0604 0.9975 TD
+[(teapot)-1174.9(bottle)-958.1(pan)]TJ
+-16.2416 -5.2091 TD
+[(plate)-1291.2(tureen)]TJ
+8.5598 0.7758 TD
+(pressure-)Tj
+0 -0.9975 TD
+(cooker)Tj
+4.7188 0.2217 TD
+[(saucepan)-4943.7(frying-pan)]TJ
+ET
+158 151 m
+159 151 l
+159 150 l
+125 117 l
+124 117 l
+124 118 l
+f
+158.5 151 m
+158.5 117 l
+213.5 151 m
+213.5 125 l
+S
+213 151 m
+214 151 l
+248 118 l
+248 117 l
+247 117 l
+213 150 l
+f
+336.5 151 m
+336.5 117 l
+S
+213 192 m
+214 192 l
+214 191 l
+91 164 l
+90 164 l
+90 165 l
+f
+213 192 m
+214 192 l
+214 191 l
+125 164 l
+124 164 l
+124 165 l
+f
+213 192 m
+214 192 l
+214 191 l
+146 164 l
+145 164 l
+145 165 l
+f
+213 192 m
+214 192 l
+214 191 l
+159 164 l
+158 164 l
+158 165 l
+f
+213 192 m
+214 192 l
+214 191 l
+187 164 l
+186 164 l
+186 165 l
+f
+213.5 192 m
+213.5 164 l
+S
+213 192 m
+214 192 l
+241 165 l
+241 164 l
+240 164 l
+213 191 l
+f
+213 192 m
+214 192 l
+269 165 l
+269 164 l
+268 164 l
+213 191 l
+f
+213 192 m
+214 192 l
+303 165 l
+303 164 l
+302 164 l
+213 191 l
+f
+213 192 m
+214 192 l
+337 165 l
+337 164 l
+336 164 l
+213 191 l
+f
+BT
+9.108 0 0 9.024 356.8264 155.9017 Tm
+[(spatula)-838.4(spoon)-790.8(knife)]TJ
+ET
+387 192 m
+388 192 l
+388 191 l
+371 164 l
+370 164 l
+370 165 l
+f
+386 192 m
+387 192 l
+405 165 l
+405 164 l
+404 164 l
+386 191 l
+f
+432.5 193 m
+432.5 164 l
+467.5 192 m
+467.5 164 l
+S
+q
+460 153 25 10 re
+W n
+BT
+9.108 0 0 9.024 459.7764 155.9017 Tm
+(f)Tj
+ET
+Q
+BT
+9.108 0 0 9.024 462.8094 155.9017 Tm
+(ork)Tj
+-29.4142 4.4333 TD
+[(container)-16247.3(tool)-2669(blade)]TJ
+/TT10 1 Tf
+10.626 0 0 10.528 432.7894 126.8978 Tm
+(LDOCE)Tj
+/TT6 1 Tf
+9.108 0 0 9.024 393.8087 108.8949 Tm
+(dipper)Tj
+ET
+406.5 152 m
+406.5 117 l
+429.5 138.5 49 -17 re
+431.5 136.5 45 -14 re
+S
+BT
+/TT2 1 Tf
+11 0 0 11 182 89 Tm
+0.0094 Tc
+0.0933 Tw
+(Figure 2. Hierarchies from different dictionaries)Tj
+-11.7273 62 TD
+0.0388 Tc
+0.3882 Tw
+(The problem of attachment too high in the)Tj
+0 -1 TD
+0.0092 Tc
+0.0923 Tw
+(hierarchy is compounded by the fact that it occurs)Tj
+T*
+0.0295 Tc
+0.2946 Tw
+(relatively randomly within a given dictionary,)Tj
+T*
+0.0075 Tc
+0.0743 Tw
+(which is evident in the hierarchies shown in figure)Tj
+T*
+0.0364 Tc
+0.3635 Tw
+(2. Because of inconsistencies such as these,)Tj
+T*
+0.0484 Tc
+0.4831 Tw
+(semantic networks extracted from different)Tj
+T*
+0.0184 Tc
+0.1838 Tw
+(dictionaries look very different, as demonstrated)Tj
+T*
+0.0078 Tc
+0.0786 Tw
+(in the same figure.)Tj
+1.9091 -1 TD
+0.0491 Tc
+0.4908 Tw
+(In some cases, information is missing)Tj
+-1.9091 -1 TD
+0.0518 Tc
+0.5182 Tw
+(altogether. For example, the definition of)Tj
+/TT4 1 Tf
+T*
+0.0515 Tc
+0 Tw
+(corkscrew)Tj
+/TT2 1 Tf
+4.5738 0 TD
+0.0106 Tc
+0.1062 Tw
+[( from )]TJ
+/TT4 1 Tf
+2.72 0 TD
+0.0265 Tc
+0.2656 Tw
+(Webster's 9th)Tj
+/TT2 1 Tf
+6.0184 0 TD
+0.0166 Tc
+0.1665 Tw
+(, "a pointed spiral)Tj
+/TT4 1 Tf
+-13.3122 -1 TD
+0.011 Tc
+0 Tw
+(piece )Tj
+/TT2 1 Tf
+2.535 0 TD
+0.0125 Tc
+0.1253 Tw
+(of metal...", gives "piece" as the hypernym,)Tj
+-2.535 -1 TD
+0.0175 Tc
+0.1758 Tw
+(which is clearly incorrrect. )Tj
+/TT4 1 Tf
+12.179 0 TD
+0.0201 Tc
+0 Tw
+(Device, )Tj
+/TT2 1 Tf
+3.6373 0 TD
+0.0173 Tc
+0.1723 Tw
+(which is the)Tj
+-15.8163 -1 TD
+0.0202 Tc
+0.202 Tw
+(hypernym given in several other dictionaries, is)Tj
+T*
+0.0478 Tc
+0.4786 Tw
+(better and should have been given if the)Tj
+T*
+0.0075 Tc
+0.0751 Tw
+(dictionary were consistent.)Tj
+1.9091 -1 TD
+0.0204 Tc
+0.2041 Tw
+(Another pervasive problem with hypernyms)Tj
+-1.9091 -1 TD
+0.0091 Tc
+0.0914 Tw
+(generated from MRDs concerns information at the)Tj
+T*
+0.0081 Tc
+0.081 Tw
+(higher levels of the hierarchy, where terms tend to)Tj
+T*
+0.0087 Tc
+0.0869 Tw
+(become more general and less clearly defined. For)Tj
+T*
+0.0098 Tc
+0.0977 Tw
+(example, most people will agree on whether some)Tj
+T*
+0.0186 Tc
+0.1869 Tw
+(object falls into the category )Tj
+/TT4 1 Tf
+13.1466 0 TD
+0.0161 Tc
+0 Tw
+(fork )Tj
+/TT2 1 Tf
+2.1026 0 TD
+0.0108 Tc
+(or )Tj
+/TT4 1 Tf
+1.2237 0 TD
+0.0221 Tc
+(spoon, )Tj
+/TT2 1 Tf
+3.2648 0 TD
+0.0831 Tc
+(but)Tj
+-19.7377 -1 TD
+0.0129 Tc
+0.1287 Tw
+(there is much less agreement on what objects are)Tj
+/TT4 1 Tf
+T*
+0.0223 Tc
+0 Tw
+(implements )Tj
+/TT2 1 Tf
+5.2728 0 TD
+0.0081 Tc
+(or )Tj
+/TT4 1 Tf
+1.1885 0 TD
+0.0358 Tc
+(utensils.)Tj
+/TT2 1 Tf
+3.628 0 TD
+0.013 Tc
+0.1297 Tw
+[( In addition, at the higher)]TJ
+-10.0893 -1 TD
+0.0365 Tc
+0.3647 Tw
+(levels some concepts simply lack a term to)Tj
+T*
+0.0285 Tc
+0.2854 Tw
+(designate them exactly. This lack of clear-cut)Tj
+T*
+0.0087 Tc
+0.0872 Tw
+(terms for higher level concepts generates \(at least\))Tj
+T*
+0.0248 Tc
+0.248 Tw
+(two phenomena in dictionary definitions. First,)Tj
+T*
+0.0272 Tc
+0.2721 Tw
+(when higher level concepts are being defined,)Tj
+T*
+0.0443 Tc
+0.4428 Tw
+(definitions are often circular. For instance,)Tj
+T*
+0.0068 Tc
+0.0681 Tw
+(consider these definitions from the )Tj
+/TT4 1 Tf
+14.7212 0 TD
+0.0276 Tc
+0 Tw
+(CED)Tj
+/TT2 1 Tf
+2.0829 0 TD
+0 Tc
+(:)Tj
+/TT6 1 Tf
+10 0 0 10 53 417 Tm
+0.0088 Tc
+0.0878 Tw
+(tool •)Tj
+/TT2 1 Tf
+2.3515 0 TD
+0.0038 Tc
+0.0382 Tw
+[( an )]TJ
+/TT4 1 Tf
+1.5354 0 TD
+0.028 Tc
+0 Tw
+(implement,)Tj
+/TT2 1 Tf
+4.6955 0 TD
+0.0076 Tc
+0.0761 Tw
+[(  such as a hammer...)]TJ
+/TT6 1 Tf
+-8.5825 -1.1 TD
+0.0101 Tc
+0.1009 Tw
+(implement • )Tj
+/TT2 1 Tf
+5.7278 0 TD
+0.006 Tc
+0.0603 Tw
+(a piece of )Tj
+/TT4 1 Tf
+4.3831 0 TD
+0.0277 Tc
+0 Tw
+(equipment)Tj
+/TT2 1 Tf
+4.4148 0 TD
+0.0026 Tc
+(; )Tj
+/TT4 1 Tf
+0.5593 0 TD
+0.0232 Tc
+(tool)Tj
+/TT2 1 Tf
+1.6485 0 TD
+0.0027 Tc
+0.027 Tw
+[(  or )]TJ
+/TT4 1 Tf
+1.6775 0 TD
+0.0249 Tc
+0 Tw
+(utensil.)Tj
+/TT6 1 Tf
+-18.411 -1.1 TD
+0.0119 Tc
+0.1191 Tw
+(utensil •)Tj
+/TT2 1 Tf
+3.6603 0 TD
+0.004 Tc
+0.0396 Tw
+[( an )]TJ
+/TT4 1 Tf
+1.539 0 TD
+0.0164 Tc
+0.164 Tw
+(implement, tool)Tj
+/TT2 1 Tf
+6.6312 0 TD
+0.003 Tc
+0.0298 Tw
+[(  or )]TJ
+/TT4 1 Tf
+1.6874 0 TD
+0.0275 Tc
+0 Tw
+(container...)Tj
+/TT2 1 Tf
+11 0 0 11 327 771 Tm
+0.0685 Tc
+0.6842 Tw
+(Circular definitions yield hierarchies)Tj
+-1.9091 -1 TD
+0.0477 Tc
+0.477 Tw
+(containing loops, which are not usable in)Tj
+T*
+0.0092 Tc
+0.0913 Tw
+(knowledge bases)Tj
+/TT4 1 Tf
+7.0328 0 TD
+0 Tc
+0 Tw
+(.)Tj
+/TT2 1 Tf
+0.2584 0 TD
+0.0055 Tc
+0.0543 Tw
+[( Second, in such cases definitions)]TJ
+-7.2912 -1 TD
+0.0174 Tc
+0.174 Tw
+(often give a list of head nouns separated by the)Tj
+T*
+0.0507 Tc
+0.5069 Tw
+(conjunction "or", as in the definitions of)Tj
+/TT4 1 Tf
+T*
+0.0131 Tc
+0 Tw
+(implement )Tj
+/TT2 1 Tf
+4.6776 0 TD
+0.0046 Tc
+0.0462 Tw
+[( and )]TJ
+/TT4 1 Tf
+2.0594 0 TD
+0.0226 Tc
+0 Tw
+(utensil)Tj
+/TT2 1 Tf
+2.825 0 TD
+0.0073 Tc
+0.0724 Tw
+[(  above. In most cases)]TJ
+/TT4 1 Tf
+9.2977 0 TD
+0 Tc
+0 Tw
+( )Tj
+/TT2 1 Tf
+0.2648 0 TD
+0.0385 Tc
+(none)Tj
+-19.1245 -1 TD
+0.0107 Tc
+0.1069 Tw
+(of the three alternatives is a true hypernym of the)Tj
+T*
+0.0104 Tc
+0.1037 Tw
+(word being defined)Tj
+/TT4 1 Tf
+8.1694 0 TD
+0.0021 Tc
+0 Tw
+(. )Tj
+/TT2 1 Tf
+0.5253 0 TD
+0.009 Tc
+0.09 Tw
+(Regarding them as such leads)Tj
+-8.6947 -1 TD
+0.0375 Tc
+0.3742 Tw
+(to other problems in the resulting hierarchy)Tj
+T*
+0.0255 Tc
+0.2558 Tw
+(\(figure 3\): in the hierarchy produced from the)Tj
+T*
+0.0326 Tc
+0.3266 Tw
+(definition of )Tj
+/TT4 1 Tf
+6.3312 0 TD
+0.0355 Tc
+0 Tw
+(utensil, )Tj
+/TT2 1 Tf
+3.84 0 TD
+0.0379 Tc
+0.3786 Tw
+[( enumerating the paths)]TJ
+-10.1712 -1.0909 TD
+0.0139 Tc
+0.1394 Tw
+(upwards from )Tj
+/TT4 1 Tf
+6.2916 0 TD
+0.0332 Tc
+0 Tw
+(spatula)Tj
+/TT6 1 Tf
+10 0 0 10 410.1554 649 Tm
+0 Tc
+( )Tj
+/TT2 1 Tf
+11 0 0 11 412.8524 649 Tm
+0.0096 Tc
+0.096 Tw
+(\(defined as a )Tj
+/TT4 1 Tf
+5.7813 0 TD
+0.03 Tc
+0 Tw
+(utensil)Tj
+/TT6 1 Tf
+10 0 0 10 508.0884 649 Tm
+0 Tc
+(\))Tj
+/TT2 1 Tf
+11 0 0 11 511.6805 649 Tm
+0.0121 Tc
+0.1212 Tw
+[( leads)]TJ
+-18.6982 -1 TD
+0.0398 Tc
+0.3981 Tw
+(to the conclusion that )Tj
+/TT4 1 Tf
+11.3397 0 TD
+0.1195 Tc
+0 Tw
+(spatula)Tj
+/TT2 1 Tf
+3.781 0 TD
+0.0258 Tc
+0.2578 Tw
+[( is a kind of)]TJ
+/TT4 1 Tf
+-15.1207 -1 TD
+0.0955 Tc
+0 Tw
+(container)Tj
+/TT2 1 Tf
+4.6924 0 TD
+0.0364 Tc
+0.364 Tw
+(, which is obviously incorrect. As)Tj
+-4.6924 -1 TD
+0.0236 Tc
+0.2361 Tw
+(demonstrated in [7] the introduction of "covert)Tj
+T*
+0.0425 Tc
+0.425 Tw
+(categories", that is, concepts which do not)Tj
+T*
+0.0239 Tc
+0.2387 Tw
+(correspond to any particular word, can help to)Tj
+T*
+0.0105 Tc
+0.106 Tw
+(solve this problem, for instance, by introducting a)Tj
+T*
+0.0456 Tc
+0.4562 Tw
+(covert category such as INSTRUMENTAL-)Tj
+T*
+0.0233 Tc
+0.2325 Tw
+(OBJECT and using it as a hypernym for )Tj
+/TT4 1 Tf
+19.0758 0 TD
+0.0758 Tc
+0 Tw
+(tool,)Tj
+-19.0758 -1 TD
+0.0148 Tc
+0.1486 Tw
+(utensil, implement, )Tj
+/TT2 1 Tf
+8.4255 0 TD
+0.0092 Tc
+0 Tw
+(and )Tj
+/TT4 1 Tf
+1.8224 0 TD
+0.0325 Tc
+(instrument)Tj
+/TT2 1 Tf
+4.6024 0 TD
+0.0135 Tc
+0.1353 Tw
+(. However, the)Tj
+-14.8503 -1 TD
+0.0189 Tc
+0.1892 Tw
+(detection and creation of covert categories must)Tj
+T*
+0.0089 Tc
+0.0892 Tw
+(be done by hand for the most part.)Tj
+/TT6 1 Tf
+8.868 0 0 8.784 449.1583 506.1861 Tm
+0 Tc
+0 Tw
+(conta)Tj
+ET
+q
+448 503 55 9 re
+W n
+BT
+8.868 0 0 8.784 469.8474 506.1861 Tm
+(i)Tj
+ET
+Q
+BT
+8.868 0 0 8.784 472.3112 506.1861 Tm
+(ner)Tj
+ET
+362 499 m
+363 499 l
+411 470 l
+411 469 l
+410 469 l
+362 498 l
+f
+457 499 m
+458 499 l
+458 498 l
+411 469 l
+410 469 l
+410 470 l
+f
+410.5 499 m
+410.5 469 l
+S
+q
+341 503 63 9 re
+W n
+BT
+8.868 0 0 8.784 341.1202 506.1861 Tm
+(i)Tj
+ET
+Q
+BT
+8.868 0 0 8.784 343.584 506.1861 Tm
+(mp)Tj
+ET
+q
+341 503 63 9 re
+W n
+BT
+8.868 0 0 8.784 355.903 506.1861 Tm
+(l)Tj
+ET
+Q
+BT
+8.868 0 0 8.784 358.3669 506.1861 Tm
+[(ement)-2552.1(too)]TJ
+ET
+q
+403 503 24 9 re
+W n
+BT
+8.868 0 0 8.784 415.964 506.1861 Tm
+(l)Tj
+ET
+Q
+BT
+8.868 0 0 8.784 399.1413 459.2122 Tm
+(utens)Tj
+ET
+q
+398 457 40 8 re
+W n
+BT
+8.868 0 0 8.784 419.3454 459.2122 Tm
+(il)Tj
+ET
+Q
+410.5 453 m
+410.5 423 l
+S
+BT
+8.868 0 0 8.784 398.1407 413.2375 Tm
+(spatu)Tj
+ET
+q
+397 410 45 9 re
+W n
+BT
+8.868 0 0 8.784 418.8428 413.2375 Tm
+(l)Tj
+ET
+Q
+BT
+8.868 0 0 8.784 421.3066 413.2375 Tm
+(a)Tj
+ET
+428.5 425.5 m
+428.5 451.881 439.727 475.952 457.424 487.517 c
+S
+465 493 m
+459 487 l
+457 489 l
+457 490 l
+465 493 l
+f*
+462 490 m
+459.993 488.005 459 487 y
+458.66 487.339 458 488 v
+457.326 488.672 457 489 y
+457 489.172 457 489.5 v
+457 489.839 457 490 y
+458.326 490.505 461 491.5 v
+463.66 492.505 465 493 y
+463.993 492.005 462 490 v
+f*
+457.5 489 m
+457.5 487 l
+S
+1 g
+417 438 39 9 re
+f
+BT
+/TT4 1 Tf
+8.868 0 0 8.784 418.1476 440.2227 Tm
+0 g
+(WRONG!)Tj
+/TT2 1 Tf
+11 0 0 11 347 389 Tm
+0.009 Tc
+0.0904 Tw
+(Figure 3 : Problematic hierarchy)Tj
+ET
+endstream
+endobj
+15 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 11 0 R
+/TT10 16 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+18 0 obj
+<<
+/Length 21795
+>>
+stream
+1 g
+/GS1 gs
+63 640 332 119 re
+f
+q
+1 i 
+60 639 336 140 re
+W n
+0 G
+0 J 0 j 1 w 10 M []0 d
+63.5 758.5 331 -118 re
+S
+Q
+BT
+/TT6 1 Tf
+9.646 0 0 9.52 71.049 746.9465 Tm
+0 g
+0 Tc
+0 Tw
+(abricot)Tj
+/TT2 1 Tf
+4.5646 0.2101 TD
+(Fruit de l'abricotier, à )Tj
+0 -1.051 TD
+(noyau, à chair et peau )Tj
+T*
+(jaune orangé.)Tj
+/TT6 1 Tf
+-4.7721 -3.1531 TD
+(pêche)Tj
+/TT2 1 Tf
+4.7721 0 TD
+(Fruit du pêcher, à )Tj
+0 -1.051 TD
+(noyau très dur et à )Tj
+0 -1.1561 TD
+(chair fine.)Tj
+9.9592 7.4622 TD
+(Fruit de l'abricotier, )Tj
+0 -1.051 TD
+(d'une saveur délicate )Tj
+T*
+(et parfumée, de )Tj
+T*
+(couleur jaune rosé.)Tj
+0 -2.1021 TD
+(Fruit comestible du )Tj
+0 -1.051 TD
+(pêcher, au noyau dur, )Tj
+0 -1.1561 TD
+(à la chair jaune ou )Tj
+0 -1.051 TD
+(blanche, tendre et )Tj
+T*
+(sucrée, à la peau rose )Tj
+T*
+-0.0005 Tc
+(et duveteuse.)Tj
+9.648 5.3602 TD
+0 Tc
+(Fruit comestible du )Tj
+0 -1.051 TD
+(pêcher, à chair juteuse )Tj
+0 -1.1561 TD
+(et à noyau dur.)Tj
+0 7.2521 TD
+(Fruit de l'abricotier, à )Tj
+0 -1.0511 TD
+(noyau lisse, à peau et )Tj
+T*
+(chair jaunes.)Tj
+ET
+q
+1 i 
+60 639 336 140 re
+W n
+0 G
+0 J 0 j 1 w 10 M []0 d
+108.5 758.5 95 -47 re
+203.5 758.5 95 -47 re
+298.5 758.5 96 -47 re
+108.5 711.5 95 -71 re
+203.5 711.5 95 -71 re
+298.5 711.5 96 -71 re
+63.5 758.5 44 -47 re
+63.5 711.5 44 -71 re
+S
+Q
+BT
+8.268 0 0 8.16 310.2153 762.9557 Tm
+-0.0106 Tc
+(PETIT LAROUSSE)Tj
+-23.3592 0.1226 TD
+-0.0202 Tc
+(MICRO-ROBERT)Tj
+12.9504 0 TD
+-0.0157 Tc
+(HACHETTE)Tj
+11 0 0 11 88 619 Tm
+0.0084 Tc
+0.0835 Tw
+(Figure 4. Definitions for )Tj
+/TT4 1 Tf
+10.578 0 TD
+0.0227 Tc
+0 Tw
+(abricot)Tj
+/TT2 1 Tf
+3.0478 0 TD
+0.0069 Tc
+0.0689 Tw
+[( \(apricot\) and )]TJ
+/TT4 1 Tf
+5.9466 0 TD
+0.0256 Tc
+0 Tw
+(pêche)Tj
+/TT2 1 Tf
+2.4597 0 TD
+0.0105 Tc
+0.1051 Tw
+[( \(peach\))]TJ
+-23.3048 -2.9091 TD
+0.0487 Tc
+0.4869 Tw
+(Despite irregularities of this kind, the)Tj
+-1.9091 -1 TD
+0.0358 Tc
+0.3578 Tw
+(specification of hypernyms is certainly more)Tj
+T*
+0.0397 Tc
+0.3973 Tw
+(consistent in dictionaries than that of other)Tj
+T*
+0.0109 Tc
+0.1087 Tw
+(semantic relations \(e.g., parts, shape, color, smell,)Tj
+T*
+0.0083 Tc
+0.0827 Tw
+(etc.\), which is given in a much more random way.)Tj
+T*
+0.0374 Tc
+0.3733 Tw
+(For example, in the definitions for )Tj
+/TT4 1 Tf
+17.5545 0 TD
+0.1235 Tc
+0 Tw
+(abricot)Tj
+/TT2 1 Tf
+-17.5545 -1 TD
+0.0281 Tc
+0.2813 Tw
+(\(apricot\) and )Tj
+/TT4 1 Tf
+6.342 0 TD
+0.0828 Tc
+0 Tw
+(pêche)Tj
+/TT2 1 Tf
+2.7456 0 TD
+0.0285 Tc
+0.2849 Tw
+[( \(peach\) from three major)]TJ
+-9.0877 -1 TD
+0.0448 Tc
+0.4484 Tw
+(French dictionaries in figure 4, all of the)Tj
+T*
+0.0072 Tc
+0.0716 Tw
+(dictionaries indicate that the pit of a peach is hard,)Tj
+T*
+0.0135 Tc
+0.1344 Tw
+(but none specifies this property for the pit of the)Tj
+T*
+0.0527 Tc
+0.5276 Tw
+(apricot \(which is certainly just as hard\).)Tj
+T*
+0.0146 Tc
+0.1459 Tw
+(Information is given inconsistently even within a)Tj
+T*
+0.0194 Tc
+0.1932 Tw
+(given dictionary, as shown when the definitions)Tj
+T*
+0.0096 Tc
+0.0967 Tw
+(are presented in tabular form \(figure 5\).)Tj
+/TT6 1 Tf
+10 0 0 10 150 420 Tm
+0.0576 Tc
+0 Tw
+(apricot)Tj
+8.9 0 TD
+0.0501 Tc
+(peach)Tj
+ET
+0 G
+0 J 0 j 1 w 10 M []0 d
+1 i 
+48.5 430 m
+48.5 429 l
+48.5 430 m
+48.5 429 l
+49 429.5 m
+124 429.5 l
+124.5 430 m
+124.5 429 l
+125 429.5 m
+209 429.5 l
+209.5 430 m
+209.5 429 l
+210 429.5 m
+294 429.5 l
+294.5 430 m
+294.5 429 l
+294.5 430 m
+294.5 429 l
+48.5 429 m
+48.5 418 l
+124.5 429 m
+124.5 418 l
+209.5 429 m
+209.5 418 l
+294.5 429 m
+294.5 418 l
+S
+BT
+10 0 0 10 53 408 Tm
+0.0527 Tc
+[(Property)-3346.9(M)-81.5(R)-947.1(H)-47.5(A)-1247.1(P)-69.5(L)-1347.3(M)-81.5(R)-947.1(H)-47.5(A)-1247.1(P)-69.5(L)]TJ
+ET
+48.5 418 m
+48.5 417 l
+49 417.5 m
+124 417.5 l
+124.5 418 m
+124.5 417 l
+125 417.5 m
+152 417.5 l
+152.5 418 m
+152.5 417 l
+153 417.5 m
+181 417.5 l
+181.5 418 m
+181.5 417 l
+182 417.5 m
+209 417.5 l
+209.5 418 m
+209.5 417 l
+210 417.5 m
+237 417.5 l
+237.5 418 m
+237.5 417 l
+238 417.5 m
+266 417.5 l
+266.5 418 m
+266.5 417 l
+267 417.5 m
+294 417.5 l
+294.5 418 m
+294.5 417 l
+48.5 417 m
+48.5 406 l
+124.5 417 m
+124.5 406 l
+152.5 417 m
+152.5 406 l
+181.5 417 m
+181.5 406 l
+209.5 417 m
+209.5 406 l
+237.5 417 m
+237.5 406 l
+266.5 417 m
+266.5 406 l
+294.5 417 m
+294.5 406 l
+S
+BT
+/TT2 1 Tf
+10 0 0 10 53 396 Tm
+-0.003 Tc
+[(sort-of fruit)-3001.3(y)13.4(e)13.4(s)-1502.8(y)13.4(e)13.4(s)-1602.8(y)13.4(e)13.4(s)-1502.8(y)13.4(e)13.4(s)-1502.8(y)13.4(e)13.4(s)-1602.8(y)13.4(e)13.4(s)]TJ
+ET
+48.5 406 m
+48.5 405 l
+49 405.5 m
+124 405.5 l
+124.5 406 m
+124.5 405 l
+125 405.5 m
+152 405.5 l
+152.5 406 m
+152.5 405 l
+153 405.5 m
+181 405.5 l
+181.5 406 m
+181.5 405 l
+182 405.5 m
+209 405.5 l
+209.5 406 m
+209.5 405 l
+210 405.5 m
+237 405.5 l
+237.5 406 m
+237.5 405 l
+238 405.5 m
+266 405.5 l
+266.5 406 m
+266.5 405 l
+267 405.5 m
+294 405.5 l
+294.5 406 m
+294.5 405 l
+48.5 405 m
+48.5 394 l
+124.5 405 m
+124.5 394 l
+152.5 405 m
+152.5 394 l
+181.5 405 m
+181.5 394 l
+209.5 405 m
+209.5 394 l
+237.5 405 m
+237.5 394 l
+266.5 405 m
+266.5 394 l
+294.5 405 m
+294.5 394 l
+S
+BT
+10 0 0 10 53 384 Tm
+-0.0229 Tc
+[(parent-tree)-3521.8(y)-6.5(e)-6.5(s)-1522.7(y)-6.5(e)-6.5(s)-1622.7(y)-6.5(e)-6.5(s)-1522.7(y)-6.5(e)-6.5(s)-1522.7(y)-6.5(e)-6.5(s)-1622.7(y)-6.5(e)-6.5(s)]TJ
+ET
+48.5 394 m
+48.5 393 l
+49 393.5 m
+124 393.5 l
+124.5 394 m
+124.5 393 l
+125 393.5 m
+152 393.5 l
+152.5 394 m
+152.5 393 l
+153 393.5 m
+181 393.5 l
+181.5 394 m
+181.5 393 l
+182 393.5 m
+209 393.5 l
+209.5 394 m
+209.5 393 l
+210 393.5 m
+237 393.5 l
+237.5 394 m
+237.5 393 l
+238 393.5 m
+266 393.5 l
+266.5 394 m
+266.5 393 l
+267 393.5 m
+294 393.5 l
+294.5 394 m
+294.5 393 l
+48.5 393 m
+48.5 382 l
+124.5 393 m
+124.5 382 l
+152.5 393 m
+152.5 382 l
+181.5 393 m
+181.5 382 l
+209.5 393 m
+209.5 382 l
+237.5 393 m
+237.5 382 l
+266.5 393 m
+266.5 382 l
+294.5 393 m
+294.5 382 l
+S
+BT
+10 0 0 10 53 372 Tm
+0.002 Tc
+0.0246 Tw
+[(has a pit)-4197.9(y)18.4(e)18.4(s)-1497.8(no)-1898(y)18.4(e)18.4(s)-1497.8(y)18.4(e)18.4(s)-1497.8(y)18.4(e)18.4(s)-1597.8(y)18.4(e)18.4(s)]TJ
+ET
+48.5 382 m
+48.5 381 l
+49 381.5 m
+124 381.5 l
+124.5 382 m
+124.5 381 l
+125 381.5 m
+152 381.5 l
+152.5 382 m
+152.5 381 l
+153 381.5 m
+181 381.5 l
+181.5 382 m
+181.5 381 l
+182 381.5 m
+209 381.5 l
+209.5 382 m
+209.5 381 l
+210 381.5 m
+237 381.5 l
+237.5 382 m
+237.5 381 l
+238 381.5 m
+266 381.5 l
+266.5 382 m
+266.5 381 l
+267 381.5 m
+294 381.5 l
+294.5 382 m
+294.5 381 l
+48.5 381 m
+48.5 370 l
+124.5 381 m
+124.5 370 l
+152.5 381 m
+152.5 370 l
+181.5 381 m
+181.5 370 l
+209.5 381 m
+209.5 370 l
+237.5 381 m
+237.5 370 l
+266.5 381 m
+266.5 370 l
+294.5 381 m
+294.5 370 l
+S
+BT
+10 0 0 10 81 360 Tm
+-0.0145 Tc
+0 Tw
+[(form)-2914.2(n)-14.5(o)-1814.5(n)-14.5(o)-1914.5(n)-14.5(o)-1814.5(n)-14.5(o)-1814.5(n)-14.5(o)-1914.5(n)-14.5(o)]TJ
+ET
+48.5 370 m
+48.5 369 l
+49 369.5 m
+124 369.5 l
+124.5 370 m
+124.5 369 l
+125 369.5 m
+152 369.5 l
+152.5 370 m
+152.5 369 l
+153 369.5 m
+181 369.5 l
+181.5 370 m
+181.5 369 l
+182 369.5 m
+209 369.5 l
+209.5 370 m
+209.5 369 l
+210 369.5 m
+237 369.5 l
+237.5 370 m
+237.5 369 l
+238 369.5 m
+266 369.5 l
+266.5 370 m
+266.5 369 l
+267 369.5 m
+294 369.5 l
+294.5 370 m
+294.5 369 l
+48.5 369 m
+48.5 358 l
+124.5 369 m
+124.5 358 l
+152.5 369 m
+152.5 358 l
+181.5 369 m
+181.5 358 l
+209.5 369 m
+209.5 358 l
+237.5 369 m
+237.5 358 l
+266.5 369 m
+266.5 358 l
+294.5 369 m
+294.5 358 l
+S
+BT
+10 0 0 10 81 348 Tm
+-0.0136 Tc
+[(color)-2813.3(n)-13.6(o)-1813.6(n)-13.6(o)-1913.6(n)-13.6(o)-1813.6(n)-13.6(o)-1813.6(n)-13.6(o)-1913.6(n)-13.6(o)]TJ
+ET
+48.5 358 m
+48.5 357 l
+49 357.5 m
+124 357.5 l
+124.5 358 m
+124.5 357 l
+125 357.5 m
+152 357.5 l
+152.5 358 m
+152.5 357 l
+153 357.5 m
+181 357.5 l
+181.5 358 m
+181.5 357 l
+182 357.5 m
+209 357.5 l
+209.5 358 m
+209.5 357 l
+210 357.5 m
+237 357.5 l
+237.5 358 m
+237.5 357 l
+238 357.5 m
+266 357.5 l
+266.5 358 m
+266.5 357 l
+267 357.5 m
+294 357.5 l
+294.5 358 m
+294.5 357 l
+48.5 357 m
+48.5 346 l
+124.5 357 m
+124.5 346 l
+152.5 357 m
+152.5 346 l
+181.5 357 m
+181.5 346 l
+209.5 357 m
+209.5 346 l
+237.5 357 m
+237.5 346 l
+266.5 357 m
+266.5 346 l
+294.5 357 m
+294.5 346 l
+S
+BT
+10 0 0 10 81 336 Tm
+-0.0138 Tc
+[(texture)-2113.6(n)-13.8(o)-1813.8(n)-13.8(o)-1913.8(yes)-1513.6(n)-13.8(o)-1813.8(n)-13.8(o)-1913.8(n)-13.8(o)]TJ
+ET
+48.5 346 m
+48.5 345 l
+49 345.5 m
+124 345.5 l
+124.5 346 m
+124.5 345 l
+125 345.5 m
+152 345.5 l
+152.5 346 m
+152.5 345 l
+153 345.5 m
+181 345.5 l
+181.5 346 m
+181.5 345 l
+182 345.5 m
+209 345.5 l
+209.5 346 m
+209.5 345 l
+210 345.5 m
+237 345.5 l
+237.5 346 m
+237.5 345 l
+238 345.5 m
+266 345.5 l
+266.5 346 m
+266.5 345 l
+267 345.5 m
+294 345.5 l
+294.5 346 m
+294.5 345 l
+48.5 345 m
+48.5 334 l
+124.5 345 m
+124.5 334 l
+152.5 345 m
+152.5 334 l
+181.5 345 m
+181.5 334 l
+209.5 345 m
+209.5 334 l
+237.5 345 m
+237.5 334 l
+266.5 345 m
+266.5 334 l
+294.5 345 m
+294.5 334 l
+S
+BT
+10 0 0 10 81 324 Tm
+-0.0283 Tc
+[(hardness)-1527.4(n)-28.3(o)-1828.3(n)-28.3(o)-1928.3(n)-28.3(o)-1828.3(y)-11.9(e)-11.9(s)-1528.1(y)-11.9(e)-11.9(s)-1628.1(y)-11.9(e)-11.9(s)]TJ
+ET
+48.5 334 m
+48.5 333 l
+49 333.5 m
+124 333.5 l
+124.5 334 m
+124.5 333 l
+125 333.5 m
+152 333.5 l
+152.5 334 m
+152.5 333 l
+153 333.5 m
+181 333.5 l
+181.5 334 m
+181.5 333 l
+182 333.5 m
+209 333.5 l
+209.5 334 m
+209.5 333 l
+210 333.5 m
+237 333.5 l
+237.5 334 m
+237.5 333 l
+238 333.5 m
+266 333.5 l
+266.5 334 m
+266.5 333 l
+267 333.5 m
+294 333.5 l
+294.5 334 m
+294.5 333 l
+48.5 333 m
+48.5 322 l
+124.5 333 m
+124.5 322 l
+152.5 333 m
+152.5 322 l
+181.5 333 m
+181.5 322 l
+209.5 333 m
+209.5 322 l
+237.5 333 m
+237.5 322 l
+266.5 333 m
+266.5 322 l
+294.5 333 m
+294.5 322 l
+S
+BT
+10 0 0 10 53 312 Tm
+-0.0027 Tc
+-0.0006 Tw
+[(has flesh)-4102.2(y)13.7(e)13.7(s)-1502.5(no)-1902.7(y)13.7(e)13.7(s)-1502.5(y)13.7(e)13.7(s)-1502.5(y)13.7(e)13.7(s)-1602.5(y)13.7(e)13.7(s)]TJ
+ET
+48.5 322 m
+48.5 321 l
+49 321.5 m
+124 321.5 l
+124.5 322 m
+124.5 321 l
+125 321.5 m
+152 321.5 l
+152.5 322 m
+152.5 321 l
+153 321.5 m
+181 321.5 l
+181.5 322 m
+181.5 321 l
+182 321.5 m
+209 321.5 l
+209.5 322 m
+209.5 321 l
+210 321.5 m
+237 321.5 l
+237.5 322 m
+237.5 321 l
+238 321.5 m
+266 321.5 l
+266.5 322 m
+266.5 321 l
+267 321.5 m
+294 321.5 l
+294.5 322 m
+294.5 321 l
+48.5 321 m
+48.5 310 l
+124.5 321 m
+124.5 310 l
+152.5 321 m
+152.5 310 l
+181.5 321 m
+181.5 310 l
+209.5 321 m
+209.5 310 l
+237.5 321 m
+237.5 310 l
+266.5 321 m
+266.5 310 l
+294.5 321 m
+294.5 310 l
+S
+BT
+10 0 0 10 81 300 Tm
+-0.0154 Tc
+0 Tw
+[(color)-2815.1(yes)-1515.2(n)-15.4(o)-1915.4(yes)-1515.2(n)-15.4(o)-1815.4(yes)-1615.2(n)-15.4(o)]TJ
+ET
+48.5 310 m
+48.5 309 l
+49 309.5 m
+124 309.5 l
+124.5 310 m
+124.5 309 l
+125 309.5 m
+152 309.5 l
+152.5 310 m
+152.5 309 l
+153 309.5 m
+181 309.5 l
+181.5 310 m
+181.5 309 l
+182 309.5 m
+209 309.5 l
+209.5 310 m
+209.5 309 l
+210 309.5 m
+237 309.5 l
+237.5 310 m
+237.5 309 l
+238 309.5 m
+266 309.5 l
+266.5 310 m
+266.5 309 l
+267 309.5 m
+294 309.5 l
+294.5 310 m
+294.5 309 l
+48.5 309 m
+48.5 298 l
+124.5 309 m
+124.5 298 l
+152.5 309 m
+152.5 298 l
+181.5 309 m
+181.5 298 l
+209.5 309 m
+209.5 298 l
+237.5 309 m
+237.5 298 l
+266.5 309 m
+266.5 298 l
+294.5 309 m
+294.5 298 l
+S
+BT
+10 0 0 10 81 288 Tm
+-0.0138 Tc
+[(texture)-2113.6(n)-13.8(o)-1813.8(n)-13.8(o)-1913.8(n)-13.8(o)-1813.8(yes)-1513.6(n)-13.8(o)-1913.8(n)-13.8(o)]TJ
+ET
+48.5 298 m
+48.5 297 l
+49 297.5 m
+124 297.5 l
+124.5 298 m
+124.5 297 l
+125 297.5 m
+152 297.5 l
+152.5 298 m
+152.5 297 l
+153 297.5 m
+181 297.5 l
+181.5 298 m
+181.5 297 l
+182 297.5 m
+209 297.5 l
+209.5 298 m
+209.5 297 l
+210 297.5 m
+237 297.5 l
+237.5 298 m
+237.5 297 l
+238 297.5 m
+266 297.5 l
+266.5 298 m
+266.5 297 l
+267 297.5 m
+294 297.5 l
+294.5 298 m
+294.5 297 l
+48.5 297 m
+48.5 286 l
+124.5 297 m
+124.5 286 l
+152.5 297 m
+152.5 286 l
+181.5 297 m
+181.5 286 l
+209.5 297 m
+209.5 286 l
+237.5 297 m
+237.5 286 l
+266.5 297 m
+266.5 286 l
+294.5 297 m
+294.5 286 l
+S
+BT
+10 0 0 10 81 276 Tm
+-0.0283 Tc
+[(hardness)-1527.4(n)-28.3(o)-1828.3(n)-28.3(o)-1928.3(n)-28.3(o)-1828.3(n)-28.3(o)-1828.3(y)-11.9(e)-11.9(s)-1628.1(n)-28.3(o)]TJ
+ET
+48.5 286 m
+48.5 285 l
+49 285.5 m
+124 285.5 l
+124.5 286 m
+124.5 285 l
+125 285.5 m
+152 285.5 l
+152.5 286 m
+152.5 285 l
+153 285.5 m
+181 285.5 l
+181.5 286 m
+181.5 285 l
+182 285.5 m
+209 285.5 l
+209.5 286 m
+209.5 285 l
+210 285.5 m
+237 285.5 l
+237.5 286 m
+237.5 285 l
+238 285.5 m
+266 285.5 l
+266.5 286 m
+266.5 285 l
+267 285.5 m
+294 285.5 l
+294.5 286 m
+294.5 285 l
+48.5 285 m
+48.5 274 l
+124.5 285 m
+124.5 274 l
+152.5 285 m
+152.5 274 l
+181.5 285 m
+181.5 274 l
+209.5 285 m
+209.5 274 l
+237.5 285 m
+237.5 274 l
+266.5 285 m
+266.5 274 l
+294.5 285 m
+294.5 274 l
+S
+BT
+10 0 0 10 81 264 Tm
+-0.0081 Tc
+[(taste)-3008(n)-8.1(o)-1808.1(y)8.3(e)8.3(s)-1607.9(n)-8.1(o)-1808.1(n)-8.1(o)-1808.1(y)8.3(e)8.3(s)-1607.9(n)-8.1(o)]TJ
+ET
+48.5 274 m
+48.5 273 l
+49 273.5 m
+124 273.5 l
+124.5 274 m
+124.5 273 l
+125 273.5 m
+152 273.5 l
+152.5 274 m
+152.5 273 l
+153 273.5 m
+181 273.5 l
+181.5 274 m
+181.5 273 l
+182 273.5 m
+209 273.5 l
+209.5 274 m
+209.5 273 l
+210 273.5 m
+237 273.5 l
+237.5 274 m
+237.5 273 l
+238 273.5 m
+266 273.5 l
+266.5 274 m
+266.5 273 l
+267 273.5 m
+294 273.5 l
+294.5 274 m
+294.5 273 l
+48.5 273 m
+48.5 262 l
+124.5 273 m
+124.5 262 l
+152.5 273 m
+152.5 262 l
+181.5 273 m
+181.5 262 l
+209.5 273 m
+209.5 262 l
+237.5 273 m
+237.5 262 l
+266.5 273 m
+266.5 262 l
+294.5 273 m
+294.5 262 l
+S
+BT
+10 0 0 10 53 252 Tm
+0.0017 Tc
+0.031 Tw
+[(has skin)-4297.6(y)18.1(e)18.1(s)-1498.1(no)-1898.3(y)18.1(e)18.1(s)-1498.1(no)-1798.3(y)18.1(e)18.1(s)-1598.1(no)]TJ
+ET
+48.5 262 m
+48.5 261 l
+49 261.5 m
+124 261.5 l
+124.5 262 m
+124.5 261 l
+125 261.5 m
+152 261.5 l
+152.5 262 m
+152.5 261 l
+153 261.5 m
+181 261.5 l
+181.5 262 m
+181.5 261 l
+182 261.5 m
+209 261.5 l
+209.5 262 m
+209.5 261 l
+210 261.5 m
+237 261.5 l
+237.5 262 m
+237.5 261 l
+238 261.5 m
+266 261.5 l
+266.5 262 m
+266.5 261 l
+267 261.5 m
+294 261.5 l
+294.5 262 m
+294.5 261 l
+48.5 261 m
+48.5 250 l
+124.5 261 m
+124.5 250 l
+152.5 261 m
+152.5 250 l
+181.5 261 m
+181.5 250 l
+209.5 261 m
+209.5 250 l
+237.5 261 m
+237.5 250 l
+266.5 261 m
+266.5 250 l
+294.5 261 m
+294.5 250 l
+S
+BT
+10 0 0 10 81 240 Tm
+-0.0147 Tc
+0 Tw
+[(color)-2814.4(yes)]TJ
+7.6 0 TD
+-0.0246 Tc
+[(\(yes\))-1024(n)-24.6(o)-1824.6(n)-24.6(o)-1824.6(y)-8.2(e)-8.2(s)-1624.4(n)-24.6(o)]TJ
+ET
+48.5 250 m
+48.5 249 l
+49 249.5 m
+124 249.5 l
+124.5 250 m
+124.5 249 l
+125 249.5 m
+152 249.5 l
+152.5 250 m
+152.5 249 l
+153 249.5 m
+181 249.5 l
+181.5 250 m
+181.5 249 l
+182 249.5 m
+209 249.5 l
+209.5 250 m
+209.5 249 l
+210 249.5 m
+237 249.5 l
+237.5 250 m
+237.5 249 l
+238 249.5 m
+266 249.5 l
+266.5 250 m
+266.5 249 l
+267 249.5 m
+294 249.5 l
+294.5 250 m
+294.5 249 l
+48.5 249 m
+48.5 238 l
+124.5 249 m
+124.5 238 l
+152.5 249 m
+152.5 238 l
+181.5 249 m
+181.5 238 l
+209.5 249 m
+209.5 238 l
+237.5 249 m
+237.5 238 l
+266.5 249 m
+266.5 238 l
+294.5 249 m
+294.5 238 l
+S
+BT
+10 0 0 10 81 228 Tm
+-0.0138 Tc
+[(texture)-2113.6(n)-13.8(o)-1813.8(n)-13.8(o)-1913.8(n)-13.8(o)-1813.8(n)-13.8(o)-1813.8(yes)-1613.6(n)-13.8(o)]TJ
+ET
+48.5 238 m
+48.5 237 l
+49 237.5 m
+124 237.5 l
+124.5 238 m
+124.5 237 l
+125 237.5 m
+152 237.5 l
+152.5 238 m
+152.5 237 l
+153 237.5 m
+181 237.5 l
+181.5 238 m
+181.5 237 l
+182 237.5 m
+209 237.5 l
+209.5 238 m
+209.5 237 l
+210 237.5 m
+237 237.5 l
+237.5 238 m
+237.5 237 l
+238 237.5 m
+266 237.5 l
+266.5 238 m
+266.5 237 l
+267 237.5 m
+294 237.5 l
+294.5 238 m
+294.5 237 l
+48.5 237 m
+48.5 226 l
+124.5 237 m
+124.5 226 l
+152.5 237 m
+152.5 226 l
+181.5 237 m
+181.5 226 l
+209.5 237 m
+209.5 226 l
+237.5 237 m
+237.5 226 l
+266.5 237 m
+266.5 226 l
+294.5 237 m
+294.5 226 l
+S
+BT
+10 0 0 10 81 216 Tm
+-0.0283 Tc
+[(hardness)-1527.4(n)-28.3(o)-1828.3(n)-28.3(o)-1928.3(n)-28.3(o)-1828.3(n)-28.3(o)-1828.3(n)-28.3(o)-1928.3(n)-28.3(o)]TJ
+ET
+48.5 226 m
+48.5 225 l
+49 225.5 m
+124 225.5 l
+124.5 226 m
+124.5 225 l
+125 225.5 m
+152 225.5 l
+152.5 226 m
+152.5 225 l
+153 225.5 m
+181 225.5 l
+181.5 226 m
+181.5 225 l
+182 225.5 m
+209 225.5 l
+209.5 226 m
+209.5 225 l
+210 225.5 m
+237 225.5 l
+237.5 226 m
+237.5 225 l
+238 225.5 m
+266 225.5 l
+266.5 226 m
+266.5 225 l
+267 225.5 m
+294 225.5 l
+294.5 226 m
+294.5 225 l
+48.5 225 m
+48.5 214 l
+124.5 225 m
+124.5 214 l
+152.5 225 m
+152.5 214 l
+181.5 225 m
+181.5 214 l
+209.5 225 m
+209.5 214 l
+237.5 225 m
+237.5 214 l
+266.5 225 m
+266.5 214 l
+294.5 225 m
+294.5 214 l
+S
+BT
+10 0 0 10 53 204 Tm
+-0.0052 Tc
+(etc.)Tj
+ET
+48.5 214 m
+48.5 213 l
+49 213.5 m
+124 213.5 l
+124.5 214 m
+124.5 213 l
+125 213.5 m
+152 213.5 l
+152.5 214 m
+152.5 213 l
+153 213.5 m
+181 213.5 l
+181.5 214 m
+181.5 213 l
+182 213.5 m
+209 213.5 l
+209.5 214 m
+209.5 213 l
+210 213.5 m
+237 213.5 l
+237.5 214 m
+237.5 213 l
+238 213.5 m
+266 213.5 l
+266.5 214 m
+266.5 213 l
+267 213.5 m
+294 213.5 l
+294.5 214 m
+294.5 213 l
+48.5 213 m
+48.5 201 l
+48.5 202 m
+48.5 201 l
+49 201.5 m
+124 201.5 l
+124.5 213 m
+124.5 201 l
+125 201.5 m
+152 201.5 l
+152.5 213 m
+152.5 201 l
+153 201.5 m
+181 201.5 l
+181.5 213 m
+181.5 201 l
+182 201.5 m
+209 201.5 l
+209.5 213 m
+209.5 201 l
+210 201.5 m
+237 201.5 l
+237.5 213 m
+237.5 201 l
+238 201.5 m
+266 201.5 l
+266.5 213 m
+266.5 201 l
+267 201.5 m
+294 201.5 l
+294.5 213 m
+294.5 201 l
+294.5 202 m
+294.5 201 l
+S
+BT
+11 0 0 11 55 181 Tm
+0.0101 Tc
+0.1006 Tw
+(Figure 5. Incoherence of properties in definitions)Tj
+-0.0909 -2.0909 TD
+0.0137 Tc
+0.1371 Tw
+(3.1.2. Information may be inappropriate)Tj
+1.8182 -1 TD
+0.0258 Tc
+0.2585 Tw
+(Some of the information in dictionaries is)Tj
+-1.9091 -1 TD
+0.0111 Tc
+0.1112 Tw
+(clearly not what is needed for NLP. For example,)Tj
+T*
+0.008 Tc
+0.0796 Tw
+(Kilgarriff [16] shows that in a sample of 83 words)Tj
+T*
+0.0052 Tc
+0.0518 Tw
+(from the LOB corpus, 69 had at least two senses in)Tj
+T*
+0.0113 Tc
+0.1132 Tw
+(LDOCE and were therefore ambiguous. However,)Tj
+T*
+0.0242 Tc
+0.2418 Tw
+(Kilgarriff found that for 60 of these 69 words)Tj
+32.7273 61.7273 TD
+0.0189 Tc
+0.189 Tw
+(\(about 87%\), there was at)Tj
+0 -1 TD
+0.0087 Tc
+0.087 Tw
+(least one usage in the LOB)Tj
+T*
+0.0411 Tc
+0.4109 Tw
+(corpus which could not)Tj
+T*
+0.0422 Tc
+0.4222 Tw
+(with any confidence be)Tj
+T*
+0.0479 Tc
+0.4795 Tw
+(classified into a single)Tj
+T*
+0.0837 Tc
+0.837 Tw
+(sense. This occurred)Tj
+T*
+0.0079 Tc
+0.0787 Tw
+(because, for example, more)Tj
+T*
+0.005 Tc
+0.0495 Tw
+(than one sense was near the)Tj
+T*
+0.0339 Tc
+0.3393 Tw
+(meaning of the word as)Tj
+T*
+0.0471 Tc
+0.4712 Tw
+(used in the corpus, or)Tj
+T*
+0.0175 Tc
+0.1759 Tw
+(because no sense given in)Tj
+T*
+0.0115 Tc
+0.1157 Tw
+(the dictionary applied.)Tj
+1.9091 -1 TD
+0.0602 Tc
+0.6014 Tw
+(MRD research has)Tj
+-1.9091 -1 TD
+0.0175 Tc
+0.1758 Tw
+(assumed for the most part)Tj
+T*
+0.03 Tc
+0.3002 Tw
+(that sense distinctions in)Tj
+T*
+0.0238 Tc
+0.2378 Tw
+(dictionaries correspond to)Tj
+-9.7273 -1 TD
+0.0235 Tc
+0.2344 Tw
+(sense distinctions that apply in actual use, and)Tj
+T*
+0.0195 Tc
+0.1941 Tw
+(therefore could provide the conceptual divisions)Tj
+T*
+0.009 Tc
+0.0898 Tw
+(that should appear in a knowledge base. However,)Tj
+T*
+0.0128 Tc
+0.128 Tw
+(apart from distinctions between homographs, it is)Tj
+T*
+0.0499 Tc
+0.4991 Tw
+(not clear that this assumption holds. The)Tj
+T*
+0.0086 Tc
+0.0863 Tw
+(differences in the level of detail and, occasionally,)Tj
+T*
+0.0116 Tc
+0.1166 Tw
+(in the ways lines are drawn between senses when)Tj
+T*
+0.0416 Tc
+0.416 Tw
+(one moves from one dictionary to another,)Tj
+T*
+0.0082 Tc
+0.082 Tw
+(already show that sense distinctions in dictionaries)Tj
+T*
+0.0071 Tc
+0.0708 Tw
+(are not definitive; studies such as Kilgarriff's bring)Tj
+T*
+0.0067 Tc
+0.0677 Tw
+(this fact into focus in relation to real language use,)Tj
+T*
+0.0064 Tc
+0.064 Tw
+(which is obviously the ultimate concern of NLP.)Tj
+0.0909 -2.0909 TD
+0.0105 Tc
+0.1044 Tw
+(3.1.3. Missing types of information)Tj
+1.8182 -1 TD
+0.0355 Tc
+0.3549 Tw
+[(Some types of information that must be)]TJ
+-1.9091 -1 TD
+0.0299 Tc
+0.2996 Tw
+(included in a knowledge base are clearly not)Tj
+T*
+0.0115 Tc
+0.1152 Tw
+(included in MRDs, in particular, broad contextual)Tj
+T*
+0.0106 Tc
+0.1059 Tw
+(or world knowledge. For instance, it is interesting)Tj
+T*
+0.0185 Tc
+0.1855 Tw
+(to note that there is no direct connection drawn)Tj
+T*
+0.0345 Tc
+0 Tw
+(between )Tj
+/TT4 1 Tf
+4.2032 0 TD
+0.0254 Tc
+(lawn )Tj
+/TT2 1 Tf
+2.5756 0 TD
+0.021 Tc
+(and )Tj
+/TT4 1 Tf
+1.9879 0 TD
+0.0747 Tc
+(house,)Tj
+/TT2 1 Tf
+3.0314 0 TD
+0.0203 Tc
+0.203 Tw
+[( or between )]TJ
+/TT4 1 Tf
+5.7668 0 TD
+0.0804 Tc
+0 Tw
+(ash)Tj
+/TT2 1 Tf
+1.6302 0 TD
+0.0226 Tc
+0.2261 Tw
+[( and)]TJ
+/TT4 1 Tf
+-19.195 -1 TD
+0.1132 Tc
+0 Tw
+(tobacco)Tj
+/TT2 1 Tf
+3.9578 0 TD
+0.0181 Tc
+0.1811 Tw
+[( in the )]TJ
+/TT4 1 Tf
+3.4375 0 TD
+0.06 Tc
+0.5999 Tw
+(Collins English Dictionary,)Tj
+/TT2 1 Tf
+-7.3953 -1 TD
+0.0134 Tc
+0.1335 Tw
+(although it is clear that this connection is part of)Tj
+T*
+0.037 Tc
+0.3696 Tw
+(human experience. The sense disambiguation)Tj
+T*
+0.0419 Tc
+0.4189 Tw
+(strategy described in [17], which applies a)Tj
+T*
+0.0439 Tc
+0.4389 Tw
+(connectionnist approach and relies on such)Tj
+T*
+0.0055 Tc
+0.0545 Tw
+(connections between words in definition texts, fails)Tj
+T*
+0.0032 Tc
+0.0319 Tw
+(in these cases as a result.)Tj
+0 -2.0909 TD
+0.0075 Tc
+0.0745 Tw
+(3.2. Discussion of postulate P2)Tj
+1.9091 -1 TD
+0.0446 Tc
+0.4462 Tw
+(The work of [3] and others made the)Tj
+-1.9091 -1 TD
+0.0238 Tc
+0.2383 Tw
+(extraction of semantic information from MRDs)Tj
+T*
+0.0148 Tc
+0.1481 Tw
+[(appear simple. However, claims of  high success)]TJ
+T*
+0.028 Tc
+0.2802 Tw
+(rates \(often, 98% etc.\) were misleading, since)Tj
+T*
+0.0228 Tc
+0.228 Tw
+("success" \(in Chodorow )Tj
+/TT4 1 Tf
+11.1073 0 TD
+0.0153 Tc
+0.1525 Tw
+(et al.)Tj
+/TT2 1 Tf
+2.2437 0 TD
+0.0181 Tc
+0.1814 Tw
+('s case [7]\) meant)Tj
+-13.3509 -1 TD
+0.0274 Tc
+0.2735 Tw
+(finding the )Tj
+/TT4 1 Tf
+5.4858 0 TD
+0.0923 Tc
+0 Tw
+(head)Tj
+/TT2 1 Tf
+2.3129 0 TD
+0.024 Tc
+0.2399 Tw
+[( of a definition. This did not)]TJ
+-7.7987 -1 TD
+0.0228 Tc
+0.2286 Tw
+(mean that this head was in fact an appropriate)Tj
+T*
+0.0112 Tc
+0.1116 Tw
+(hypernym. In addition, by far the greatest success)Tj
+T*
+0.0263 Tc
+0.2624 Tw
+(was achieved for simple semantic information,)Tj
+T*
+0.0129 Tc
+0.1292 Tw
+(notably hypernyms. The extraction of other kinds)Tj
+T*
+0.0135 Tc
+0.1347 Tw
+(of semantic information proved to be much more)Tj
+T*
+0.0183 Tc
+0.1822 Tw
+(problematic due to far greater inconsistencies in)Tj
+T*
+0.039 Tc
+0.3899 Tw
+(the ways it was specified, often demanding)Tj
+T*
+0.0207 Tc
+0.207 Tw
+(relatively sophisticated parsing of the definition)Tj
+T*
+0.0063 Tc
+0.0631 Tw
+(text . The following outlines the various sources of)Tj
+T*
+0.0222 Tc
+0.2215 Tw
+(difficulty in extracting information from MRDs)Tj
+T*
+0.0057 Tc
+0.0568 Tw
+(\(see [8, 18, 19, 20]\).)Tj
+ET
+endstream
+endobj
+19 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 11 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Length 13695
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 54 771 Tm
+0 g
+/GS1 gs
+0.0105 Tc
+0.1058 Tw
+(3.2.1. Physical formats)Tj
+1.8182 -1 TD
+0.0424 Tc
+0.4232 Tw
+(MRDs typically come to researchers in)Tj
+-1.9091 -1 TD
+0.0515 Tc
+0.5147 Tw
+(unusable formats--notably, in the form of)Tj
+T*
+0.0283 Tc
+0.2826 Tw
+(typesetter tapes from publishers. To make the)Tj
+T*
+0.0119 Tc
+0.1194 Tw
+(MRD usable for research, considerable effort was)Tj
+T*
+0.0068 Tc
+0.068 Tw
+(often required, and in fact the translation of MRDs)Tj
+T*
+0.0103 Tc
+0.1031 Tw
+(in typesetter format to something more usable has)Tj
+T*
+0.0157 Tc
+0.1574 Tw
+(become an area of study in itself. As a result of)Tj
+T*
+0.0399 Tc
+0.3993 Tw
+(ambiguities and inconsistencies in typesetter)Tj
+T*
+0.0589 Tc
+0.5893 Tw
+(formats, parsing typesetter tapes requires)Tj
+T*
+0.0082 Tc
+0.0822 Tw
+(developing a complex grammar of entries \(see, for)Tj
+T*
+0.0075 Tc
+0.0753 Tw
+(example, [21]\). Even with this, problems still arise)Tj
+T*
+0.0569 Tc
+0.5686 Tw
+(because conventions are inconsistent. For)Tj
+T*
+0.0131 Tc
+0.1309 Tw
+(example, in the )Tj
+/TT4 1 Tf
+6.9889 0 TD
+0.0628 Tc
+0 Tw
+(CED)Tj
+/TT2 1 Tf
+2.1885 0 TD
+0.0096 Tc
+0.096 Tw
+(, the entry )Tj
+/TT4 1 Tf
+4.68 0 TD
+0.018 Tc
+0.1803 Tw
+(Canopic jar, urn)Tj
+/TT2 1 Tf
+-13.8574 -1 TD
+0.0549 Tc
+0 Tw
+(or)Tj
+/TT4 1 Tf
+0.9428 0 TD
+0.0115 Tc
+0.1155 Tw
+[( vase )]TJ
+/TT2 1 Tf
+2.577 0 TD
+0.0194 Tc
+0.1932 Tw
+(must be interpreted as \()Tj
+/TT4 1 Tf
+10.6236 0 TD
+0.0302 Tc
+0.3016 Tw
+(Canopic jar)Tj
+/TT2 1 Tf
+5.4393 0 TD
+0.0144 Tc
+0.1435 Tw
+(\) or)Tj
+-19.5827 -1 TD
+0 Tc
+0 Tw
+(\()Tj
+/TT4 1 Tf
+0.3843 0 TD
+0.0369 Tc
+0.3689 Tw
+(Canopic urn)Tj
+/TT2 1 Tf
+5.8027 0 TD
+0 Tc
+0 Tw
+(\))Tj
+/TT4 1 Tf
+0.3843 0 TD
+( )Tj
+/TT2 1 Tf
+0.2885 0 TD
+0.0642 Tc
+(or)Tj
+/TT4 1 Tf
+0.9614 0 TD
+0 Tc
+( )Tj
+/TT2 1 Tf
+0.2885 0 TD
+(\()Tj
+/TT4 1 Tf
+0.3843 0 TD
+0.0379 Tc
+0.3793 Tw
+(Canopic vase)Tj
+/TT2 1 Tf
+6.2497 0 TD
+0.0261 Tc
+0.2605 Tw
+(\), whereas the)Tj
+-14.7438 -1 TD
+0.0205 Tc
+0 Tw
+(entry )Tj
+/TT4 1 Tf
+2.6315 0 TD
+0.0284 Tc
+0.2832 Tw
+(Junggar Pendi, Dzungaria, )Tj
+/TT2 1 Tf
+12.7811 0 TD
+0.059 Tc
+0 Tw
+(or)Tj
+/TT4 1 Tf
+0.951 0 TD
+0.0315 Tc
+0.3149 Tw
+[( Zungaria,)]TJ
+/TT2 1 Tf
+-16.3636 -1 TD
+0.012 Tc
+0.1197 Tw
+(which has the same structure, must be interpreted)Tj
+T*
+0.0065 Tc
+0.0645 Tw
+(as \()Tj
+/TT4 1 Tf
+1.5064 0 TD
+0.0165 Tc
+0.1641 Tw
+(Junggar Pendi)Tj
+/TT2 1 Tf
+6.2936 0 TD
+0.0065 Tc
+0.0645 Tw
+(\) or)Tj
+/TT4 1 Tf
+1.5064 0 TD
+0 Tc
+0 Tw
+( )Tj
+/TT2 1 Tf
+0.266 0 TD
+(\()Tj
+/TT4 1 Tf
+0.3543 0 TD
+0.0304 Tc
+(Dzungaria)Tj
+/TT2 1 Tf
+4.5516 0 TD
+0 Tc
+(\))Tj
+/TT4 1 Tf
+0.3543 0 TD
+( )Tj
+/TT2 1 Tf
+0.266 0 TD
+0.0265 Tc
+(or)Tj
+/TT4 1 Tf
+0.8861 0 TD
+0 Tc
+( )Tj
+/TT2 1 Tf
+0.266 0 TD
+(\()Tj
+/TT4 1 Tf
+0.3543 0 TD
+0.0297 Tc
+(Zungaria)Tj
+/TT2 1 Tf
+3.961 0 TD
+0.0372 Tc
+(\).)Tj
+-20.5659 -1 TD
+0.0298 Tc
+0.2978 Tw
+(Because of the inconsistency, fully automated)Tj
+T*
+0.0409 Tc
+0.4096 Tw
+(procedures cannot determine the appropriate)Tj
+T*
+0.0165 Tc
+0 Tw
+(interpretations.)Tj
+1.9091 -1 TD
+0.0123 Tc
+0.1223 Tw
+(Most of this work is far outside the realm of)Tj
+-1.9091 -1 TD
+0.0092 Tc
+0.0913 Tw
+(NLP research, and in general it is time-consuming)Tj
+T*
+0.028 Tc
+0.2798 Tw
+(and without great intellectual interest. Thus it)Tj
+T*
+0.0093 Tc
+0.0925 Tw
+(diverts resources from more central NLP research.)Tj
+T*
+0.0251 Tc
+0.2509 Tw
+(As a result, only a handful of dictionaries are)Tj
+T*
+0.0195 Tc
+0.194 Tw
+(available in a usable format, mainly in English.)Tj
+T*
+0.0204 Tc
+0.2037 Tw
+(Now that the magnitude of the task is obvious,)Tj
+T*
+0.0121 Tc
+0.1212 Tw
+(researchers may be reluctant to start similar work)Tj
+T*
+0.0095 Tc
+0.096 Tw
+(on dictionaries in other languages.)Tj
+0.0909 -2.0909 TD
+0.0127 Tc
+0.1269 Tw
+(3.2.2. Incoherence of metatext)Tj
+1.8182 -1 TD
+0.0095 Tc
+0.0959 Tw
+(The difficulty of extracting information arises)Tj
+-1.9091 -1 TD
+0.0251 Tc
+0.2507 Tw
+(from inconsistencies in the way information is)Tj
+T*
+0.0264 Tc
+0.2632 Tw
+(specified, in particular, variations in definition)Tj
+/TT4 1 Tf
+T*
+0.044 Tc
+0 Tw
+(metatext)Tj
+/TT2 1 Tf
+3.7392 0 TD
+0.0134 Tc
+0.1334 Tw
+[(  \(that is, phrases in definition texts that)]TJ
+-3.7392 -1 TD
+0.0043 Tc
+0.0432 Tw
+[(express semantic relations, such as  "used in )]TJ
+/TT4 1 Tf
+18.4736 0 TD
+0 Tc
+0 Tw
+(V)Tj
+/TT2 1 Tf
+0.6294 0 TD
+0.0153 Tc
+(-ing")Tj
+-19.103 -1 TD
+0.0073 Tc
+0.073 Tw
+(for instrument, "consisting of a  )Tj
+/TT4 1 Tf
+13.6194 0 TD
+0 Tc
+0 Tw
+(N)Tj
+/TT2 1 Tf
+0.7024 0 TD
+0.0072 Tc
+0.072 Tw
+(" for parts, etc.\).)Tj
+-14.3217 -1 TD
+0.0291 Tc
+0.2906 Tw
+(For example, consider the following from the)Tj
+/TT4 1 Tf
+T*
+0.0115 Tc
+0 Tw
+(CED, )Tj
+/TT2 1 Tf
+2.6714 0 TD
+0.0082 Tc
+0.0818 Tw
+(in which the fact that a handle is a part-of a)Tj
+-2.6714 -1 TD
+0.0045 Tc
+0.0443 Tw
+(utensil is expressed in vastly different ways:)Tj
+/TT6 1 Tf
+10 0 0 10 53 295 Tm
+0.0129 Tc
+0 Tw
+(jug)Tj
+/TT2 1 Tf
+1.4279 0 TD
+0.0035 Tc
+0.0353 Tw
+[( • a vessel...usually )]TJ
+ET
+0 G
+0 J 0 j 0.493 w 10 M []0 d
+1 i 
+148.225 294.243 m
+176.199 294.243 l
+S
+BT
+10 0 0 10 148.2253 295 Tm
+0.0107 Tc
+0.0323 Tw
+(having a )Tj
+3.831 0 TD
+0.0039 Tc
+(handle...)Tj
+/TT6 1 Tf
+-13.3536 -1.2 TD
+0.0118 Tc
+0 Tw
+(kettle)Tj
+/TT2 1 Tf
+2.4585 0 TD
+0.0033 Tc
+0.0335 Tw
+[( • a metal container )]TJ
+ET
+159.806 282.243 m
+178.111 282.243 l
+S
+BT
+10 0 0 10 159.8065 283 Tm
+0.0106 Tc
+0.0354 Tw
+(with a )Tj
+2.8707 0 TD
+0.0042 Tc
+(handle...)Tj
+/TT6 1 Tf
+-13.5513 -1.2 TD
+0.0079 Tc
+0 Tw
+(ladle)Tj
+/TT2 1 Tf
+2.0952 0 TD
+0.0008 Tc
+0.0085 Tw
+[( • a )]TJ
+ET
+89.686 270.243 m
+143.462 270.243 l
+S
+BT
+10 0 0 10 89.6861 271 Tm
+0.0085 Tc
+0 Tw
+(long-handled )Tj
+5.6682 0 TD
+0.0036 Tc
+(spoon...)Tj
+/TT6 1 Tf
+-9.3368 -1.2 TD
+0.0575 Tc
+(corkscrew)Tj
+/TT2 1 Tf
+4.9042 0 TD
+0.0131 Tc
+0.1314 Tw
+[( • a device...)]TJ
+ET
+156.851 258.243 m
+214.291 258.243 l
+S
+BT
+10 0 0 10 156.8514 259 Tm
+0.0252 Tc
+0.2647 Tw
+[(consisting of )104.9(a )]TJ
+7.076 0 TD
+0.0168 Tc
+0.1682 Tw
+(pointed metal)Tj
+-17.4612 -1.2 TD
+-0.0028 Tc
+0 Tw
+(spiral )Tj
+ET
+77.521 246.243 m
+120.761 246.243 l
+S
+BT
+10 0 0 10 77.5208 247 Tm
+-0.0032 Tc
+(attached to a handle...)Tj
+/TT6 1 Tf
+-2.4521 -1.2 TD
+0.0486 Tc
+(fork)Tj
+/TT2 1 Tf
+2.0274 0 TD
+0.0142 Tc
+0.1423 Tw
+[( • a small usually metal implement )]TJ
+ET
+229.177 234.243 m
+286.003 234.243 l
+S
+BT
+10 0 0 10 229.1768 235 Tm
+0.0248 Tc
+0.2476 Tw
+(consisting of)Tj
+-17.6177 -1.2 TD
+0.0202 Tc
+0.2018 Tw
+(two, three, or four long thin prongs )Tj
+ET
+217.632 222.243 m
+278.038 222.243 l
+S
+BT
+10 0 0 10 217.6322 223 Tm
+0.0184 Tc
+0.1842 Tw
+[(on the end of )97.9(a)]TJ
+-16.4632 -1.2 TD
+-0.0019 Tc
+0 Tw
+(handle...)Tj
+/TT6 1 Tf
+0 -1.1 TD
+0.0208 Tc
+(knife)Tj
+/TT2 1 Tf
+2.271 0 TD
+0.0059 Tc
+0.0591 Tw
+[( • a cutting instrument )]TJ
+ET
+171.067 199.243 m
+224.914 199.243 l
+S
+BT
+10 0 0 10 171.0673 200 Tm
+0.0096 Tc
+0.0838 Tw
+[(consisting )-24.6(of a sharp-edged)]TJ
+-11.8067 -1.2 TD
+-0.002 Tc
+0 Tw
+(often pointed blade of metal )Tj
+ET
+167.659 187.243 m
+206.622 187.243 l
+S
+BT
+10 0 0 10 167.6592 188 Tm
+-0.0019 Tc
+(fitted into a handle...)Tj
+/TT6 1 Tf
+-11.4659 -1.2 TD
+0.014 Tc
+(basket)Tj
+/TT2 1 Tf
+2.8623 0 TD
+0.004 Tc
+0.0399 Tw
+[( • a container...often )]TJ
+ET
+167.328 175.243 m
+248.838 175.243 l
+S
+BT
+10 0 0 10 167.3277 176 Tm
+0.0046 Tc
+0.0491 Tw
+[(carried by means of )10.9(a )10.9(handle)]TJ
+-11.4328 -1.2 TD
+-0.0087 Tc
+0 Tw
+(or handles.)Tj
+11 0 0 11 74 142 Tm
+0.0096 Tc
+0.0964 Tw
+(This small sample demonstrates that there are)Tj
+-1.9091 -1 TD
+0.0156 Tc
+0.1565 Tw
+(often a handful of metatextual phrases signalling)Tj
+T*
+0.0523 Tc
+0.5224 Tw
+(particular relations \("having a", "with a",)Tj
+T*
+0.0238 Tc
+0.2385 Tw
+("consisting of", etc.\) that can be detected with)Tj
+T*
+0.079 Tc
+0.79 Tw
+(simple Chodorow-like pattern matching)Tj
+23 61.1818 TD
+0.0144 Tc
+0.1434 Tw
+(techniques. Even this simple case is problematic;)Tj
+0 -1 TD
+0.0226 Tc
+0 Tw
+(consider)Tj
+/TT6 1 Tf
+10 0 0 10 306 737 Tm
+0.0753 Tc
+(lug)Tj
+/TT2 1 Tf
+1.5599 0 TD
+0.0191 Tc
+0.1909 Tw
+[( • a box or basket for vegetables or fruit )]TJ
+ET
+510.127 736.243 m
+530.913 736.243 l
+S
+BT
+10 0 0 10 510.1274 737 Tm
+0.0753 Tc
+0.0422 Tw
+(with a)Tj
+-20.4127 -1.2 TD
+0.0009 Tc
+0.009 Tw
+(capacity of 28 to 40 pounds.)Tj
+11 0 0 11 306 703 Tm
+0.0086 Tc
+0.0863 Tw
+(where the noun \()Tj
+/TT4 1 Tf
+7.1446 0 TD
+0 Tc
+0 Tw
+(N)Tj
+/TT2 1 Tf
+0.7063 0 TD
+0.0064 Tc
+0.0635 Tw
+(\) in the phrase "with a )Tj
+/TT4 1 Tf
+9.6063 0 TD
+0 Tc
+0 Tw
+(N)Tj
+/TT2 1 Tf
+0.7063 0 TD
+0.0062 Tc
+0.0622 Tw
+(" is not)Tj
+-18.1634 -1 TD
+0.004 Tc
+0.0402 Tw
+(a part, as it is in the earlier examples.)Tj
+1.9091 -1 TD
+0.0563 Tc
+0.5623 Tw
+(However, things are rarely even this)Tj
+-1.9091 -1 TD
+0.0275 Tc
+0.2759 Tw
+(straightforward. The definitions of )Tj
+/TT4 1 Tf
+16.1745 0 TD
+0.0721 Tc
+0 Tw
+(corkscrew,)Tj
+-16.1745 -1 TD
+0.0103 Tc
+0.1026 Tw
+(fork, knife, )Tj
+/TT2 1 Tf
+4.893 0 TD
+0.009 Tc
+0 Tw
+(and )Tj
+/TT4 1 Tf
+1.8198 0 TD
+0.0123 Tc
+(basket )Tj
+/TT2 1 Tf
+3.0132 0 TD
+0.0118 Tc
+0.1184 Tw
+(show that there is virtually)Tj
+-9.7261 -1 TD
+0.0362 Tc
+0.3617 Tw
+(an open-ended set of metatextual phrases to)Tj
+T*
+0.0115 Tc
+0.1145 Tw
+(specify that a handle is a part of some object, for)Tj
+T*
+0.0105 Tc
+0.1044 Tw
+(which no pattern can be devised. Bearing in mind)Tj
+T*
+0.0385 Tc
+0.3847 Tw
+(that this example shows only a single case)Tj
+T*
+0.0144 Tc
+0.1439 Tw
+(\(handle\) over a handful of definitions in a single)Tj
+T*
+0.0246 Tc
+0.2465 Tw
+(dictionary, it is clear that the amount of work)Tj
+T*
+0.0156 Tc
+0.1565 Tw
+(required to determine the possible variants could)Tj
+T*
+0.0396 Tc
+0.396 Tw
+(easily exceed that required to construct the)Tj
+T*
+0.0121 Tc
+0.1214 Tw
+(corresponding knowledge base by hand.)Tj
+0.0909 -2.0909 TD
+0.0145 Tc
+0.1454 Tw
+(3.2.3. The bootstrapping problem)Tj
+1.8182 -1 TD
+0.0348 Tc
+0.3478 Tw
+[( It is common in MRD research to use)]TJ
+-1.9091 -1 TD
+0.0201 Tc
+0.2009 Tw
+(sophisticated syntactic parsers \(for example, the)Tj
+T*
+0.0258 Tc
+0.2582 Tw
+(Linguistic String Parser as in [22]\) to analyze)Tj
+T*
+0.0105 Tc
+0.1044 Tw
+(definition texts. But even for the simple examples)Tj
+T*
+0.035 Tc
+0.3499 Tw
+(given above, more than syntactic analysis is)Tj
+T*
+0.0122 Tc
+0.1221 Tw
+(required. For example, to determine that a handle)Tj
+T*
+0.009 Tc
+0.09 Tw
+(is a part-of a basket from the )Tj
+/TT4 1 Tf
+12.6546 0 TD
+0.0125 Tc
+0 Tw
+(CED )Tj
+/TT2 1 Tf
+2.4243 0 TD
+0.0183 Tc
+0.1828 Tw
+(definition, not)Tj
+-15.0789 -1 TD
+0.0103 Tc
+0.103 Tw
+(only syntactic parsing but also lexical information)Tj
+T*
+0.0156 Tc
+0.1569 Tw
+(is needed to differentiate "carried by means of a)Tj
+T*
+0.0404 Tc
+0.4031 Tw
+(handle" from "cooked by means of steam".)Tj
+T*
+0.0347 Tc
+0.3469 Tw
+(Similarly, in the definition of )Tj
+/TT4 1 Tf
+14.7887 0 TD
+0.035 Tc
+0 Tw
+(ladle, )Tj
+/TT2 1 Tf
+3.0948 0 TD
+0.1058 Tc
+(lexical)Tj
+-17.8835 -1 TD
+0.0452 Tc
+0.4522 Tw
+(information would be required in order to)Tj
+T*
+0.0459 Tc
+0.4588 Tw
+(determine that the adjective "long-handled")Tj
+T*
+0.0251 Tc
+0.2511 Tw
+(specifies a part of a ladle)Tj
+/TT4 1 Tf
+11.9002 0 TD
+0 Tc
+0 Tw
+(.)Tj
+/TT2 1 Tf
+0.2985 0 TD
+0.0252 Tc
+0.2516 Tw
+[( In some cases, the)]TJ
+-12.1987 -1 TD
+0.0096 Tc
+0.0968 Tw
+(resources of a full knowledge base are required to)Tj
+T*
+0.0336 Tc
+0.3363 Tw
+(understand the specification. For example, to)Tj
+T*
+0.0128 Tc
+0.1285 Tw
+(differentiate "carried by means of a handle" from)Tj
+T*
+0.0119 Tc
+0.1195 Tw
+("carried by means of a wagon", world knowledge)Tj
+T*
+0.0088 Tc
+0.0882 Tw
+(is required to determine that "wagon" is not a part)Tj
+T*
+0.0311 Tc
+0.3109 Tw
+(of the object carried, although "handle" most)Tj
+T*
+0.0054 Tc
+0.0533 Tw
+(likely is.)Tj
+1.9091 -1 TD
+0.0297 Tc
+0.2974 Tw
+(In addition, in order to create knowledge)Tj
+-1.9091 -1 TD
+0.0149 Tc
+0.1495 Tw
+(bases from MRDs, it is necessary to apply sense)Tj
+T*
+0.029 Tc
+0.2904 Tw
+(disambiguation to the words in the dictionary)Tj
+T*
+0.0444 Tc
+0.4433 Tw
+(itself as a prior step. Without prior sense)Tj
+T*
+0.089 Tc
+0.8896 Tw
+(disambiguation, automatically extracted)Tj
+T*
+0.0227 Tc
+0.2273 Tw
+(hierarchies are necessarily )Tj
+/TT4 1 Tf
+12.1175 0 TD
+0.0524 Tc
+0 Tw
+(tangled)Tj
+/TT2 1 Tf
+3.3661 0 TD
+0.0194 Tc
+0.1938 Tw
+[( [1], because)]TJ
+-15.4836 -1 TD
+0.013 Tc
+0.1298 Tw
+(many words are polysemous. For example, in the)Tj
+/TT4 1 Tf
+T*
+0.1278 Tc
+0 Tw
+(CED)Tj
+/TT2 1 Tf
+2.3835 0 TD
+0.02 Tc
+0.2 Tw
+(, the word )Tj
+/TT4 1 Tf
+5.0969 0 TD
+0.024 Tc
+0 Tw
+(pan )Tj
+/TT2 1 Tf
+2.0857 0 TD
+0.0353 Tc
+0.3527 Tw
+(has the following senses)Tj
+-9.566 -1 TD
+0.0154 Tc
+0.1537 Tw
+(\(among others\):)Tj
+/TT6 1 Tf
+10 0 0 10 306 181 Tm
+0.0224 Tc
+0 Tw
+(pan)Tj
+/TT2 1 Tf
+1.6795 0.3 TD
+0 Tc
+(1)Tj
+/TT6 1 Tf
+1.1205 -0.3 TD
+0.0076 Tc
+(1.a)Tj
+/TT2 1 Tf
+1.2728 0 TD
+0.0019 Tc
+0.0188 Tw
+[( a wide metal )]TJ
+/TT4 1 Tf
+5.7107 0 TD
+0.0072 Tc
+0 Tw
+(vessel)Tj
+/TT2 1 Tf
+2.4309 0 TD
+0.0044 Tc
+0.0444 Tw
+(… [CED])Tj
+/TT6 1 Tf
+-12.2144 -1.3 TD
+0.0224 Tc
+0 Tw
+(pan)Tj
+/TT2 1 Tf
+1.6795 0.3 TD
+0 Tc
+(2)Tj
+/TT6 1 Tf
+1.1205 -0.3 TD
+0.0014 Tc
+(1 )Tj
+/TT2 1 Tf
+0.7671 0 TD
+0.0024 Tc
+(the )Tj
+/TT4 1 Tf
+1.5053 0 TD
+0.0086 Tc
+(leaf)Tj
+/TT2 1 Tf
+1.5339 0 TD
+0.0031 Tc
+0.0306 Tw
+[( of the betel tree... [CED])]TJ
+11 0 0 11 306 146 Tm
+0.0397 Tc
+0 Tw
+(The )Tj
+/TT4 1 Tf
+2.3611 0 TD
+0.2055 Tc
+(CED)Tj
+/TT2 1 Tf
+2.6166 0 TD
+0.0298 Tc
+0.2982 Tw
+[( gives )]TJ
+/TT4 1 Tf
+3.4159 0 TD
+0.1542 Tc
+0 Tw
+(pan)Tj
+/TT2 1 Tf
+1.9625 0 TD
+0.0433 Tc
+0.4324 Tw
+[( as the hypernym for)]TJ
+/TT4 1 Tf
+-10.3562 -1 TD
+0.1176 Tc
+0 Tw
+(saucepan,)Tj
+/TT2 1 Tf
+5.0856 0 TD
+0.0414 Tc
+0.4137 Tw
+[( which taken together yields the)]TJ
+-5.0856 -1 TD
+0.0424 Tc
+0.4236 Tw
+(hierarchy in figure 6. The undisambiguated)Tj
+T*
+0.0134 Tc
+0.1333 Tw
+(hierarchy is unusable because, following the path)Tj
+T*
+0.0213 Tc
+0.2122 Tw
+(upwards from )Tj
+/TT4 1 Tf
+6.5331 0 TD
+0.0567 Tc
+0 Tw
+(saucepan)Tj
+/TT2 1 Tf
+4.2307 0 TD
+0.0121 Tc
+0.1207 Tw
+(, we find that )Tj
+/TT4 1 Tf
+6.1906 0 TD
+0.0648 Tc
+0 Tw
+(saucepan)Tj
+/TT2 1 Tf
+-16.9544 -1 TD
+0.0091 Tc
+0.0905 Tw
+(can be a kind of )Tj
+/TT4 1 Tf
+7.2435 0 TD
+0.0115 Tc
+0 Tw
+(leaf, )Tj
+/TT2 1 Tf
+2.1824 0 TD
+0.0175 Tc
+0.1759 Tw
+(which is clearly erroneous.)Tj
+ET
+endstream
+endobj
+22 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 11 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+24 0 obj
+<<
+/Length 9468
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 53 771 Tm
+0 g
+/GS1 gs
+0.0126 Tc
+0.1266 Tw
+(Sense disambiguation is a complex task requiring)Tj
+0 -1 TD
+0.0085 Tc
+0.0843 Tw
+(possibly substantial knowledge resources.)Tj
+ET
+1 i 
+210 700 m
+200.865 695.933 l
+200.295 697.213 200 698.599 200 700 c
+200 701.401 200.295 702.787 200.865 704.067 c
+f
+206 700 m
+207 700 l
+207 699 l
+115 698 l
+114 698 l
+114 699 l
+f
+BT
+/TT6 1 Tf
+9.108 0 0 9.144 56.0021 736.9885 Tm
+0 Tc
+0 Tw
+[(vessel)-5461.6(leaf)]TJ
+4.0899 -4.2655 TD
+(pan)Tj
+-0.9726 -4.8125 TD
+(saucepan)Tj
+ET
+72 733 m
+73 733 l
+100 705 l
+100 704 l
+99 704 l
+72 732 l
+f
+127 733 m
+128 733 l
+128 732 l
+100 704 l
+99 704 l
+99 705 l
+f
+0 G
+0 J 0 j 1 w 10 M []0 d
+99.5 692 m
+99.5 663 l
+S
+BT
+/TT10 1 Tf
+9.108 0 0 9.144 55.0017 635.9778 Tm
+(a\) word hierarchy)Tj
+ET
+1 g
+196 698.46 m
+196 693.216 178.752 688.96 157.5 688.96 c
+136.248 688.96 119 693.216 119 698.46 c
+119 703.704 136.248 707.96 157.5 707.96 c
+178.752 707.96 196 703.704 196 698.46 c
+f
+195.5 698.46 m
+195.5 693.492 178.476 689.46 157.5 689.46 c
+136.524 689.46 119.5 693.492 119.5 698.46 c
+119.5 703.428 136.524 707.46 157.5 707.46 c
+178.476 707.46 195.5 703.428 195.5 698.46 c
+s
+BT
+9.108 0 0 9.144 124.0047 695.9845 Tm
+0 g
+(disambiguation)Tj
+/TT6 1 Tf
+9.0034 4.5937 TD
+(vessel)Tj
+0.796 -4.2656 TD
+(pan)Tj
+-0.9726 -4.8124 TD
+(saucepan)Tj
+ET
+219.5 734 m
+219.5 705 l
+219.5 692 m
+219.5 664 l
+S
+BT
+9.108 0 0 9.144 230.0081 703.9847 Tm
+(1)Tj
+0.549 -0.5468 TD
+(1a)Tj
+0.1098 4.2656 TD
+[(1)-1805.8(leaf)]TJ
+ET
+262.5 734 m
+262.5 705 l
+S
+BT
+9.108 0 0 9.144 256.2589 698.9845 Tm
+[(pan)-666(1)]TJ
+1.7293 0.6562 TD
+(2)Tj
+0.3294 3.6093 TD
+(1)Tj
+/TT10 1 Tf
+-8.0152 -11.1561 TD
+(b\) sense hierarchy)Tj
+/TT6 1 Tf
+4.7213 2.0781 TD
+(1)Tj
+/TT2 1 Tf
+11 0 0 11 90 613 Tm
+0.0094 Tc
+0.0935 Tw
+(Figure 6 : Sense-tangled hierarchy)Tj
+-1.4545 -2.0909 TD
+0.0301 Tc
+0.3011 Tw
+(All of this means that in order to create)Tj
+-1.9091 -1 TD
+0.0346 Tc
+0.3467 Tw
+(resources for use in NLP from MRDs, it is)Tj
+T*
+0.0112 Tc
+0.1118 Tw
+(necessary to have full NLP capabilities--including)Tj
+T*
+0.0264 Tc
+0.2641 Tw
+(full knowledge bases--already at hand. This is)Tj
+T*
+0.0172 Tc
+0.1717 Tw
+(clearly circular, and has led some researchers to)Tj
+T*
+0.0223 Tc
+0.223 Tw
+(attempt MRD analysis using only minimal pre-)Tj
+T*
+0.0317 Tc
+0.3174 Tw
+(existing resources that can be constructed by)Tj
+T*
+0.0507 Tc
+0.5072 Tw
+(hand, and bootstrapping as MRD analysis)Tj
+T*
+0.0161 Tc
+0.1611 Tw
+(proceeds. However, it is becoming clear that the)Tj
+T*
+0.0135 Tc
+0.1346 Tw
+(difficulties are so considerable that such methods)Tj
+T*
+0.0095 Tc
+0.0949 Tw
+[(are unlikely to succeed;  indeed, to date, none has)]TJ
+T*
+0.0133 Tc
+0.1327 Tw
+(been convincingly demonstrated.)Tj
+13 0 0 13 53 431 Tm
+-0.0213 Tc
+0 Tw
+(4. SYNTHESIS)Tj
+11 0 0 11 74 421 Tm
+0.01 Tc
+0.1002 Tw
+(The remarks in the preceding sections lead to)Tj
+-1.9091 -1 TD
+0.0224 Tc
+0.2234 Tw
+(the conclusion that the two postulates of MRD)Tj
+T*
+0.0371 Tc
+0.3711 Tw
+(research were erroneous. The information in)Tj
+T*
+0.0296 Tc
+0.296 Tw
+(MRDs is probably not consistent or complete)Tj
+T*
+0.0386 Tc
+0.3863 Tw
+(enough to provide a substantial basis for a)Tj
+T*
+0.0389 Tc
+0.3887 Tw
+(knowledge base. In addition, given that the)Tj
+T*
+0.0592 Tc
+0.5922 Tw
+(amount of work required to extract the)Tj
+T*
+0.0067 Tc
+0.0672 Tw
+(information that does exist in MRDs has now been)Tj
+T*
+0.0158 Tc
+0.158 Tw
+(demonstrated to be extensive \(even requiring the)Tj
+T*
+0.0109 Tc
+0.1094 Tw
+(existence of the knowledge bases it is intended to)Tj
+T*
+0.0195 Tc
+0.1952 Tw
+(create\), the return on investment is clearly very)Tj
+T*
+-0.0075 Tc
+0 Tw
+(low.)Tj
+1.9091 -1 TD
+0.0074 Tc
+0.0735 Tw
+(Therefore, does the past fifteen years of MRD)Tj
+-1.9091 -1 TD
+0.0225 Tc
+0.2257 Tw
+(research constitute wasted effort? If the mostly)Tj
+T*
+0.013 Tc
+0.1302 Tw
+(automatic extraction of near-perfect knowledge is)Tj
+T*
+0.0194 Tc
+0.194 Tw
+(the goal, the answer is certainly "yes". But this)Tj
+T*
+0.0212 Tc
+0.2118 Tw
+(assumption reveals a broader postulate than the)Tj
+T*
+0.0065 Tc
+0.0648 Tw
+(two cited in section 2 underlying MRD research:)Tj
+/TT6 1 Tf
+0 -2.0909 TD
+0.0235 Tc
+0.2359 Tw
+(Postulate P0.)Tj
+/TT2 1 Tf
+6.0966 0 TD
+0.0165 Tc
+0.1658 Tw
+[( Large knowledge bases cannot be)]TJ
+-6.0966 -1 TD
+0.0115 Tc
+0.1157 Tw
+(built by hand.)Tj
+1.9091 -2.0909 TD
+0.0091 Tc
+0.0906 Tw
+(It is not at all sure that this postulate is valid,)Tj
+-1.9091 -1 TD
+0.0138 Tc
+0.1385 Tw
+(given, for example, the work of the CYC project)Tj
+T*
+0.0187 Tc
+0.1874 Tw
+([34], and the fact that lexicographers have been)Tj
+T*
+0.0199 Tc
+0.1994 Tw
+(creating knowledge bases by hand for over 200)Tj
+T*
+0.016 Tc
+0.1597 Tw
+(years. If this broader postulate is abandoned, we)Tj
+T*
+0.0203 Tc
+0.2027 Tw
+(can more realistically assess the contribution of)Tj
+T*
+0.029 Tc
+0.2897 Tw
+(MRD research. It is clear that MRDs contain)Tj
+T*
+0.0095 Tc
+0.0957 Tw
+(useful data--but most of it is probably usable only)Tj
+T*
+0.0367 Tc
+0.367 Tw
+(with possibly substantial by-hand massaging,)Tj
+23 62 TD
+0.0275 Tc
+0.274 Tw
+(requiring human judgement to be incorporated)Tj
+0 -1 TD
+0.0121 Tc
+0.1212 Tw
+(into useful knowledge bases. In addition, it is the)Tj
+T*
+0.0088 Tc
+0.088 Tw
+(trend in NLP research \(possibly in part because of)Tj
+T*
+0.0214 Tc
+0.2139 Tw
+(the experience with MRDs\) to consider that no)Tj
+T*
+0.0246 Tc
+0.2463 Tw
+(single source \(dictionaries, corpora, etc.\) could)Tj
+T*
+0.0388 Tc
+0.3883 Tw
+(provide all or even most of the knowledge)Tj
+T*
+0.0258 Tc
+0.2579 Tw
+(required for NLP. Therefore, it is now widely)Tj
+T*
+0.0389 Tc
+0.3889 Tw
+(recognized that knowledge base construction)Tj
+T*
+0.0324 Tc
+0.3238 Tw
+(requires combining information from multiple)Tj
+T*
+0.0408 Tc
+0.4086 Tw
+(sources \(section 4.1\). Clearly, coupled with)Tj
+T*
+0.0185 Tc
+0.1856 Tw
+[(information from other sources and subjected to)]TJ
+T*
+0.0146 Tc
+0.1464 Tw
+(by-hand amelioration, information extracted from)Tj
+T*
+0.0468 Tc
+0.4679 Tw
+(MRDs is a valuable resource for building)Tj
+T*
+0.0088 Tc
+0.0879 Tw
+(knowledge bases.)Tj
+1.9091 -1 TD
+0.0303 Tc
+0.3028 Tw
+(However, there are other contributions of)Tj
+-1.9091 -1 TD
+0.0164 Tc
+0.1637 Tw
+(MRD research that may be less well-recognized.)Tj
+T*
+0.0681 Tc
+0.681 Tw
+(In fact, MRD research has contributed)Tj
+T*
+0.0247 Tc
+0.2469 Tw
+(significantly to several areas, in particular, the)Tj
+T*
+0.0102 Tc
+0.1017 Tw
+(development of encoding and database models for)Tj
+T*
+0.0195 Tc
+0.1959 Tw
+(dictionaries and other textual data \(section 4.2\),)Tj
+T*
+0.0164 Tc
+0.1637 Tw
+(the assessment of the kind of knowledge needed)Tj
+T*
+0.0215 Tc
+0.2151 Tw
+(for NLP \(section 4.3\), and the consideration of)Tj
+T*
+0.0239 Tc
+0.2392 Tw
+(pure associational information for various NLP)Tj
+T*
+0.0082 Tc
+0.0823 Tw
+(tasks \(section 4.4\).)Tj
+1.9091 -1 TD
+0.0178 Tc
+0.178 Tw
+(Probably the most important contribution of)Tj
+-1.9091 -1 TD
+0.0075 Tc
+0.0759 Tw
+(MRD research is the fostering of a convergence of)Tj
+T*
+0.0163 Tc
+0.163 Tw
+(interests among the fields of NLP, lexicography,)Tj
+T*
+0.0232 Tc
+0.2316 Tw
+(and electronic publishing--a convergence which)Tj
+T*
+0.0118 Tc
+0.1184 Tw
+(MRD research will certainly continue to feed and)Tj
+T*
+0.0268 Tc
+0.2684 Tw
+(develop. This convergence promises to benefit)Tj
+T*
+0.0445 Tc
+0.4458 Tw
+(NLP research as well as lexicography and)Tj
+T*
+0.0112 Tc
+0.1114 Tw
+(electronic publishing \(section 4.5\).)Tj
+0 -2.0909 TD
+0.0104 Tc
+0.1034 Tw
+(4.1. Combination of knowledge sources)Tj
+1.9091 -1 TD
+0.0423 Tc
+0.4225 Tw
+(It is now becoming clear that merging)Tj
+-1.9091 -1 TD
+0.0166 Tc
+0.1666 Tw
+(information from multiple sources is essential to)Tj
+T*
+0.0073 Tc
+0.0726 Tw
+(the process of creating knowledge bases. One such)Tj
+T*
+0.0194 Tc
+0.1939 Tw
+(possibility involves the use of information from)Tj
+T*
+0.0248 Tc
+0.2485 Tw
+(several dictionaries, since although information)Tj
+T*
+0.0164 Tc
+0.164 Tw
+(derived from individual dictionaries suffers from)Tj
+T*
+0.019 Tc
+0.1896 Tw
+(incompleteness, it is extremely unlikely that the)Tj
+T*
+0.013 Tc
+0.1305 Tw
+(same information is consistently missing from all)Tj
+T*
+0.0432 Tc
+0.4321 Tw
+(dictionaries. It is therefore possible to use)Tj
+T*
+0.0262 Tc
+0.2617 Tw
+(information from several dictionaries to fill in)Tj
+T*
+0.0159 Tc
+0.159 Tw
+(information which is missing or faulty in one or)Tj
+T*
+0.013 Tc
+0.1301 Tw
+(more others. For example, in a small experiment,)Tj
+T*
+0.0306 Tc
+0.3067 Tw
+(merging multiple dictionaries produced highly)Tj
+T*
+0.0451 Tc
+0.4513 Tw
+(encouraging results: in a merged hierarchy)Tj
+T*
+0.0474 Tc
+0.4735 Tw
+(created from five English dictionaries, the)Tj
+T*
+0.0091 Tc
+0.0908 Tw
+(percentage of problematic cases was reduced from)Tj
+T*
+0.0164 Tc
+0.1639 Tw
+(55-70% to around 5% [7]. By-hand work is still)Tj
+T*
+0.0205 Tc
+0.2048 Tw
+(required, but merging can substantially improve)Tj
+T*
+0.0098 Tc
+0.0978 Tw
+(the quality of the extracted information.)Tj
+1.9091 -1 TD
+0.0187 Tc
+0.187 Tw
+(It is now widely recognized that combining)Tj
+-1.9091 -1 TD
+0.0721 Tc
+0.7213 Tw
+(information extracted from MRDs with)Tj
+T*
+0.0331 Tc
+0.331 Tw
+(information provided by corpus analysis is a)Tj
+T*
+0.0166 Tc
+0.1667 Tw
+(fruitful means to fill out knowledge bases, since)Tj
+T*
+0.0124 Tc
+0.1239 Tw
+(corpora can provide information such as common)Tj
+T*
+0.0615 Tc
+0.6141 Tw
+(collocates, proper nouns, role preference)Tj
+T*
+0.0509 Tc
+0.5086 Tw
+(information, frequency of use and similar)Tj
+T*
+0.0005 Tc
+0.0041 Tw
+(statistics, etc. However, with corpora as with MRDs,)Tj
+T*
+0.008 Tc
+0.0802 Tw
+(fully automatic extraction is not likely.)Tj
+ET
+endstream
+endobj
+25 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT6 11 0 R
+/TT10 16 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 9497
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 74 771 Tm
+0 g
+/GS1 gs
+0.0234 Tc
+0.2337 Tw
+(We foresee that the creation of knowledge)Tj
+-1.9091 -1 TD
+0.0084 Tc
+0.0834 Tw
+(bases in the future will be accomplished by giving)Tj
+T*
+0.0408 Tc
+0.4077 Tw
+(the human knowledge-base-creator access to)Tj
+T*
+0.0144 Tc
+0.144 Tw
+(multiple resources, including MRDs and corpora,)Tj
+T*
+0.0212 Tc
+0.2113 Tw
+(together with tools to extract different kinds of)Tj
+T*
+0.0115 Tc
+0.1159 Tw
+(information and combine it more or less by-hand.)Tj
+T*
+0.0175 Tc
+0.1743 Tw
+(Indeed, projects to develop workstations for this)Tj
+T*
+0.0498 Tc
+0.4984 Tw
+(kind of work are already underway. This)Tj
+T*
+0.0439 Tc
+0.4393 Tw
+(information will be widely varied in kind,)Tj
+T*
+0.0197 Tc
+0.1976 Tw
+(including both detailed linguistic information as)Tj
+T*
+0 Tc
+0 Tw
+(well as statistics, associational links, etc.)Tj
+0 -2.0909 TD
+0.0098 Tc
+0.0986 Tw
+(4.2. Physical organization of dictionaries)Tj
+1.9091 -1 TD
+0.0446 Tc
+0.4462 Tw
+(MRD research has necessarily involved)Tj
+-1.9091 -1 TD
+0.0099 Tc
+0.099 Tw
+(considerable work on rendering dictionaries into a)Tj
+T*
+0.0225 Tc
+0.225 Tw
+(usable format for extraction of information. To)Tj
+T*
+0.0137 Tc
+0.1373 Tw
+(this end, an encoding format for MRDs has been)Tj
+T*
+0.0178 Tc
+0.1783 Tw
+(developed under the aegis of the Text Encoding)Tj
+T*
+0.0275 Tc
+0.2752 Tw
+(Initiative \(see [23, 24, 25, 26]\) which can be)Tj
+T*
+0.0374 Tc
+0.3737 Tw
+(applied across mono- and bi-lingual western)Tj
+T*
+0.022 Tc
+0.2196 Tw
+(dictionaries. Such a format must necessarily be)Tj
+T*
+0.0362 Tc
+0.3616 Tw
+(both general enough to be applicable across)Tj
+T*
+0.013 Tc
+0.1303 Tw
+(different dictionaries, whose structures often vary)Tj
+T*
+0.0465 Tc
+0.4659 Tw
+(widely, and at the same time capture the)Tj
+T*
+0.0825 Tc
+0.8244 Tw
+(fundamental structural principles \(e.g.,)Tj
+T*
+0.0253 Tc
+0.2523 Tw
+(hierarchical structure, factoring of information\))Tj
+T*
+0.0251 Tc
+0.2504 Tw
+(that underlie dictionaries. A common encoding)Tj
+T*
+0.048 Tc
+0.48 Tw
+(format enables the application of common)Tj
+T*
+0.0051 Tc
+0.0513 Tw
+(software and hence the reusability of MRDs, and is)Tj
+T*
+0.0243 Tc
+0.243 Tw
+(extremely useful in the publishing industry for)Tj
+T*
+0.0406 Tc
+0.4068 Tw
+(rendering in-house data in common formats)Tj
+T*
+0.0463 Tc
+0.4623 Tw
+(which are directly suitable for typesetting,)Tj
+T*
+0.0125 Tc
+0.1249 Tw
+(generation of dictionaries in different forms \(e.g.,)Tj
+T*
+0.0042 Tc
+0.0414 Tw
+(concise, learner's\), etc.)Tj
+1.9091 -1 TD
+0.0372 Tc
+0.3716 Tw
+(The development of an encoding format)Tj
+-1.9091 -1 TD
+0.017 Tc
+0.1697 Tw
+(suitable for MRDs demands identification of the)Tj
+T*
+0.0105 Tc
+0.105 Tw
+(dicionary entry's constituent elements as well as a)Tj
+T*
+0.0272 Tc
+0.2714 Tw
+(deep understanding of the structural principles)Tj
+T*
+0.0116 Tc
+0.1168 Tw
+(underlying dictionaries. Thus a related problem is)Tj
+T*
+0.0097 Tc
+0.0978 Tw
+(the determination of a database model suitable for)Tj
+T*
+0.0251 Tc
+0.2505 Tw
+(representing the information in MRDs. Lexical)Tj
+T*
+0.0063 Tc
+0.0625 Tw
+(data, as is obvious in any dictionary entry, is much)Tj
+T*
+0.0243 Tc
+0.2431 Tw
+(more complex than the kind of data \(suppliers)Tj
+T*
+0.0367 Tc
+0.3669 Tw
+(and parts, employees' records, etc.\) that has)Tj
+T*
+0.015 Tc
+0.1502 Tw
+(provided the impetus for most database research.)Tj
+T*
+0.0281 Tc
+0.2805 Tw
+(Therefore, classical data models \(for example,)Tj
+T*
+0.0324 Tc
+0.3238 Tw
+(relational models\) do not apply very well to)Tj
+T*
+0.0149 Tc
+0.1488 Tw
+(lexical data, although several attempts have been)Tj
+T*
+0.0088 Tc
+0.0878 Tw
+[(made \(see  for example [6, 27]\). Ide, Véronis, and)]TJ
+T*
+0.0351 Tc
+0.351 Tw
+(Le Maitre [28] have proposed an alternative)Tj
+T*
+0.0175 Tc
+0.1744 Tw
+(feature-based model for lexical databases, which)Tj
+T*
+0.0193 Tc
+0.1926 Tw
+(allows for a full representation of sense nesting)Tj
+T*
+0.0085 Tc
+0.0845 Tw
+(and defines an inheritance mechanism that enables)Tj
+T*
+0.0298 Tc
+0.2977 Tw
+(the elimination of redundant information. The)Tj
+T*
+0.0428 Tc
+0.4287 Tw
+(model has been implemented in an object-)Tj
+T*
+0.0112 Tc
+0.112 Tw
+(oriented DBMS [29]. This and other similar work)Tj
+T*
+0.0258 Tc
+0.2587 Tw
+(continues to feed the development of database)Tj
+T*
+0.0375 Tc
+0.3743 Tw
+(models to represent lexical data and textual)Tj
+T*
+0.0218 Tc
+0.2187 Tw
+(information, which is becoming an increasingly)Tj
+T*
+0.0065 Tc
+0.0647 Tw
+(active area of research in database design.)Tj
+23 59.0909 TD
+0.0063 Tc
+0.0628 Tw
+(4.3. Assessment of the needs of NLP)Tj
+1.9091 -1 TD
+0.0122 Tc
+0.1217 Tw
+(MRD research to date has provided the basis)Tj
+-1.9091 -1 TD
+0.0108 Tc
+0.1082 Tw
+(of an assessment of the kind of knowledge that is)Tj
+T*
+0.0132 Tc
+0.132 Tw
+(needed in NLP. In particular, in comprehensively)Tj
+T*
+0.0674 Tc
+0.6736 Tw
+(examining the information presented by)Tj
+T*
+0.0126 Tc
+0.1266 Tw
+(lexicographers who had no conscious intention to)Tj
+T*
+0.0453 Tc
+0.4532 Tw
+(provide a fully systematic set of semantic)Tj
+T*
+0.0336 Tc
+0.3363 Tw
+(specifications, numerous subtleties concerning)Tj
+T*
+0.0188 Tc
+0.1884 Tw
+(semantic distinction and semantic relations have)Tj
+T*
+0.0143 Tc
+0.1427 Tw
+(become more clear. The covert category problem)Tj
+T*
+0.0352 Tc
+0.3516 Tw
+(and the attendant thinking about overlapping)Tj
+T*
+0.0244 Tc
+0.2432 Tw
+(meanings, circularity, etc., described in section)Tj
+T*
+0.0098 Tc
+0.0984 Tw
+(3.1.1 provides one simple example.)Tj
+1.9091 -1 TD
+0.0286 Tc
+0.2864 Tw
+(The exact nature and kind of information)Tj
+-1.9091 -1 TD
+0.0115 Tc
+0.1146 Tw
+(required for various NLP tasks has not been fully)Tj
+T*
+0.038 Tc
+0.3799 Tw
+(explored. For example, even in the case of)Tj
+T*
+0.018 Tc
+0.1802 Tw
+(taxonomies, it is not always clear what must be)Tj
+T*
+0.0427 Tc
+0.4271 Tw
+(included: for instance, we know that some)Tj
+T*
+0.0254 Tc
+0.2539 Tw
+(inheritance mechanisms are needed for parsing)Tj
+T*
+0.0078 Tc
+0.0786 Tw
+(\(e.g., for successful PP attachment in "I ate a trout)Tj
+T*
+0.0115 Tc
+0.115 Tw
+(with bones", it is necessary that )Tj
+/TT4 1 Tf
+13.9574 0 TD
+0.0326 Tc
+0 Tw
+(trout)Tj
+/TT2 1 Tf
+2.108 0 TD
+0.0124 Tc
+0.1238 Tw
+[( inherits the)]TJ
+-16.0654 -1 TD
+0.0133 Tc
+0 Tw
+(feature )Tj
+/TT4 1 Tf
+3.2648 0 TD
+0.0357 Tc
+(has-bones)Tj
+/TT2 1 Tf
+4.3767 0 TD
+0.0075 Tc
+0.0744 Tw
+[( from )]TJ
+/TT4 1 Tf
+2.6375 0 TD
+0.0325 Tc
+0 Tw
+(vertebrate)Tj
+/TT2 1 Tf
+4.4348 0 TD
+0.0135 Tc
+0.1358 Tw
+(\)--but are there)Tj
+-14.7138 -1 TD
+0.0236 Tc
+0.2366 Tw
+(cases where more precise or different kinds of)Tj
+T*
+0.0153 Tc
+0.153 Tw
+(information are necessary? Is the broad semantic)Tj
+T*
+0.011 Tc
+0.1102 Tw
+(information in a dictionary sufficient? Too much?)Tj
+T*
+0.0099 Tc
+0.0996 Tw
+(It is difficult to draw a precise taxonomy in many)Tj
+T*
+0.0063 Tc
+0.0624 Tw
+(cases \(e.g., it is very difficult to determine whether)Tj
+T*
+0.0185 Tc
+0.1844 Tw
+(a given item is a )Tj
+/TT4 1 Tf
+8.0582 0 TD
+0.0785 Tc
+0 Tw
+(pot)Tj
+/TT2 1 Tf
+1.5135 0 TD
+0.0092 Tc
+0.0917 Tw
+(, a )Tj
+/TT4 1 Tf
+1.414 0 TD
+0.0245 Tc
+0 Tw
+(pan, )Tj
+/TT2 1 Tf
+2.3685 0 TD
+0.0265 Tc
+0.2649 Tw
+(or both\), and yet)Tj
+-13.3542 -1 TD
+0.0274 Tc
+0.2737 Tw
+(humans easily understand sentences containing)Tj
+T*
+0.0345 Tc
+0.3454 Tw
+(words for which the taxonomic relations are)Tj
+T*
+0.0176 Tc
+0.176 Tw
+(unclear. This suggests that the kind of precision)Tj
+T*
+0.0358 Tc
+0.3578 Tw
+(NLP researchers have traditionally sought in)Tj
+T*
+0.0266 Tc
+0.2662 Tw
+(knowledge bases may be unnecessary in some)Tj
+T*
+0.0264 Tc
+0.2641 Tw
+(cases. We can ask if very different kinds and)Tj
+T*
+0.0325 Tc
+0.3246 Tw
+(amounts of information required for different)Tj
+T*
+0.003 Tc
+0.0302 Tw
+(NLP tasks, and if so, it will be essential to precisely)Tj
+T*
+0.0334 Tc
+0.3334 Tw
+(identify these differences. Some studies have)Tj
+T*
+0.0455 Tc
+0.4547 Tw
+(attempted to assess in detail the kinds of)Tj
+T*
+0.0121 Tc
+0.1207 Tw
+(knowledge required for given NLP tasks \(see, for)Tj
+T*
+0.0104 Tc
+0.1034 Tw
+(example, [30]\); such studies provide a start, but it)Tj
+T*
+0.0326 Tc
+0.3262 Tw
+(is clear that more consideration of the exact)Tj
+T*
+0.0224 Tc
+0.2236 Tw
+(requirements of various NLP tasks needs to be)Tj
+T*
+0.0425 Tc
+0 Tw
+(done.)Tj
+0 -2.0909 TD
+0.0109 Tc
+0.1093 Tw
+(4.4. Exploitation of associational information)Tj
+1.9091 -1 TD
+0.0349 Tc
+0.3492 Tw
+(Work on extracting semantic information)Tj
+-1.9091 -1 TD
+0.0374 Tc
+0.3741 Tw
+(from definition texts involves an attempt to)Tj
+T*
+0.0081 Tc
+0.0807 Tw
+(identify not only which words are related, but also)Tj
+T*
+0.0205 Tc
+0.2048 Tw
+(the nature of the relationship. However, several)Tj
+T*
+0.0348 Tc
+0.3482 Tw
+(researchers have used MRDs as a source of)Tj
+/TT4 1 Tf
+T*
+0.0145 Tc
+0 Tw
+(associational )Tj
+/TT2 1 Tf
+5.9308 0 TD
+0.0142 Tc
+0.1419 Tw
+(information indicating which words)Tj
+-5.9308 -1 TD
+0.0191 Tc
+0.1908 Tw
+(are related, without regard for the nature of the)Tj
+T*
+0.0377 Tc
+0.3769 Tw
+(relationship, to perform tasks such as sense)Tj
+T*
+0.3782 Tw
+(disambiguation, topic identification, etc. The)Tj
+T*
+0.017 Tc
+0.1704 Tw
+(fundamental assumption underlying these studies)Tj
+T*
+0.021 Tc
+0.2101 Tw
+(is that words in a definition are closely related)Tj
+T*
+0.0243 Tc
+0.2427 Tw
+(semantically to the defined word. Such studies)Tj
+T*
+0.041 Tc
+0.4099 Tw
+(have identified senses by counting overlaps)Tj
+T*
+0.0135 Tc
+0.135 Tw
+(between words in the definition texts of different)Tj
+T*
+0.0175 Tc
+0.1741 Tw
+(senses and surrounding words in context [31, 9])Tj
+T*
+0.03 Tc
+0.2998 Tw
+(and generated lists of topic or key words by)Tj
+T*
+0.0092 Tc
+0.0921 Tw
+(extracting the not only the most frequent words in)Tj
+ET
+endstream
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+30 0 obj
+<<
+/Length 8912
+>>
+stream
+1 g
+/GS1 gs
+54 110 328 263 re
+f
+q
+1 i 
+53 109 330 265 re
+W n
+0 G
+0 J 0 j 1 w 10 M []0 d
+54.5 372.5 327 -262 re
+S
+Q
+BT
+/TT10 1 Tf
+9.52 0 0 9.394 59.9644 358.9267 Tm
+0 g
+0 Tc
+0 Tw
+(abricot)Tj
+/TT2 1 Tf
+0.4199 -2.6616 TD
+(Sort-of)Tj
+8.0834 -0.4259 TD
+(Part-of)Tj
+0 -2.3423 TD
+(Edible)Tj
+-3.1494 2.5552 TD
+(Fruit)Tj
+/TT4 1 Tf
+9.4481 -0.2129 TD
+(abricotier)Tj
+0 -2.3423 TD
+(yes)Tj
+/TT2 1 Tf
+0.4199 -2.6617 TD
+(Pit)Tj
+0 -12.5631 TD
+-0.016 Tc
+(Skin)Tj
+0 6.0686 TD
+-0.0059 Tc
+(Flesh)Tj
+3.8843 6.4944 TD
+0 Tc
+(Form)Tj
+0 -1.3841 TD
+(Color)Tj
+T*
+(Texture)Tj
+T*
+-0.0111 Tc
+(Hardness)Tj
+/TT4 1 Tf
+5.2489 1.3841 TD
+-0.0158 Tc
+(lisse)Tj
+0 -1.4905 TD
+0 Tc
+(dur)Tj
+/TT2 1 Tf
+-5.2489 -8.5174 TD
+(Color)Tj
+0 -1.3841 TD
+(Texture)Tj
+0 -1.1711 TD
+-0.0111 Tc
+(Hardness)Tj
+/TT4 1 Tf
+4.8291 2.5552 TD
+-0.0082 Tc
+(jaune orangé)Tj
+/TT2 1 Tf
+-4.8291 4.8975 TD
+0 Tc
+(Texture)Tj
+0 -2.7681 TD
+-0.0056 Tc
+(Taste)Tj
+/TT4 1 Tf
+5.2489 4.1522 TD
+-0.0197 Tc
+(jaune)Tj
+-0.4199 -4.1522 TD
+0 Tc
+(délicate, parfumée)Tj
+ET
+0 G
+0 J 0 j 1 w 10 M []0 d
+1 i 
+237.5 292.5 129 -52 re
+237.5 230.5 129 -51 re
+237.5 172.5 129 -38 re
+286.5 265.5 28 -11 re
+286.5 252.5 28 -12 re
+286.5 229.5 28 -11 re
+286.5 192.5 76 -11 re
+285.5 170.5 54 -11 re
+199.5 337.5 44 -11 re
+199.5 316.5 18 -11 re
+S
+BT
+/TT2 1 Tf
+9.52 0 0 9.394 140.9164 284.9161 Tm
+(Parts)Tj
+ET
+q
+53 109 330 265 re
+W n
+199.5 294.5 171 -165 re
+137.5 341.5 237 -216 re
+104.5 348.5 274 -227 re
+S
+Q
+BT
+9.52 0 0 9.394 242.8552 220.9061 Tm
+(Color)Tj
+0 -2.5552 TD
+-0.0111 Tc
+(Hardness)Tj
+11 0 0 11 108 89 Tm
+0.009 Tc
+0.0895 Tw
+(Figure 7. Template for dictionary entries \(fruits\))Tj
+-5 62 TD
+0.0166 Tc
+0.1666 Tw
+(a text, but also the most frequent words in their)Tj
+0 -1 TD
+0.0128 Tc
+0.1281 Tw
+(definitions [32]. Other studies have employed the)Tj
+T*
+0.0118 Tc
+0.1184 Tw
+(same principle by building associational networks)Tj
+T*
+0.0195 Tc
+0.194 Tw
+(on the basis of the implicit association between)Tj
+T*
+0.0267 Tc
+0.2676 Tw
+(headword and words in the definition text for)Tj
+T*
+0.0104 Tc
+0.1038 Tw
+(sense disambiguation \([17, 33]\).)Tj
+1.9091 -1 TD
+0.0438 Tc
+0.4386 Tw
+(The work which has utilised the word)Tj
+-1.9091 -1 TD
+0.0095 Tc
+0.095 Tw
+(associations implicit in a dictionary's structure has)Tj
+T*
+0.0189 Tc
+0.1894 Tw
+(shown considerable success, although like much)Tj
+T*
+0.0068 Tc
+0.0684 Tw
+(NLP research these studies have typically involved)Tj
+T*
+0.0067 Tc
+0.067 Tw
+(small-sized experiments, and it is not clear that the)Tj
+T*
+0.004 Tc
+0.0401 Tw
+(methods will scale up to real-size data. However, at)Tj
+T*
+0.0246 Tc
+0.2461 Tw
+(the very least, this work demonstrates that the)Tj
+T*
+0.0375 Tc
+0.3751 Tw
+(associational information in MRDs--which is)Tj
+T*
+0.0178 Tc
+0.1785 Tw
+(trivial to extract since no complex processing is)Tj
+T*
+0.0078 Tc
+0.0786 Tw
+(required--is potentially valuable for use in NLP.)Tj
+0 -2.0909 TD
+0.066 Tc
+0.6604 Tw
+(4.5. Synergy among NLP, lexicography,)Tj
+0 -1 TD
+0.0135 Tc
+0.1347 Tw
+(electronic publishing)Tj
+1.9091 -1 TD
+0.0207 Tc
+0.2068 Tw
+(One of the most promising possibilities for)Tj
+-1.9091 -1 TD
+0.0399 Tc
+0.3986 Tw
+(the future of MRD research results from a)Tj
+T*
+0.0335 Tc
+0.3347 Tw
+(merging of interests among NLP researchers,)Tj
+T*
+0.0641 Tc
+0.6409 Tw
+(lexicographers, and electronic publishers.)Tj
+T*
+0.0321 Tc
+0.3207 Tw
+(Lexicographers, possibly as a result of MRD)Tj
+T*
+0.0241 Tc
+0.2408 Tw
+(research, are increasingly interested in creating)Tj
+T*
+0.047 Tc
+0.4696 Tw
+(lexical data bases containing the kinds of)Tj
+T*
+0.0355 Tc
+0.3541 Tw
+(information that NLP research had hoped to)Tj
+T*
+0.0342 Tc
+0.3414 Tw
+(extract from MRDs; some lexicographers are)Tj
+T*
+0.0436 Tc
+0.4364 Tw
+(explicitly concerned with creating NLP-like)Tj
+T*
+0.0382 Tc
+0.3816 Tw
+(knowledge bases [12, 13]. Creation of such)Tj
+T*
+0.0067 Tc
+0.0673 Tw
+(databases would in turn provide NLP with more of)Tj
+T*
+0.0312 Tc
+0.3114 Tw
+(the resources it needs. In addition, electronic)Tj
+T*
+0.0331 Tc
+0.331 Tw
+(publishing has made possible the creation of)Tj
+T*
+0.01 Tc
+0.1004 Tw
+(commercially available, hypertext-like dictionaries)Tj
+T*
+0.0256 Tc
+0.2567 Tw
+(which would include information and facilities)Tj
+23 34.0909 TD
+0.0097 Tc
+0.0971 Tw
+(well beyond that of print dictionaries. This sort of)Tj
+0 -1 TD
+0.0145 Tc
+0.1443 Tw
+(product is likely to explode on the market in the)Tj
+T*
+0.021 Tc
+0.2098 Tw
+(near future, and in fact a few such dictionaries)Tj
+T*
+0.0059 Tc
+0.0588 Tw
+(\(Sony Data Discman, Larousse, etc.\) already exist.)Tj
+1.9091 -1 TD
+0.0188 Tc
+0.1881 Tw
+(So far, computerization has been applied to)Tj
+-1.9091 -1 TD
+0.0103 Tc
+0.1024 Tw
+(lexicography in only limited ways; the COBUILD)Tj
+T*
+0.039 Tc
+0.3903 Tw
+(project [35] was one of the first to utilize)Tj
+T*
+0.0225 Tc
+0.2246 Tw
+(computers to exploit corpora in the creation of)Tj
+T*
+0.0075 Tc
+0.0752 Tw
+(lexical entries, and most dictionary publishers now)Tj
+T*
+0.038 Tc
+0.3797 Tw
+(create dictionaries by first creating in-house)Tj
+T*
+0.0448 Tc
+0.4484 Tw
+(databases--although such databases typically)Tj
+T*
+0.0106 Tc
+0.1069 Tw
+(contain only gross distinctions among information)Tj
+T*
+0.0165 Tc
+0.165 Tw
+(fields \(orthographic form, pronunciation, part-of-)Tj
+T*
+0.0189 Tc
+0.1892 Tw
+(speech, etymology, definition text, etc.\). Almost)Tj
+T*
+0.0084 Tc
+0.084 Tw
+(no work has been done to improve definition texts)Tj
+T*
+0.0095 Tc
+0.0959 Tw
+(themselves or to systematize semantic information)Tj
+T*
+0.0384 Tc
+0.3835 Tw
+(\(apart from occasional attempts such as the)Tj
+/TT4 1 Tf
+T*
+0.0169 Tc
+0 Tw
+(LDOCE)Tj
+/TT2 1 Tf
+3.3629 0 TD
+0.005 Tc
+0.0496 Tw
+[( semantic codes\).)]TJ
+-1.4538 -1 TD
+0.0169 Tc
+0.1696 Tw
+(Computerization of dictionary-making at the)Tj
+-1.9091 -1 TD
+0.005 Tc
+0.0502 Tw
+(semantic level could involve the following:)Tj
+1.9091 -1 TD
+0.0178 Tc
+0 Tw
+(\(1\) )Tj
+/TT4 1 Tf
+1.6657 0 TD
+0.03 Tc
+0.3 Tw
+(the creation of explicit semantic links)Tj
+/TT2 1 Tf
+-3.5747 -1 TD
+0.0245 Tc
+0.2458 Tw
+(\(hypernym, part, color, etc.\) between words or)Tj
+T*
+0.0383 Tc
+0.3824 Tw
+(entries. This would be especially useful for)Tj
+T*
+0.035 Tc
+0.3496 Tw
+(creating electronic \(hypertextual\) dictionaries.)Tj
+T*
+0.0322 Tc
+0.3217 Tw
+(Such links could lead to the development of)Tj
+T*
+0.0121 Tc
+0.1205 Tw
+(precise templates for classes of objects, etc. \(e.g.,)Tj
+T*
+0.0147 Tc
+0.1474 Tw
+(figure 7\).)Tj
+1.9091 -1 TD
+0.0267 Tc
+0.267 Tw
+(So far, navigation and query in electronic)Tj
+-1.9091 -1 TD
+0.0175 Tc
+0.1743 Tw
+(dictionaries is rather limited and relies on user's)Tj
+T*
+0.0142 Tc
+0.1421 Tw
+(judgement and understanding of definitions to be)Tj
+T*
+0.0499 Tc
+0.4994 Tw
+(usable. However, an explicit semantic net)Tj
+T*
+0.0107 Tc
+0.1069 Tw
+(underlying the dictionary could be very useful for)Tj
+T*
+0.0414 Tc
+0.4132 Tw
+(nativation and query. For example, we can)Tj
+T*
+0.0378 Tc
+0.3785 Tw
+(envision display to varying levels of detail,)Tj
+T*
+0.015 Tc
+0.1503 Tw
+(depending on user preference, of the information)Tj
+T*
+0.0088 Tc
+0.0886 Tw
+(in the template for )Tj
+/TT4 1 Tf
+8.1389 0 TD
+0.0241 Tc
+0 Tw
+(fruit)Tj
+/TT2 1 Tf
+1.8431 0 TD
+0.0113 Tc
+0.1125 Tw
+(, and even user navigation)Tj
+-1.8002 -1 TD
+0.0221 Tc
+0.2212 Tw
+(within the template \(click on)Tj
+T*
+0.0231 Tc
+0.2309 Tw
+(PARTS-OF "apricot" and get)Tj
+T*
+0.0067 Tc
+0.0676 Tw
+("pit," "flesh," "skin," etc.; click)Tj
+T*
+0.0125 Tc
+0.1241 Tw
+(on "pit" and get the properties)Tj
+T*
+0.1046 Tc
+1.0466 Tw
+(of apricot pit, etc.\).)Tj
+T*
+0.0114 Tc
+0.1132 Tw
+(Information could be linked to)Tj
+T*
+0.0686 Tc
+0.6868 Tw
+(images and sounds, and)Tj
+T*
+0.0129 Tc
+0.1295 Tw
+(displayed in template form; or)Tj
+T*
+0.0156 Tc
+0.1561 Tw
+(definitions and sub-definitions)Tj
+T*
+0.0205 Tc
+0.2051 Tw
+(could be generated in natural)Tj
+T*
+0.0845 Tc
+0.8451 Tw
+(language, in any form)Tj
+T*
+0.0078 Tc
+0.0784 Tw
+(\(concise, learner's version, full,)Tj
+T*
+0.0185 Tc
+0 Tw
+(etc.\).)Tj
+1.9091 -1 TD
+0.0136 Tc
+(\(2\) )Tj
+/TT4 1 Tf
+1.6068 0 TD
+0.0388 Tc
+0.3884 Tw
+(ensuring consistency)Tj
+-3.5159 -1 TD
+0.0192 Tc
+0.192 Tw
+(of the content of entries.)Tj
+/TT2 1 Tf
+10.9591 0 TD
+0.0182 Tc
+0.1815 Tw
+[( The)]TJ
+-10.9591 -1 TD
+0.0155 Tc
+0.1541 Tw
+(templates created for different)Tj
+T*
+0.0258 Tc
+0.2578 Tw
+(classes of concepts could be)Tj
+T*
+0.0655 Tc
+0.6546 Tw
+(used to ensure that the)Tj
+T*
+0.042 Tc
+0.4201 Tw
+(information given for each)Tj
+T*
+0.0122 Tc
+0.1221 Tw
+(entry when it is appropriate to)Tj
+T*
+0.0084 Tc
+0.0836 Tw
+(do so. This could eliminate the)Tj
+T*
+0.0802 Tc
+0.8016 Tw
+(kinds of inconsistencies)Tj
+T*
+0.0112 Tc
+0.1119 Tw
+(demonstrated in the entries for)Tj
+/TT4 1 Tf
+T*
+0.0878 Tc
+0 Tw
+(apricot)Tj
+/TT2 1 Tf
+3.5034 0 TD
+0.0165 Tc
+0.1654 Tw
+[( and )]TJ
+/TT4 1 Tf
+2.3573 0 TD
+0.1015 Tc
+0 Tw
+(peach)Tj
+/TT2 1 Tf
+2.8954 0 TD
+0.0265 Tc
+0.266 Tw
+[( given in)]TJ
+-8.7561 -1 TD
+0.0132 Tc
+0.1322 Tw
+(section 3.1.1.)Tj
+1.9091 -1 TD
+0.0136 Tc
+0 Tw
+(\(3\) )Tj
+/TT4 1 Tf
+1.6068 0 TD
+0.0388 Tc
+0.3884 Tw
+(ensuring consistency)Tj
+-3.5159 -1 TD
+0.0141 Tc
+0.1407 Tw
+(of metatext.)Tj
+/TT2 1 Tf
+4.9749 0 TD
+0.0106 Tc
+0.1063 Tw
+[( As outlined above)]TJ
+ET
+endstream
+endobj
+31 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT10 16 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+33 0 obj
+<<
+/Length 10932
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 53 771 Tm
+0 g
+/GS1 gs
+0.0149 Tc
+0.1492 Tw
+(in section 3.2.2, MRD research has revealed that)Tj
+0 -1 TD
+0.0275 Tc
+0.2745 Tw
+(metatext in dictionaries is highly variable and)Tj
+T*
+0.0154 Tc
+0.1532 Tw
+(relatively inconsistent, and, by compiling lists of)Tj
+T*
+0.0063 Tc
+0.0622 Tw
+(metatextual specifications for various relations, has)Tj
+T*
+0.0118 Tc
+0.118 Tw
+(identified both the sources and potential solutions)Tj
+T*
+0.0257 Tc
+0.2577 Tw
+(to the problem of inconsistency. We can even)Tj
+T*
+0.034 Tc
+0.3398 Tw
+(imagine that metatext could be automatically)Tj
+T*
+0.023 Tc
+0.2299 Tw
+(generated from templates of the type described)Tj
+T*
+0.0179 Tc
+0 Tw
+(above.)Tj
+1.9091 -1 TD
+0.0143 Tc
+(\(4\) )Tj
+/TT4 1 Tf
+1.6162 0 TD
+0.0281 Tc
+0.2806 Tw
+(ensuring consistency of sense division.)Tj
+/TT2 1 Tf
+-3.5253 -1 TD
+0.0129 Tc
+0.1292 Tw
+(Lexicographers have sought means to remove the)Tj
+T*
+0.0189 Tc
+0.1887 Tw
+(arbitrariness of sense divisions. Computerization)Tj
+T*
+0.0464 Tc
+0.4634 Tw
+(has already been helpful, for example, by)Tj
+T*
+0.01 Tc
+0.0998 Tw
+(automatizing and systematizing the use of corpora)Tj
+T*
+0.0255 Tc
+0.2554 Tw
+(as a source of information about word senses.)Tj
+T*
+0.0167 Tc
+0.1672 Tw
+(Knowledge bases could take this systematization)Tj
+T*
+0.0298 Tc
+0.2985 Tw
+(even farther. For instance, a dictionary might)Tj
+T*
+0.0255 Tc
+0 Tw
+(define )Tj
+/TT4 1 Tf
+3.1829 0 TD
+0.0191 Tc
+(cup )Tj
+/TT2 1 Tf
+1.9615 0 TD
+0.0168 Tc
+0.1684 Tw
+(as ")Tj
+/TT6 1 Tf
+1.7268 0 TD
+0.0593 Tc
+0 Tw
+(1.)Tj
+/TT2 1 Tf
+0.8685 0 TD
+0.0198 Tc
+0.1984 Tw
+[( a container for liquid... )]TJ
+/TT6 1 Tf
+11.1905 0 TD
+0.0593 Tc
+0 Tw
+(2.)Tj
+/TT2 1 Tf
+0.8685 0 TD
+0.0145 Tc
+0.1453 Tw
+[( its)]TJ
+-19.7988 -1 TD
+0.0059 Tc
+0 Tw
+(content", )Tj
+/TT4 1 Tf
+3.9697 0 TD
+0.0045 Tc
+(bowl )Tj
+/TT2 1 Tf
+2.2619 0 TD
+0.0033 Tc
+0.0326 Tw
+(as ")Tj
+/TT6 1 Tf
+1.5369 0 TD
+0.0024 Tc
+0 Tw
+(1. )Tj
+/TT2 1 Tf
+1.0306 0 TD
+0.0051 Tc
+0.0511 Tw
+(a container...; its content", but)Tj
+/TT4 1 Tf
+-8.7991 -1 TD
+0.0242 Tc
+0 Tw
+(glass)Tj
+/TT2 1 Tf
+2.1771 0 TD
+0.0055 Tc
+0.0555 Tw
+[( only as ")]TJ
+/TT6 1 Tf
+3.9909 0 TD
+0.0221 Tc
+0 Tw
+(1.)Tj
+/TT2 1 Tf
+0.7942 0 TD
+0.0094 Tc
+0.0941 Tw
+[( a container...", which ignores the)]TJ
+-6.9621 -1 TD
+0.0288 Tc
+0.2884 Tw
+(metonymic use of glass \("its content"\) and is)Tj
+T*
+0.0346 Tc
+0.3461 Tw
+(therefore inconsistent. An electronic database)Tj
+T*
+0.0221 Tc
+0.2214 Tw
+(containing explicit marking of metonymic links)Tj
+T*
+0.0318 Tc
+0.318 Tw
+(could enable checking that metonymic use is)Tj
+T*
+0.0269 Tc
+0.2696 Tw
+(specified where necessary, and in a consistent)Tj
+T*
+0.0293 Tc
+0 Tw
+(format.)Tj
+13 0 0 13 53 470 Tm
+-0.0113 Tc
+(5. CONCLUSION)Tj
+11 0 0 11 74 460 Tm
+0.018 Tc
+0.1801 Tw
+[( The false expectation that large knowledge)]TJ
+-1.9091 -1 TD
+0.0362 Tc
+0.3618 Tw
+(bases could be generated automatically from)Tj
+T*
+0.0095 Tc
+0.0956 Tw
+(MRDs has led to a perception that the past fifteen)Tj
+T*
+0.025 Tc
+0.2505 Tw
+(years of MRD research has failed to meet the)Tj
+T*
+0.0095 Tc
+0.0941 Tw
+(original goals. Indeed, it seems to be the case that)Tj
+T*
+0.0217 Tc
+0.217 Tw
+(large-scale knowledge bases will be built using)Tj
+T*
+0.0401 Tc
+0.4007 Tw
+(information from multiple sources, and will)Tj
+T*
+0.0073 Tc
+0.0731 Tw
+(require human involvement. From this perspective,)Tj
+T*
+0.0205 Tc
+0.2049 Tw
+(it is clear that while they are not the exclusive)Tj
+T*
+0.0094 Tc
+0.0937 Tw
+(resource they may have been originally thought to)Tj
+T*
+0.0237 Tc
+0.2378 Tw
+(be, MRDs have something to contribute to the)Tj
+T*
+0.0211 Tc
+0.2112 Tw
+(creation of knowledge bases. In some instances)Tj
+T*
+0.0165 Tc
+0.164 Tw
+(that contribution is not what had originally been)Tj
+T*
+0.0163 Tc
+0.1627 Tw
+(expected, as evident in the fact that MRDs have)Tj
+T*
+0.0096 Tc
+0.0965 Tw
+(been found to contain a vast bank of associational)Tj
+T*
+0.0068 Tc
+0.0686 Tw
+(information that is useful in many NLP tasks.)Tj
+1.9091 -1 TD
+0.0109 Tc
+0.1094 Tw
+(It is also clear that MRD research has in fact)Tj
+-1.9091 -1 TD
+0.0197 Tc
+0.1973 Tw
+(contributed to other NLP goals. In particular, it)Tj
+T*
+0.0389 Tc
+0.3887 Tw
+(has contributed to our understanding of the)Tj
+T*
+0.0116 Tc
+0.1163 Tw
+(nature, kinds, and role of semantic information in)Tj
+T*
+0.0129 Tc
+0.1288 Tw
+(the processing of natural languages, as well as to)Tj
+T*
+0.0135 Tc
+0.1358 Tw
+(the increasingly obvious idea that widely varying)Tj
+T*
+0.0231 Tc
+0.2305 Tw
+(types of information--several in addition to the)Tj
+T*
+0.0252 Tc
+0.2515 Tw
+(traditionally accepted set--are needed for NLP.)Tj
+T*
+0.0443 Tc
+0.4427 Tw
+(This may in turn lead to more systematic)Tj
+T*
+0.0122 Tc
+0.122 Tw
+(assessment of the needs of various NLP tasks, an)Tj
+T*
+0.0054 Tc
+0.0538 Tw
+(area which deserves serious attention.)Tj
+1.9091 -1 TD
+0.0408 Tc
+0.4087 Tw
+(The most promising avenue of activity,)Tj
+-1.9091 -1 TD
+0.0118 Tc
+0.1181 Tw
+(however, involves collaboration between the NLP)Tj
+T*
+0.0355 Tc
+0.3551 Tw
+(community and lexicographers and electronic)Tj
+T*
+0.0346 Tc
+0.3467 Tw
+(publishers. The two communities are already)Tj
+T*
+0.0238 Tc
+0.2383 Tw
+(beginning to work with one another; one clear)Tj
+T*
+0.0063 Tc
+0.0622 Tw
+(example is a recent survey sent to NLP researchers)Tj
+T*
+0.0177 Tc
+0.1776 Tw
+(from Longman publishers, asking for their input)Tj
+23 61.2727 TD
+0.0092 Tc
+0.0922 Tw
+(in devising new database versions of the )Tj
+/TT4 1 Tf
+17.4343 0 TD
+0.044 Tc
+0 Tw
+(LDOCE.)Tj
+/TT2 1 Tf
+-17.4343 -1 TD
+0.0138 Tc
+0.1383 Tw
+(Obviously, collaboration--both in terms of shared)Tj
+T*
+0.0243 Tc
+0.2428 Tw
+(information and shared effort--can benefit both)Tj
+T*
+0.0602 Tc
+0.6021 Tw
+(communities. The result could be better)Tj
+T*
+0.0312 Tc
+0.3118 Tw
+(dictionaries and exciting new possibilities for)Tj
+T*
+0.023 Tc
+0.2301 Tw
+(electronic, hypertextual dictionary databases, as)Tj
+T*
+0.0039 Tc
+0.0391 Tw
+(well as a wealth of material useful for NLP.)Tj
+13 0 0 13 306 679 Tm
+0.0033 Tc
+0 Tw
+(REFERENCES)Tj
+11 0 0 11 306 669 Tm
+0.0067 Tc
+0.0668 Tw
+[([)-46.9(1)-46.9(])-1083.6(Amsler, R. A. )]TJ
+/TT4 1 Tf
+8.4913 0 TD
+0.0089 Tc
+0.0889 Tw
+(The structure of the Merriam-)Tj
+-6.1276 -1 TD
+0.0789 Tc
+0.7889 Tw
+(Webster Pocket Dictionary.)Tj
+/TT2 1 Tf
+14.709 0 TD
+0.0268 Tc
+0.2681 Tw
+[(  Ph. D.)]TJ
+-14.709 -1 TD
+0.0142 Tc
+0.1415 Tw
+(Dissertation, University of Texas at Austin,)Tj
+T*
+0.0444 Tc
+0 Tw
+(\(1980\).)Tj
+-2.3636 -1 TD
+0.0135 Tc
+0.1348 Tw
+[([)-40.1(2)-40.1(])-1076.8(Calzolari, N. Detecting patterns in a lexical)]TJ
+2.3636 -1 TD
+0.0494 Tc
+0.4938 Tw
+(data base. )Tj
+/TT4 1 Tf
+5.723 0 TD
+0.0669 Tc
+0.669 Tw
+(Proceedings of the 10th)Tj
+-5.723 -1 TD
+0.0155 Tc
+0.1559 Tw
+(International Conference on Computational)Tj
+T*
+0.0125 Tc
+0.1251 Tw
+(Linguistics, COLING'84)Tj
+/TT2 1 Tf
+10.1721 0 TD
+0.008 Tc
+0.0796 Tw
+[( \(1984\), 170-173.)]TJ
+-12.5357 -1 TD
+0.0053 Tc
+0.0525 Tw
+[([)-48.3(3)-48.3(])-1085(Chodorow, M. S., Byrd. R. J., Heidorn, G. E.)]TJ
+2.3636 -1 TD
+0.0106 Tc
+0.1062 Tw
+(Extracting semantic hierarchies from a large)Tj
+T*
+0.0161 Tc
+0.1607 Tw
+(on-line dictionary. )Tj
+/TT4 1 Tf
+8.28 0 TD
+0.0156 Tc
+0.1561 Tw
+(Proceedings of the 23rd)Tj
+-8.28 -1 TD
+0.0241 Tc
+0.2413 Tw
+(Annual Conference of the Association for)Tj
+T*
+0.0187 Tc
+0.1869 Tw
+(Computational Linguistics,)Tj
+/TT2 1 Tf
+11.564 0 TD
+0.0119 Tc
+0.1192 Tw
+[( Chicago \(1985\),)]TJ
+-11.564 -1 TD
+0.0466 Tc
+0 Tw
+(299-304.)Tj
+-2.3636 -1 TD
+0.0317 Tc
+0.3172 Tw
+[([)-21.9(4)-21.9(])-1058.6(Markowitz, J., Ahlswede, T., Evens, M.)]TJ
+2.3636 -1 TD
+0.0706 Tc
+0.7067 Tw
+(Semantically significant patterns in)Tj
+T*
+0.0267 Tc
+0.2676 Tw
+(dictionary definitions. )Tj
+/TT4 1 Tf
+10.2581 0 TD
+0.0263 Tc
+0.2626 Tw
+(Proceedings of the)Tj
+-10.2581 -1 TD
+0.0171 Tc
+0.1706 Tw
+(24th Annual Conference of the Association)Tj
+T*
+0.0291 Tc
+0.2908 Tw
+(for Computational Linguistics,)Tj
+/TT2 1 Tf
+13.7615 0 TD
+0.0187 Tc
+0.1875 Tw
+[( New York)]TJ
+-13.7615 -1 TD
+0.021 Tc
+0.2097 Tw
+(\(1986\), 112-119.)Tj
+-2.3636 -1 TD
+0.0099 Tc
+0.099 Tw
+[([)-43.7(5)-43.7(])-1080.4(Byrd, R. J., Calzolari, N., Chodorow, M. S.,)]TJ
+2.3636 -1 TD
+0.0146 Tc
+0.1465 Tw
+(Klavans, J. L., Neff, M. S., Rizk, O. Tools)Tj
+T*
+0.0204 Tc
+0.2034 Tw
+(and methods for computational linguistics.)Tj
+/TT4 1 Tf
+T*
+0.0291 Tc
+0.2912 Tw
+(Computational Linguistics,)Tj
+/TT2 1 Tf
+11.9377 0 TD
+0.0133 Tc
+0.1325 Tw
+[( 13, 3/4 \(1987\),)]TJ
+-11.9377 -1 TD
+0.0466 Tc
+0 Tw
+(219-240.)Tj
+-2.3636 -1 TD
+0.0369 Tc
+0.3696 Tw
+[([)-16.7(6)-16.7(])-1053.4(Nakamura, J., Nagao, M. Extraction of)]TJ
+2.3636 -1 TD
+0.0418 Tc
+0.4182 Tw
+(semantic information from an ordinary)Tj
+T*
+0.0495 Tc
+0.4954 Tw
+(English dictionary and its evaluation.)Tj
+/TT4 1 Tf
+T*
+0.0484 Tc
+0.4835 Tw
+(Proceedings of the 13th International)Tj
+T*
+0.0251 Tc
+0.2505 Tw
+(Conference on Computational Linguistics,)Tj
+T*
+0.0263 Tc
+0 Tw
+(COLING'88)Tj
+/TT2 1 Tf
+5.1178 0 TD
+0.0095 Tc
+0.0942 Tw
+[( \(1988\), 459-464.)]TJ
+-7.4814 -1 TD
+0.0288 Tc
+0.2882 Tw
+[([)-24.8(7)-24.8(])-1061.5(Ide, N., Véronis, J. Refining taxonomies)]TJ
+2.3636 -1 TD
+0.1103 Tc
+1.1028 Tw
+(extracted from machine-readable)Tj
+T*
+0.0069 Tc
+0.069 Tw
+(dictionaries. In Hockey, S., Ide, N. )Tj
+/TT4 1 Tf
+14.8327 0 TD
+0.0251 Tc
+0 Tw
+(Research)Tj
+-14.8327 -1 TD
+0.0508 Tc
+0.5087 Tw
+(in Humanities Computing 2, )Tj
+/TT2 1 Tf
+14.9901 0 TD
+0.1699 Tc
+0 Tw
+(Oxford)Tj
+-14.9901 -1 TD
+0.006 Tc
+0.0599 Tw
+[(University Press   \(1993\).)]TJ
+-2.3636 -1 TD
+0.0179 Tc
+0.179 Tw
+[([)-35.7(8)-35.7(])-1072.4(Klavans, J., Chodorow, M., Wacholder, N.)]TJ
+2.3636 -1 TD
+0.036 Tc
+0.3596 Tw
+(From dictionary to knowledge base via)Tj
+T*
+0.0865 Tc
+0 Tw
+(taxonomy. )Tj
+/TT4 1 Tf
+6.2303 0 TD
+0.0681 Tc
+0.6807 Tw
+(Proceedings of the 6th)Tj
+-6.2303 -1 TD
+0.0178 Tc
+0.1784 Tw
+(Conference of the UW Centre for the New)Tj
+T*
+0.0073 Tc
+0 Tw
+(OED, )Tj
+/TT2 1 Tf
+2.6646 0 TD
+0.0086 Tc
+0.0859 Tw
+[(Waterloo,  \(1990\), 110-132.)]TJ
+-5.0283 -1 TD
+0.0077 Tc
+0.0769 Tw
+[([)-45.9(9)-45.9(])-1082.6(Wilks, Y., Fass, D., Guo, C., MacDonald, J.,)]TJ
+2.3636 -1 TD
+0.0355 Tc
+0.3544 Tw
+[(Plate, T., Slator, B. Providing Machine)]TJ
+T*
+0.0514 Tc
+0.5139 Tw
+(Tractable Dictionary Tools. )Tj
+/TT4 1 Tf
+14.309 0 TD
+0.1534 Tc
+0 Tw
+(Machine)Tj
+-14.309 -1 TD
+0.0139 Tc
+(Translation, )Tj
+/TT2 1 Tf
+5.4874 0 TD
+0.0095 Tc
+0.0952 Tw
+[(5  \(1990\), 99-154.)]TJ
+-7.8511 -1 TD
+0.0509 Tc
+0 Tw
+([10])Tj
+2.3636 0 TD
+0.0112 Tc
+0.1122 Tw
+(Pigamo, F. )Tj
+/TT4 1 Tf
+4.9592 0 TD
+0.0161 Tc
+0.1609 Tw
+(Outils de traitement sémantique)Tj
+-4.9592 -1 TD
+0.0556 Tc
+0.5565 Tw
+(du langage naturel.)Tj
+/TT2 1 Tf
+10.0304 0 TD
+0.0409 Tc
+0.4091 Tw
+[( Thèse de l'Ecole)]TJ
+-10.0304 -1 TD
+0.0741 Tc
+0.7413 Tw
+(Nationale Supérieure des Télécom-)Tj
+T*
+0.0102 Tc
+0.1014 Tw
+(munications, Paris \(1990\), 242pp.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([11])Tj
+2.3636 0 TD
+0.0136 Tc
+0.1367 Tw
+(Alonge, A. Analysing dictionary definitions)Tj
+0 -1 TD
+0.0211 Tc
+0.2106 Tw
+(of motion verbs. )Tj
+/TT4 1 Tf
+7.823 0 TD
+0.0265 Tc
+0.2655 Tw
+(Proceedings of the 15th)Tj
+-7.823 -1 TD
+0.0155 Tc
+0.1559 Tw
+(International Conference on Computational)Tj
+T*
+0.0134 Tc
+0.1336 Tw
+(Linguistics, COLING'92)Tj
+/TT2 1 Tf
+10.1986 0 TD
+0.0092 Tc
+0.0921 Tw
+[( \(1992\), 1315-1319.)]TJ
+ET
+endstream
+endobj
+34 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 11 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+36 0 obj
+<<
+/Length 11741
+>>
+stream
+BT
+/TT2 1 Tf
+11 0 0 11 53 771 Tm
+0 g
+/GS1 gs
+0.0509 Tc
+0 Tw
+([12])Tj
+2.3636 0 TD
+0.0685 Tc
+0.6847 Tw
+(Martin, R. Inférences et définition)Tj
+0 -1 TD
+0.0553 Tc
+0 Tw
+(lexicographique. )Tj
+/TT4 1 Tf
+8.434 0 TD
+0.0467 Tc
+0.4668 Tw
+(Colloque "Lexique et)Tj
+-8.434 -1 TD
+0.0553 Tc
+0 Tw
+(Inférences",)Tj
+/TT2 1 Tf
+5.4977 0 TD
+0.0238 Tc
+0.2382 Tw
+[( Metz \(1991\), Proceedings to)]TJ
+-5.4977 -1 TD
+0.0295 Tc
+0 Tw
+(appear.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([13])Tj
+2.3636 0 TD
+0.0297 Tc
+0.2972 Tw
+(Procter, P. Cambridge Language Survey:)Tj
+0 -1 TD
+0.0102 Tc
+0.1022 Tw
+(The development of a non-language specific)Tj
+T*
+0.0417 Tc
+0.4178 Tw
+(semantic coding system using multiple)Tj
+T*
+0.1057 Tc
+0 Tw
+(inheritance. )Tj
+/TT4 1 Tf
+7.3738 0 TD
+0.1012 Tc
+1.0121 Tw
+(Paper presented at)Tj
+-7.3738 -1 TD
+0.0318 Tc
+0.3186 Tw
+(International Workshop of the European)Tj
+T*
+0.0644 Tc
+0.6433 Tw
+(Association of Machine Translation,)Tj
+T*
+0.0335 Tc
+0.3358 Tw
+("Machine Translation and the Lexicon",)Tj
+/TT2 1 Tf
+T*
+0.0109 Tc
+0.109 Tw
+(Heidelberg, 26-28 \(Avril 1993\).)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([14])Tj
+2.3636 0 TD
+0.0806 Tc
+0.8065 Tw
+(Amsler, R.A. Words and worlds.)Tj
+/TT4 1 Tf
+0 -1 TD
+0.0376 Tc
+0.3769 Tw
+(Proceedings of the Third Workshop on)Tj
+T*
+0.0362 Tc
+0.3616 Tw
+(Theoretical Issues in Natural Language)Tj
+T*
+0.039 Tc
+0.3903 Tw
+(Processing \(TINLAP-3\).)Tj
+/TT2 1 Tf
+11.0251 0 TD
+0.0198 Tc
+0.1984 Tw
+[( Las Cruces, NM)]TJ
+-11.0251 -1 TD
+0.0444 Tc
+0 Tw
+(\(1987\).)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([15])Tj
+2.3636 0 TD
+0.0171 Tc
+0.1705 Tw
+(Boguraev, B. K. The definitional power of)Tj
+0 -1 TD
+0.0152 Tc
+0 Tw
+(words. )Tj
+/TT4 1 Tf
+3.2023 0 TD
+0.0174 Tc
+0.1737 Tw
+(Proceedings of the Third Workshop)Tj
+-3.2023 -1 TD
+0.0171 Tc
+0.1705 Tw
+(on Theoretical Issues in Natural Language)Tj
+T*
+0.039 Tc
+0.3903 Tw
+(Processing \(TINLAP-3\).)Tj
+/TT2 1 Tf
+11.0251 0 TD
+0.0198 Tc
+0.1984 Tw
+[( Las Cruces, NM)]TJ
+-11.0251 -1 TD
+0.0188 Tc
+0.1886 Tw
+(\(1987\), 11-15.)Tj
+-2.3636 -1 TD
+0.0552 Tc
+0.5577 Tw
+[([16])-489.7(Kilgarriff, A. Dictionary word sense)]TJ
+2.3636 -1 TD
+0.0236 Tc
+0.2366 Tw
+(distinctions: An enquiry into their nature.)Tj
+/TT4 1 Tf
+T*
+0.0201 Tc
+0.201 Tw
+(Computers and the Humanities )Tj
+/TT2 1 Tf
+14.1083 0 TD
+0.0485 Tc
+0 Tw
+(\(1993\))Tj
+/TT4 1 Tf
+2.9567 0 TD
+0.0045 Tc
+(, )Tj
+/TT2 1 Tf
+0.5545 0 TD
+0.1091 Tc
+(26)Tj
+-17.6196 -1 TD
+0.0194 Tc
+0.1934 Tw
+(\(5-6\), 365-388.)Tj
+-2.3636 -1 TD
+0.0491 Tc
+0.4884 Tw
+[([17])-495.8(Véronis, J., Ide, N., M. Word sense)]TJ
+2.3636 -1 TD
+0.0462 Tc
+0.4619 Tw
+(disambiguation with very large neural)Tj
+T*
+0.0213 Tc
+0.2128 Tw
+(networks extracted from machine readable)Tj
+T*
+0.0592 Tc
+0 Tw
+(dictionaries. )Tj
+/TT4 1 Tf
+6.585 0 TD
+0.0504 Tc
+0.5034 Tw
+(Proceedings of the 14th)Tj
+-6.585 -1 TD
+0.0155 Tc
+0.1559 Tw
+(International Conference on Computational)Tj
+T*
+0.0226 Tc
+0.2261 Tw
+(Linguistics, COLING'90, )Tj
+/TT2 1 Tf
+11.2665 0 TD
+0.0183 Tc
+0.1831 Tw
+[(Helsinki  \(1990\),)]TJ
+-11.2665 -1 TD
+0.0163 Tc
+0.1632 Tw
+(2, 389-394.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([18])Tj
+2.3636 0 TD
+0.0372 Tc
+0.3713 Tw
+(Jensen, K., Binot, J.-L. Disambiguating)Tj
+0 -1 TD
+0.0186 Tc
+0.1866 Tw
+(prepositional phrase attachements by using)Tj
+T*
+0.1363 Tc
+1.3628 Tw
+(on-line dictionary definitions.)Tj
+/TT4 1 Tf
+T*
+0.0235 Tc
+0.2341 Tw
+(Computational Linguistics)Tj
+/TT2 1 Tf
+11.4607 0 TD
+0.0087 Tc
+0.0871 Tw
+[(  \(1987\))]TJ
+/TT4 1 Tf
+3.41 0 TD
+0 Tc
+0 Tw
+(,)Tj
+/TT2 1 Tf
+0.2693 0 TD
+0.0092 Tc
+0.0917 Tw
+[( 13, 3-4,)]TJ
+-15.14 -1 TD
+0.0466 Tc
+0 Tw
+(251-260.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([19])Tj
+2.3636 0 TD
+0.0087 Tc
+0.0872 Tw
+(Montemagni, S., Vanderwende, L. Structural)Tj
+0 -1 TD
+0.0279 Tc
+0.2791 Tw
+(patterns vs. string patterns for extracting)Tj
+T*
+0.0418 Tc
+0.4184 Tw
+(semantic information from dictionaries.)Tj
+/TT4 1 Tf
+T*
+0.0484 Tc
+0.4835 Tw
+(Proceedings of the 15th International)Tj
+T*
+0.0251 Tc
+0.2505 Tw
+(Conference on Computational Linguistics,)Tj
+T*
+0.0267 Tc
+0 Tw
+(COLING'92)Tj
+/TT2 1 Tf
+5.1219 0 TD
+0.0076 Tc
+0.0761 Tw
+[(  \(1992\), 546-552.)]TJ
+-7.4855 -1 TD
+0.0509 Tc
+0 Tw
+([20])Tj
+2.3636 0 TD
+0.0203 Tc
+0.2025 Tw
+(Ravin, Y. Disambiguating and interpreting)Tj
+0 -1 TD
+0.0263 Tc
+0.263 Tw
+(verb definitions. )Tj
+/TT4 1 Tf
+7.8031 0 TD
+0.0269 Tc
+0.2691 Tw
+(Proceedings of the 28th)Tj
+-7.8031 -1 TD
+0.0241 Tc
+0.2413 Tw
+(Annual Conference of the Association for)Tj
+T*
+0.069 Tc
+0.6896 Tw
+(Computational Linguistics,)Tj
+/TT2 1 Tf
+13.3738 0 TD
+0.0497 Tc
+0.4972 Tw
+[( Pittsburgh)]TJ
+-13.3738 -1 TD
+0.021 Tc
+0.2097 Tw
+(\(1990\), 260-267.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([21])Tj
+2.3636 0 TD
+0.029 Tc
+0.2896 Tw
+(Neff, M.S., Boguraev, B.K. Dictionaries,)Tj
+0 -1 TD
+0.0269 Tc
+0.2688 Tw
+(dictionary grammars and dictionary entry)Tj
+T*
+0.028 Tc
+0 Tw
+(parsing. )Tj
+/TT4 1 Tf
+3.9761 0 TD
+0.0286 Tc
+0.2864 Tw
+(Proceedings of the 27rd Annual)Tj
+-3.9761 -1 TD
+0.0735 Tc
+0.7341 Tw
+(Conference of the Association for)Tj
+T*
+0.0624 Tc
+0.6238 Tw
+(Computational Linguistics,)Tj
+/TT2 1 Tf
+13.1354 0 TD
+0.0504 Tc
+0.5032 Tw
+[( Vancouver)]TJ
+-13.1354 -1 TD
+0.02 Tc
+0.1995 Tw
+(\(1989\), 91-101.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([22])Tj
+2.3636 0 TD
+0.0013 Tc
+0.0128 Tw
+(Ahlswede, T., Evens, M., Rossi, K. Building a)Tj
+0 -1 TD
+0.0497 Tc
+0.4969 Tw
+(lexical database by parsing Webster's)Tj
+T*
+0.0132 Tc
+0.1317 Tw
+(Seventh Collegiate Dictionary. )Tj
+/TT4 1 Tf
+13.4117 0 TD
+0.0318 Tc
+0 Tw
+(Proceedings)Tj
+-13.4117 -1 TD
+0.0226 Tc
+0.2268 Tw
+(of the 2nd Annual Conference of the UW)Tj
+T*
+0.0145 Tc
+0.1445 Tw
+(Centre for the NewOED.)Tj
+/TT2 1 Tf
+10.695 0 TD
+0.0157 Tc
+0.1568 Tw
+[( Waterloo, Canada)]TJ
+-10.695 -1 TD
+0.0188 Tc
+0.1886 Tw
+(\(1985\), 65-76.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([23])Tj
+2.3636 0 TD
+0.0213 Tc
+0.2124 Tw
+(Amsler, R. A., Tompa, F. W. An SGML-)Tj
+0 -1 TD
+0.0362 Tc
+0.362 Tw
+(based standard for English monolingual)Tj
+23 62 TD
+0.0174 Tc
+0 Tw
+(dictionaries. )Tj
+/TT4 1 Tf
+5.5819 0 TD
+0.0145 Tc
+0.1443 Tw
+(Proceedings of the 4th Annual)Tj
+-5.5819 -1 TD
+0.0178 Tc
+0.1784 Tw
+(Conference of the UW Centre for the New)Tj
+T*
+0.0555 Tc
+0.5554 Tw
+(Oxford English Dictionary.)Tj
+/TT2 1 Tf
+13.5261 0 TD
+0.0517 Tc
+0.5173 Tw
+[( Waterloo,)]TJ
+-13.5261 -1 TD
+0.0116 Tc
+0.1167 Tw
+[(Ontario  \(1988\), 61-80.)]TJ
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([24])Tj
+2.3636 0 TD
+0.0186 Tc
+0.1862 Tw
+(Ide, N., Véronis, J. Print dictionaries, )Tj
+/TT4 1 Tf
+17.0452 0 TD
+0.093 Tc
+0 Tw
+(TEI)Tj
+-17.0452 -1 TD
+0.0133 Tc
+0.1328 Tw
+(Working Paper AI5 D17,)Tj
+/TT2 1 Tf
+10.7442 0 TD
+0.0107 Tc
+0.1069 Tw
+[( Distributed by the)]TJ
+-10.7442 -1 TD
+0.0224 Tc
+0.2235 Tw
+(Text Encoding Initiative. Compter Center,)Tj
+T*
+0.0235 Tc
+0.2347 Tw
+[(University of Illinois at Chicago  \(1992\),)]TJ
+T*
+0.0512 Tc
+0 Tw
+(60pp.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([25])Tj
+2.3636 0 TD
+0.0067 Tc
+0.0674 Tw
+(Ide, N., Veronis, J.,)Tj
+8.1476 0.2727 TD
+0 Tc
+0 Tw
+( )Tj
+0.261 -0.2727 TD
+0.014 Tc
+0.1404 Tw
+(Warwick-Armstrong, S.,)Tj
+-8.4086 -1 TD
+0.0528 Tc
+0.5277 Tw
+(Calzolari, N. Principles for encoding)Tj
+T*
+0.0101 Tc
+0.1008 Tw
+(machine readable dictionaries,)Tj
+/TT4 1 Tf
+12.6928 0 TD
+0.012 Tc
+0.1198 Tw
+[( EURALEX'92)]TJ
+-12.6928 -1 TD
+0.0272 Tc
+0 Tw
+(Proceedings,)Tj
+/TT2 1 Tf
+5.5747 0 TD
+0.0098 Tc
+0.0986 Tw
+[( H. Tommola, K. Varantola, T.)]TJ
+-5.5747 -1 TD
+0.0184 Tc
+0.1838 Tw
+(Salmi-Tolonen, Y. Schopp, eds., in )Tj
+/TT4 1 Tf
+15.8939 0 TD
+0.0557 Tc
+0 Tw
+(Studia)Tj
+-15.8939 -1 TD
+0.0166 Tc
+(Translatologica)Tj
+/TT2 1 Tf
+6.6392 0 TD
+0.0057 Tc
+0.0575 Tw
+(, Ser. a, 2, Tampere, Finland,)Tj
+-6.6392 -1 TD
+0.021 Tc
+0.2097 Tw
+(\(1992\), 239-246.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([26])Tj
+2.3636 0 TD
+0.018 Tc
+0.1804 Tw
+(Ide, N., Véronis, J.. Encoding dictionaries.)Tj
+/TT4 1 Tf
+0 -1 TD
+0.0195 Tc
+0.196 Tw
+[(Computers and the Humanities)]TJ
+/TT2 1 Tf
+13.6067 0 TD
+0.0082 Tc
+0.0823 Tw
+[(,   \(1994\) to)]TJ
+-13.6067 -1 TD
+0.0295 Tc
+0 Tw
+(appear.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([27])Tj
+2.3636 0 TD
+0.0256 Tc
+0.2567 Tw
+(Neff, M. S., Byrd, R. J., & Rizk, O. A.)Tj
+0 -1 TD
+0.0322 Tc
+0.3214 Tw
+(Creating and querying lexical databases.)Tj
+/TT4 1 Tf
+T*
+0.0671 Tc
+0.6708 Tw
+(Proceedings of the Association for)Tj
+T*
+0.023 Tc
+0.2305 Tw
+(Computational Linguistics Second Applied)Tj
+T*
+0.0891 Tc
+0.891 Tw
+(Conference on Natural Language)Tj
+T*
+0.0094 Tc
+0 Tw
+(Processing. )Tj
+/TT2 1 Tf
+5.1497 0 TD
+0.0085 Tc
+0.0843 Tw
+(Austin, Texas \(1988\), 84-92.)Tj
+-7.5133 -1 TD
+0.0509 Tc
+0 Tw
+([28])Tj
+2.3636 0 TD
+0.0039 Tc
+0.0395 Tw
+(Ide, N., Le Maitre, J., Veronis, J. Outline of a)Tj
+0 -1 TD
+0.0259 Tc
+0.2594 Tw
+(model for lexical databases. )Tj
+/TT4 1 Tf
+13.2009 0 TD
+0.0749 Tc
+0 Tw
+(Information)Tj
+-13.2009 -1 TD
+0.0194 Tc
+0.1938 Tw
+(Processing and Managment )Tj
+/TT2 1 Tf
+12.5363 0 TD
+0.012 Tc
+0.1196 Tw
+[( \(1993\), 29, 2,)]TJ
+-12.5363 -1 TD
+0.0466 Tc
+0 Tw
+(159-186.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+[([29])-494(L)22(e)22( )]TJ
+4.0441 0 TD
+0.0289 Tc
+0.289 Tw
+(Maitre, J., Ide, N., Véronis, J. Deux)Tj
+-1.6804 -1 TD
+0.0145 Tc
+0.1448 Tw
+(modèles pour la représentation des données)Tj
+T*
+0.0262 Tc
+0.2623 Tw
+(lexicales et leur implémentation orientée-)Tj
+T*
+0.0185 Tc
+0 Tw
+(objet. )Tj
+/TT4 1 Tf
+2.8146 0 TD
+0.0217 Tc
+0.2171 Tw
+(Actes des 9èmes Journées Bases de)Tj
+-2.8146 -1 TD
+0.0294 Tc
+0.2938 Tw
+(Données Avancées,)Tj
+/TT2 1 Tf
+8.5674 0 TD
+0.0185 Tc
+0.1844 Tw
+[( Toulouse \(1993\), 312-)]TJ
+-8.5674 -1 TD
+0.053 Tc
+0 Tw
+(331.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([30])Tj
+2.3636 0 TD
+0.0234 Tc
+0.2334 Tw
+(McRoy, S. W. Using Multiple knowledge)Tj
+0 -1 TD
+0.0431 Tc
+0.4307 Tw
+(sources for word sense discrimination.)Tj
+/TT4 1 Tf
+T*
+0.0146 Tc
+0.1463 Tw
+(Computational Linguistics )Tj
+/TT2 1 Tf
+11.5632 0 TD
+0.0106 Tc
+0.1059 Tw
+[( \(1992\))]TJ
+/TT4 1 Tf
+3.0964 0 TD
+0 Tc
+0 Tw
+(,)Tj
+/TT2 1 Tf
+0.2655 0 TD
+0.0056 Tc
+0.0568 Tw
+[( 18, 1, 1-)]TJ
+-14.9251 -1 TD
+0.0568 Tc
+0 Tw
+(30.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([31])Tj
+2.3636 0 TD
+0.0174 Tc
+0.1734 Tw
+(Lesk, M.. Automated sense disambiguation)Tj
+0 -1 TD
+0.0096 Tc
+0.0964 Tw
+(using machine-readable dictionaries: How to)Tj
+T*
+0.0232 Tc
+0.2323 Tw
+(tell a pine cone from an ice cream cone.)Tj
+/TT4 1 Tf
+T*
+0.0734 Tc
+0.7339 Tw
+(Proceedings of the 1986 SIGDOC)Tj
+T*
+0.0124 Tc
+0 Tw
+(Conference )Tj
+/TT2 1 Tf
+5.1194 0 TD
+0.0092 Tc
+0.0919 Tw
+[( \(1986\))]TJ
+/TT4 1 Tf
+3.0722 0 TD
+0 Tc
+0 Tw
+(.)Tj
+/TT2 1 Tf
+-10.5552 -1 TD
+0.0509 Tc
+([32])Tj
+2.3636 0 TD
+0.0189 Tc
+0.1891 Tw
+(Ide, N., Véronis, J.. Caught in the web of)Tj
+0 -1 TD
+0.0416 Tc
+0.4164 Tw
+(words: Using networks generated from)Tj
+T*
+0.0342 Tc
+0.3421 Tw
+(dictionaries for content analysis. )Tj
+/TT4 1 Tf
+15.8108 0 TD
+0.1184 Tc
+0 Tw
+(Paper)Tj
+-15.8108 -1 TD
+0.0921 Tc
+0.9206 Tw
+(presented at ACH/ALLC'91 Joint)Tj
+T*
+0.0215 Tc
+0.2152 Tw
+(International Conference, )Tj
+/TT2 1 Tf
+11.6273 0 TD
+0.0263 Tc
+0.2629 Tw
+(Tempe, Arizona)Tj
+-11.6273 -1 TD
+0.0405 Tc
+0 Tw
+(\(1991\))Tj
+/TT4 1 Tf
+2.9093 0 TD
+0 Tc
+(.)Tj
+/TT2 1 Tf
+-5.2729 -1 TD
+0.0509 Tc
+([33])Tj
+2.3636 0 TD
+0.0405 Tc
+0.4051 Tw
+[(Ide, N., Véronis, J. Very large neural)]TJ
+0 -1 TD
+0.032 Tc
+0.3203 Tw
+(networks for word-sense disambiguation.)Tj
+/TT4 1 Tf
+T*
+0.0433 Tc
+0.4323 Tw
+(9th European Conference on Arfificial)Tj
+T*
+0.03 Tc
+0.3003 Tw
+(Intelligence, ECAI'90,)Tj
+/TT2 1 Tf
+9.8655 0 TD
+0.018 Tc
+0.1798 Tw
+[( Stockholm  \(1990\),)]TJ
+-9.8655 -1 TD
+0.0466 Tc
+0 Tw
+(366-368.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+([34])Tj
+2.3636 0 TD
+0.0025 Tc
+0.0254 Tw
+(Lenat, D.B., Prakash, M., Shepherd, M. CYC:)Tj
+0 -1 TD
+0.0644 Tc
+0.644 Tw
+(Using common sense knowledge to)Tj
+T*
+0.065 Tc
+0.6498 Tw
+(overcome brittleness and knowledge)Tj
+T*
+0.0102 Tc
+0.1016 Tw
+(acquisition bottlenecks. )Tj
+/TT4 1 Tf
+10.1502 0 TD
+0.0113 Tc
+0.1129 Tw
+(AI magazine)Tj
+/TT2 1 Tf
+5.2638 0 TD
+0.0088 Tc
+0.0878 Tw
+[( \(1986\),)]TJ
+-15.414 -1 TD
+0.0115 Tc
+0.1141 Tw
+(7 \(4\), 65-85.)Tj
+-2.3636 -1 TD
+0.0509 Tc
+0 Tw
+([35])Tj
+2.3636 0 TD
+0.0059 Tc
+0.0596 Tw
+[(Sinclair,  J. M. )]TJ
+/TT4 1 Tf
+6.4773 0 TD
+0.01 Tc
+0.1003 Tw
+(An account of the COBUILD)Tj
+-6.4773 -1 TD
+0.0206 Tc
+0 Tw
+(project.)Tj
+/TT2 1 Tf
+3.2476 0 TD
+0.0085 Tc
+0.0843 Tw
+[( London: Collins ELT  \(1987\).)]TJ
+ET
+endstream
+endobj
+37 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+>>
+/ExtGState <<
+/GS1 6 0 R
+>>
+>>
+endobj
+6 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+38 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+39 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 653
+/Descent -250
+/Flags 98
+/FontBBox [-169 -217 1010 883]
+/FontName /Times-Italic
+/ItalicAngle -15
+/StemV 76
+/XHeight 441
+/StemH 76
+>>
+endobj
+40 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+41 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 32
+/FontBBox [-166 -225 1000 931]
+/FontName /Helvetica
+/ItalicAngle 0
+/StemV 88
+/XHeight 523
+/StemH 88
+>>
+endobj
+42 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 669
+/Descent -250
+/Flags 262242
+/FontBBox [-200 -218 996 921]
+/FontName /Times-BoldItalic
+/ItalicAngle -15
+/StemV 133
+/XHeight 462
+/StemH 121
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 234
+/Widths [250 0 408 0 0 833 778 180 333 333 0 0 250 333 250 278 
+500 500 500 500 500 500 500 500 500 500 278 278 0 0 0 444 
+0 722 667 667 722 611 556 722 722 333 389 722 611 889 722 722 
+556 0 667 556 611 722 722 944 722 722 0 333 0 333 0 0 
+0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 
+500 500 333 389 278 500 500 722 500 500 444 0 0 0 0 0 
+0 0 0 0 0 1000 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 350 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+444 0 0 0 0 0 0 0 444 444 444 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 38 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 234
+/Widths [250 333 420 0 0 0 0 214 333 333 0 0 250 333 250 278 
+500 500 500 500 500 500 500 500 500 500 0 0 0 0 0 0 
+920 611 611 667 722 611 0 722 722 333 444 0 556 833 667 722 
+611 0 611 500 556 722 611 833 611 0 556 0 0 0 0 0 
+0 500 500 444 500 444 278 500 500 278 278 444 278 722 500 500 
+500 500 389 389 278 500 444 667 444 444 389 400 0 400 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 444 444 444 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Italic
+/FontDescriptor 39 0 R
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 234
+/Widths [250 0 0 0 0 0 0 0 0 333 0 0 0 333 250 0 
+500 500 500 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 722 0 0 0 0 0 0 778 0 0 0 667 944 0 0 
+611 0 722 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 500 556 444 556 444 333 500 556 278 333 556 278 833 556 500 
+556 0 444 389 333 556 500 722 0 500 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 350 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 444 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 40 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 45
+/LastChar 85
+/Widths [333 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 667 0 0 0 667 611 0 0 278 0 0 0 
+833 722 778 667 0 722 667 611 722 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica
+/FontDescriptor 41 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [250 0 0 0 0 0 0 0 0 333 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 667 722 667 0 0 0 0 0 0 611 0 0 722 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 500 500 444 500 444 0 500 556 278 0 0 0 778 556 500 
+0 0 389 389 278 556 0 667 0 444 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-BoldItalic
+/FontDescriptor 42 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 10 0 R
+/Contents 9 0 R
+>>
+endobj
+13 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 15 0 R
+/Contents 14 0 R
+>>
+endobj
+17 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 19 0 R
+/Contents 18 0 R
+>>
+endobj
+20 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 22 0 R
+/Contents 21 0 R
+>>
+endobj
+23 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 25 0 R
+/Contents 24 0 R
+>>
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 28 0 R
+/Contents 27 0 R
+>>
+endobj
+29 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 31 0 R
+/Contents 30 0 R
+>>
+endobj
+32 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 34 0 R
+/Contents 33 0 R
+>>
+endobj
+35 0 obj
+<<
+/Type /Page
+/Parent 7 0 R
+/Resources 37 0 R
+/Contents 36 0 R
+>>
+endobj
+43 0 obj
+<<
+/S /D
+>>
+endobj
+44 0 obj
+<<
+/Nums [0 43 0 R ]
+>>
+endobj
+7 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 8 0 R 13 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R]
+/Count 10
+/MediaBox [0 0 595 842]
+>>
+endobj
+45 0 obj
+<<
+/CreationDate (D:20050219184528-05'00')
+/ModDate (D:20050219184528-05'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+46 0 obj
+<<
+/Type /Catalog
+/Pages 7 0 R
+/PageLabels 44 0 R
+>>
+endobj
+xref
+0 47
+0000000000 65535 f 
+0000122015 00000 n 
+0000000016 00000 n 
+0000007641 00000 n 
+0000119204 00000 n 
+0000119951 00000 n 
+0000118061 00000 n 
+0000122908 00000 n 
+0000122095 00000 n 
+0000007747 00000 n 
+0000018157 00000 n 
+0000120682 00000 n 
+0000121340 00000 n 
+0000122176 00000 n 
+0000018288 00000 n 
+0000030702 00000 n 
+0000121612 00000 n 
+0000122259 00000 n 
+0000030834 00000 n 
+0000052683 00000 n 
+0000122342 00000 n 
+0000052802 00000 n 
+0000066551 00000 n 
+0000122425 00000 n 
+0000066670 00000 n 
+0000076191 00000 n 
+0000122508 00000 n 
+0000076312 00000 n 
+0000085862 00000 n 
+0000122591 00000 n 
+0000085969 00000 n 
+0000094934 00000 n 
+0000122674 00000 n 
+0000095054 00000 n 
+0000106040 00000 n 
+0000122757 00000 n 
+0000106159 00000 n 
+0000117954 00000 n 
+0000118201 00000 n 
+0000118398 00000 n 
+0000118598 00000 n 
+0000118800 00000 n 
+0000118995 00000 n 
+0000122840 00000 n 
+0000122868 00000 n 
+0000123052 00000 n 
+0000123184 00000 n 
+trailer
+<<
+/Size 47
+/Root 46 0 R
+/Info 45 0 R
+/ID [<607f865d61add2c573e8f5204ad389cd><607f865d61add2c573e8f5204ad389cd>]
+>>
+startxref
+123253
+%%EOF
